@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:background="@color/azulPiscina">
+
+    <Button
+        android:id="@+id/btnNoFunction4"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transp"
+        android:text="@string/sobre"
+        app:layout_constraintStart_toEndOf="@+id/btnNoFunction5"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoFunction2" />
+
+    <ImageButton
+        android:id="@+id/btnNoFunction5"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoFunction3"
+        app:srcCompat="@drawable/ic_elipse_3"
+        tools:ignore="ContentDescription"
+        android:clickable="false"
+        android:accessibilityHeading="false"/>
+
+    <Button
+        android:id="@+id/btnNoFunction2"
+        android:layout_width="320dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transp"
+        android:text="@string/comoUtilizar"
+        app:layout_constraintStart_toEndOf="@+id/btnNoFunction3"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoFunction" />
+
+    <ImageButton
+        android:id="@+id/btnNoFunction3"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoFunction1"
+        app:srcCompat="@drawable/ic_elipse_3"
+        tools:ignore="ContentDescription"
+        android:clickable="false"
+        android:accessibilityHeading="false"/>
+
+    <Button
+        android:id="@+id/btnNoFunction"
+        android:layout_width="320dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:background="@color/transp"
+        android:text="@string/objetivo"
+        app:layout_constraintStart_toEndOf="@+id/btnNoFunction1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnNoFunction1"
+        android:layout_width="28dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_elipse_3"
+        tools:ignore="ContentDescription"
+        android:clickable="false"
+        android:accessibilityHeading="false"/>
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="105dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="284dp"
+        android:contentDescription="@string/btnVoltar"
+        android:text="@string/Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoFunction4" />
+
+</android.support.constraint.ConstraintLayout>
