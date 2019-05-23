@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">Stevie</string>
+    <string name="menuPrincipal" translatable="false">Menu Principal</string>
+
+    <!--Tela 1 - Main
+    btn = botão; T = tela; O = opção -->
+    <string name="btnT1O1" translatable="false">Localização Atual</string>
+    <string name="btnT1O2" translatable="false">Identificar Objetos</string>
+    <string name="btnT1O3" translatable="false">Escolher um Destino</string>
+
+    <!--Tela 2 - Identificar Objeto -->
+    <string name="IdentificarObjeto" translatable="false">Identificar Objeto</string>  <!-- Título da Activity -->
+    <string name="btnT2O1" translatable="false">Objetos Próximos</string>
+    <string name="btnT2O2" translatable="false">Escolher um Objeto Específico</string>
+
+
+    <!--Tela 3 - EscolherDestino -->
+    <string name="menuDestino" translatable="false">Escolher Destino</string>  <!-- Título da Activity -->
+    <string name="btnT3O1" translatable="false">Escolher Departamento</string>
+    <string name="btnT3O2" translatable="false">Escolher Sala de Aula</string>
+    <string name="btnT3O3" translatable="false">Escolher Banheiro</string>
+    <string name="btnT3O4" translatable="false">Escolher Laboratorio</string>
+
+    <!--Tela 4 - Selecionar Objeto -->
+    <string name="btnT4O1" translatable="false">Escolher um objeto</string>
+    <string name="btnT4O2" translatable="false">Selecionar objeto</string>
+    <string name="btnT4O3" translatable="false">Voltar ao menu anterior</string>
+
+    <!--Tela 5 - Navegar -->
+
+
+    <!--Tela Ajuda -->
+    <string name="menuAjuda" translatable="false">Menu de Ajuda</string>
+    <string name="mnAjuda" translatable="false">Ajuda</string>
+    <string name="objetivo" translatable="false">Objetivo do Aplicativo</string>
+    <string name="comoUtilizar" translatable="false">Como Utilizar o aplicativo</string>
+    <string name="sobre" translatable="false">Sobre o aplicativo</string>
+    <string name="btnAjuda" translatable="false">Menu de Ajuda</string>
+
+    <!--Genéricos-->
+    <string name="Voltar" translatable="false">Voltar</string>
+    <string name="VoltarPrincipal" translatable="false">Voltar ao menu principal</string>
+
+</resources>
