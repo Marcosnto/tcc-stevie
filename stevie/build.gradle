@@ -6,16 +6,10 @@ buildscript {
         jcenter()
         
     }
-    dependencies {
-<<<<<<< HEAD:app/stevie/build.gradle
-        classpath 'com.android.tools.build:gradle:3.4.0'
-=======
-        classpath 'com.android.tools.build:gradle:3.4.1'
->>>>>>> 449d6674177598d6ef8f100289767e7e6825e1b5:stevie/build.gradle
-        
+    dependencies{
+    classpath 'com.android.tools.build:gradle:3.4.2'
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
-    }
 }
 
 allprojects {
@@ -24,6 +18,7 @@ allprojects {
         jcenter()
         
     }
+}
 }
 
 task clean(type: Delete) {
