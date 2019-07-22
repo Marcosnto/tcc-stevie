@@ -1,0 +1,13 @@
+- O software registra a tag somente uma vez
+- Ele pode ler ela diversas vezes
+- É possível salvar em TXT todas as tags 
+- Todas as tags têm por default um ID de 24 dígito (EPC) 
+
+- 22/07/2019 -
+> Por algum motivo ele só está escrevendo o EPC com 8 dígitos
+> De alguma forma o 'Freq Space' influência na distância, as seguintes
+configurações pegam em uma distância de exatos 67 cm:
+    - Start frequency: 850 000 Khz
+    - Freq Space: 5000
+    - Quantity: 50
+> As ativação das antenas talvez esteja relacionada as direções do leitor. 
