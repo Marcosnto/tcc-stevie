@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UHFDemo">
+</Property><Property Name="解决方案文件" Value="E:\UHFDemo_v3.61\UHFDemo.sln">
+</Property><Property Name="Date" Value="2013年6月25日">
+</Property><Property Name="Time" Value="18:53">
+</Property></Properties><Event ErrorLevel="0" Project="UHFDemo" Source="UHFDemo\UHFDemo.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="UHFDemo" Source="UHFDemo\UHFDemo.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="CustomControl" Source="CustomControl\CustomControl.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="CustomControl" Source="CustomControl\CustomControl.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Reader" Source="Reader\Reader.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="Reader" Source="Reader\Reader.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="UHFDemo.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="UHFDemo.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="UHFDemo" Source="UHFDemo\UHFDemo.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="CustomControl" Source="CustomControl\CustomControl.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event><Event ErrorLevel="0" Project="Reader" Source="Reader\Reader.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

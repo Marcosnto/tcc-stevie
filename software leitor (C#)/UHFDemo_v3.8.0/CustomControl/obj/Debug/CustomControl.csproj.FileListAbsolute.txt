@@ -1,0 +1,14 @@
+D:\Project\Demo\MyControlLibrary\CustomControl\bin\Debug\CustomControl.dll
+D:\Project\Demo\MyControlLibrary\CustomControl\bin\Debug\CustomControl.pdb
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.dll
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.pdb
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.IpAddressTextBox.resources
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.csproj.GenerateResource.Cache
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\bin\Debug\CustomControl.dll
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\bin\Debug\CustomControl.pdb
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\Debug\CustomControl.IpAddressTextBox.resources
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\Debug\CustomControl.csproj.GenerateResource.Cache
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\Debug\CustomControl.dll
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\Debug\CustomControl.pdb

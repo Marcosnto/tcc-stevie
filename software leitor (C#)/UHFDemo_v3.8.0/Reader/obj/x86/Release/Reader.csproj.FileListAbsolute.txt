@@ -1,0 +1,40 @@
+D:\Project\Luo\R2000Project\UHFDemo\Reader\bin\x86\Release\Reader.dll
+D:\Project\Luo\R2000Project\UHFDemo\Reader\bin\x86\Release\Reader.pdb
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\x86\Release\Reader.dll
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\x86\Release\Reader.pdb
+D:\demo\UHFDemo_v3.62\Reader\bin\x86\Release\Reader.dll
+D:\demo\UHFDemo_v3.62\Reader\bin\x86\Release\Reader.pdb
+D:\demo\UHFDemo_v3.62\Reader\obj\x86\Release\ResolveAssemblyReference.cache
+D:\demo\UHFDemo_v3.62\Reader\obj\x86\Release\Reader.dll
+D:\demo\UHFDemo_v3.62\Reader\obj\x86\Release\Reader.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\Reader\bin\x86\Release\Reader.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\Reader\bin\x86\Release\Reader.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\Reader\obj\x86\Release\Reader.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\Reader\obj\x86\Release\Reader.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\Reader\bin\x86\Release\Reader.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\Reader\bin\x86\Release\Reader.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\Reader\bin\x86\Release\Reader.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\Reader\bin\x86\Release\Reader.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\Reader\obj\x86\Release\Reader.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csprojAssemblyReference.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csprojAssemblyReference.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb

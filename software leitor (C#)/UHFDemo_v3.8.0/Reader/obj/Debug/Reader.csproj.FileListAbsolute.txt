@@ -1,0 +1,5 @@
+D:\Project\Luo\R2000Project\UHFDemo\Reader\bin\Debug\Reader.dll
+D:\Project\Luo\R2000Project\UHFDemo\Reader\bin\Debug\Reader.pdb
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\Debug\Reader.dll
+D:\Project\Luo\R2000Project\UHFDemo\Reader\obj\Debug\Reader.pdb

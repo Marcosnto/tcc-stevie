@@ -1,0 +1,53 @@
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\bin\x86\Release\CustomControl.dll
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\bin\x86\Release\CustomControl.pdb
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.Cache
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\x86\Release\CustomControl.dll
+D:\Project\Luo\R2000Project\UHFDemo\CustomControl\obj\x86\Release\CustomControl.pdb
+D:\demo\UHFDemo_v3.62\CustomControl\bin\x86\Release\CustomControl.dll
+D:\demo\UHFDemo_v3.62\CustomControl\bin\x86\Release\CustomControl.pdb
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\ResolveAssemblyReference.cache
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.dll
+D:\demo\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\bin\x86\Release\CustomControl.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\bin\x86\Release\CustomControl.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.Cache
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\CustomControl\obj\x86\Release\CustomControl.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\bin\x86\Release\CustomControl.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\bin\x86\Release\CustomControl.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\ResolveAssemblyReference.cache
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\CustomControl.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\CustomControl\obj\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csprojAssemblyReference.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csprojAssemblyReference.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.pdb

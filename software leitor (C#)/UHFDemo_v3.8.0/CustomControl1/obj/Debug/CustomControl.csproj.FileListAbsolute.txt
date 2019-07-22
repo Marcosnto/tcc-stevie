@@ -1,0 +1,5 @@
+D:\Project\Demo\MyControlLibrary\CustomControl\bin\Debug\CustomControl.dll
+D:\Project\Demo\MyControlLibrary\CustomControl\bin\Debug\CustomControl.pdb
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\ResolveAssemblyReference.cache
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.dll
+D:\Project\Demo\MyControlLibrary\CustomControl\obj\Debug\CustomControl.pdb
