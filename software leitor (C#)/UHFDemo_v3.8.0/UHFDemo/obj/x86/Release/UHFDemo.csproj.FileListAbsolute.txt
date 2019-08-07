@@ -122,3 +122,18 @@ C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\R
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb

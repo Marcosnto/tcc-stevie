@@ -38,3 +38,9 @@ C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Re
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb

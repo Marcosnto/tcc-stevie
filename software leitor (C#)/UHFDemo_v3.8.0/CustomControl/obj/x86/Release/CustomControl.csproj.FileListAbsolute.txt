@@ -51,3 +51,11 @@ C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.CoreCompileInputs.cache
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.dll
 C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.IpAddressTextBox.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\CustomControl\obj\x86\Release\CustomControl.pdb

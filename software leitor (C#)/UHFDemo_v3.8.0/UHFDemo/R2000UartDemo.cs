@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Net;
 using System.Threading;
+using System.IO;
 
 namespace UHFDemo
 {
@@ -3114,6 +3115,7 @@ namespace UHFDemo
                 //    MessageBox.Show("");
                 //}
                 string strEPC = CCommondMethod.ByteArrayToString(msgTran.AryData, 3, nEpcLength);
+                SalvarLeitura(strEPC);
                 string strPC = CCommondMethod.ByteArrayToString(msgTran.AryData, 1, 2);
                 string strRSSI = (msgTran.AryData[nLength - 1] & 0x7F).ToString();
                 SetMaxMinRSSI(Convert.ToInt32(msgTran.AryData[nLength - 1] & 0x7F));
@@ -3124,6 +3126,7 @@ namespace UHFDemo
                 string strAntId = btAntId.ToString();
                 byte btFreq = (byte)(btTemp >> 2);
                 string strFreq = GetFreqString(btFreq);
+
                 
                 //DataRow row = m_curInventoryBuffer.dtTagDetailTable.NewRow();
                 //row[0] = strEPC;
@@ -3288,7 +3291,28 @@ namespace UHFDemo
             }
         }
 
-      
+        private static void SalvarLeitura(string tag)
+        {
+            if (!Directory.Exists(@"c:\stevie"))
+            {
+                System.IO.Directory.CreateDirectory(@"c:\stevie");
+            }
+            
+            if (!File.Exists(@"c:\stevie\LeituraTags.txt"))
+            {
+                using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
+                {
+                    arqTags.WriteLine(tag);
+                };
+            }
+            else 
+            {
+                using (StreamWriter arqTags = new StreamWriter(@"c:\stevie\LeituraTags.txt", true))
+                {
+                    arqTags.WriteLine(tag);
+                };
+            }
+        }
 
         private void ProcessInventory(Reader.MessageTran msgTran)
         {
