@@ -15,3 +15,33 @@ configurações pegam em uma distância de exatos 67 cm:
 - 06/08/2019 - 
 > A captação da tag no software do leitor se encontra na classe R2000UartDemo.cs na linha 
 3294. 
+
+===== código da leitura das tags =====
+- verifica se o arquivo existe {
+    exclui o arquivo atual;
+    cria um arquivo novo com mesmo nome;
+    posição = 0;
+    (loop infinito){
+        (verifica se o arquivo foi modificado){
+            arquivo.direcionar(posição);
+            (loop para leitura do arquivo até o final){
+                array [] = linha;
+                println(array);
+            }
+        }
+    }
+
+}
+=======================================
+
+- Anotações reunião 07/08/2019 - 
+> Justificar o problema do leitor de RFID. 
+    - descrever muito bem o leitor do RFID na monografia
+        - documentar muito bem como eu fiz a configuração dele, como
+        foi trabalhado as questões da documentação.
+        - como eu lidei com os problemas
+> A escrita tem que ser impecável
+> Falar mais sober o Talkback
+> Simular um ambiente onde eu consigo mostrar que o sistema funciona
+> Colocar a descrição do leitor no Referencial Teórico
+> Explicar tudo que for colocado na descrição do referencial teórico 
