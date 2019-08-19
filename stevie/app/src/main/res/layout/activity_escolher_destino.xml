@@ -8,64 +8,62 @@
 
     <ImageButton
         android:id="@+id/btnDepartamento"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="100dp"
         android:background="@null"
         android:contentDescription="@string/btnT3O1"
+        app:layout_constraintEnd_toStartOf="@id/btnSala"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/e_departamento" />
 
     <ImageButton
         android:id="@+id/btnSala"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="0dp"
         android:background="@null"
         android:contentDescription="@string/btnT3O2"
+        app:layout_constraintStart_toEndOf="@id/btnDepartamento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/e_sala_aula" />
 
     <ImageButton
         android:id="@+id/btnBanheiro"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="72dp"
         android:background="@null"
         android:contentDescription="@string/btnT3O3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnDepartamento"
+        app:layout_constraintEnd_toStartOf="@id/btnLaboratorio"
         app:srcCompat="@drawable/e_banheiro" />
 
     <ImageButton
         android:id="@+id/btnLaboratorio"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginTop="72dp"
-        android:layout_marginEnd="8dp"
         android:background="@null"
         android:contentDescription="@string/btnT3O4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toEndOf="@+id/btnBanheiro"
         app:layout_constraintTop_toBottomOf="@+id/btnSala"
+        app:layout_constraintStart_toEndOf="@id/btnBanheiro"
         app:srcCompat="@drawable/e_laboratorio" />
 
     <ImageButton
         android:id="@+id/btnVoltar"
-        android:layout_width="140dp"
-        android:layout_height="41dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="508dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
         android:background="@null"
         android:contentDescription="@string/VoltarPrincipal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/botao_voltar" />
 </android.support.constraint.ConstraintLayout>

@@ -2,6 +2,9 @@
     <string name="app_name" translatable="false">Stevie</string>
     <string name="menuPrincipal" translatable="false">Menu Principal</string>
 
+    <!-- Tela inicial -->
+    <string name = "btnT001" translatable="false">Bluetooth</string>
+
     <!--Tela 1 - Main
     btn = botão; T = tela; O = opção -->
     <string name="btnT1O1" translatable="false">Localização Atual</string>
