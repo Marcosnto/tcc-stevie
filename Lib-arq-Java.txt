@@ -1,0 +1,4 @@
+- Adicionar o .jar ao projeto
+- Copiar a DLL jnotify.dll ao caminho: C:\\Arquivos de Programas\\Java\\jdk1.8.0_201\\bin
+
+Após isso a biblioteca está pronta para ser usada. 

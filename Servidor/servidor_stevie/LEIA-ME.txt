@@ -1,0 +1,2 @@
+> O código do servidor só será compilado corretamente se o bluetooth 
+    estiver conectado ao notebook.

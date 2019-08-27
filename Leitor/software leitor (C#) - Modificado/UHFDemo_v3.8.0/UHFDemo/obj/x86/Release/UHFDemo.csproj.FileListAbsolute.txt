@@ -1,0 +1,154 @@
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\UHFDemo.exe
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\UHFDemo.pdb
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\CustomControl.dll
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\Reader.dll
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\CustomControl.pdb
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\bin\x86\Release\Reader.pdb
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.Cache
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.exe
+D:\Project\Luo\R2000Project\UHFDemo\UHFDemo\obj\x86\Release\UHFDemo.pdb
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.exe
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.pdb
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\UHFDemo.exe
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\UHFDemo.pdb
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\CustomControl.dll
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\Reader.dll
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\CustomControl.pdb
+D:\demo\UHFDemo_v3.62\UHFDemo\bin\x86\Release\Reader.pdb
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\ResolveAssemblyReference.cache
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\GenerateResource-ResGen.read.1.tlog
+D:\demo\UHFDemo_v3.62\UHFDemo\obj\x86\Release\GenerateResource-ResGen.write.1.tlog
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.exe
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\UHFDemo.exe
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\UHFDemo.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\CustomControl.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\Reader.dll
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\CustomControl.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\bin\x86\Release\Reader.pdb
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.csprojResolveAssemblyReference.cache
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+E:\UHF_RFID\demo\源代码\UHFDemo_v3.62\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.Cache
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\UHFDemo.exe
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\UHFDemo.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\CustomControl.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\Reader.dll
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\CustomControl.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\bin\x86\Release\Reader.pdb
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.exe
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.csprojResolveAssemblyReference.cache
+D:\UHFDemo_v3.65_EN_SDK\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.Cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.65\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.Cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojResolveAssemblyReference.cache
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\test\Desktop\DemoDebug\8口\英文\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.Cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Dropbox\TCC\Marcos\Software do leitor\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos Neto\OneDrive\TCC\TCC_2\D10x - EN\PC-demo-software (c#)\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\PC-demo-software (c#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\UHFDemo.pdb
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.dll
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.dll
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\CustomControl.pdb
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\bin\x86\Release\Reader.pdb
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csprojAssemblyReference.cache
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Form1.resources
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.R2000UartDemo.resources
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.Properties.Resources.resources
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.GenerateResource.cache
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CoreCompileInputs.cache
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.csproj.CopyComplete
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.exe
+C:\Users\Marcos\Documents\Projetos no Git\stevie\software leitor (C#) - Modificado\UHFDemo_v3.8.0\UHFDemo\obj\x86\Release\UHFDemo.pdb

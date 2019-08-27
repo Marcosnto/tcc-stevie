@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/Arquivos-Binarios-CPP.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/64-bit Linux/libjnotify.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/CHANGELOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/epl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify-0.94.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify-native-linux-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify-native-macosx-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify-native-win32-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/jnotify_64bit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/lgpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/libjnotify.jnilib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Arquivos - Implementacao/jnotify-lib-0.94/libjnotify.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Auto Writte Card_V3.63/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Auto Writte Card_V3.63/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Auto Writte Card_V3.63/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentação/Definição de Requisitos.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentação/Definição de Requisitos.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Outros/Classe principal do leitor (so pra garantir).rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Protótipo/prototipo-stevie.xd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/AUTHORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/assembly-distr-sources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/assembly.manifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/assembly.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/build-native-bluecove.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/build-native-intelbth.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/build-native-osx.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/build.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/developer-read-me.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/device.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/findbugs-exclude.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/BlueSoleilStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/BlueSoleilStack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStack.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackChannelController.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackChannelController.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackDiscovery.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackDiscovery.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackL2CAP.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackL2CAP.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackL2CAPServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackL2CAPServer.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackRFCOMM.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackRFCOMM.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackRFCOMMServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackRFCOMMServer.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackSDPQuery.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackSDPQuery.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackSDPServer.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackSDPServer.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/OSXStackTest.mm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/ReadMe.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/ToshibaStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/ToshibaStack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/WIDCOMMStack.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/WIDCOMMStack.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/WIDCOMMStackL2CAP.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/WIDCOMMStackRFCOMM.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/bluecove.dsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/bluecove.dsw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/bluecove.mak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/bluecove.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/bluecove.xcodeproj/project.pbxproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/common.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/common.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/commonObjects.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/commonTest.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/intelbth.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/intelbth.def" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/intelbth.rc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/intelbth.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/c/intelbth/intelbth.vcproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/connection/CreateConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/connection/btgoep/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/connection/btl2cap/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/connection/btspp/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/connection/tcpobex/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/ibm/oti/vm/VM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BlueCoveConfigProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BlueCoveImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BlueCoveLocalDeviceProperties.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionAccessAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionNotifierBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionNotifierParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionNotifierServiceRecordAccess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConnectionParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothConsts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothL2CAPClientConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothL2CAPConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothL2CAPConnectionNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothL2CAPServerConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommClientConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommConnectionNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothRFCommServerConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothServerConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStack.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackBlueSoleil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackMicrosoft.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackOSX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackToshiba.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackWIDCOMM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/BluetoothStackWIDCOMMSDPInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/DebugLog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/DebugLog4jAppender.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/DeviceInquiryRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/DeviceInquiryThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/DiscoveryListenerAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/MicroeditionConnector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NativeLibLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NativeTestInterfaces.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NotImplementedError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NotImplementedIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NotSupportedIOException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/NotSupportedRuntimeException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/RemoteDeviceHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/RetrieveDevicesCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SDPInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SDPOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SearchServicesDeviceNotReachableException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SearchServicesException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SearchServicesRunnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SearchServicesTerminatedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SearchServicesThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/SelectServiceHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/ServiceRecordImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/ServiceRecordsRegistry.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/ThreadLocalWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/UtilsJavaSE.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/UtilsJavaSE5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/UtilsStringTokenizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/WeakVectorFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/btgoep/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/btl2cap/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/btspp/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/gcf/socket/ServerSocketConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/gcf/socket/SocketConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/BlueCoveOBEX.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/MD5DigestWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXClientOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXClientOperationGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXClientOperationPut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXClientSessionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXConnectionParams.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXHeaderSetImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperationCodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperationDelivery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperationInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperationOutputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXOperationReceive.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXServerOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXServerOperationGet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXServerOperationPut.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXServerSessionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXSessionBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXSessionNotifierImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXTCPServiceRecordImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/OBEXUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/obex/UnsupportedInputStream.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/intel/bluetooth/tcpobex/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/sun/cdc/io/ConnectionBaseInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/sun/cdc/io/j2me/btgoep/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/sun/cdc/io/j2me/btl2cap/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/sun/cdc/io/j2me/btspp/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/com/sun/cdc/io/j2me/tcpobex/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/BluetoothConnectionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/BluetoothStateException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/DataElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/DeviceClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/DiscoveryAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/DiscoveryListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/L2CAPConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/L2CAPConnectionNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/LocalDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/RemoteDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/ServiceRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/ServiceRegistrationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/bluetooth/UUID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/ConnectionNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/Connector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/ContentConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/InputConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/OutputConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/ServerSocketConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/SocketConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/StreamConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/microedition/io/StreamConnectionNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/Authenticator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/ClientSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/HeaderSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/Operation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/PasswordAuthentication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/ResponseCodes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/ServerRequestHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/java/javax/obex/SessionNotifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/ibm/oti/connection/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/ibm/oti/vm/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/btgoep/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/btl2cap/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/btspp/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/gcf/socket/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/obex/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/intel/bluetooth/tcpobex/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/sun/cdc/io/j2me/btgoep/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/sun/cdc/io/j2me/btl2cap/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/sun/cdc/io/j2me/btspp/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/sun/cdc/io/j2me/tcpobex/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/com/sun/cdc/io/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/javax/bluetooth/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/javax/microedition/io/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/javax/obex/package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/main/javadoc/overview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/site/apt/index.apt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/BluetoothStackWIDCOMMSDPInputStreamTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeConversionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeConversionWIDCOMMTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeDebugTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeDebugWIDCOMMTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeExceptionTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeExceptionWIDCOMMTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeOSXTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeReceiveBufferTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeReceiveBufferWIDCOMMTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeRunnableLoopOSXTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeSDPStreamOSXTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/NativeTestCase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/SDPStreamTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/UtilsStringTokenizerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/UtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/javadoc/OBEXPutServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/javadoc/ObexPutClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/javadoc/RemoteDeviceDiscovery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/javadoc/ServicesSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/obex/HeaderTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/obex/OBEXAuthenticationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/obex/OBEXUtilsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/test/Consts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/test/EnvSettings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/test/SimpleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/test/SimpleDiscovery.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/com/intel/bluetooth/test/SimpleServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/javax/bluetooth/JSR82APIDeclarationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/javax/bluetooth/UUIDTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/javax/microedition/io/CLDC11APIDeclarationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/java/javax/obex/JSR82APIObexDeclarationsTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/resources/cldcapi_10_11-javax.microedition.io-signature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/resources/jsr82-obex-signature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/resources/jsr82-signature.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/src/test/resources/log4j.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/stacks.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bluecove-2.1.0/todo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/64-bit Linux/libjnotify.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/CHANGELOG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/epl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify-0.94.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify-native-linux-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify-native-macosx-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify-native-win32-0.94-src.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/jnotify_64bit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/lgpl.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/libjnotify.jnilib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jnotify-lib-0.94/libjnotify.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/libraries/jnotify_lib_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stevie_java/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software - Arquivo/main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software - Arquivo/main.java.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../diario de um leitor de rfid.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../servidor_stevie/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../servidor_stevie/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../servidor_stevie/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../servidor_stevie/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../servidor_stevie/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v15/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo_v3.8.0/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/9239.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/CustomControl.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/CustomControl.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/HexTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/HexTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/Led.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/LogRichTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/LogRichTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Debug/Refactor/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/Refactor/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/CustomControl.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/HexTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/HexTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/LogRichTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/LogRichTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl1/obj/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/ITalker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/MessageTran.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/Reader.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/Reader.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/ReaderMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/Talker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Debug/Refactor/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/Release/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Refactor/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/9239.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/CCommondMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Form1.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Form1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Form1.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/InventoryBuffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/OperateTagBuffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/OperateTagISO18000Buffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Properties/Resources.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Properties/Resources.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Properties/Settings.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/Properties/Settings.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/ReaderSetting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/UHFDemo.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/UHFDemo.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/ResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/ResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/UpgradeLog.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport_Minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport_Plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/abstract-waves.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/abstract-waves2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/bar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#) - Modificado/UHFDemo_v3.8.0/bar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/androidTest/java/com/example/stevie/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/Ajuda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/EscolherDestino.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/Navegar.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-hdpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-ldpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-mdpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xhdpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxhdpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/ajuda_como_utilizar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/ajuda_objetivo_app.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/ajuda_sobre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/botao_selecionar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/botao_voltar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/e_banheiro.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/e_departamento.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/e_laboratorio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/e_sala_aula.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/escolher_destino.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/escolher_ob_especifico.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/identificar_objeto.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/localizacao_atual.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/menu_anterior.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/menu_principal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable-xxxhdpi/objetos_proximos.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_ajuda.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_escolher_destino.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_identificar_objeto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_menu_principal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_navegar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_selecionar_objeto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_tela_inicial.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/test/java/com/example/stevie/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/src/Servidor.java" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#novoArq#0;class#Main#0" />
+                <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#OuvirArquivo#0" />
+                <element signature="n#!!doc;n#mask#0;n#OuvirArquivo#0" />
+                <element signature="n#!!doc;n#ouvirSubDiretorios#0;n#OuvirArquivo#0" />
+                <element signature="method#lerArq#0;class#OuvirArquivo#0" />
+                <element signature="class#ConexaoBluetooth#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/model/bean/Local.java" />
+        <option value="$PROJECT_DIR$/src/model/bean/Tag.java" />
+        <option value="$PROJECT_DIR$/src/model/bean/Grupo.java" />
+        <option value="$PROJECT_DIR$/src/model/bean/Objeto.java" />
+        <option value="$PROJECT_DIR$/src/connection/ConnectionFactory.java" />
+        <option value="$PROJECT_DIR$/src/model/dao/LocalDAO.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/94e8672d-605d-4a14-8bb7-1de794545a39/console.sql" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/dataSources.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
+              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-8.0.16.jar" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="servidor_stevie" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="" />
+      <created>1566342481039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566342481039</updated>
+      <workItem from="1566342484913" duration="4763000" />
+      <workItem from="1566347447093" duration="5333000" />
+      <workItem from="1566449445939" duration="7123000" />
+      <workItem from="1566523938615" duration="190000" />
+      <workItem from="1566531127498" duration="2242000" />
+      <workItem from="1566872685496" duration="91000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="19742000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17270789" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32827735" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Console" order="13" visible="true" weight="0.497545" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.21002132" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/ClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="2659" selection-start-line="2659" selection-end-line="2659" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fdfef4fe-4565-4ee1-b00a-6e5f65003ce2/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/94e8672d-605d-4a14-8bb7-1de794545a39/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bean/Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-95">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#213#214#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#388#389#0" expanded="true" />
+            <element signature="e#429#430#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#573#574#0" expanded="true" />
+            <element signature="e#613#614#0" expanded="true" />
+            <element signature="e#650#651#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#779#780#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#963#964#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bean/Objeto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-214">
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <folding>
+            <element signature="e#252#253#0" expanded="true" />
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#341#342#0" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#441#442#0" expanded="true" />
+            <element signature="e#477#478#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#663#664#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#943#944#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bean/Tag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#421#422#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#605#606#0" expanded="true" />
+            <element signature="e#643#644#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#777#778#0" expanded="true" />
+            <element signature="e#818#819#0" expanded="true" />
+            <element signature="e#855#856#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1009#1010#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1109#1110#0" expanded="true" />
+            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="e#1212#1213#0" expanded="true" />
+            <element signature="e#1257#1258#0" expanded="true" />
+            <element signature="e#1450#1451#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/bean/Grupo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#205#206#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#282#283#0" expanded="true" />
+            <element signature="e#315#316#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/connection/ConnectionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/dao/LocalDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#novoArq#0;class#Main#0" />
+            <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#OuvirArquivo#0" />
+            <element signature="n#!!doc;n#mask#0;n#OuvirArquivo#0" />
+            <element signature="n#!!doc;n#ouvirSubDiretorios#0;n#OuvirArquivo#0" />
+            <element signature="method#lerArq#0;class#OuvirArquivo#0" />
+            <element signature="class#ConexaoBluetooth#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>servidor_stevie</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>src</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
