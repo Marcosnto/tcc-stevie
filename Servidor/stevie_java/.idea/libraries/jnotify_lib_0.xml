@@ -1,16 +1,16 @@
 <component name="libraryTable">
   <library name="jnotify-lib-0">
     <CLASSES>
-      <root url="file://$USER_HOME$/Downloads/jnotify-lib-0.94" />
+      <root url="file://$PROJECT_DIR$/../jnotify-lib-0.94" />
     </CLASSES>
     <JAVADOC />
     <NATIVE>
-      <root url="file://$USER_HOME$/Downloads/jnotify-lib-0.94" />
+      <root url="file://$PROJECT_DIR$/../jnotify-lib-0.94" />
     </NATIVE>
     <SOURCES>
-      <root url="file://$USER_HOME$/Downloads/jnotify-lib-0.94" />
+      <root url="file://$PROJECT_DIR$/../jnotify-lib-0.94" />
     </SOURCES>
-    <jarDirectory url="file://$USER_HOME$/Downloads/jnotify-lib-0.94" recursive="false" />
-    <jarDirectory url="file://$USER_HOME$/Downloads/jnotify-lib-0.94" recursive="false" type="SOURCES" />
+    <jarDirectory url="file://$PROJECT_DIR$/../jnotify-lib-0.94" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../jnotify-lib-0.94" recursive="false" type="SOURCES" />
   </library>
 </component>

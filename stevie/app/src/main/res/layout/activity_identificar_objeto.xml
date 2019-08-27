@@ -8,36 +8,36 @@
 
     <ImageButton
         android:id="@+id/btnProximos"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
         android:layout_marginTop="212dp"
         android:background="@null"
         android:contentDescription="@string/btnT4O1"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnEspecifico"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/objetos_proximos" />
 
     <ImageButton
         android:id="@+id/btnEspecifico"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="212dp"
-        android:layout_marginEnd="60dp"
         android:background="@null"
         android:contentDescription="@string/btnT4O2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnProximos"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/escolher_ob_especifico" />
 
     <ImageButton
         android:id="@+id/btnVoltar"
-        android:layout_width="140dp"
+        android:layout_width="0dp"
         android:layout_height="41dp"
-        android:layout_marginStart="136dp"
         android:layout_marginTop="396dp"
         android:background="@null"
         android:contentDescription="@string/VoltarPrincipal"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/botao_voltar" />

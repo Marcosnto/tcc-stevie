@@ -2,20 +2,181 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4809ec36-8c87-47aa-8912-4252570c33ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../diario de um leitor de rfid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../diario de um leitor de rfid.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/jnotify_lib_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jnotify_lib_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v15/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide-shm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v15/Server/sqlite3/storage.ide-wal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/db.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/UHFDemo_v3.8.0/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/VSWorkspaceState.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/.vs/slnx.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/9239.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/CustomControl.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/CustomControl.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/HexTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/HexTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/IpAddressTextBox.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/Led.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/LogRichTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/LogRichTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Debug/Refactor/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Debug/Refactor/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.IpAddressTextBox.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/CustomControl.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/HexTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/HexTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/LogRichTextBox.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/LogRichTextBox.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Debug/CustomControl.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/CustomControl1/obj/Release/CustomControl.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/ITalker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/MessageTran.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/Reader.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/Reader.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/ReaderMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/Talker.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Debug/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Debug/Refactor/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/Release/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Debug/Refactor/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/9239.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/CCommondMethod.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Form1.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Form1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Form1.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/InventoryBuffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/OperateTagBuffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/OperateTagISO18000Buffer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Properties/Resources.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Properties/Resources.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Properties/Settings.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/Properties/Settings.settings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/ReaderSetting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/UHFDemo.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/UHFDemo.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/ResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Debug/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/GenerateResource-ResGen.read.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/GenerateResource-ResGen.write.1.tlog" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/ResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csproj.GenerateResource.Cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Debug/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/DesignTimeResolveAssemblyReferences.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/DesignTimeResolveAssemblyReferencesInput.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.Form1.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.Properties.Resources.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.R2000UartDemo.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojResolveAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/UpgradeLog.XML" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport.xslt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport_Minus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/_UpgradeReport_Files/UpgradeReport_Plus.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/abstract-waves.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/abstract-waves2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/bar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../software leitor (C#)/UHFDemo_v3.8.0/bar2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_ajuda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_ajuda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_escolher_destino.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_escolher_destino.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_identificar_objeto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_identificar_objeto.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_menu_principal.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_menu_principal.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_navegar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_navegar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_selecionar_objeto.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../stevie/app/src/main/res/layout/activity_selecionar_objeto.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,10 +193,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+            <state relative-caret-position="328">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#Main#0" />
+                <element signature="n#!!doc;n#mask#0;n#Main#0" />
+                <element signature="e#1120#1190#0" />
               </folding>
             </state>
           </provider>
@@ -74,24 +238,27 @@
             </path>
             <path>
               <item name="stevie_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="stevie_java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../jnotify-lib-0.94" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -137,17 +304,18 @@
       <workItem from="1565117062421" duration="2859000" />
       <workItem from="1565121054321" duration="974000" />
       <workItem from="1565154788640" duration="273000" />
+      <workItem from="1565614641049" duration="1619000" />
+      <workItem from="1565896014520" duration="113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7952000" />
+    <option name="totallyTimeSpent" value="9684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19722815" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23294243" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -182,12 +350,16 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="16" column="64" lean-forward="true" selection-start-line="16" selection-start-column="64" selection-end-line="16" selection-end-column="64" />
+        <state relative-caret-position="328">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#Main#0" />
+            <element signature="n#!!doc;n#mask#0;n#Main#0" />
+            <element signature="e#1120#1190#0" />
           </folding>
         </state>
       </provider>

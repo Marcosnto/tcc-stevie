@@ -45,3 +45,7 @@ configurações pegam em uma distância de exatos 67 cm:
 > Simular um ambiente onde eu consigo mostrar que o sistema funciona
 > Colocar a descrição do leitor no Referencial Teórico
 > Explicar tudo que for colocado na descrição do referencial teórico 
+
+=======================================
+Link da biblioteca do bluetooth que funciona:
+http://www.java2s.com/Code/Jar/b/Downloadbluecove211jar.htm
