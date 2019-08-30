@@ -43,7 +43,7 @@ public class JDBC4ClientInfoProviderSP implements JDBC4ClientInfoProvider {
         String getClientInfoSpName = configurationProps.getProperty("clientInfoGetSPName", "getClientInfo");
         String getClientInfoBulkSpName = configurationProps.getProperty("clientInfoGetBulkSPName", "getClientInfoBulk");
         String clientInfoCatalog = configurationProps.getProperty("clientInfoCatalog", ""); // "" means use current from
-                                                                                           // connection
+                                                                                           // database.connection
 
         String catalog = "".equals(clientInfoCatalog) ? conn.getCatalog() : clientInfoCatalog;
 

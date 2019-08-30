@@ -656,7 +656,7 @@ public class StatementRegressionTest extends BaseTestCase {
             try {
                 reconnectStmt.executeBatch();
             } catch (SQLException sqlEx) {
-                // We expect this...we killed the connection
+                // We expect this...we killed the database.connection
             }
 
             assertEquals(2, getRowCount("testBug13255"));
@@ -684,7 +684,7 @@ public class StatementRegressionTest extends BaseTestCase {
             try {
                 reconnectPStmt.executeBatch();
             } catch (SQLException sqlEx) {
-                // We expect this...we killed the connection
+                // We expect this...we killed the database.connection
             }
 
             assertEquals(2, getRowCount("testBug13255"));
@@ -3015,7 +3015,7 @@ public class StatementRegressionTest extends BaseTestCase {
 
     /**
      * Tests fix for BUG#20650 - Statement.cancel() causes NullPointerException
-     * if underlying connection has been closed due to server failure.
+     * if underlying database.connection has been closed due to server failure.
      * 
      * @throws Exception
      *             if the test fails.
@@ -3507,7 +3507,7 @@ public class StatementRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests fix for BUG#28256 - When connection is in read-only mode, queries
+     * Tests fix for BUG#28256 - When database.connection is in read-only mode, queries
      * that are parentheized incorrectly identified as DML.
      * 
      * @throws Exception
@@ -5965,7 +5965,7 @@ public class StatementRegressionTest extends BaseTestCase {
      * WL#4897 - Add EXPLAIN INSERT/UPDATE/DELETE
      * 
      * Added support for EXPLAIN INSERT/REPLACE/UPDATE/DELETE. Connector/J must issue a warning containing the execution
-     * plan for slow queries when connection properties logSlowQueries=true and explainSlowQueries=true are used.
+     * plan for slow queries when database.connection properties logSlowQueries=true and explainSlowQueries=true are used.
      * 
      * @throws SQLException
      */
@@ -6175,7 +6175,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertEquals(this.stmt.executeUpdate("INSERT INTO testBug55340 (col1, col2) VALUES (1, 'one'), (2, 'two'), (3, 'three')"), 3);
 
         for (Connection testConn : new Connection[] { this.conn, testConnCacheRSMD }) {
-            String testDesc = testConn == testConnCacheRSMD ? "Conn. with 'cacheResultSetMetadata=true'" : "Default connection";
+            String testDesc = testConn == testConnCacheRSMD ? "Conn. with 'cacheResultSetMetadata=true'" : "Default database.connection";
 
             // bug occurs in 2nd call only
             for (int i = 1; i <= 2; i++) {
@@ -6382,7 +6382,7 @@ public class StatementRegressionTest extends BaseTestCase {
         testConn.close();
 
         /*
-         * Case 7: Multiple combinations between maxRows connection prop, Statement.setMaxRows() and LIMIT clause.
+         * Case 7: Multiple combinations between maxRows database.connection prop, Statement.setMaxRows() and LIMIT clause.
          * Covers some cases not tested previously.
          */
         testBug71396MultiSettingsCheck("", -1, 1, 1);
@@ -6801,7 +6801,7 @@ public class StatementRegressionTest extends BaseTestCase {
         final int[] expectedGenKeysForBatchPStmtNoChkODKU51 = new int[] { 1, 2, 3, 4, 2, 3, 4, 3, 4, 5, 5, 6, 4, 5, 6, 6, 7, 8, 7 };
         final int[] expectedGenKeysForBatchPStmtRW51 = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19 };
 
-        // Test multiple connection props
+        // Test multiple database.connection props
         do {
             switch (++testStep) {
                 case 1:
@@ -6917,7 +6917,7 @@ public class StatementRegressionTest extends BaseTestCase {
             testConn.close();
         } while (!lastTest);
 
-        // Test connection prop allowMultiQueries=true
+        // Test database.connection prop allowMultiQueries=true
         // (behaves as if only first query has been executed)
         lastTest = false;
         String allQueries = "";
@@ -7785,7 +7785,7 @@ public class StatementRegressionTest extends BaseTestCase {
         try {
             future1.get(5, TimeUnit.SECONDS);
         } catch (TimeoutException e) {
-            // The connection hung, forcibly closing it releases resources.
+            // The database.connection hung, forcibly closing it releases resources.
             this.stmt.execute("KILL CONNECTION " + testConn.getId());
             fail("Connection hung after executeUpdate().");
         }
@@ -7803,7 +7803,7 @@ public class StatementRegressionTest extends BaseTestCase {
         try {
             this.rs = future2.get(5, TimeUnit.SECONDS);
         } catch (TimeoutException e) {
-            // The connection hung, forcibly closing it releases resources.
+            // The database.connection hung, forcibly closing it releases resources.
             this.stmt.execute("KILL CONNECTION " + testConn.getId());
             fail("Connection hung after executeQuery().");
         }
@@ -7886,7 +7886,7 @@ public class StatementRegressionTest extends BaseTestCase {
             try {
                 future.get(10, TimeUnit.SECONDS);
             } catch (TimeoutException e) {
-                // The connection hung, forcibly closing it releases resources.
+                // The database.connection hung, forcibly closing it releases resources.
                 this.stmt.executeQuery("KILL CONNECTION " + testConn.getId());
                 fail(testCase + ": Connection hung!");
             }
@@ -7914,14 +7914,14 @@ public class StatementRegressionTest extends BaseTestCase {
      * 1. Call .close() on a server prepared statement. This promotes a prepared statement for caching if prepared statements cache is enabled.
      * 2. cachePrepStmts=true|false. Turns on/off the prepared statements cache.
      * 3. Call .setPoolable(true|false) on the prepared statement. This allows canceling the prepared statement caching, on a per statement basis. It has no
-     * effect if the prepared statements cache if turned off for the current connection.
+     * effect if the prepared statements cache if turned off for the current database.connection.
      * 
      * Expected behavior:
      * - If .close() is not called on server prepared statements then they also can't be promoted for caching. This causes a server prepared statements leak in
      * all remaining combinations.
-     * - If .close() is called on server prepared statements and the prepared statements cache is disabled by any form (either per connection or per statement),
+     * - If .close() is called on server prepared statements and the prepared statements cache is disabled by any form (either per database.connection or per statement),
      * then the statements is immediately closed on server side too.
-     * - If .close() is called on server prepared statements and the prepared statements cache is enabled (both in the connection and in the statement) then the
+     * - If .close() is called on server prepared statements and the prepared statements cache is enabled (both in the database.connection and in the statement) then the
      * statement is cached and only effectively closed in the server side if and when removed from the cache.
      */
     public void testBug80615() throws Exception {
@@ -8170,7 +8170,7 @@ public class StatementRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests fix for Bug#66430 - setCatalog on connection leaves ServerPreparedStatement cache for old catalog.
+     * Tests fix for Bug#66430 - setCatalog on database.connection leaves ServerPreparedStatement cache for old catalog.
      */
     public void testBug66430() throws Exception {
         createDatabase("testBug66430DB1");
@@ -8237,7 +8237,7 @@ public class StatementRegressionTest extends BaseTestCase {
      * Tests fix for Bug#84783 - query timeout is not working(thread hang).
      */
     public void testBug84783() throws Exception {
-        // Test using a standard connection.
+        // Test using a standard database.connection.
         final Statement testStmt = this.conn.createStatement();
         testStmt.setQueryTimeout(1);
         assertThrows(SQLException.class, "Statement cancelled due to timeout or client request", new Callable<Void>() {
@@ -8257,7 +8257,7 @@ public class StatementRegressionTest extends BaseTestCase {
 
             Connection testConn;
 
-            // Test using a failover connection.
+            // Test using a failover database.connection.
             testConn = getUnreliableFailoverConnection(new String[] { "host1", "host2" }, null);
             final Statement testStmtFO = testConn.createStatement();
             testStmtFO.setQueryTimeout(1);
@@ -8277,7 +8277,7 @@ public class StatementRegressionTest extends BaseTestCase {
             });
             testConn.close();
 
-            // Test using a load-balanced connection.
+            // Test using a load-balanced database.connection.
             testConn = getUnreliableLoadBalancedConnection(new String[] { "host1", "host2" }, null);
             final Statement testStmtLB = testConn.createStatement();
             testStmtLB.setQueryTimeout(1);
@@ -8297,7 +8297,7 @@ public class StatementRegressionTest extends BaseTestCase {
             });
             testConn.close();
 
-            // Test using a replication connection.
+            // Test using a replication database.connection.
             testConn = getUnreliableReplicationConnection(new String[] { "host1", "host2" }, null);
             final Statement testStmtR = testConn.createStatement();
             testStmtR.setQueryTimeout(1);
@@ -8396,7 +8396,7 @@ public class StatementRegressionTest extends BaseTestCase {
     public void testBug78313() throws Exception {
         Connection testConn;
 
-        // Plain connection.
+        // Plain database.connection.
         testConn = getConnectionWithProps("");
         assertFalse(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -8413,7 +8413,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Plain connection with proxied result sets.
+        // Plain database.connection with proxied result sets.
         testConn = getConnectionWithProps("statementInterceptors=com.mysql.jdbc.interceptors.ResultSetScannerInterceptor,resultSetScannerRegex=.*");
         assertFalse(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -8431,7 +8431,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Fail-over connection; all JDBC objects are proxied.
+        // Fail-over database.connection; all JDBC objects are proxied.
         testConn = getFailoverConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -8449,7 +8449,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Load-balanced connection; all JDBC objects are proxied. 
+        // Load-balanced database.connection; all JDBC objects are proxied.
         testConn = getLoadBalancedConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -8467,7 +8467,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Replication connection; all JDBC objects are proxied.
+        // Replication database.connection; all JDBC objects are proxied.
         testConn = getMasterSlaveReplicationConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -8562,7 +8562,7 @@ public class StatementRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests fix for Bug#87534 - UNION ALL query fails when useServerPrepStmts=true on database connection.
+     * Tests fix for Bug#87534 - UNION ALL query fails when useServerPrepStmts=true on database database.connection.
      * Base Bug#27422376 - NEWDATE TYPE IS LEAKING OUT, fixed in MySQL 5.7.22.
      */
     public void testBug87534() throws Exception {

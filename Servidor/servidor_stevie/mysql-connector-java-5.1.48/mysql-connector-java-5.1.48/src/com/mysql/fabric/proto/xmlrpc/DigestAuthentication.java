@@ -62,7 +62,7 @@ public class DigestAuthentication {
             } else if (400 == conn.getResponseCode()) {
                 // 400 usually means that auth is disabled on the Fabric node
                 throw new IOException("Fabric returns status 400. If authentication is disabled on the Fabric node, "
-                        + "omit the `fabricUsername' and `fabricPassword' properties from your connection.");
+                        + "omit the `fabricUsername' and `fabricPassword' properties from your database.connection.");
             } else {
                 throw ex;
             }

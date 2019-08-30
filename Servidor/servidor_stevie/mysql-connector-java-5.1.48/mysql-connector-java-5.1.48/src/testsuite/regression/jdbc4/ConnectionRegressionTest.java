@@ -84,7 +84,7 @@ public class ConnectionRegressionTest extends BaseTestCase {
         props.setProperty("loadBalanceExceptionChecker", Bug75168LoadBalanceExceptionChecker.class.getName());
         props.setProperty("statementInterceptors", testsuite.regression.ConnectionRegressionTest.Bug75168StatementInterceptor.class.getName());
 
-        Connection connTest = getLoadBalancedConnection(2, null, props); // get a load balancing connection with two default servers
+        Connection connTest = getLoadBalancedConnection(2, null, props); // get a load balancing database.connection with two default servers
         for (int i = 0; i < 3; i++) {
             Statement stmtTest = null;
             try {
@@ -103,7 +103,7 @@ public class ConnectionRegressionTest extends BaseTestCase {
 
         boolean stop = false;
         do {
-            connTest = getLoadBalancedConnection(2, null, props); // get a load balancing connection with two default servers
+            connTest = getLoadBalancedConnection(2, null, props); // get a load balancing database.connection with two default servers
             for (int i = 0; i < 3; i++) {
                 PreparedStatement pstmtTest = null;
                 try {
@@ -151,7 +151,7 @@ public class ConnectionRegressionTest extends BaseTestCase {
         getConnectionWithProps(props);
 
         /*
-         * case 2: verifying server certificate using key store provided by connection properties
+         * case 2: verifying server certificate using key store provided by database.connection properties
          */
         props.clear();
         props.setProperty("useSSL", "true");
@@ -215,7 +215,7 @@ public class ConnectionRegressionTest extends BaseTestCase {
         con.close();
 
         // If PooledConnection is already closed by some reason a NullPointerException was thrown on the next line
-        // because the closed connection has nulled out the list that it synchronises on when the closed event is fired.
+        // because the closed database.connection has nulled out the list that it synchronises on when the closed event is fired.
         this.pstmt.close();
     }
 

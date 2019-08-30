@@ -1,13 +1,12 @@
-package model.bean;
+package database.connection.model.bean;
 
 public class Tag {
     private int id_tag;
+    private String cod_tag;
     private String id_tag_frente;
     private String id_tag_tras;
     private String id_tag_direita;
     private String id_tag_esquerda;
-    private String id_tag_latera_esquerda;
-    private String id_tag_lateral_direita;
 
     public int getId_tag() {
         return id_tag;
@@ -49,19 +48,11 @@ public class Tag {
         this.id_tag_esquerda = id_tag_esquerda;
     }
 
-    public String getId_tag_latera_esquerda() {
-        return id_tag_latera_esquerda;
+    public String getCod_tag() {
+        return cod_tag;
     }
 
-    public void setId_tag_latera_esquerda(String id_tag_latera_esquerda) {
-        this.id_tag_latera_esquerda = id_tag_latera_esquerda;
-    }
-
-    public String getId_tag_lateral_direita() {
-        return id_tag_lateral_direita;
-    }
-
-    public void setId_tag_lateral_direita(String id_tag_lateral_direita) {
-        this.id_tag_lateral_direita = id_tag_lateral_direita;
+    public void setCod_tag(String cod_tag) {
+        this.cod_tag = cod_tag;
     }
 }

@@ -78,16 +78,16 @@ public class StatementRegressionTest extends BaseTestCase {
         createProcedure("testBug68916_proc", "() BEGIN SELECT 1; SELECT 2; SELECT 3; END");
         createTable("testBug68916_tbl", "(fld1 INT NOT NULL AUTO_INCREMENT, fld2 INT, PRIMARY KEY(fld1))");
 
-        // STEP 1: Test using standard connection (no properties)
+        // STEP 1: Test using standard database.connection (no properties)
         subTestBug68916ForStandardConnection();
 
-        // STEP 2: Test using connection property holdResultsOpenOverStatementClose=true
+        // STEP 2: Test using database.connection property holdResultsOpenOverStatementClose=true
         subTestBug68916ForHoldResultsOpenOverStatementClose();
 
-        // STEP 3: Test using connection property dontTrackOpenResources=true
+        // STEP 3: Test using database.connection property dontTrackOpenResources=true
         subTestBug68916ForDontTrackOpenResources();
 
-        // STEP 4: Test using connection property allowMultiQueries=true
+        // STEP 4: Test using database.connection property allowMultiQueries=true
         subTestBug68916ForAllowMultiQueries();
 
         // STEP 5: Test concurrent Statement/ResultSet sharing same Connection
@@ -106,12 +106,12 @@ public class StatementRegressionTest extends BaseTestCase {
         CallableStatement testCallStatement = null;
 
         /*
-         * Testing with standard connection (no properties)
+         * Testing with standard database.connection (no properties)
          */
         testStep = "Standard Connection";
 
         /*
-         * SUB-STEP 0: The basics (connection without properties)
+         * SUB-STEP 0: The basics (database.connection without properties)
          */
         // **testing Statement**
         // ResultSets should be closed when owning Statement is closed
@@ -171,7 +171,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(testStep + ".PS:0. PreparedStatement.isClosed(): true after PreparedStatement.close().", testPrepStatement.isClosed());
 
         /*
-         * SUB-STEP 1: One ResultSet (connection without properties)
+         * SUB-STEP 1: One ResultSet (database.connection without properties)
          */
         // **testing Statement**
         // Statement using closeOnCompletion should be closed when last ResultSet is closed
@@ -249,7 +249,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(testStep + ".PS:1. PreparedStatement.isClosed(): true when last ResultSet is closed.", testPrepStatement.isClosed());
 
         /*
-         * SUB-STEP 2: Multiple ResultSets, sequentially (connection without properties)
+         * SUB-STEP 2: Multiple ResultSets, sequentially (database.connection without properties)
          */
         testStatement = (StatementImpl) testConnection.createStatement();
         testStatement.closeOnCompletion();
@@ -283,7 +283,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(testStep + ".ST:2. Statement.isClosed(): true when last ResultSet is closed.", testStatement.isClosed());
 
         /*
-         * SUB-STEP 3: Multiple ResultSets, returned at once (connection without properties)
+         * SUB-STEP 3: Multiple ResultSets, returned at once (database.connection without properties)
          */
         // **testing Statement**
         // Statement using closeOnCompletion should be closed when last ResultSet is closed
@@ -354,7 +354,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(testStep + ".CS:3. CallableStatement.isClosed(): true when last ResultSet is closed.", testCallStatement.isClosed());
 
         /*
-         * SUB-STEP 4: Generated Keys ResultSet (connection without properties)
+         * SUB-STEP 4: Generated Keys ResultSet (database.connection without properties)
          */
         testStatement = (StatementImpl) testConnection.createStatement();
         testStatement.closeOnCompletion();
@@ -407,7 +407,7 @@ public class StatementRegressionTest extends BaseTestCase {
         CallableStatement testCallStatement = null;
 
         /*
-         * Testing with connection property holdResultsOpenOverStatementClose=true
+         * Testing with database.connection property holdResultsOpenOverStatementClose=true
          */
         testStep = "Conn. Prop. 'holdResultsOpenOverStatementClose'";
         testConnection = getConnectionWithProps("holdResultsOpenOverStatementClose=true");
@@ -725,7 +725,7 @@ public class StatementRegressionTest extends BaseTestCase {
         CallableStatement testCallStatement = null;
 
         /*
-         * Testing with connection property dontTrackOpenResources=true
+         * Testing with database.connection property dontTrackOpenResources=true
          */
         testStep = "Conn. Prop. 'dontTrackOpenResources'";
         testConnection = getConnectionWithProps("dontTrackOpenResources=true");
@@ -1063,7 +1063,7 @@ public class StatementRegressionTest extends BaseTestCase {
         CallableStatement testCallStatement = null;
 
         /*
-         * Testing with connection property allowMultiQueries=true
+         * Testing with database.connection property allowMultiQueries=true
          */
         testStep = "Conn. Prop. 'allowMultiQueries'";
         testConnection = getConnectionWithProps("allowMultiQueries=true");
@@ -1480,7 +1480,7 @@ public class StatementRegressionTest extends BaseTestCase {
     public void testBug78313() throws Exception {
         Connection testConn;
 
-        // Plain connection.
+        // Plain database.connection.
         testConn = getConnectionWithProps("");
         assertFalse(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -1497,7 +1497,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Plain connection with proxied result sets.
+        // Plain database.connection with proxied result sets.
         testConn = getConnectionWithProps("statementInterceptors=com.mysql.jdbc.interceptors.ResultSetScannerInterceptor,resultSetScannerRegex=.*");
         assertFalse(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -1515,7 +1515,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Fail-over connection; all JDBC objects are proxied.
+        // Fail-over database.connection; all JDBC objects are proxied.
         testConn = getFailoverConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -1533,7 +1533,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Load-balanced connection; all JDBC objects are proxied. 
+        // Load-balanced database.connection; all JDBC objects are proxied.
         testConn = getLoadBalancedConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));
@@ -1551,7 +1551,7 @@ public class StatementRegressionTest extends BaseTestCase {
         assertTrue(this.rs.equals(this.rs));
         testConn.close();
 
-        // Replication connection; all JDBC objects are proxied.
+        // Replication database.connection; all JDBC objects are proxied.
         testConn = getMasterSlaveReplicationConnection();
         assertTrue(testConn.getClass().getName().matches("^(?:com\\.sun\\.proxy\\.)?\\$Proxy\\d*"));
         assertTrue(testConn.equals(testConn));

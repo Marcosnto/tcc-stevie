@@ -48,7 +48,7 @@ public class HibernateFabric {
         String fabricUsername = System.getProperty("com.mysql.fabric.testsuite.fabricUsername");
         String fabricPassword = System.getProperty("com.mysql.fabric.testsuite.fabricPassword");
 
-        // Using JDBC Fabric connection to create database and table
+        // Using JDBC Fabric database.connection to create database and table
         Class.forName("com.mysql.fabric.jdbc.FabricMySQLDriver");
         Connection con = DriverManager.getConnection("jdbc:mysql:fabric://" + hostname + ":" + Integer.valueOf(port)
                 + "/mysql?fabricServerGroup=fabric_test1_global&fabricUsername=" + fabricUsername + "&fabricPassword=" + fabricPassword, user, password);

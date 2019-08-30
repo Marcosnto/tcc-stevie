@@ -77,7 +77,7 @@ public class TestRegressions extends BaseFabricTestCase {
     }
 
     /**
-     * Test Bug#75080 - NPE when setting a timestamp on a Fabric connection
+     * Test Bug#75080 - NPE when setting a timestamp on a Fabric database.connection
      */
     public void testBug75080() throws Exception {
         if (!this.isSetForFabricTest) {
@@ -192,7 +192,7 @@ public class TestRegressions extends BaseFabricTestCase {
         System.err.println("Waiting " + seconds + " seconds for new master to be chosen");
         Thread.sleep(TimeUnit.SECONDS.toMillis(1 + seconds));
 
-        // force the LB proxy to pick a new connection
+        // force the LB proxy to pick a new database.connection
         this.conn.rollback();
 
         // verify change is seen by client
@@ -310,7 +310,7 @@ public class TestRegressions extends BaseFabricTestCase {
             getNewDefaultDataSource().getConnection(this.username, this.password);
             fail("Exception was expected when trying to connect to a non-running Fabric node.");
         } catch (SQLException e) {
-            assertEquals("Unable to establish connection to the Fabric server", e.getMessage());
+            assertEquals("Unable to establish database.connection to the Fabric server", e.getMessage());
         }
     }
 

@@ -24,7 +24,7 @@
 package com.mysql.jdbc;
 
 /**
- * Thrown when a client requests a connection-level feature that isn't available for this particular distribution of Connector/J (currently only used by code
+ * Thrown when a client requests a database.connection-level feature that isn't available for this particular distribution of Connector/J (currently only used by code
  * that is export-controlled).
  */
 public class ConnectionFeatureNotAvailableException extends CommunicationsException {

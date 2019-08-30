@@ -425,7 +425,7 @@ public class CallableStatement extends PreparedStatement implements java.sql.Cal
      * Creates a new CallableStatement
      * 
      * @param conn
-     *            the connection creating this statement
+     *            the database.connection creating this statement
      * @param paramInfo
      *            the SQL to prepare
      * 
@@ -530,7 +530,7 @@ public class CallableStatement extends PreparedStatement implements java.sql.Cal
      * Creates a new CallableStatement
      * 
      * @param conn
-     *            the connection creating this statement
+     *            the database.connection creating this statement
      * @param sql
      *            the SQL to prepare
      * @param catalog
@@ -935,7 +935,7 @@ public class CallableStatement extends PreparedStatement implements java.sql.Cal
             }
 
             if (this.connection.getNoAccessToProcedureBodies()) {
-                throw SQLError.createSQLException("No access to parameters by name when connection has been configured not to access procedure bodies",
+                throw SQLError.createSQLException("No access to parameters by name when database.connection has been configured not to access procedure bodies",
                         SQLError.SQL_STATE_ILLEGAL_ARGUMENT, getExceptionInterceptor());
             }
 
@@ -1358,7 +1358,7 @@ public class CallableStatement extends PreparedStatement implements java.sql.Cal
     protected int getNamedParamIndex(String paramName, boolean forOut) throws SQLException {
         synchronized (checkClosed().getConnectionMutex()) {
             if (this.connection.getNoAccessToProcedureBodies()) {
-                throw SQLError.createSQLException("No access to parameters by name when connection has been configured not to access procedure bodies",
+                throw SQLError.createSQLException("No access to parameters by name when database.connection has been configured not to access procedure bodies",
                         SQLError.SQL_STATE_ILLEGAL_ARGUMENT, getExceptionInterceptor());
             }
 

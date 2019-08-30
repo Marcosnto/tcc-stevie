@@ -102,7 +102,7 @@ public class RowDataCursor implements RowData {
      * Creates a new cursor-backed row provider.
      * 
      * @param ioChannel
-     *            connection to the server.
+     *            database.connection to the server.
      * @param creatingStatement
      *            statement that opened the cursor.
      * @param metadata

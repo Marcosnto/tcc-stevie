@@ -1,18 +1,18 @@
-package model.bean;
+package database.connection.model.bean;
 
-public class Objeto {
-    private int id_objeto;
+public class Ponto_Interesse {
+    private int id_ponto_interesse;
     private int id_tag;
     private int id_local;
     private String nome_objeto;
     private String descricao_objeto;
 
-    public int getId_objeto() {
-        return id_objeto;
+    public int getId_ponto_interesse() {
+        return id_ponto_interesse;
     }
 
-    public void setId_objeto(int id_objeto) {
-        this.id_objeto = id_objeto;
+    public void setId_ponto_interesse(int id_ponto_interesse) {
+        this.id_ponto_interesse = id_ponto_interesse;
     }
 
     public int getId_tag() {

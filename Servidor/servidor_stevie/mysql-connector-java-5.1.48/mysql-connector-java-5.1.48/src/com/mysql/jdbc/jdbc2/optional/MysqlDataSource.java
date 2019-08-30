@@ -41,7 +41,7 @@ import com.mysql.jdbc.NonRegisteringDriver;
 import com.mysql.jdbc.SQLError;
 
 /**
- * A JNDI DataSource for a Mysql JDBC connection
+ * A JNDI DataSource for a Mysql JDBC database.connection
  */
 public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSource, Referenceable, Serializable {
 
@@ -95,10 +95,10 @@ public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSou
     }
 
     /**
-     * Creates a new connection using the already configured username and
+     * Creates a new database.connection using the already configured username and
      * password.
      * 
-     * @return a connection to the database
+     * @return a database.connection to the database
      * 
      * @throws SQLException
      *             if an error occurs
@@ -108,14 +108,14 @@ public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSou
     }
 
     /**
-     * Creates a new connection with the given username and password
+     * Creates a new database.connection with the given username and password
      * 
      * @param userID
      *            the user id to connect with
      * @param password
      *            the password to connect with
      * 
-     * @return a connection to the database
+     * @return a database.connection to the database
      * 
      * @throws SQLException
      *             if an error occurs
@@ -304,19 +304,19 @@ public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSou
     //
 
     /**
-     * Sets the URL for this connection
+     * Sets the URL for this database.connection
      * 
      * @param url
-     *            the URL for this connection
+     *            the URL for this database.connection
      */
     public void setURL(String url) {
         setUrl(url);
     }
 
     /**
-     * Returns the URL for this connection
+     * Returns the URL for this database.connection
      * 
-     * @return the URL for this connection
+     * @return the URL for this database.connection
      */
     public String getURL() {
         return getUrl();
@@ -336,9 +336,9 @@ public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSou
     }
 
     /**
-     * Returns the JDBC URL that will be used to create the database connection.
+     * Returns the JDBC URL that will be used to create the database database.connection.
      * 
-     * @return the URL for this connection
+     * @return the URL for this database.connection
      */
     public String getUrl() {
         if (!this.explicitUrl) {
@@ -362,21 +362,21 @@ public class MysqlDataSource extends ConnectionPropertiesImpl implements DataSou
     }
 
     /**
-     * Returns the configured user for this connection
+     * Returns the configured user for this database.connection
      * 
-     * @return the user for this connection
+     * @return the user for this database.connection
      */
     public String getUser() {
         return this.user;
     }
 
     /**
-     * Creates a connection using the specified properties.
+     * Creates a database.connection using the specified properties.
      * 
      * @param props
      *            the properties to connect with
      * 
-     * @return a connection to the database
+     * @return a database.connection to the database
      * 
      * @throws SQLException
      *             if an error occurs

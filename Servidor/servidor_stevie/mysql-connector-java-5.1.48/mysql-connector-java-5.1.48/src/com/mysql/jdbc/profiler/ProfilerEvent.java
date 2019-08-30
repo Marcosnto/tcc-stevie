@@ -90,7 +90,7 @@ public class ProfilerEvent {
     protected String catalog;
 
     /**
-     * Associated connection (-1 for none)
+     * Associated database.connection (-1 for none)
      */
     protected long connectionId;
 
@@ -158,7 +158,7 @@ public class ProfilerEvent {
      * @param catalog
      *            the catalog in use
      * @param connectionId
-     *            the connection id (-1 if N/A)
+     *            the database.connection id (-1 if N/A)
      * @param statementId
      *            the statement id (-1 if N/A)
      * @param resultSetId
@@ -227,9 +227,9 @@ public class ProfilerEvent {
     }
 
     /**
-     * Returns the id of the associated connection (-1 for none).
+     * Returns the id of the associated database.connection (-1 for none).
      * 
-     * @return the connection in use
+     * @return the database.connection in use
      */
     public long getConnectionId() {
         return this.connectionId;
@@ -341,7 +341,7 @@ public class ProfilerEvent {
         buf.append(new Date(this.eventCreationTime));
         buf.append(", duration: ");
         buf.append(this.eventDuration);
-        buf.append(", connection-id: ");
+        buf.append(", database.connection-id: ");
         buf.append(this.connectionId);
         buf.append(", statement-id: ");
         buf.append(this.statementId);

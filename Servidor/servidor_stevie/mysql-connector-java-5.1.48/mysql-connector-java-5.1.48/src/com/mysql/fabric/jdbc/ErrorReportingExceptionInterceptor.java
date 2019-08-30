@@ -36,7 +36,7 @@ import com.mysql.jdbc.SQLError;
 
 /**
  * Relay the exception to {@link FabricMySQLConnectionProxy} for error reporting. This class exists solely because extensions cannot be provided with instances
- * but instead require the connection to instantiate the provided class.
+ * but instead require the database.connection to instantiate the provided class.
  */
 public class ErrorReportingExceptionInterceptor implements ExceptionInterceptor {
     private String hostname;
@@ -46,7 +46,7 @@ public class ErrorReportingExceptionInterceptor implements ExceptionInterceptor 
     public SQLException interceptException(SQLException sqlEx, Connection conn) {
         MySQLConnection mysqlConn = (MySQLConnection) conn;
 
-        // don't intercept exceptions during initialization, before the proxy has a chance to setProxy() on the physical connection
+        // don't intercept exceptions during initialization, before the proxy has a chance to setProxy() on the physical database.connection
         if (ConnectionImpl.class.isAssignableFrom(mysqlConn.getMultiHostSafeProxy().getClass())) {
             return null;
         }

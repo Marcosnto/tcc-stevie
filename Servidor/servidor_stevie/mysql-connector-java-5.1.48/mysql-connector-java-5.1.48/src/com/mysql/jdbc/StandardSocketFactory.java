@@ -121,7 +121,7 @@ public class StandardSocketFactory implements SocketFactory, SocketMetadata {
     }
 
     /**
-     * Configures socket properties based on properties from the connection
+     * Configures socket properties based on properties from the database.connection
      * (tcpNoDelay, snd/rcv buf, traffic class, etc).
      * 
      * @param props
@@ -191,7 +191,7 @@ public class StandardSocketFactory implements SocketFactory, SocketMetadata {
                     throw new SocketException("No addresses for host");
                 }
 
-                // save last exception to propagate to caller if connection fails
+                // save last exception to propagate to caller if database.connection fails
                 SocketException lastException = null;
 
                 // Need to loop through all possible addresses. Name lookup may return multiple addresses including IPv4 and IPv6 addresses. Some versions of
@@ -253,7 +253,7 @@ public class StandardSocketFactory implements SocketFactory, SocketMetadata {
     }
 
     /**
-     * Validates the connection/socket timeout that must really be used.
+     * Validates the database.connection/socket timeout that must really be used.
      * 
      * @param expectedTimeout
      *            The timeout to validate.

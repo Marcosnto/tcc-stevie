@@ -85,7 +85,7 @@ public class ConnectionTest extends BaseTestCase {
             }
         });
 
-        // make sure the connection string doesn't contain 'maxRows'
+        // make sure the database.connection string doesn't contain 'maxRows'
         String testUrl = BaseTestCase.dbUrl;
         int b = testUrl.indexOf("maxRows");
         if (b != -1) {

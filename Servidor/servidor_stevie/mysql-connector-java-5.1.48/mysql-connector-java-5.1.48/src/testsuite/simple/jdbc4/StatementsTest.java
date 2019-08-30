@@ -182,7 +182,7 @@ public class StatementsTest extends BaseTestCase {
             fail();
         } catch (SQLException e) {
             // ok
-            assertEquals("Can not call setNCharacterStream() when connection character set isn't UTF-8", e.getMessage());
+            assertEquals("Can not call setNCharacterStream() when database.connection character set isn't UTF-8", e.getMessage());
         }
         pstmt1.close();
         conn1.close();
@@ -280,14 +280,14 @@ public class StatementsTest extends BaseTestCase {
             fail();
         } catch (SQLException e) {
             // ok
-            assertEquals("Can not call setNClob() when connection character set isn't UTF-8", e.getMessage());
+            assertEquals("Can not call setNClob() when database.connection character set isn't UTF-8", e.getMessage());
         }
         try {
             pstmt1.setNClob(2, reader2, 3);
             fail();
         } catch (SQLException e) {
             // ok
-            assertEquals("Can not call setNClob() when connection character set isn't UTF-8", e.getMessage());
+            assertEquals("Can not call setNClob() when database.connection character set isn't UTF-8", e.getMessage());
         }
         pstmt1.close();
         conn1.close();
@@ -382,7 +382,7 @@ public class StatementsTest extends BaseTestCase {
             fail();
         } catch (SQLException e) {
             // ok
-            assertEquals("Can not call setNString() when connection character set isn't UTF-8", e.getMessage());
+            assertEquals("Can not call setNString() when database.connection character set isn't UTF-8", e.getMessage());
         }
         pstmt1.close();
         conn1.close();
@@ -604,7 +604,7 @@ public class StatementsTest extends BaseTestCase {
         try {
             conn2.createNClob();
         } catch (SQLException e) {
-            fail("Unable to call Connection.createNClob() in load-balanced connection");
+            fail("Unable to call Connection.createNClob() in load-balanced database.connection");
         }
 
     }

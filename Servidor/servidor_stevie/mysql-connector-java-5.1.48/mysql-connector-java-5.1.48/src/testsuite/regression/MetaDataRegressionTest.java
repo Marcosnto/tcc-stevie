@@ -1183,7 +1183,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
 
     /**
      * Tests fix for BUG#13277 - RSMD for generated keys has NPEs when a
-     * connection is referenced.
+     * database.connection is referenced.
      * 
      * @throws Exception
      */
@@ -1811,7 +1811,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
 
     /**
      * Tests fix for BUG#27867 - Schema objects with identifiers other than the
-     * connection character aren't retrieved correctly in ResultSetMetadata.
+     * database.connection character aren't retrieved correctly in ResultSetMetadata.
      * 
      * @throws Exception
      *             if the test fails.
@@ -2571,7 +2571,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
      * fails with "No Database Selected"
      * The workaround introduced in DatabaseMetaData.getCallStmtParameterTypes
      * to fix the bug in server where SHOW CREATE PROCEDURE was not respecting
-     * lower-case table names is misbehaving when connection is not attached to
+     * lower-case table names is misbehaving when database.connection is not attached to
      * database and on non-casesensitive OS.
      * 
      * @throws Exception
@@ -3212,7 +3212,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
      * like DatabaseMetaData.getColumns() allow parameters passed both in unquoted and quoted form,
      * quoted form is not JDBC-compliant but used by third party tools. So when you pass the indentifier
      * "`dbname`" in unquoted form (`dbname`) driver handles it as quoted by "`" symbol. To handle such
-     * identifiers correctly a new behavior was added to pedantic mode (connection property pedantic=true),
+     * identifiers correctly a new behavior was added to pedantic mode (database.connection property pedantic=true),
      * now if it set to true methods like DatabaseMetaData.getColumns() treat all parameters as unquoted.
      * 
      * @throws Exception
@@ -3477,7 +3477,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         createFunction("testBug69298_func", "(param_func INT) RETURNS INT COMMENT 'testBug69298_func comment' DETERMINISTIC RETURN 1");
         createProcedure("testBug69298_proc", "(IN param_proc INT) COMMENT 'testBug69298_proc comment' SELECT 1");
 
-        // test with standard connection
+        // test with standard database.connection
         assertFalse("Property useInformationSchema should be false", ((ConnectionProperties) this.conn).getUseInformationSchema());
         assertTrue("Property getProceduresReturnsFunctions should be true", ((ConnectionProperties) this.conn).getGetProceduresReturnsFunctions());
         checkGetProceduresForBug69298("Std. Connection MetaData", this.conn);
@@ -3612,7 +3612,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         createFunction("testBug17248345", "(funccol INT) RETURNS INT DETERMINISTIC RETURN 1");
         createProcedure("testBug17248345", "(IN proccol INT) SELECT 1");
 
-        // test with standard connection (getProceduresReturnsFunctions=true & useInformationSchema=false)
+        // test with standard database.connection (getProceduresReturnsFunctions=true & useInformationSchema=false)
         assertFalse("Property useInformationSchema should be false", ((ConnectionProperties) this.conn).getUseInformationSchema());
         assertTrue("Property getProceduresReturnsFunctions should be true", ((ConnectionProperties) this.conn).getGetProceduresReturnsFunctions());
         checkMetaDataInfoForBug17248345(this.conn);
@@ -3806,7 +3806,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         this.stmt.executeUpdate("INSERT INTO testBug35115 VALUES ('2002'), ('2013')");
 
         /*
-         * test connection with property 'yearIsDateType=false'
+         * test database.connection with property 'yearIsDateType=false'
          */
         testConnection = getConnectionWithProps("yearIsDateType=false");
         this.stmt = testConnection.createStatement();
@@ -3822,7 +3822,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         testConnection.close();
 
         /*
-         * test connection with property 'yearIsDateType=true'
+         * test database.connection with property 'yearIsDateType=true'
          */
         testConnection = getConnectionWithProps("yearIsDateType=true");
         this.stmt = testConnection.createStatement();

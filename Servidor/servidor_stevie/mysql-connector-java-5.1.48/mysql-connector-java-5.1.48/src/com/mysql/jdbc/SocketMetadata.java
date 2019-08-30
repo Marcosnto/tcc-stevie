@@ -35,7 +35,7 @@ public interface SocketMetadata {
     public boolean isLocallyConnected(ConnectionImpl conn) throws SQLException;
 
     /*
-     * Provides a standard way of determining whether a socket connection is local.
+     * Provides a standard way of determining whether a socket database.connection is local.
      * 
      * This ensures socket factories (e.g. StandardSocketFactory, StandardSSLSocketFactory) which need to implement this interface, can delegate to a generic
      * implementation.
@@ -62,7 +62,7 @@ public interface SocketMetadata {
                     processHost = findProcessHost(threadId, processListStmt);
 
                     if (processHost == null) {
-                        // http://bugs.mysql.com/bug.php?id=44167 - connection ids on the wire wrap at 4 bytes even though they're 64-bit numbers
+                        // http://bugs.mysql.com/bug.php?id=44167 - database.connection ids on the wire wrap at 4 bytes even though they're 64-bit numbers
                         conn.getLog()
                                 .logWarn(String.format(
                                         "Connection id %d not found in \"SHOW PROCESSLIST\", assuming 32-bit overflow, using SELECT CONNECTION_ID() instead",
@@ -76,7 +76,7 @@ public interface SocketMetadata {
                             processHost = findProcessHost(threadId, processListStmt);
                         } else {
                             conn.getLog().logError(
-                                    "No rows returned for statement \"SELECT CONNECTION_ID()\", local connection check will most likely be incorrect");
+                                    "No rows returned for statement \"SELECT CONNECTION_ID()\", local database.connection check will most likely be incorrect");
                         }
                     }
                 } finally {

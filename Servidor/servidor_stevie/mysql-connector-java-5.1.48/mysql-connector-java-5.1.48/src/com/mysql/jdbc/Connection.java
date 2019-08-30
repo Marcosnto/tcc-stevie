@@ -39,8 +39,8 @@ import com.mysql.jdbc.log.Log;
 public interface Connection extends java.sql.Connection, ConnectionProperties {
 
     /**
-     * Changes the user on this connection by performing a re-authentication. If
-     * authentication fails, the connection will remain under the context of the
+     * Changes the user on this database.connection by performing a re-authentication. If
+     * authentication fails, the database.connection will remain under the context of the
      * current user.
      * 
      * @param userName
@@ -118,17 +118,17 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract java.sql.PreparedStatement clientPrepareStatement(String sql, String[] autoGenKeyColNames) throws SQLException;
 
     /**
-     * Returns the number of statements active on this connection, which
+     * Returns the number of statements active on this database.connection, which
      * haven't been .close()d.
      */
     public abstract int getActiveStatementCount();
 
     /**
-     * Reports how long this connection has been idle.
+     * Reports how long this database.connection has been idle.
      * This time (reported in milliseconds) is updated once a query has
      * completed.
      * 
-     * @return number of ms that this connection has been idle, 0 if the driver
+     * @return number of ms that this database.connection has been idle, 0 if the driver
      *         is busy retrieving results.
      */
     public abstract long getIdleFor();
@@ -175,14 +175,14 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract String getStatementComment();
 
     /**
-     * Has this connection tried to execute a query on the "master"
+     * Has this database.connection tried to execute a query on the "master"
      * server (first host in a multiple host list).
      */
     @Deprecated
     public abstract boolean hasTriedMaster();
 
     /**
-     * Is this connection currently a participant in an XA transaction?
+     * Is this database.connection currently a participant in an XA transaction?
      */
     public abstract boolean isInGlobalTx();
 
@@ -194,10 +194,10 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public void setInGlobalTx(boolean flag);
 
     /**
-     * Is this connection connected to the first host in the list if
+     * Is this database.connection connected to the first host in the list if
      * there is a list of servers in the URL?
      * 
-     * @return true if this connection is connected to the first in
+     * @return true if this database.connection is connected to the first in
      *         the list.
      */
     public abstract boolean isMasterConnection();
@@ -211,8 +211,8 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract boolean isNoBackslashEscapesSet();
 
     /**
-     * Does this connection have the same resource name as the given
-     * connection (for XA)?
+     * Does this database.connection have the same resource name as the given
+     * database.connection (for XA)?
      * 
      * @param c
      */
@@ -226,13 +226,13 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract boolean lowerCaseTableNames();
 
     /**
-     * Does the server this connection is connected to
+     * Does the server this database.connection is connected to
      * support unicode?
      */
     public abstract boolean parserKnowsUnicode();
 
     /**
-     * Detect if the connection is still good by sending a ping command
+     * Detect if the database.connection is still good by sending a ping command
      * to the server.
      * 
      * @throws SQLException
@@ -241,9 +241,9 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract void ping() throws SQLException;
 
     /**
-     * Resets the server-side state of this connection. Doesn't work for MySQL
+     * Resets the server-side state of this database.connection. Doesn't work for MySQL
      * versions older than 4.0.6 or if isParanoid() is set (it will become a
-     * no-op in these cases). Usually only used from connection pooling code.
+     * no-op in these cases). Usually only used from database.connection pooling code.
      * 
      * @throws SQLException
      *             if the operation fails while resetting server state.
@@ -344,25 +344,25 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract void shutdownServer() throws SQLException;
 
     /**
-     * Does the server this connection is connected to
+     * Does the server this database.connection is connected to
      * support isolation levels?
      */
     public abstract boolean supportsIsolationLevel();
 
     /**
-     * Does the server this connection is connected to
+     * Does the server this database.connection is connected to
      * support quoted identifiers?
      */
     public abstract boolean supportsQuotedIdentifiers();
 
     /**
-     * Does the server this connection is connected to
+     * Does the server this database.connection is connected to
      * support transactions?
      */
     public abstract boolean supportsTransactions();
 
     /**
-     * Does the server this connection is connected to
+     * Does the server this database.connection is connected to
      * meet or exceed the given version?
      */
     public abstract boolean versionMeetsMinimum(int major, int minor, int subminor) throws SQLException;
@@ -380,12 +380,12 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public abstract int getAutoIncrementIncrement();
 
     /**
-     * Does this connection have the same properties as another?
+     * Does this database.connection have the same properties as another?
      */
     public boolean hasSameProperties(Connection c);
 
     /**
-     * Returns the parsed and passed in properties for this connection.
+     * Returns the parsed and passed in properties for this database.connection.
      */
     public Properties getProperties();
 
@@ -394,7 +394,7 @@ public interface Connection extends java.sql.Connection, ConnectionProperties {
     public void setProxy(MySQLConnection proxy);
 
     /**
-     * Is the server this connection is connected to "local" (i.e. same host) as the application?
+     * Is the server this database.connection is connected to "local" (i.e. same host) as the application?
      */
     public boolean isServerLocal() throws SQLException;
 

@@ -73,7 +73,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Proxy class to intercept and deal with errors that may occur in any object bound to the current connection.
+     * Proxy class to intercept and deal with errors that may occur in any object bound to the current database.connection.
      * Additionally intercepts query executions and triggers an execution count on the outer class.
      */
     class FailoverJdbcInterfaceProxy extends JdbcInterfaceProxy {
@@ -110,7 +110,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Instantiates a new FailoverConnectionProxy for the given list of hosts and connection properties.
+     * Instantiates a new FailoverConnectionProxy for the given list of hosts and database.connection properties.
      * 
      * @param hosts
      *            The lists of hosts available to switch on.
@@ -146,7 +146,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /*
-     * Local implementation for the connection switch exception checker.
+     * Local implementation for the database.connection switch exception checker.
      * 
      * @see com.mysql.jdbc.MultiHostConnectionProxy#shouldExceptionTriggerConnectionSwitch(java.lang.Throwable)
      */
@@ -159,7 +159,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
         String sqlState = ((SQLException) t).getSQLState();
         if (sqlState != null) {
             if (sqlState.startsWith("08")) {
-                // connection error
+                // database.connection error
                 return true;
             }
         }
@@ -173,7 +173,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Checks if current connection is to a master host.
+     * Checks if current database.connection is to a master host.
      */
     @Override
     boolean isMasterConnection() {
@@ -181,7 +181,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /*
-     * Local implementation for the new connection picker.
+     * Local implementation for the new database.connection picker.
      * 
      * @see com.mysql.jdbc.MultiHostConnectionProxy#pickNewConnection()
      */
@@ -204,19 +204,19 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Creates a new connection instance for host pointed out by the given host index.
+     * Creates a new database.connection instance for host pointed out by the given host index.
      * 
      * @param hostIndex
      *            The host index in the global hosts list.
      * @return
-     *         The new connection instance.
+     *         The new database.connection instance.
      */
     synchronized ConnectionImpl createConnectionForHostIndex(int hostIndex) throws SQLException {
         return createConnectionForHost(this.hostList.get(hostIndex));
     }
 
     /**
-     * Connects this dynamic failover connection proxy to the host pointed out by the given host index.
+     * Connects this dynamic failover database.connection proxy to the host pointed out by the given host index.
      * 
      * @param hostIndex
      *            The host index in the global hosts list.
@@ -235,12 +235,12 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Replaces the previous underlying connection by the connection given. State from previous connection, if any, is synchronized with the new one.
+     * Replaces the previous underlying database.connection by the database.connection given. State from previous database.connection, if any, is synchronized with the new one.
      * 
      * @param hostIndex
-     *            The host index in the global hosts list that matches the given connection.
+     *            The host index in the global hosts list that matches the given database.connection.
      * @param connection
-     *            The connection instance to switch to.
+     *            The database.connection instance to switch to.
      */
     private synchronized void switchCurrentConnectionTo(int hostIndex, MySQLConnection connection) throws SQLException {
         invalidateCurrentConnection();
@@ -263,7 +263,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Initiates a default failover procedure starting at the current connection host index.
+     * Initiates a default failover procedure starting at the current database.connection host index.
      */
     private synchronized void failOver() throws SQLException {
         failOver(this.currentHostIndex);
@@ -271,10 +271,10 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
 
     /**
      * Initiates a default failover procedure starting at the given host index.
-     * This process tries to connect, sequentially, to the next host in the list. The primary host may or may not be excluded from the connection attempts.
+     * This process tries to connect, sequentially, to the next host in the list. The primary host may or may not be excluded from the database.connection attempts.
      * 
      * @param failedHostIdx
-     *            The host index where to start from. First connection attempt will be the next one.
+     *            The host index where to start from. First database.connection attempt will be the next one.
      */
     private synchronized void failOver(int failedHostIdx) throws SQLException {
         int prevHostIndex = this.currentHostIndex;
@@ -325,7 +325,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Falls back to primary host or keep current connection if primary not available.
+     * Falls back to primary host or keep current database.connection if primary not available.
      */
     synchronized void fallBackToPrimaryIfAvailable() {
         MySQLConnection connection = null;
@@ -339,7 +339,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
                 } catch (SQLException e2) {
                 }
             }
-            // Keep current connection and reset counters
+            // Keep current database.connection and reset counters
             resetAutoFallBackCounters();
         }
     }
@@ -348,7 +348,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
      * Gets the next host on the hosts list. Uses a round-robin algorithm to find the next element, but it may skip the index for the primary host.
      * General rules to include the primary host are:
      * - not currently connected to any host.
-     * - primary host is vouched (usually because connection to all secondary hosts has failed).
+     * - primary host is vouched (usually because database.connection to all secondary hosts has failed).
      * - conditions to fall back to primary host are met (or they are disabled).
      * 
      * @param currHostIdx
@@ -381,7 +381,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Checks if there is a underlying connection for this proxy.
+     * Checks if there is a underlying database.connection for this proxy.
      */
     synchronized boolean isConnected() {
         return this.currentHostIndex != NO_CONNECTION_INDEX;
@@ -398,14 +398,14 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Checks if this proxy is using the primary host in the underlying connection.
+     * Checks if this proxy is using the primary host in the underlying database.connection.
      */
     synchronized boolean connectedToPrimaryHost() {
         return isPrimaryHostIndex(this.currentHostIndex);
     }
 
     /**
-     * Checks if this proxy is using a secondary host in the underlying connection.
+     * Checks if this proxy is using a secondary host in the underlying database.connection.
      */
     synchronized boolean connectedToSecondaryHost() {
         return this.currentHostIndex >= 0 && !isPrimaryHostIndex(this.currentHostIndex);
@@ -434,7 +434,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Closes current connection.
+     * Closes current database.connection.
      */
     @Override
     synchronized void doClose() throws SQLException {
@@ -442,7 +442,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Aborts current connection.
+     * Aborts current database.connection.
      */
     @Override
     synchronized void doAbortInternal() throws SQLException {
@@ -450,7 +450,7 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
     }
 
     /**
-     * Aborts current connection using the given executor.
+     * Aborts current database.connection using the given executor.
      */
     @Override
     synchronized void doAbort(Executor executor) throws SQLException {
@@ -474,12 +474,12 @@ public class FailoverConnectionProxy extends MultiHostConnectionProxy {
 
         if (this.isClosed && !allowedOnClosedConnection(method)) {
             if (this.autoReconnect && !this.closedExplicitly) {
-                this.currentHostIndex = NO_CONNECTION_INDEX; // Act as if this is the first connection but let it sync with the previous one.
+                this.currentHostIndex = NO_CONNECTION_INDEX; // Act as if this is the first database.connection but let it sync with the previous one.
                 pickNewConnection();
                 this.isClosed = false;
                 this.closedReason = null;
             } else {
-                String reason = "No operations allowed after connection closed.";
+                String reason = "No operations allowed after database.connection closed.";
                 if (this.closedReason != null) {
                     reason += ("  " + this.closedReason);
                 }

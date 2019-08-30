@@ -95,7 +95,7 @@ public class TimeUtil {
      * Change the given times from one timezone to another
      * 
      * @param conn
-     *            the current connection to the MySQL server
+     *            the current database.connection to the MySQL server
      * @param t
      *            the times to change
      * @param fromTz
@@ -147,7 +147,7 @@ public class TimeUtil {
      * Change the given timestamp from one timezone to another
      * 
      * @param conn
-     *            the current connection to the MySQL server
+     *            the current database.connection to the MySQL server
      * @param tstamp
      *            the timestamp to change
      * @param fromTz

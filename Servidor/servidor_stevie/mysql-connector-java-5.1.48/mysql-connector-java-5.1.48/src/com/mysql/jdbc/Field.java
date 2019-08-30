@@ -141,7 +141,7 @@ public class Field {
         this.defaultValueStart = defaultValueStart;
         this.defaultValueLength = defaultValueLength;
 
-        // If we're not running 4.1 or newer, use the connection's charset
+        // If we're not running 4.1 or newer, use the database.connection's charset
         this.collationIndex = charsetIndex;
 
         // Map MySqlTypes to java.sql Types
@@ -652,7 +652,7 @@ public class Field {
                 stringVal = StringUtils.toAsciiString(this.buffer, stringStart, stringLength);
             }
         } else {
-            // we don't have a connection, so punt
+            // we don't have a database.connection, so punt
             stringVal = StringUtils.toAsciiString(this.buffer, stringStart, stringLength);
         }
 

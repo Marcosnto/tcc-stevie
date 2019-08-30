@@ -84,7 +84,7 @@ public interface JDBC4FabricMySQLConnection extends com.mysql.jdbc.JDBC4MySQLCon
     void clearQueryTables() throws SQLException;
 
     /**
-     * Add a table to the set of tables used for the next query on this connection.
+     * Add a table to the set of tables used for the next query on this database.connection.
      * This is used for:
      * <ul>
      * <li>Choosing a shard given the tables used</li>
@@ -94,7 +94,7 @@ public interface JDBC4FabricMySQLConnection extends com.mysql.jdbc.JDBC4MySQLCon
     void addQueryTable(String tableName) throws SQLException;
 
     /**
-     * The set of tables to be used in the next query on this connection.
+     * The set of tables to be used in the next query on this database.connection.
      */
     Set<String> getQueryTables();
 }

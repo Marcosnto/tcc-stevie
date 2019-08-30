@@ -750,7 +750,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
 
     private static volatile String mysqlKeywords = null;
 
-    /** The connection to the database */
+    /** The database.connection to the database */
     protected MySQLConnection conn;
 
     /** The 'current' database name being used */
@@ -1277,7 +1277,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
      * same code to work on extracting the foreign key data
      * 
      * @param connToUse
-     *            the database connection to use
+     *            the database database.connection to use
      * @param metadata
      *            the DatabaseMetaData instance calling this method
      * @param catalog
@@ -1628,7 +1628,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
             } catch (UnsupportedEncodingException ueEx) {
                 procNameAsBytes = s2b(tmpProcName);
 
-                // Set all fields to connection encoding
+                // Set all fields to database.connection encoding
             }
 
             tmpProcName = StringUtils.unQuoteIdentifier(dbName, this.quotedId);
@@ -1637,7 +1637,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
             } catch (UnsupportedEncodingException ueEx) {
                 procCatAsBytes = s2b(tmpProcName);
 
-                // Set all fields to connection encoding
+                // Set all fields to database.connection encoding
             }
 
             // there is no need to quote the identifier here since 'dbName' and 'procName' are guaranteed to be already quoted.
@@ -1660,7 +1660,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
 
                 if (!this.conn.getNoAccessToProcedureBodies() && (procedureDef == null || procedureDef.length() == 0)) {
                     throw SQLError.createSQLException("User does not have access to metadata required to determine "
-                            + "stored procedure parameter types. If rights can not be granted, configure connection with \"noAccessToProcedureBodies=true\" "
+                            + "stored procedure parameter types. If rights can not be granted, configure database.connection with \"noAccessToProcedureBodies=true\" "
                             + "to have driver generate parameters that represent INOUT strings irregardless of actual parameter types.",
                             SQLError.SQL_STATE_GENERAL_ERROR, getExceptionInterceptor());
                 }
@@ -2599,9 +2599,9 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
     }
 
     /**
-     * JDBC 2.0 Return the connection that produced this metadata object.
+     * JDBC 2.0 Return the database.connection that produced this metadata object.
      * 
-     * @return the connection that produced this metadata object.
+     * @return the database.connection that produced this metadata object.
      * @throws SQLException
      *             if a database error occurs
      */
@@ -3943,7 +3943,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
                 if (!hasResults) {
                     // throw SQLError.createSQLException(
                     // "User does not have access to metadata required to determine " +
-                    // "stored procedure parameter types. If rights can not be granted, configure connection with \"noAccessToProcedureBodies=true\" " +
+                    // "stored procedure parameter types. If rights can not be granted, configure database.connection with \"noAccessToProcedureBodies=true\" " +
                     // "to have driver generate parameters that represent INOUT strings irregardless of actual parameter types.",
                     // SQLError.SQL_STATE_GENERAL_ERROR, getExceptionInterceptor());		
                 } else {
@@ -6715,7 +6715,7 @@ public class DatabaseMetaData implements java.sql.DatabaseMetaData {
     }
 
     /**
-     * Converts the given string to bytes, using the connection's character
+     * Converts the given string to bytes, using the database.connection's character
      * encoding, or if not available, the JVM default encoding.
      * 
      * @param s

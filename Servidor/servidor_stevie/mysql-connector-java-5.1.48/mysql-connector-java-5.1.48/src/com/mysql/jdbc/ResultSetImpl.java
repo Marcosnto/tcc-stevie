@@ -173,7 +173,7 @@ public class ResultSetImpl implements ResultSetInternalMethods {
     protected boolean[] columnUsed = null;
 
     /** The Connection instance that created us */
-    protected volatile MySQLConnection connection; // The connection that created us
+    protected volatile MySQLConnection connection; // The database.connection that created us
 
     /** The current row #, -1 == before start of result set */
     protected int currentRow = -1; // Cursor to current row;
@@ -245,7 +245,7 @@ public class ResultSetImpl implements ResultSetInternalMethods {
     protected RowData rowData; // The results
 
     /**
-     * Any info message from the server that was created while generating this result set (if 'info parsing' is enabled for the connection).
+     * Any info message from the server that was created while generating this result set (if 'info parsing' is enabled for the database.connection).
      */
     protected String serverInfo = null;
 
@@ -1808,7 +1808,7 @@ public class ResultSetImpl implements ResultSetInternalMethods {
                 return this.connection.getCalendarInstanceForSessionOrNew();
             }
 
-            // punt, no connection around
+            // punt, no database.connection around
             return new GregorianCalendar();
         }
     }
@@ -5099,7 +5099,7 @@ public class ResultSetImpl implements ResultSetInternalMethods {
         } catch (SQLException sqlEx) {
             if (!this.retainOwningStatement) {
                 throw SQLError.createSQLException("Operation not allowed on closed ResultSet. Statements "
-                        + "can be retained over result set closure by setting the connection property " + "\"retainStatementAfterResultSetClose\" to \"true\".",
+                        + "can be retained over result set closure by setting the database.connection property " + "\"retainStatementAfterResultSetClose\" to \"true\".",
                         SQLError.SQL_STATE_GENERAL_ERROR, getExceptionInterceptor());
             }
 

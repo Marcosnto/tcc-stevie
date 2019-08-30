@@ -30,7 +30,7 @@ import javax.sql.ConnectionPoolDataSource;
 import javax.sql.PooledConnection;
 
 /**
- * This class is used to obtain a physical connection and instantiate and return a MysqlPooledConnection. J2EE application servers map client calls to
+ * This class is used to obtain a physical database.connection and instantiate and return a MysqlPooledConnection. J2EE application servers map client calls to
  * dataSource.getConnection to this class based upon mapping set within deployment descriptor. This class extends MysqlDataSource.
  */
 public class MysqlConnectionPoolDataSource extends MysqlDataSource implements ConnectionPoolDataSource {
@@ -38,7 +38,7 @@ public class MysqlConnectionPoolDataSource extends MysqlDataSource implements Co
     static final long serialVersionUID = -7767325445592304961L;
 
     /**
-     * Returns a pooled connection.
+     * Returns a pooled database.connection.
      * 
      * @exception SQLException
      *                if an error occurs
@@ -52,7 +52,7 @@ public class MysqlConnectionPoolDataSource extends MysqlDataSource implements Co
     }
 
     /**
-     * This method is invoked by the container. Obtains physical connection
+     * This method is invoked by the container. Obtains physical database.connection
      * using mySql.Driver class and returns a mysqlPooledConnection object.
      * 
      * @param s

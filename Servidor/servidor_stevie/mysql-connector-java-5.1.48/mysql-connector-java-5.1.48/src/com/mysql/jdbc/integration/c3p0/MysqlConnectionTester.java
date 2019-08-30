@@ -33,7 +33,7 @@ import com.mchange.v2.c3p0.QueryConnectionTester;
 import com.mysql.jdbc.CommunicationsException;
 
 /**
- * ConnectionTester for C3P0 connection pool that uses the more efficient COM_PING method of testing connection 'liveness' for MySQL, and 'sorts' exceptions
+ * ConnectionTester for C3P0 database.connection pool that uses the more efficient COM_PING method of testing database.connection 'liveness' for MySQL, and 'sorts' exceptions
  * based on SQLState or class of 'CommunicationsException' for handling exceptions.
  */
 public final class MysqlConnectionTester implements QueryConnectionTester {
@@ -48,7 +48,7 @@ public final class MysqlConnectionTester implements QueryConnectionTester {
         try {
             this.pingMethod = com.mysql.jdbc.Connection.class.getMethod("ping", (Class[]) null);
         } catch (Exception ex) {
-            // punt, we have no way to recover, other than we now use 'SELECT 1' for handling the connection testing.
+            // punt, we have no way to recover, other than we now use 'SELECT 1' for handling the database.connection testing.
         }
     }
 
@@ -61,10 +61,10 @@ public final class MysqlConnectionTester implements QueryConnectionTester {
         try {
             if (this.pingMethod != null) {
                 if (con instanceof com.mysql.jdbc.Connection) {
-                    // We've been passed an instance of a MySQL connection -- no need for reflection
+                    // We've been passed an instance of a MySQL database.connection -- no need for reflection
                     ((com.mysql.jdbc.Connection) con).ping();
                 } else {
-                    // Assume the connection is a C3P0 proxy
+                    // Assume the database.connection is a C3P0 proxy
                     C3P0ProxyConnection castCon = (C3P0ProxyConnection) con;
                     castCon.rawConnectionOperation(this.pingMethod, C3P0ProxyConnection.RAW_CONNECTION, NO_ARGS_ARRAY);
                 }

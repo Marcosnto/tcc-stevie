@@ -1991,7 +1991,7 @@ public class StringUtils {
      * @param quoteId
      *            quote character as defined on server
      * @param isNoBslashEscSet
-     *            is our connection in no BackSlashEscape mode
+     *            is our database.connection in no BackSlashEscape mode
      * @return the input string with all comment-delimited data removed
      */
     public static List<String> splitDBdotName(String source, String catalog, String quoteId, boolean isNoBslashEscSet) {
@@ -2072,7 +2072,7 @@ public class StringUtils {
      * @param quoteChar
      *            ` or "
      * @param identifier
-     *            in pedantic mode (connection property pedantic=true) identifier is treated as unquoted
+     *            in pedantic mode (database.connection property pedantic=true) identifier is treated as unquoted
      *            (as it is stored in the database) even if it starts and ends with quoteChar;
      *            in non-pedantic mode if identifier starts and ends with quoteChar method treats it as already quoted and doesn't modify.
      * @param isPedantic
@@ -2139,7 +2139,7 @@ public class StringUtils {
      * Surrounds identifier with "`" and duplicates these symbols inside the identifier.
      * 
      * @param identifier
-     *            in pedantic mode (connection property pedantic=true) identifier is treated as unquoted
+     *            in pedantic mode (database.connection property pedantic=true) identifier is treated as unquoted
      *            (as it is stored in the database) even if it starts and ends with "`";
      *            in non-pedantic mode if identifier starts and ends with "`" method treats it as already quoted and doesn't modify.
      * @param isPedantic

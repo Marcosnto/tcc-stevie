@@ -29,7 +29,7 @@ import java.sql.SQLException;
  * The Java SQL framework allows for multiple database drivers. Each driver should supply a class that implements the Driver interface
  * 
  * <p>
- * The DriverManager will try to load as many drivers as it can find and then for any given connection request, it will ask each driver in turn to try to
+ * The DriverManager will try to load as many drivers as it can find and then for any given database.connection request, it will ask each driver in turn to try to
  * connect to the target URL.
  * 
  * <p>

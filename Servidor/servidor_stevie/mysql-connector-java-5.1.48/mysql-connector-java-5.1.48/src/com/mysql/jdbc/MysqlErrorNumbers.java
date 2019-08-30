@@ -158,7 +158,7 @@ public final class MysqlErrorNumbers {
     public final static int ER_CANT_OPEN_LIBRARY = 1126; //SQLSTATE: HY000 Message: Can't open shared library '%s' (errno: %d %s)
     public final static int ER_CANT_FIND_DL_ENTRY = 1127; //SQLSTATE: HY000 Message: Can't find symbol '%s' in library
     public final static int ER_FUNCTION_NOT_DEFINED = 1128; //SQLSTATE: HY000 Message: Function '%s' is not defined
-    public final static int ER_HOST_IS_BLOCKED = 1129; //SQLSTATE: HY000 Message: Host '%s' is blocked because of many connection errors; unblock with 'mysqladmin flush-hosts'
+    public final static int ER_HOST_IS_BLOCKED = 1129; //SQLSTATE: HY000 Message: Host '%s' is blocked because of many database.connection errors; unblock with 'mysqladmin flush-hosts'
     public final static int ER_HOST_NOT_PRIVILEGED = 1130; //SQLSTATE: HY000 Message: Host '%s' is not allowed to connect to this MySQL server
     public final static int ER_PASSWORD_ANONYMOUS_USER = 1131; //SQLSTATE: 42000 Message: You are using MySQL as an anonymous user and anonymous users are not allowed to change passwords
     public final static int ER_PASSWORD_NOT_ALLOWED = 1132; //SQLSTATE: 42000 Message: You must have privileges to update tables in the mysql database to be able to change passwords for others
@@ -181,9 +181,9 @@ public final class MysqlErrorNumbers {
     public final static int ER_SYNTAX_ERROR = 1149; //SQLSTATE: 42000 Message: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use
     public final static int ER_DELAYED_CANT_CHANGE_LOCK = 1150; //SQLSTATE: HY000 Message: Delayed insert thread couldn't get requested lock for table %s
     public final static int ER_TOO_MANY_DELAYED_THREADS = 1151; //SQLSTATE: HY000 Message: Too many delayed threads in use
-    public final static int ER_ABORTING_CONNECTION = 1152; //SQLSTATE: 08S01 Message: Aborted connection %ld to db: '%s' user: '%s' (%s)
+    public final static int ER_ABORTING_CONNECTION = 1152; //SQLSTATE: 08S01 Message: Aborted database.connection %ld to db: '%s' user: '%s' (%s)
     public final static int ER_NET_PACKET_TOO_LARGE = 1153; //SQLSTATE: 08S01 Message: Got a packet bigger than 'max_allowed_packet' bytes
-    public final static int ER_NET_READ_ERROR_FROM_PIPE = 1154; //SQLSTATE: 08S01 Message: Got a read error from the connection pipe
+    public final static int ER_NET_READ_ERROR_FROM_PIPE = 1154; //SQLSTATE: 08S01 Message: Got a read error from the database.connection pipe
     public final static int ER_NET_FCNTL_ERROR = 1155; //SQLSTATE: 08S01 Message: Got an error from fcntl()
     public final static int ER_NET_PACKETS_OUT_OF_ORDER = 1156; //SQLSTATE: 08S01 Message: Got packets out of order
     public final static int ER_NET_UNCOMPRESS_ERROR = 1157; //SQLSTATE: 08S01 Message: Couldn't uncompress communication packet
@@ -213,7 +213,7 @@ public final class MysqlErrorNumbers {
     public final static int ER_ERROR_DURING_ROLLBACK = 1181; //SQLSTATE: HY000 Message: Got error %d during ROLLBACK
     public final static int ER_ERROR_DURING_FLUSH_LOGS = 1182; //SQLSTATE: HY000 Message: Got error %d during FLUSH_LOGS
     public final static int ER_ERROR_DURING_CHECKPOINT = 1183; //SQLSTATE: HY000 Message: Got error %d during CHECKPOINT
-    public final static int ER_NEW_ABORTING_CONNECTION = 1184; //SQLSTATE: 08S01 Message: Aborted connection %ld to db: '%s' user: '%s' host: '%s' (%s)
+    public final static int ER_NEW_ABORTING_CONNECTION = 1184; //SQLSTATE: 08S01 Message: Aborted database.connection %ld to db: '%s' user: '%s' host: '%s' (%s)
     public final static int ER_DUMP_NOT_IMPLEMENTED = 1185; //SQLSTATE: HY000 Message: The storage engine for the table does not support binary table dump
     public final static int ER_FLUSH_MASTER_BINLOG_CLOSED = 1186; //SQLSTATE: HY000 Message: Binlog closed, cannot RESET MASTER
     public final static int ER_INDEX_REBUILD = 1187; //SQLSTATE: HY000 Message: Failed rebuilding the index of dumped table '%s'
@@ -461,8 +461,8 @@ public final class MysqlErrorNumbers {
     public final static int ER_CONNECT_TO_FOREIGN_DATA_SOURCE = 1429; //SQLSTATE: HY000 Message: Unable to connect to foreign data source: %s
     public final static int ER_QUERY_ON_FOREIGN_DATA_SOURCE = 1430; //SQLSTATE: HY000 Message: There was a problem processing the query on the foreign data source. Data source error: %s
     public final static int ER_FOREIGN_DATA_SOURCE_DOESNT_EXIST = 1431; //SQLSTATE: HY000 Message: The foreign data source you are trying to reference does not exist. Data source error: %s
-    public final static int ER_FOREIGN_DATA_STRING_INVALID_CANT_CREATE = 1432; //SQLSTATE: HY000 Message: Can't create federated table. The data source connection string '%s' is not in the correct format
-    public final static int ER_FOREIGN_DATA_STRING_INVALID = 1433; //SQLSTATE: HY000 Message: The data source connection string '%s' is not in the correct format
+    public final static int ER_FOREIGN_DATA_STRING_INVALID_CANT_CREATE = 1432; //SQLSTATE: HY000 Message: Can't create federated table. The data source database.connection string '%s' is not in the correct format
+    public final static int ER_FOREIGN_DATA_STRING_INVALID = 1433; //SQLSTATE: HY000 Message: The data source database.connection string '%s' is not in the correct format
     public final static int ER_CANT_CREATE_FEDERATED_TABLE = 1434; //SQLSTATE: HY000 Message: Can't create federated table. Foreign data src error: %s
     public final static int ER_TRG_IN_WRONG_SCHEMA = 1435; //SQLSTATE: HY000 Message: Trigger in wrong schema
     public final static int ER_STACK_OVERRUN_NEED_MORE = 1436; //SQLSTATE: HY000 Message: Thread stack overrun: %ld bytes used of a %ld byte stack, and %ld bytes needed. Use 'mysqld --thread_stack=#' to specify a bigger stack.
@@ -867,7 +867,7 @@ public final class MysqlErrorNumbers {
     public final static int ER_FK_CANNOT_DELETE_PARENT = 1834; //SQLSTATE: HY000 Message: Cannot delete rows from table which is parent in a foreign key constraint '%s' of table '%s'
     public final static int ER_MALFORMED_PACKET = 1835; //SQLSTATE: HY000 Message: Malformed communication packet.
     public final static int ER_READ_ONLY_MODE = 1836; //SQLSTATE: HY000 Message: Running in read-only mode
-    public final static int ER_GTID_NEXT_TYPE_UNDEFINED_GROUP = 1837; //SQLSTATE: HY000 Message: When GTID_NEXT is set to a GTID, you must explicitly set it again after a COMMIT or ROLLBACK. If you see this error message in the slave SQL thread, it means that a table in the current transaction is transactional on the master and non-transactional on the slave. In a client connection, it means that you executed SET GTID_NEXT before a transaction and forgot to set GTID_NEXT to a different identifier or to 'AUTOMATIC' after COMMIT or ROLLBACK. Current GTID_NEXT is '%s'.
+    public final static int ER_GTID_NEXT_TYPE_UNDEFINED_GROUP = 1837; //SQLSTATE: HY000 Message: When GTID_NEXT is set to a GTID, you must explicitly set it again after a COMMIT or ROLLBACK. If you see this error message in the slave SQL thread, it means that a table in the current transaction is transactional on the master and non-transactional on the slave. In a client database.connection, it means that you executed SET GTID_NEXT before a transaction and forgot to set GTID_NEXT to a different identifier or to 'AUTOMATIC' after COMMIT or ROLLBACK. Current GTID_NEXT is '%s'.
     public final static int ER_VARIABLE_NOT_SETTABLE_IN_SP = 1838; //SQLSTATE: HY000 Message: The system variable %s cannot be set in stored procedures.
     public final static int ER_CANT_SET_GTID_PURGED_WHEN_GTID_MODE_IS_OFF = 1839; //SQLSTATE: HY000 Message: GTID_PURGED can only be set when GTID_MODE = ON.
     public final static int ER_CANT_SET_GTID_PURGED_WHEN_GTID_EXECUTED_IS_NOT_EMPTY = 1840; //SQLSTATE: HY000 Message: GTID_PURGED can only be set when GTID_EXECUTED is empty.

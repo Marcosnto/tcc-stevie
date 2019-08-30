@@ -334,7 +334,7 @@ Java 8 (for JDBC 4+ implementation) is also required. Set the full path to this 
             <isset property="com.mysql.jdbc.testsuite.url.internal" />
         </condition>
 
-        <fail message="Set the MySQL database connection string for the test suite in one of the properties, 'com.mysql.jdbc.testsuite.url' or 'com.mysql.jdbc.testsuite.url.N', according to desired target.">
+        <fail message="Set the MySQL database database.connection string for the test suite in one of the properties, 'com.mysql.jdbc.testsuite.url' or 'com.mysql.jdbc.testsuite.url.N', according to desired target.">
             <condition>
                 <not>
                     <or>
@@ -353,7 +353,7 @@ Java 8 (for JDBC 4+ implementation) is also required. Set the full path to this 
             <isset property="com.mysql.jdbc.compliance.url.internal" />
         </condition>
 
-        <fail message="Set the MySQL database connection string for the compliance tests in one of the properties, 'com.mysql.jdbc.compliance.url' or 'com.mysql.jdbc.compliance.url.N', according to desired target.">
+        <fail message="Set the MySQL database database.connection string for the compliance tests in one of the properties, 'com.mysql.jdbc.compliance.url' or 'com.mysql.jdbc.compliance.url.N', according to desired target.">
             <condition>
                 <not>
                     <or>

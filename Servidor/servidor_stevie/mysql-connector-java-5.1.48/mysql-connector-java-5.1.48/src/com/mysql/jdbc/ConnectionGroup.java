@@ -113,7 +113,7 @@ public class ConnectionGroup {
     }
 
     public long getTotalTransactionCount() {
-        // need to account for closed connection proxies
+        // need to account for closed database.connection proxies
         long transactions = this.closedProxyTotalTransactions;
         Map<Long, LoadBalancedConnectionProxy> proxyMap = new HashMap<Long, LoadBalancedConnectionProxy>();
         synchronized (this.connectionProxies) {
@@ -164,7 +164,7 @@ public class ConnectionGroup {
      * @param removeExisting
      *            Whether affects existing load-balanced connections or only new ones.
      * @param waitForGracefulFailover
-     *            If true instructs the load-balanced connections to fail-over the underlying active connection before removing this host, otherwise remove
+     *            If true instructs the load-balanced connections to fail-over the underlying active database.connection before removing this host, otherwise remove
      *            immediately.
      * @throws SQLException
      */

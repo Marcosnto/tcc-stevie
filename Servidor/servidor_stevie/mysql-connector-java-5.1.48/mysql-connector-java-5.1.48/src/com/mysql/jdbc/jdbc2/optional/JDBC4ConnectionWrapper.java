@@ -55,7 +55,7 @@ public class JDBC4ConnectionWrapper extends ConnectionWrapper {
      * @param mysqlPooledConnection
      *            reference to object that instantiated this object
      * @param mysqlConnection
-     *            physical connection to db
+     *            physical database.connection to db
      * 
      * @throws SQLException
      *             if an error occurs.
@@ -133,22 +133,22 @@ public class JDBC4ConnectionWrapper extends ConnectionWrapper {
     }
 
     /**
-     * Returns true if the connection has not been closed and is still valid.
-     * The driver shall submit a query on the connection or use some other
-     * mechanism that positively verifies the connection is still valid when
+     * Returns true if the database.connection has not been closed and is still valid.
+     * The driver shall submit a query on the database.connection or use some other
+     * mechanism that positively verifies the database.connection is still valid when
      * this method is called.
      * <p>
-     * The query submitted by the driver to validate the connection shall be executed in the context of the current transaction.
+     * The query submitted by the driver to validate the database.connection shall be executed in the context of the current transaction.
      * 
      * @param timeout
      *            -
      *            The time in seconds to wait for the database operation used to
-     *            validate the connection to complete. If the timeout period
+     *            validate the database.connection to complete. If the timeout period
      *            expires before the operation completes, this method returns
      *            false. A value of 0 indicates a timeout is not applied to the
      *            database operation.
      *            <p>
-     * @return true if the connection is valid, false otherwise
+     * @return true if the database.connection is valid, false otherwise
      * @exception SQLException
      *                if the value supplied for <code>timeout</code> is less
      *                then 0

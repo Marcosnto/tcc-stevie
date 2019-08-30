@@ -33,7 +33,7 @@ import javax.sql.StatementEvent;
 import javax.sql.StatementEventListener;
 
 /**
- * This class is used to wrap and return a physical connection within a logical handle. It also registers and notifies ConnectionEventListeners of any
+ * This class is used to wrap and return a physical database.connection within a logical handle. It also registers and notifies ConnectionEventListeners of any
  * ConnectionEvents
  */
 public class JDBC4MysqlPooledConnection extends MysqlPooledConnection {
@@ -53,7 +53,7 @@ public class JDBC4MysqlPooledConnection extends MysqlPooledConnection {
     /**
      * Registers a <code>StatementEventListener</code> with this <code>PooledConnection</code> object. Components that
      * wish to be notified when <code>PreparedStatement</code>s created by the
-     * connection are closed or are detected to be invalid may use this method
+     * database.connection are closed or are detected to be invalid may use this method
      * to register a <code>StatementEventListener</code> with this <code>PooledConnection</code> object.
      * 
      * @param listener

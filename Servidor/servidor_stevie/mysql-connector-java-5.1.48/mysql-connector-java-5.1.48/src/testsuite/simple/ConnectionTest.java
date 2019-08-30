@@ -106,7 +106,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests a cluster connection for failover, requires a two-node cluster URL
+     * Tests a cluster database.connection for failover, requires a two-node cluster URL
      * specfied in com.mysql.jdbc.testsuite.ClusterUrl system proeprty.
      * 
      * @throws Exception
@@ -134,7 +134,7 @@ public class ConnectionTest extends BaseTestCase {
                     clusterStmt.execute("SELECT * FROM testClusterConn");
                     clusterStmt.executeUpdate("UPDATE testClusterConn SET field1=4");
 
-                    // Kill the connection
+                    // Kill the database.connection
                     @SuppressWarnings("unused")
                     String connectionId = getSingleValueWithQuery("SELECT CONNECTION_ID()").toString();
 
@@ -154,7 +154,7 @@ public class ConnectionTest extends BaseTestCase {
                     }
 
                     //
-                    // Test that this 'new' connection is not read-only
+                    // Test that this 'new' database.connection is not read-only
                     //
                     clusterStmt.executeUpdate("UPDATE testClusterConn SET field1=5");
 
@@ -624,7 +624,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the ability to set the connection collation via properties.
+     * Tests the ability to set the database.connection collation via properties.
      * 
      * @throws Exception
      *             if an error occurs or the test fails
@@ -880,7 +880,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests whether re-connect with non-read-only connection can happen.
+     * Tests whether re-connect with non-read-only database.connection can happen.
      * 
      * @throws Exception
      *             if the test fails.
@@ -913,7 +913,7 @@ public class ConnectionTest extends BaseTestCase {
 
                 assertTrue("Connection should not be in READ_ONLY state", !failoverConnection.isReadOnly());
 
-                // Kill the connection
+                // Kill the database.connection
                 this.stmt.executeUpdate("KILL " + originalConnectionId);
 
                 // This takes a bit to occur
@@ -922,7 +922,7 @@ public class ConnectionTest extends BaseTestCase {
 
                 try {
                     failoverConnection.createStatement().execute("SELECT 1");
-                    fail("We expect an exception here, because the connection should be gone until the reconnect code picks it up again");
+                    fail("We expect an exception here, because the database.connection should be gone until the reconnect code picks it up again");
                 } catch (SQLException sqlEx) {
                     // do-nothing
                 }
@@ -934,7 +934,7 @@ public class ConnectionTest extends BaseTestCase {
                 String newConnectionId = getSingleIndexedValueWithQuery(failoverConnection, 1, "SELECT connection_id()").toString();
                 System.out.println("new Connection Id = " + newConnectionId);
 
-                assertTrue("We should have a new connection to the server in this case", !newConnectionId.equals(originalConnectionId));
+                assertTrue("We should have a new database.connection to the server in this case", !newConnectionId.equals(originalConnectionId));
                 assertTrue("Connection should not be read-only", !failoverConnection.isReadOnly());
             } finally {
                 if (failoverConnection != null) {
@@ -1067,7 +1067,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests setting profileSql on/off in the span of one connection.
+     * Tests setting profileSql on/off in the span of one database.connection.
      * 
      * @throws Exception
      *             if an error occurs.
@@ -1244,7 +1244,7 @@ public class ConnectionTest extends BaseTestCase {
      * 
      * @throws Exception
      *             if the test can't use at least one of the local machine's
-     *             interfaces to make an outgoing connection to the server.
+     *             interfaces to make an outgoing database.connection to the server.
      */
     public void testLocalSocketAddress() throws Exception {
         Enumeration<NetworkInterface> allInterfaces = NetworkInterface.getNetworkInterfaces();
@@ -1295,7 +1295,7 @@ public class ConnectionTest extends BaseTestCase {
             }
         }
 
-        assertTrue("At least one connection was made with the localSocketAddress set", didOneWork);
+        assertTrue("At least one database.connection was made with the localSocketAddress set", didOneWork);
 
         NonRegisteringDriver d = new NonRegisteringDriver();
 
@@ -1322,7 +1322,7 @@ public class ConnectionTest extends BaseTestCase {
             }
 
             if (!isLocalIf) {
-                assertTrue("At least one connection didn't fail with localSocketAddress set", didOneFail);
+                assertTrue("At least one database.connection didn't fail with localSocketAddress set", didOneFail);
             }
         }
     }
@@ -1809,7 +1809,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Test connection property cacheDefaultTimezone.
+     * Test database.connection property cacheDefaultTimezone.
      * 
      * @throws SQLException
      */
@@ -1898,15 +1898,15 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Test the new connection property 'enableEscapeProcessing', as well as the old connection property 'processEscapeCodesForPrepStmts' and interrelation
+     * Test the new database.connection property 'enableEscapeProcessing', as well as the old database.connection property 'processEscapeCodesForPrepStmts' and interrelation
      * between both.
      * 
      * This test uses a StatementInterceptor to capture the query sent to the server and assert whether escape processing has been done in the client side or if
-     * the query is sent untouched and escape processing will be done at server side, according to provided connection properties and type of Statement objects
+     * the query is sent untouched and escape processing will be done at server side, according to provided database.connection properties and type of Statement objects
      * in use.
      */
     public void testEnableEscapeProcessing() throws Exception {
-        // make sure the connection string doesn't contain 'enableEscapeProcessing'
+        // make sure the database.connection string doesn't contain 'enableEscapeProcessing'
         String testUrl = BaseTestCase.dbUrl;
         int b = testUrl.indexOf("enableEscapeProcessing");
         if (b != -1) {
@@ -1989,7 +1989,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Test authentication with a user that requires an SSL connection.
+     * Test authentication with a user that requires an SSL database.connection.
      * 
      * This test requires the CA truststore and the client keystore available in testsuite/ssl-test-certs.
      * The server needs to be configured with the CA and server certificates from testsuite/ssl-test-certs.
@@ -2079,7 +2079,7 @@ public class ConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Test authentication with a user that requires an SSL connection and an authorized client certificate.
+     * Test authentication with a user that requires an SSL database.connection and an authorized client certificate.
      * 
      * This test requires the CA truststore and the client keystore available in testsuite/ssl-test-certs.
      * The server needs to be configured with the CA and server certificates from testsuite/ssl-test-certs.

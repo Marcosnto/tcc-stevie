@@ -40,7 +40,7 @@ import java.util.StringTokenizer;
  * The Java SQL framework allows for multiple database drivers. Each driver should supply a class that implements the Driver interface
  * 
  * <p>
- * The DriverManager will try to load as many drivers as it can find and then for any given connection request, it will ask each driver in turn to try to
+ * The DriverManager will try to load as many drivers as it can find and then for any given database.connection request, it will ask each driver in turn to try to
  * connect to the target URL.
  * </p>
  * 
@@ -75,7 +75,7 @@ public class NonRegisteringDriver implements java.sql.Driver {
 
     /*
      * Standardizes OS name information to align with other drivers/clients
-     * for MySQL connection attributes
+     * for MySQL database.connection attributes
      * 
      * @return the transformed, standardized OS name
      */
@@ -85,7 +85,7 @@ public class NonRegisteringDriver implements java.sql.Driver {
 
     /*
      * Standardizes platform information to align with other drivers/clients
-     * for MySQL connection attributes
+     * for MySQL database.connection attributes
      * 
      * @return the transformed, standardized platform details
      */
@@ -264,7 +264,7 @@ public class NonRegisteringDriver implements java.sql.Driver {
     //
 
     /**
-     * Try to make a database connection to the given URL. The driver should return "null" if it realizes it is the wrong kind of driver to connect to the given
+     * Try to make a database database.connection to the given URL. The driver should return "null" if it realizes it is the wrong kind of driver to connect to the given
      * URL. This will be common, as when the JDBC driverManager is asked to connect to a given URL, it passes the URL to each loaded driver in turn.
      * 
      * <p>
@@ -273,7 +273,7 @@ public class NonRegisteringDriver implements java.sql.Driver {
      * </p>
      * 
      * <p>
-     * The java.util.Properties argument can be used to pass arbitrary string tag/value pairs as connection arguments. These properties take precedence over any
+     * The java.util.Properties argument can be used to pass arbitrary string tag/value pairs as database.connection arguments. These properties take precedence over any
      * properties sent in the URL.
      * </p>
      * 
@@ -289,9 +289,9 @@ public class NonRegisteringDriver implements java.sql.Driver {
      * @param url
      *            the URL of the database to connect to
      * @param info
-     *            a list of arbitrary tag/value pairs as connection arguments
+     *            a list of arbitrary tag/value pairs as database.connection arguments
      * 
-     * @return a connection to the URL or null if it isn't us
+     * @return a database.connection to the URL or null if it isn't us
      * 
      * @exception SQLException
      *                if a database access error occurs or the url is null

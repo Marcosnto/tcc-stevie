@@ -41,7 +41,7 @@ abstract class WrapperBase {
     protected MysqlPooledConnection pooledConnection;
 
     /**
-     * Fires connection error event if required, before re-throwing exception
+     * Fires database.connection error event if required, before re-throwing exception
      * 
      * @param sqlEx
      *            the SQLException that has occurred

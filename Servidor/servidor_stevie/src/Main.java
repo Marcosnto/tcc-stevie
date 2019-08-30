@@ -4,27 +4,57 @@ import javax.bluetooth.DiscoveryAgent;
 import javax.bluetooth.LocalDevice;
 import javax.microedition.io.Connector;
 import javax.obex.*;
+import javax.swing.table.DefaultTableModel;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
+import database.connection.model.bean.Tag;
+import database.connection.model.dao.TagDAO;
 import net.contentobjects.jnotify.JNotify;
 import net.contentobjects.jnotify.JNotifyAdapter;
 import net.contentobjects.jnotify.JNotifyException;
 
 public class Main {
+    static ArrayList<Tag> tags_banco = new ArrayList<>();
+    static List<Tag> tags = new ArrayList<>();
+    static Tag tag = new Tag();
+    static TagDAO dao = new TagDAO();
 
     public static void main(String[] args) {
-        //startar a thread para ouvir as modificações
-        OuvirArquivo ouvirArquivo = new OuvirArquivo();
-        Thread ouvirArq = new Thread(ouvirArquivo);
-        ouvirArq.start();
+        // startar a thread para ouvir as modificações
+//        OuvirArquivo ouvirArquivo = new OuvirArquivo();
+//        Thread ouvirArq = new Thread(ouvirArquivo);
+//        ouvirArq.start();
 
+        // iniciando o servidor bluetooth
+//        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
+//        Thread conexao = new Thread(bluetooth);
+//        conexao.start();
 
-//        iniciando o servidor bluetooth
-        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
-        Thread conexao = new Thread(bluetooth);
-        conexao.start();
-
+        // carrega todas as tags do banco
+        carregarTags();
+        BFS bfs = new BFS(tags);
     }
+
+    public static void adicionarTags() {
+        //modelo teste para adicionar tags
+//        tag.setCod_tag("teste_codigo2");
+//        tag.setId_tag_frente("tag frente2");
+//        tag.setId_tag_tras("tag tras2");
+//        tag.setId_tag_esquerda("tag esquerda2");
+//        tag.setId_tag_direita("teste direita2");
+//        dao.create(tag);
+    }
+
+    public static void carregarTags() {
+        for (Tag t : dao.read()) {
+            tags.add(t);
+            //tags_banco.add(t);
+        }
+    }
+
 
     public static void novoArq(File arquivo) throws IOException {
         arquivo.delete();
@@ -128,7 +158,7 @@ class ConexaoBluetooth implements Runnable {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println("Received OBEX connection " + (++count));
+            System.out.println("Received OBEX database.connection " + (++count));
         }
     }
 
@@ -158,7 +188,5 @@ class ConexaoBluetooth implements Runnable {
         }
     }
 }
-
-
 
 

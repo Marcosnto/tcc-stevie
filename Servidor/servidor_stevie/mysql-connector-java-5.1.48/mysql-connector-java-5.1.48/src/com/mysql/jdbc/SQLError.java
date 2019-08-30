@@ -645,7 +645,7 @@ public class SQLError {
      * actually throws DataTruncation as an exception.
      * 
      * @param connection
-     *            the connection to use for getting warnings.
+     *            the database.connection to use for getting warnings.
      * 
      * @return the SQLWarning chain (or null if no warnings)
      * 
@@ -663,7 +663,7 @@ public class SQLError {
      * actually throws DataTruncation as an exception.
      * 
      * @param connection
-     *            the connection to use for getting warnings.
+     *            the database.connection to use for getting warnings.
      * @param warningCountIfKnown
      *            the warning count (if known), otherwise set it to 0.
      * @param forTruncationOnly
@@ -684,7 +684,7 @@ public class SQLError {
         try {
             if (warningCountIfKnown < 100) {
                 stmt = connection.createStatement();
-                stmt.setFetchSize(0); // turns off cursor based fetch, in case the connection was set up to use them.
+                stmt.setFetchSize(0); // turns off cursor based fetch, in case the database.connection was set up to use them.
 
                 if (stmt.getMaxRows() != 0) {
                     stmt.setMaxRows(0);
