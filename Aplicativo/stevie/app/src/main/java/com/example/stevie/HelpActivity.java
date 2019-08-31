@@ -6,24 +6,24 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class Ajuda extends AppCompatActivity {
+public class HelpActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajuda);
 
-        setTitle("Ajuda");
+        setTitle("HelpActivity");
 
-        ImageButton btnObjetivo = (ImageButton) findViewById(R.id.btnObjetivo);
-        ImageButton btnUtilizar = (ImageButton) findViewById(R.id.btnUtilizar);
-        ImageButton btnSobre = (ImageButton) findViewById(R.id.btnSobre);
-        ImageButton btnVoltar = (ImageButton) findViewById(R.id.btnVoltar);
+        ImageButton btnObjetivo = findViewById(R.id.btnObjetivo);
+        ImageButton btnUtilizar = findViewById(R.id.btnUtilizar);
+        ImageButton btnSobre = findViewById(R.id.btnSobre);
+        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
 
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Ajuda.this, MenuPrincipal.class);
+                Intent intent = new Intent(HelpActivity.this, MenuPrincipal.class);
                 startActivity(intent);
             }
         });

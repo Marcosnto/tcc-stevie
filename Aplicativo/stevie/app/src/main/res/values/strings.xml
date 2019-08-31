@@ -32,7 +32,7 @@
     <!--Tela 5 - Navegar -->
 
 
-    <!--Tela Ajuda -->
+    <!--Tela HelpActivity -->
     <string name="menuAjuda" translatable="false">Menu de Ajuda</string>
     <string name="mnAjuda" translatable="false">Ajuda</string>
     <string name="objetivo" translatable="false">Objetivo do Aplicativo</string>
@@ -43,5 +43,6 @@
     <!--Genéricos-->
     <string name="Voltar" translatable="false">Voltar</string>
     <string name="VoltarPrincipal" translatable="false">Voltar ao menu principal</string>
+    <string name="list_options">Lista de opções</string>
 
 </resources>

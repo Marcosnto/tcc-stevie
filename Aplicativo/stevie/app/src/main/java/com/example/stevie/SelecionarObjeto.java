@@ -11,12 +11,12 @@ public class SelecionarObjeto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_selecionar_objeto);
+        setContentView(R.layout.activity_selecionar_opcao);
 
         setTitle("Selecionar Objeto");
 
-        ImageButton btnSelecionar= (ImageButton) findViewById(R.id.btnSelecionar);
-        ImageButton btnVoltar = (ImageButton) findViewById(R.id.btnVoltar);
+        ImageButton btnSelecionar=  findViewById(R.id.btnSelecionar);
+        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
 
         btnSelecionar.setOnClickListener(new View.OnClickListener() {
             @Override

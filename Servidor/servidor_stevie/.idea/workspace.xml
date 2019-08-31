@@ -2,130 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Regiao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/Ajuda.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_ajuda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_ajuda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_selecionar_objeto.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94e8672d-605d-4a14-8bb7-1de794545a39.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/src.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/src.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jnotify-lib-0.94/epl.html" beforeDir="false" afterPath="$PROJECT_DIR$/jnotify-lib-0.94/epl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/CHANGES" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/CHANGES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/hibernate/FabricMultiTenantConnectionProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/hibernate/FabricMultiTenantConnectionProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/ErrorReportingExceptionInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/ErrorReportingExceptionInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLConnectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLConnectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/FabricMySQLDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/JDBC4FabricMySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/jdbc/JDBC4FabricMySQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/proto/xmlrpc/DigestAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/fabric/proto/xmlrpc/DigestAuthentication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/AbandonedConnectionCleanupThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/AbandonedConnectionCleanupThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/AuthenticationPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/AuthenticationPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/BalanceStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/BalanceStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/CallableStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/CallableStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/CharsetMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/CharsetMapping.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionFeatureNotAvailableException.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionFeatureNotAvailableException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionLifecycleInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionLifecycleInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionPropertiesImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ConnectionPropertiesImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/DatabaseMetaData.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/DatabaseMetaData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Extension.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Extension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/FailoverConnectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/FailoverConnectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Field.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Field.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ClientInfoProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ClientInfoProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ClientInfoProviderSP.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ClientInfoProviderSP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ServerPreparedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/JDBC4ServerPreparedStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalanceExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalanceExceptionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalancedAutoCommitInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalancedAutoCommitInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalancedConnectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LoadBalancedConnectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LocalizedErrorMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LocalizedErrorMessages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MiniAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MiniAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MultiHostConnectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MultiHostConnectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MultiHostMySQLConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MultiHostMySQLConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlErrorNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlErrorNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/NonRegisteringDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/NonRegisteringDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/NonRegisteringReplicationDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/NonRegisteringReplicationDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/PreparedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/PreparedStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ProfilerEventHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ProfilerEventHandlerFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationConnectionGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationConnectionGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationConnectionProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationConnectionProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ReplicationDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ResultSetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ResultSetImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ResultSetRow.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ResultSetRow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/RowDataCursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/RowDataCursor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/RowDataDynamic.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/RowDataDynamic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SQLError.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SQLError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ServerPreparedStatement.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/ServerPreparedStatement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SocketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SocketFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SocketMetadata.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/SocketMetadata.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StandardLoadBalanceExceptionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StandardLoadBalanceExceptionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StandardSocketFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StandardSocketFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementInterceptorV2.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StatementInterceptorV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/StringUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/TimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/TimeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/configs/maxPerformance.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/configs/maxPerformance.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/integration/c3p0/MysqlConnectionTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/integration/c3p0/MysqlConnectionTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/integration/jboss/MysqlValidConnectionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/integration/jboss/MysqlValidConnectionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/ConnectionWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/ConnectionWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4ConnectionWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4ConnectionWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4MysqlPooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4MysqlPooledConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4MysqlXAConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4MysqlXAConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4SuspendableXAConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/JDBC4SuspendableXAConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlConnectionPoolDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlConnectionPoolDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlPooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlPooledConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlXADataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/MysqlXADataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/SuspendableXAConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/SuspendableXAConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/WrapperBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/jdbc2/optional/WrapperBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/profiler/ProfilerEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/profiler/ProfilerEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/util/BaseBugReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/util/BaseBugReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/util/PropertiesDocGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/util/PropertiesDocGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/EmployeesDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/EmployeesDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/EmployeesJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/EmployeesJdbc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/HibernateFabric.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/demo/fabric/HibernateFabric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/BaseTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/BaseTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestBasicConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestBasicConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestFabricMySQLConnectionSharding.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestFabricMySQLConnectionSharding.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestHABasics.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestHABasics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestRegressions.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/fabric/jdbc/TestRegressions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/CallableStatementRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/CallableStatementRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/ConnectionRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/ConnectionRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/DataSourceRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/DataSourceRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/MetaDataRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/MetaDataRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/PooledConnectionRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/PooledConnectionRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/ResultSetRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/ResultSetRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/StatementRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/StatementRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/ConnectionRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/ConnectionRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/MetaDataRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/MetaDataRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/StatementRegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/regression/jdbc4/StatementRegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/ConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/DataSourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/DataSourceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/MultiHostConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/MultiHostConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/ReadOnlyCallableStatementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/ReadOnlyCallableStatementTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/StatementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/StatementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/jdbc4/StatementsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/jdbc4/StatementsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/jdbc42/ConnectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/testsuite/simple/jdbc42/ConnectionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/bean/Grupo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/bean/Local.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/bean/Objeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Ponto_Interesse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/bean/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Tag.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/LocalDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,102 +70,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="class#OuvirArquivo#0" />
-                <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#OuvirArquivo#0" />
-                <element signature="n#!!doc;n#mask#0;n#OuvirArquivo#0" />
-                <element signature="n#!!doc;n#ouvirSubDiretorios#0;n#OuvirArquivo#0" />
-                <element signature="method#lerArq#0;class#OuvirArquivo#0" />
-                <element signature="class#ConexaoBluetooth#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/database/connection/model/bean/Tag.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#459#460#0" expanded="true" />
-                <element signature="e#605#606#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#971#972#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BFS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#742#748#0" expanded="true" />
-                <element signature="e#2133#2134#0" expanded="true" />
-                <element signature="e#2158#2159#0" expanded="true" />
-                <element signature="e#2194#2195#0" expanded="true" />
-                <element signature="e#2222#2223#0" expanded="true" />
-                <element signature="e#2250#2251#0" expanded="true" />
-                <element signature="e#2276#2277#0" expanded="true" />
-                <element signature="e#2312#2313#0" expanded="true" />
-                <element signature="e#2342#2343#0" expanded="true" />
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2402#2403#0" expanded="true" />
-                <element signature="e#2444#2445#0" expanded="true" />
-                <element signature="e#2480#2481#0" expanded="true" />
-                <element signature="e#2509#2510#0" expanded="true" />
-                <element signature="e#2536#2537#0" expanded="true" />
-                <element signature="e#2574#2575#0" expanded="true" />
-                <element signature="e#2606#2607#0" expanded="true" />
-                <element signature="e#2639#2640#0" expanded="true" />
-                <element signature="e#2670#2671#0" expanded="true" />
-                <element signature="e#2716#2717#0" expanded="true" />
-                <element signature="e#2756#2757#0" expanded="true" />
-                <element signature="e#2788#2789#0" expanded="true" />
-                <element signature="e#2818#2819#0" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#2900#2901#0" expanded="true" />
-                <element signature="e#3473#3474#0" expanded="true" />
-                <element signature="e#3499#3500#0" expanded="true" />
-                <element signature="e#3548#3549#0" expanded="true" />
-                <element signature="e#3580#3581#0" expanded="true" />
-                <element signature="e#3072#3073#0" expanded="true" />
-                <element signature="e#3106#3107#0" expanded="true" />
-                <element signature="e#3161#3162#0" expanded="true" />
-                <element signature="e#3207#3208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -285,110 +80,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/model/bean/Local.java" />
-        <option value="$PROJECT_DIR$/src/model/bean/Grupo.java" />
-        <option value="$PROJECT_DIR$/src/model/bean/Objeto.java" />
-        <option value="$PROJECT_DIR$/src/connection/ConnectionFactory.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/94e8672d-605d-4a14-8bb7-1de794545a39/console.sql" />
-        <option value="$PROJECT_DIR$/src/model/bean/Regiao.java" />
-        <option value="$PROJECT_DIR$/src/model/bean/Tag.java" />
-        <option value="$PROJECT_DIR$/src/model/bean/Ponto_Interesse.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/LocalDAO.java" />
-        <option value="$PROJECT_DIR$/src/model/dao/TagDAO.java" />
-        <option value="$PROJECT_DIR$/src/database/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" />
-        <option value="$PROJECT_DIR$/src/BFS.java" />
-      </list>
-    </option>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_INTERNAL" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
-  </component>
+  <component name="ProjectId" id="1QAi9B5esEqqJdVM9g9vgusNdwo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="connection" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="connection" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="connection" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="connection" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="servidor_stevie" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="servidor_stevie" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="DatabaseDriversLRU" value="redshift&#10;mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bluecove-2.1.1.jar/bluecove-2.1.1.jar!/" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="database.main" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -442,351 +151,28 @@
       <workItem from="1567104263660" duration="1694000" />
       <workItem from="1567113523601" duration="9413000" />
       <workItem from="1567126941620" duration="4610000" />
+      <workItem from="1567222065781" duration="1281000" />
+      <workItem from="1567226838866" duration="193000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49545000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="5" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Console" order="12" visible="true" weight="0.497545" />
-      <window_info anchor="bottom" id="Run" order="13" weight="0.49590835" />
-      <window_info anchor="right" id="Coverage" sideWeight="0.5008183" side_tool="true" visible="true" weight="0.2624811" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" sideWeight="0.49918166" visible="true" weight="0.2624811" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>79</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/servidor_stevie$Main.ic" NAME="Main Coverage Results" MODIFIED="1567130191964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/ClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="2659" selection-start-line="2659" selection-end-line="2659" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/fdfef4fe-4565-4ee1-b00a-6e5f65003ce2/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/94e8672d-605d-4a14-8bb7-1de794545a39/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/connection/model/bean/Regiao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding>
-            <element signature="e#133#134#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#292#293#0" expanded="true" />
-            <element signature="e#326#327#0" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/bean/Local.java" />
-    <entry file="file://$PROJECT_DIR$/src/database/connection/model/bean/Ponto_Interesse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-          <folding>
-            <element signature="e#247#248#0" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#413#414#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#472#473#0" expanded="true" />
-            <element signature="e#513#514#0" expanded="true" />
-            <element signature="e#549#550#0" expanded="true" />
-            <element signature="e#581#582#0" expanded="true" />
-            <element signature="e#612#613#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#769#770#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#869#870#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-            <element signature="e#1015#1016#0" expanded="true" />
-            <element signature="e#1071#1072#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a3f244c1-485d-42e6-9904-84446f8c421b/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/jdk/internal/loader/BuiltinClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="582" column="18" selection-start-line="582" selection-start-column="18" selection-end-line="582" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="407" column="19" selection-start-line="407" selection-start-column="19" selection-end-line="407" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/MysqlIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="3932" column="31" selection-start-line="3932" selection-start-column="31" selection-end-line="3932" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/lang/reflect/Constructor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="499" column="24" selection-start-line="499" selection-start-column="24" selection-end-line="499" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/grafobuscaemlargura-master/grafobuscaemlargura-master/src/Principal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071">
-          <folding>
-            <element signature="e#0#6035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-12.0.2/lib/src.zip!/java.base/java/util/Queue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="187" column="37" selection-start-line="187" selection-start-column="37" selection-end-line="187" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/connection/model/bean/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#605#606#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#971#972#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="class#OuvirArquivo#0" />
-            <element signature="n#!!doc;n#PATH_TO_LISTEN#0;n#OuvirArquivo#0" />
-            <element signature="n#!!doc;n#mask#0;n#OuvirArquivo#0" />
-            <element signature="n#!!doc;n#ouvirSubDiretorios#0;n#OuvirArquivo#0" />
-            <element signature="method#lerArq#0;class#OuvirArquivo#0" />
-            <element signature="class#ConexaoBluetooth#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/database/connection/ConnectionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BFS.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#742#748#0" expanded="true" />
-            <element signature="e#2133#2134#0" expanded="true" />
-            <element signature="e#2158#2159#0" expanded="true" />
-            <element signature="e#2194#2195#0" expanded="true" />
-            <element signature="e#2222#2223#0" expanded="true" />
-            <element signature="e#2250#2251#0" expanded="true" />
-            <element signature="e#2276#2277#0" expanded="true" />
-            <element signature="e#2312#2313#0" expanded="true" />
-            <element signature="e#2342#2343#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2402#2403#0" expanded="true" />
-            <element signature="e#2444#2445#0" expanded="true" />
-            <element signature="e#2480#2481#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-            <element signature="e#2536#2537#0" expanded="true" />
-            <element signature="e#2574#2575#0" expanded="true" />
-            <element signature="e#2606#2607#0" expanded="true" />
-            <element signature="e#2639#2640#0" expanded="true" />
-            <element signature="e#2670#2671#0" expanded="true" />
-            <element signature="e#2716#2717#0" expanded="true" />
-            <element signature="e#2756#2757#0" expanded="true" />
-            <element signature="e#2788#2789#0" expanded="true" />
-            <element signature="e#2818#2819#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2900#2901#0" expanded="true" />
-            <element signature="e#3473#3474#0" expanded="true" />
-            <element signature="e#3499#3500#0" expanded="true" />
-            <element signature="e#3548#3549#0" expanded="true" />
-            <element signature="e#3580#3581#0" expanded="true" />
-            <element signature="e#3072#3073#0" expanded="true" />
-            <element signature="e#3106#3107#0" expanded="true" />
-            <element signature="e#3161#3162#0" expanded="true" />
-            <element signature="e#3207#3208#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>servidor_stevie</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>src</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

@@ -15,14 +15,15 @@ public class IdentificarObjeto extends AppCompatActivity {
 
         setTitle("Identificar Objeto");
 
-        ImageButton btnProximos = (ImageButton) findViewById(R.id.btnProximos);
-        ImageButton btnEspecifico = (ImageButton) findViewById(R.id.btnEspecifico);
-        ImageButton btnVoltar = (ImageButton) findViewById(R.id.btnVoltar);
+        ImageButton btnProximos = findViewById(R.id.btnProximos);
+        ImageButton btnEspecifico = findViewById(R.id.btnEspecifico);
+        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
 
         btnEspecifico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(IdentificarObjeto.this, SelecionarObjeto.class);
+                Intent intent = new Intent(IdentificarObjeto.this, ChooseOptionActivity.class);
+                intent.putExtra("title", "Selecionar Objeto");
                 startActivity(intent);
             }
         });

@@ -40,7 +40,7 @@ public class MenuPrincipal extends AppCompatActivity {
         btnAjuda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent (MenuPrincipal.this, Ajuda.class);
+                Intent intent = new Intent (MenuPrincipal.this, HelpActivity.class);
                 startActivity(intent);
             }
         });
