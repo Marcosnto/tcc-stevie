@@ -11,6 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TagDAO {
+
+
     public void create(Tag t){
         //abertura de conexão
         Connection con = ConnectionFactory.getConnection();

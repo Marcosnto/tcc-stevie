@@ -22,7 +22,7 @@ public class IdentificarObjeto extends AppCompatActivity {
         btnEspecifico.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(IdentificarObjeto.this, ChooseOptionActivity.class);
+                Intent intent = new Intent(IdentificarObjeto.this, ListarOpcoes.class);
                 intent.putExtra("title", "Selecionar Objeto");
                 startActivity(intent);
             }

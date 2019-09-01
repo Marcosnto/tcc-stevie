@@ -15,24 +15,24 @@ public class SelecionarObjeto extends AppCompatActivity {
 
         setTitle("Selecionar Objeto");
 
-        ImageButton btnSelecionar=  findViewById(R.id.btnSelecionar);
-        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
-
-        btnSelecionar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelecionarObjeto.this, Navegar.class);
-                startActivity(intent);
-            }
-        });
-
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(SelecionarObjeto.this, MenuPrincipal.class);
-                startActivity(intent);
-            }
-        });
+//        ImageButton btnSelecionar=  findViewById(R.id.btnSelecionar);
+//        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
+//
+//        btnSelecionar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SelecionarObjeto.this, Navegar.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnVoltar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(SelecionarObjeto.this, MenuPrincipal.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
 }

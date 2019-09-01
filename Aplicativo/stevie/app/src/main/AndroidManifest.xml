@@ -15,21 +15,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".TelaInicial"></activity>
+        android:theme="@style/AppTheme"
+        android:name=".app.StevieApplication">
+        <activity android:name=".TelaInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".HelpActivity" />
         <activity android:name=".Navegar" />
         <activity android:name=".SelecionarObjeto" />
         <activity android:name=".EscolherDestino" />
         <activity android:name=".IdentificarObjeto" />
+        <activity android:name=".IObluetooth"/>
         <activity android:name=".MenuPrincipal">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
-        <activity android:name=".ChooseOptionActivity" />
+        <activity android:name=".ListarOpcoes" />
     </application>
 
 </manifest>

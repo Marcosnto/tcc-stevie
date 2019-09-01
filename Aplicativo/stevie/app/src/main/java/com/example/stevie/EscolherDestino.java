@@ -29,5 +29,37 @@ public class EscolherDestino extends AppCompatActivity {
             }
         });
 
+        btnDepartamento.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EscolherDestino.this, ListarOpcoes.class);
+                startActivity(intent);
+            }
+        });
+
+        btnBanheiro.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EscolherDestino.this, ListarOpcoes.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSala.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EscolherDestino.this, ListarOpcoes.class);
+                startActivity(intent);
+            }
+        });
+
+        btnLaboratorio.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EscolherDestino.this, ListarOpcoes.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

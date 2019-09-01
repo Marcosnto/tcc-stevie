@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.stevie.adapter.ObjectRecyclerAdapter;
 
-public class ChooseOptionActivity extends AppCompatActivity {
+public class ListarOpcoes extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private RecyclerView.Adapter mAdapter;
@@ -34,24 +34,24 @@ public class ChooseOptionActivity extends AppCompatActivity {
             setTitle(title);
         }
 
-        ImageButton btnSelecionar=  findViewById(R.id.btnSelecionar);
-        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
-
-        btnSelecionar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ChooseOptionActivity.this, Navegar.class);
-                startActivity(intent);
-            }
-        });
-
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(ChooseOptionActivity.this, MenuPrincipal.class);
-                startActivity(intent);
-            }
-        });
+//        ImageButton btnSelecionar=  findViewById(R.id.btnSelecionar);
+//        ImageButton btnVoltar = findViewById(R.id.btnVoltar);
+//
+//        btnSelecionar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(ListarOpcoes.this, Navegar.class);
+//                startActivity(intent);
+//            }
+//        });
+//
+//        btnVoltar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(ListarOpcoes.this, MenuPrincipal.class);
+//                startActivity(intent);
+//            }
+//        });
 
         setupRecycler();
     }
@@ -103,8 +103,8 @@ public class ChooseOptionActivity extends AppCompatActivity {
         mAdapter = new ObjectRecyclerAdapter(mockedList, new ObjectRecyclerAdapter.ChooseOptionInterface() {
             @Override
             public void onOptionClicked(String name) {
-                Toast.makeText(ChooseOptionActivity.this, name, Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(ChooseOptionActivity.this, Navegar.class);
+                Toast.makeText(ListarOpcoes.this, name, Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(ListarOpcoes.this, Navegar.class);
                 startActivity(intent);
             }
         });

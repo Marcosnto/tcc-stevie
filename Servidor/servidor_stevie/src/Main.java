@@ -10,7 +10,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import database.connection.model.bean.Departamento;
+import database.connection.model.bean.Laboratorio;
+import database.connection.model.bean.Ponto_Interesse;
 import database.connection.model.bean.Tag;
+import database.connection.model.dao.DepartamentoDAO;
+import database.connection.model.dao.LaboratorioDAO;
+import database.connection.model.dao.Ponto_InteresseDAO;
 import database.connection.model.dao.TagDAO;
 import net.contentobjects.jnotify.JNotify;
 import net.contentobjects.jnotify.JNotifyAdapter;
@@ -18,23 +24,36 @@ import net.contentobjects.jnotify.JNotifyException;
 
 public class Main {
     static ArrayList<Tag> tags_banco = new ArrayList<>();
+
+    static TagDAO tDAO = new TagDAO();
+    static DepartamentoDAO dDAO = new DepartamentoDAO();
+    static LaboratorioDAO lDAO = new LaboratorioDAO();
+    static Ponto_InteresseDAO pDAO = new Ponto_InteresseDAO();
+
+    //lista onde serão carregados os dados do banco assim que o servidor
+    //for iniciado
     static List<Tag> tags = new ArrayList<>();
-    static Tag tag = new Tag();
-    static TagDAO dao = new TagDAO();
+    static List<Departamento> departamentos = new ArrayList<>();
+    static List<Laboratorio> laboratorios = new ArrayList<>();
+    static List<Ponto_Interesse> pontos_interesses = new ArrayList<>();
 
     public static void main(String[] args) {
+        // carrega todas os dados do banco
+        carregarTags();
+        carregarDepartamentos();
+        carregarLaboratorios();
+        carregarPontosInteresse();
+
         // startar a thread para ouvir as modificações
 //        OuvirArquivo ouvirArquivo = new OuvirArquivo();
 //        Thread ouvirArq = new Thread(ouvirArquivo);
 //        ouvirArq.start();
 
-        // iniciando o servidor bluetooth
-//        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
-//        Thread conexao = new Thread(bluetooth);
-//        conexao.start();
+//         iniciando o servidor bluetooth
+        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
+        Thread conexao = new Thread(bluetooth);
+        conexao.start();
 
-        // carrega todas as tags do banco
-        carregarTags();
         BFS bfs = new BFS(tags);
     }
 
@@ -49,20 +68,30 @@ public class Main {
     }
 
     public static void carregarTags() {
-        for (Tag t : dao.read()) {
+        for (Tag t : tDAO.read()) {
             tags.add(t);
-            //tags_banco.add(t);
+        }
+    }
+
+    public static void carregarDepartamentos() {
+        for (Departamento d : dDAO.read()) {
+            departamentos.add(d);
         }
     }
 
 
-    public static void novoArq(File arquivo) throws IOException {
-        arquivo.delete();
-        FileWriter novoArq = new FileWriter("C:\\Users\\Marcos\\Documents\\Leitura.txt");
-        System.out.printf("Novo arquivo criado!");
-
-        return;
+    public static void carregarLaboratorios() {
+        for (Laboratorio l : lDAO.read()) {
+            laboratorios.add(l);
+        }
     }
+
+    public static void carregarPontosInteresse() {
+        for (Ponto_Interesse p : pDAO.read()) {
+            pontos_interesses.add(p);
+        }
+    }
+
 }
 
 class OuvirArquivo implements Runnable {
@@ -131,11 +160,13 @@ class OuvirArquivo implements Runnable {
 
 class ConexaoBluetooth implements Runnable {
     //definição do Identificador universal unico (UUID)
+    //não é aceito se houver os ifens (-)
     static final String serverUUID = "11111111111111111111111111111123";
+    private OutputStream mmOutStream;
 
     @Override
     public void run() {
-
+        //ficará ouvindo até conectar-se a um dispositivo
         try {
             LocalDevice.getLocalDevice().setDiscoverable(DiscoveryAgent.GIAC);
         } catch (BluetoothStateException e) {
@@ -172,7 +203,7 @@ class ConexaoBluetooth implements Runnable {
                 }
 
                 InputStream is = op.openInputStream();
-
+                //buffer de armazenamento do dado
                 StringBuffer buf = new StringBuffer();
                 int data;
                 while ((data = is.read()) != -1) {
@@ -185,6 +216,16 @@ class ConexaoBluetooth implements Runnable {
                 e.printStackTrace();
                 return ResponseCodes.OBEX_HTTP_UNAVAILABLE;
             }
+        }
+    }
+
+    public void write(byte[] dados){
+        try{
+            mmOutStream.write(dados);
+            
+
+        }catch (IOException e){
+            System.out.println("Erro ao enviar para o cliente: "+ e);
         }
     }
 }

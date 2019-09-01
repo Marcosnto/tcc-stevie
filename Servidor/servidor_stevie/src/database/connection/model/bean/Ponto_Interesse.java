@@ -2,10 +2,12 @@ package database.connection.model.bean;
 
 public class Ponto_Interesse {
     private int id_ponto_interesse;
+    private int id_regiao;
     private int id_tag;
-    private int id_local;
-    private String nome_objeto;
-    private String descricao_objeto;
+    private int id_departamento;
+    private int id_laboratorio;
+    private String nome;
+    private String descricao;
 
     public int getId_ponto_interesse() {
         return id_ponto_interesse;
@@ -13,6 +15,14 @@ public class Ponto_Interesse {
 
     public void setId_ponto_interesse(int id_ponto_interesse) {
         this.id_ponto_interesse = id_ponto_interesse;
+    }
+
+    public int getId_regiao() {
+        return id_regiao;
+    }
+
+    public void setId_regiao(int id_regiao) {
+        this.id_regiao = id_regiao;
     }
 
     public int getId_tag() {
@@ -23,27 +33,35 @@ public class Ponto_Interesse {
         this.id_tag = id_tag;
     }
 
-    public int getId_local() {
-        return id_local;
+    public int getId_departamento() {
+        return id_departamento;
     }
 
-    public void setId_local(int id_local) {
-        this.id_local = id_local;
+    public void setId_departamento(int id_departamento) {
+        this.id_departamento = id_departamento;
     }
 
-    public String getNome_objeto() {
-        return nome_objeto;
+    public int getId_laboratorio() {
+        return id_laboratorio;
     }
 
-    public void setNome_objeto(String nome_objeto) {
-        this.nome_objeto = nome_objeto;
+    public void setId_laboratorio(int id_laboratorio) {
+        this.id_laboratorio = id_laboratorio;
     }
 
-    public String getDescricao_objeto() {
-        return descricao_objeto;
+    public String getNome() {
+        return nome;
     }
 
-    public void setDescricao_objeto(String descricao_objeto) {
-        this.descricao_objeto = descricao_objeto;
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }

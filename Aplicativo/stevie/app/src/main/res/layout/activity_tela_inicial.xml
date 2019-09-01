@@ -7,24 +7,13 @@
     tools:context=".TelaInicial">
 
     <Button
-        android:id="@+id/btnBluetooth"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/btnT001"
-        android:layout_marginTop="340dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        />
-
-    <Button
         android:id="@+id/btnPesquisar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pesquisar Bluetooths"
-        android:layout_marginTop="450dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="380dp"
+        android:text="Efetuar Conexao"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
