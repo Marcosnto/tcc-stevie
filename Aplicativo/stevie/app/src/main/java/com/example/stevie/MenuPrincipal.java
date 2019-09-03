@@ -12,18 +12,17 @@ import android.widget.ImageButton;
 import com.example.stevie.app.StevieApplication;
 
 public class MenuPrincipal extends AppCompatActivity{
-//  DataThread dataThread = new DataThread(((StevieApplication) getApplication()).getSocket());
     private static final String TAG = "MenuPrincipal";
-    BluetoothSocket bluetoothSocket = ((StevieApplication) getApplication()).getSocket();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+        final DataThread dataThread = new DataThread(((StevieApplication) getApplication()).getSocket());
 
         setTitle("Menu Principal");
 
-        ImageButton btnLocalizacao = (ImageButton) findViewById(R.id.btnLocalizacao);
+        final ImageButton btnLocalizacao = (ImageButton) findViewById(R.id.btnLocalizacao);
         ImageButton btnIdentificar = (ImageButton) findViewById(R.id.btnIdentificar);
         ImageButton btnEscolherDestino = (ImageButton) findViewById(R.id.btnEscolherDestino);
         ImageButton btnAjuda = (ImageButton) findViewById(R.id.btnAjuda);
@@ -41,7 +40,7 @@ public class MenuPrincipal extends AppCompatActivity{
                 Intent intent = new Intent(MenuPrincipal.this, IdentificarObjeto.class);
                 startActivity(intent);
                 String teste = "testando";
-//                dataThread.write(teste.getBytes());
+                dataThread.write(teste.getBytes());
                 Log.i(TAG, "onClick: enviei caralhõn");
             }
         });

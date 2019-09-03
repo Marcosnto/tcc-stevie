@@ -26,7 +26,7 @@ public class TelaInicial extends AppCompatActivity {
     ArrayList<BluetoothDevice> mBTDevices = new ArrayList<>();
 
 
-    private static final UUID MY_UUID_INSECURE = UUID.fromString("11111111-1111-1111-1111-111111111123");
+    private static final UUID MY_UUID_INSECURE = UUID.fromString("04c6093b-0000-1000-8000-00805f9b34fb");
 
 
 

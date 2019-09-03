@@ -72,23 +72,17 @@ public class DataThread extends Thread {
     public void write(byte[] bytes) {
         try {
             mmOutStream.write(bytes);
-
-            // Share the sent message with the UI activity.
-            Message writtenMsg = handler.obtainMessage(
-                    MessageConstants.MESSAGE_WRITE, -1, -1, mmBuffer);
-            writtenMsg.sendToTarget();
             Log.i(TAG, "write: Dados enviados!");
         } catch (IOException e) {
             Log.e(TAG, "Ocorreu um erro ao enviar os dados", e);
-
-            // Send a failure message back to the activity.
-            Message writeErrorMsg =
-                    handler.obtainMessage(MessageConstants.MESSAGE_TOAST);
-            Bundle bundle = new Bundle();
-            bundle.putString("toast",
-                    "Couldn't send data to the other device");
-            writeErrorMsg.setData(bundle);
-            handler.sendMessage(writeErrorMsg);
+//            // Send a failure message back to the activity.
+//            Message writeErrorMsg =
+//                    handler.obtainMessage(MessageConstants.MESSAGE_TOAST);
+//            Bundle bundle = new Bundle();
+//            bundle.putString("toast",
+//                    "Couldn't send data to the other device");
+//            writeErrorMsg.setData(bundle);
+//            handler.sendMessage(writeErrorMsg);
         }
     }
 

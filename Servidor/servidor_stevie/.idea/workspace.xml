@@ -2,30 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Departamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Laboratorio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/dao/DepartamentoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/dao/LaboratorioDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/connection/model/dao/Ponto_InteresseDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/EscolherDestino.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/EscolherDestino.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/DataThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/DataThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_selecionar_opcao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_selecionar_opcao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_tela_inicial.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_tela_inicial.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3f244c1-485d-42e6-9904-84446f8c421b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3f244c1-485d-42e6-9904-84446f8c421b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bluecove-2.1.1.jar/bluecove-2.1.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/bean/Ponto_Interesse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Ponto_Interesse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +72,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bluecove-2.1.1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -98,7 +80,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
@@ -158,7 +140,8 @@
       <workItem from="1567222065781" duration="1281000" />
       <workItem from="1567226838866" duration="193000" />
       <workItem from="1567320623786" duration="164000" />
-      <workItem from="1567320836690" duration="13925000" />
+      <workItem from="1567320836690" duration="25576000" />
+      <workItem from="1567471816984" duration="9278000" />
     </task>
     <servers />
   </component>
@@ -177,6 +160,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/servidor_stevie$Main.ic" NAME="Main Coverage Results" MODIFIED="1567130191964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

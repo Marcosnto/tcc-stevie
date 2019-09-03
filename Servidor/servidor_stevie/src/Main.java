@@ -1,15 +1,22 @@
 import java.io.*;
-import javax.bluetooth.BluetoothStateException;
-import javax.bluetooth.DiscoveryAgent;
-import javax.bluetooth.LocalDevice;
+import javax.bluetooth.*;
 import javax.microedition.io.Connector;
+import javax.microedition.io.ContentConnection;
+import javax.microedition.io.StreamConnection;
+import javax.microedition.io.StreamConnectionNotifier;
 import javax.obex.*;
 import javax.swing.table.DefaultTableModel;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.rmi.Remote;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.stream.Stream;
 
+import com.sun.corba.se.spi.orbutil.fsm.Input;
 import database.connection.model.bean.Departamento;
 import database.connection.model.bean.Laboratorio;
 import database.connection.model.bean.Ponto_Interesse;
@@ -39,22 +46,25 @@ public class Main {
 
     public static void main(String[] args) {
         // carrega todas os dados do banco
-        carregarTags();
-        carregarDepartamentos();
-        carregarLaboratorios();
-        carregarPontosInteresse();
+//        carregarTags();
+//        carregarDepartamentos();
+//        carregarLaboratorios();
+//        carregarPontosInteresse();
+
+        Thread c = new Thread(new ConexaoBL());
+        c.start();
 
         // startar a thread para ouvir as modificações
 //        OuvirArquivo ouvirArquivo = new OuvirArquivo();
 //        Thread ouvirArq = new Thread(ouvirArquivo);
 //        ouvirArq.start();
 
-//         iniciando o servidor bluetooth
-        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
-        Thread conexao = new Thread(bluetooth);
-        conexao.start();
+////         iniciando o servidor bluetooth
+//        ConexaoBluetooth bluetooth = new ConexaoBluetooth();
+//        Thread conexao = new Thread(bluetooth);
+//        conexao.start();
 
-        BFS bfs = new BFS(tags);
+//        BFS bfs = new BFS(tags);
     }
 
     public static void adicionarTags() {
@@ -158,76 +168,106 @@ class OuvirArquivo implements Runnable {
     }
 }
 
-class ConexaoBluetooth implements Runnable {
-    //definição do Identificador universal unico (UUID)
-    //não é aceito se houver os ifens (-)
+class ConexaoBL implements Runnable {
     static final String serverUUID = "11111111111111111111111111111123";
-    private OutputStream mmOutStream;
+    public ConexaoBL(){
 
+    }
     @Override
     public void run() {
-        //ficará ouvindo até conectar-se a um dispositivo
-        try {
-            LocalDevice.getLocalDevice().setDiscoverable(DiscoveryAgent.GIAC);
-        } catch (BluetoothStateException e) {
-            e.printStackTrace();
-        }
-
-        SessionNotifier serverConnection = null;
-        try {
-            serverConnection = (SessionNotifier) Connector.open("btgoep://localhost:" +
-                    serverUUID + ";name=ObexExample");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        int count = 0;
-        while (count < 2) {
-            RequestHandler handler = new RequestHandler();
-            try {
-                serverConnection.acceptAndOpen(handler);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-            System.out.println("Received OBEX database.connection " + (++count));
-        }
+        waitForConnection();
     }
 
-    public static class RequestHandler extends ServerRequestHandler {
-        public int onPut(Operation op) {
-            try {
-                HeaderSet hs = op.getReceivedHeaders();
-                String name = (String) hs.getHeader(HeaderSet.NAME);
-                if (name != null) {
-                    System.out.println("put name: " + name);
-                }
+    private void waitForConnection(){
+        LocalDevice local = null;
 
-                InputStream is = op.openInputStream();
-                //buffer de armazenamento do dado
-                StringBuffer buf = new StringBuffer();
-                int data;
-                while ((data = is.read()) != -1) {
-                    buf.append((char) data);
-                }
-                System.out.println("got:" + buf.toString());
-                op.close();
-                return ResponseCodes.OBEX_HTTP_OK;
-            } catch (IOException e) {
-                e.printStackTrace();
-                return ResponseCodes.OBEX_HTTP_UNAVAILABLE;
-            }
-        }
-    }
+        StreamConnectionNotifier notifier;
+        StreamConnection connection = null;
 
-    public void write(byte[] dados){
         try{
-            mmOutStream.write(dados);
-            
+            local = LocalDevice.getLocalDevice();
+            local.setDiscoverable(DiscoveryAgent.GIAC);
 
-        }catch (IOException e){
-            System.out.println("Erro ao enviar para o cliente: "+ e);
+//            String url = "btgoep://localhost:" + serverUUID + ";name=Stevie";
+            UUID uuid = new UUID(80087355); // "04c6093b-0000-1000-8000-00805f9b34fb"
+            String url = "btspp://localhost:" + uuid.toString() + ";name=RemoteBluetooth";
+            notifier = (StreamConnectionNotifier) Connector.open(url);
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return;
+        }
+
+        while (true) {
+            try{
+                System.out.println("waiting for connection");
+                connection = notifier.acceptAndOpen();
+
+                Thread processThread = new Thread(new ProcessConnectionThread(connection));
+                processThread.start();
+            } catch (Exception e){
+                e.printStackTrace();
+                return;
+            }
         }
     }
 }
 
+class ProcessConnectionThread implements Runnable {
+
+    private StreamConnection mConnection;
+    String str = "";
+
+    // Constant that indicate command from devices
+    private static final int EXIT_CMD = -1;
+    private static final int KEY_RIGHT = 1;
+    private static final int KEY_LEFT = 2;
+
+    public ProcessConnectionThread(StreamConnection connection)
+    {
+        mConnection = connection;
+    }
+
+    @Override
+    public void run() {
+        try {
+            // prepare to receive data
+            InputStream inputStream = mConnection.openInputStream();
+
+            System.out.println("waiting for input");
+
+            while (true) {
+                int command = inputStream.read();
+                str = Character.toString((char) command);
+                System.out.print(str);
+                if (command == EXIT_CMD) {
+                    System.out.println("finish process");
+                    break;
+                }
+//                processCommand(command);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    private void processCommand(int command) {
+        try {
+            switch (command){
+                case 1:
+                    //Localização atual
+                    break;
+                case 2:
+                    //Identificar objetos próximos
+                    break;
+                case 3:
+                    break;
+                case 4:
+                    break;
+
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
 
