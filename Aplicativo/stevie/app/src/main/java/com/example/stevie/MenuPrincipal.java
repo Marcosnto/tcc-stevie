@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import com.example.stevie.app.StevieApplication;
 
@@ -19,6 +20,9 @@ public class MenuPrincipal extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
         final DataThread dataThread = new DataThread(((StevieApplication) getApplication()).getSocket());
+        dataThread.start();
+        final TelaInicial telaInicial = new TelaInicial();
+
 
         setTitle("Menu Principal");
 
@@ -40,8 +44,8 @@ public class MenuPrincipal extends AppCompatActivity{
                 Intent intent = new Intent(MenuPrincipal.this, IdentificarObjeto.class);
                 startActivity(intent);
                 String teste = "testando";
-                dataThread.write(teste.getBytes());
-                Log.i(TAG, "onClick: enviei caralhõn");
+                dataThread.enviarDados("1");
+                telaInicial.conectarServidor();
             }
         });
 

@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/DataThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/DataThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bluecove-2.1.1.jar/bluecove-2.1.1.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,6 +143,9 @@
       <workItem from="1567320623786" duration="164000" />
       <workItem from="1567320836690" duration="25576000" />
       <workItem from="1567471816984" duration="9278000" />
+      <workItem from="1567559895402" duration="640000" />
+      <workItem from="1567563695500" duration="14993000" />
+      <workItem from="1567584575017" duration="3754000" />
     </task>
     <servers />
   </component>
@@ -166,7 +170,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>193</line>
+          <line>232</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>231</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>233</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>

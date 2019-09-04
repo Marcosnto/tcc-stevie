@@ -37,16 +37,23 @@ public class TelaInicial extends AppCompatActivity {
         setContentView(R.layout.activity_tela_inicial);
         Button search = (Button) findViewById(R.id.btnPesquisar);
         mBluetoothAdapter = mBluetoothAdapter.getDefaultAdapter();
+
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: pesquisando");
                 verificarBluetooths();
+                conectarServidor();
+                Intent intent = new Intent(TelaInicial.this, MenuPrincipal.class);
+                startActivity(intent);
 
-                ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
-                ConnectThread conexao = new ConnectThread();
-                conexao.run(((StevieApplication) getApplication()).getSocket(),
-                        ((StevieApplication) getApplication()).getDevice());
+//                ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
+//                ConnectThread conexao = new ConnectThread();
+//                conexao.run(((StevieApplication) getApplication()).getSocket(),
+//                        ((StevieApplication) getApplication()).getDevice());
+
+
+
             }
         });
     }
@@ -80,8 +87,6 @@ public class TelaInicial extends AppCompatActivity {
                 //até ter sucesso ou disparar uma excessão
                 mmSocket.connect();
                 Log.i(TAG, "run: Conectei!!!!!");
-                Intent intent = new Intent(TelaInicial.this, MenuPrincipal.class);
-                startActivity(intent);
             } catch (IOException connectException) {
                 // Unable to connect; close the com.example.stevie.socket and get out
                 try {
@@ -94,5 +99,12 @@ public class TelaInicial extends AppCompatActivity {
 
         }
 
+    }
+
+    public void conectarServidor(){
+        ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
+        ConnectThread conexao = new ConnectThread();
+        conexao.run(((StevieApplication) getApplication()).getSocket(),
+                ((StevieApplication) getApplication()).getDevice());
     }
 }

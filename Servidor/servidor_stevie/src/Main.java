@@ -43,6 +43,7 @@ public class Main {
     static List<Departamento> departamentos = new ArrayList<>();
     static List<Laboratorio> laboratorios = new ArrayList<>();
     static List<Ponto_Interesse> pontos_interesses = new ArrayList<>();
+    static String todosDepartamentos = "";
 
     public static void main(String[] args) {
         // carrega todas os dados do banco
@@ -86,6 +87,7 @@ public class Main {
     public static void carregarDepartamentos() {
         for (Departamento d : dDAO.read()) {
             departamentos.add(d);
+//            todosDepartamentos += d.getNome() + ";";
         }
     }
 
@@ -169,22 +171,18 @@ class OuvirArquivo implements Runnable {
 }
 
 class ConexaoBL implements Runnable {
-    static final String serverUUID = "11111111111111111111111111111123";
-    public ConexaoBL(){
 
-    }
     @Override
     public void run() {
         waitForConnection();
     }
 
-    private void waitForConnection(){
+    private void waitForConnection() {
         LocalDevice local = null;
 
         StreamConnectionNotifier notifier;
-        StreamConnection connection = null;
 
-        try{
+        try {
             local = LocalDevice.getLocalDevice();
             local.setDiscoverable(DiscoveryAgent.GIAC);
 
@@ -193,81 +191,52 @@ class ConexaoBL implements Runnable {
             String url = "btspp://localhost:" + uuid.toString() + ";name=RemoteBluetooth";
             notifier = (StreamConnectionNotifier) Connector.open(url);
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return;
         }
 
-        while (true) {
-            try{
-                System.out.println("waiting for connection");
-                connection = notifier.acceptAndOpen();
-
-                Thread processThread = new Thread(new ProcessConnectionThread(connection));
-                processThread.start();
-            } catch (Exception e){
-                e.printStackTrace();
-                return;
-            }
-        }
-    }
-}
-
-class ProcessConnectionThread implements Runnable {
-
-    private StreamConnection mConnection;
-    String str = "";
-
-    // Constant that indicate command from devices
-    private static final int EXIT_CMD = -1;
-    private static final int KEY_RIGHT = 1;
-    private static final int KEY_LEFT = 2;
-
-    public ProcessConnectionThread(StreamConnection connection)
-    {
-        mConnection = connection;
-    }
-
-    @Override
-    public void run() {
         try {
-            // prepare to receive data
-            InputStream inputStream = mConnection.openInputStream();
-
-            System.out.println("waiting for input");
-
+            StreamConnection connection = notifier.acceptAndOpen();
+            InputStream inputStream = connection.openInputStream();
+            OutputStream outputStream = connection.openOutputStream();
             while (true) {
-                int command = inputStream.read();
-                str = Character.toString((char) command);
-                System.out.print(str);
-                if (command == EXIT_CMD) {
-                    System.out.println("finish process");
-                    break;
+                System.out.println("waiting for connection");
+                System.out.println("Conexao aberta");
+//          // prepare to receive data
+                try {
+                    String st = "";
+                    ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+
+                    st = (String) objectInputStream.readObject();
+                    System.out.println(st);
+                    switch (st) {
+                        case "1":
+                            write("DISGRAÇA", outputStream);
+                            break;
+                        case "2":
+                            break;
+                    }
+                } catch (IOException | ClassNotFoundException e) {
+                    e.printStackTrace();
                 }
-//                processCommand(command);
             }
         } catch (Exception e) {
             e.printStackTrace();
+            return;
         }
     }
-    private void processCommand(int command) {
-        try {
-            switch (command){
-                case 1:
-                    //Localização atual
-                    break;
-                case 2:
-                    //Identificar objetos próximos
-                    break;
-                case 3:
-                    break;
-                case 4:
-                    break;
 
-            }
-        } catch (Exception e) {
+    public void write(String string, OutputStream outputStream) {
+        try {
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+            objectOutputStream.writeObject(string);
+            System.out.println("Enviei!");
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 }
+
+
 
