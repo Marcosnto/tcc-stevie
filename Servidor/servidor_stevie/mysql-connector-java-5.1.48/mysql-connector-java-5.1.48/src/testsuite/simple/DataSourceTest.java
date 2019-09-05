@@ -95,7 +95,7 @@ public class DataSourceTest extends BaseTestCase {
     }
 
     /**
-     * Tests that we can get a database.connection from the DataSource bound in JNDI
+     * Tests that we can get a com.example.stevie.connection from the DataSource bound in JNDI
      * during test setup
      * 
      * @throws Exception

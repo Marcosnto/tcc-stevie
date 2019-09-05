@@ -49,7 +49,7 @@ import java.util.concurrent.Executor;
  * global blacklist for loadBalanceBlacklistTimeout ms, after which they will be removed from the blacklist and made eligible once again to be selected for new
  * connections.
  * 
- * This implementation is thread-safe, but it's questionable whether sharing a database.connection instance amongst threads is a good idea, given that transactions are
+ * This implementation is thread-safe, but it's questionable whether sharing a com.example.stevie.connection instance amongst threads is a good idea, given that transactions are
  * scoped to connections in JDBC.
  */
 public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implements PingTarget {
@@ -139,7 +139,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
             hosts = new ArrayList<String>(this.connectionGroup.getInitialHosts());
         }
 
-        // hosts specifications may have been reset with settings from a previous database.connection group
+        // hosts specifications may have been reset with settings from a previous com.example.stevie.connection group
         int numHosts = initializeHostsSpecs(hosts, props);
 
         this.liveConnections = new HashMap<String, ConnectionImpl>(numHosts);
@@ -233,7 +233,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
      * Wraps this object with a new load balanced Connection instance.
      * 
      * @return
-     *         The database.connection object instance that wraps 'this'.
+     *         The com.example.stevie.connection object instance that wraps 'this'.
      */
     @Override
     MySQLConnection getNewWrapperForThisAsConnection() throws SQLException {
@@ -244,10 +244,10 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
     }
 
     /**
-     * Propagates the database.connection proxy down through all live connections.
+     * Propagates the com.example.stevie.connection proxy down through all live connections.
      * 
      * @param proxyConn
-     *            The top level database.connection in the multi-host connections chain.
+     *            The top level com.example.stevie.connection in the multi-host connections chain.
      */
     @Override
     protected void propagateProxyDown(MySQLConnection proxyConn) {
@@ -257,7 +257,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
     }
 
     /**
-     * Consults the registered LoadBalanceExceptionChecker if the given exception should trigger a database.connection fail-over.
+     * Consults the registered LoadBalanceExceptionChecker if the given exception should trigger a com.example.stevie.connection fail-over.
      * 
      * @param ex
      *            The Exception instance to check.
@@ -268,7 +268,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
     }
 
     /**
-     * Always returns 'true' as there are no "masters" and "slaves" in this type of database.connection.
+     * Always returns 'true' as there are no "masters" and "slaves" in this type of com.example.stevie.connection.
      */
     @Override
     boolean isMasterConnection() {
@@ -276,7 +276,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
     }
 
     /**
-     * Closes specified database.connection and removes it from required mappings.
+     * Closes specified com.example.stevie.connection and removes it from required mappings.
      * 
      * @param conn
      * @throws SQLException
@@ -303,7 +303,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
     }
 
     /**
-     * Picks the "best" database.connection to use for the next transaction based on the BalanceStrategy in use.
+     * Picks the "best" com.example.stevie.connection to use for the next transaction based on the BalanceStrategy in use.
      * 
      * @throws SQLException
      */
@@ -349,19 +349,19 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
 
             } catch (SQLException e) {
                 if (shouldExceptionTriggerConnectionSwitch(e) && newConn != null) {
-                    // database.connection error, close up shop on current database.connection
+                    // com.example.stevie.connection error, close up shop on current com.example.stevie.connection
                     invalidateConnection(newConn);
                 }
             }
         }
 
-        // no hosts available to swap database.connection to, close up.
+        // no hosts available to swap com.example.stevie.connection to, close up.
         this.isClosed = true;
-        this.closedReason = "Connection closed after inability to pick valid new database.connection during load-balance.";
+        this.closedReason = "Connection closed after inability to pick valid new com.example.stevie.connection during load-balance.";
     }
 
     /**
-     * Creates a new physical database.connection for the given host:port and updates required internal mappings and statistics for that database.connection.
+     * Creates a new physical com.example.stevie.connection for the given host:port and updates required internal mappings and statistics for that com.example.stevie.connection.
      * 
      * @param hostPortSpec
      *            The host:port specification.
@@ -498,7 +498,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
                 this.isClosed = false;
                 this.closedReason = null;
             } else {
-                String reason = "No operations allowed after database.connection closed.";
+                String reason = "No operations allowed after com.example.stevie.connection closed.";
                 if (this.closedReason != null) {
                     reason += " " + this.closedReason;
                 }
@@ -533,7 +533,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
 
                 // Update stats
                 String host = this.connectionsToHostsMap.get(this.currentConnection);
-                // avoid NPE if the database.connection has already been removed from connectionsToHostsMap in invalidateCurrenctConnection()
+                // avoid NPE if the com.example.stevie.connection has already been removed from connectionsToHostsMap in invalidateCurrenctConnection()
                 if (host != null) {
                     synchronized (this.responseTimes) {
                         Integer hostIndex = (this.hostsToListIndexMap.get(host));
@@ -572,16 +572,16 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
                 }
                 foundHost = true;
             } catch (SQLException e) {
-                // give up if it is the current database.connection, otherwise NPE faking resultset later.
+                // give up if it is the current com.example.stevie.connection, otherwise NPE faking resultset later.
                 if (host.equals(this.connectionsToHostsMap.get(this.currentConnection))) {
-                    // clean up underlying connections, since database.connection pool won't do it
+                    // clean up underlying connections, since com.example.stevie.connection pool won't do it
                     closeAllConnections();
                     this.isClosed = true;
-                    this.closedReason = "Connection closed because ping of current database.connection failed.";
+                    this.closedReason = "Connection closed because ping of current com.example.stevie.connection failed.";
                     throw e;
                 }
 
-                // if the Exception is caused by ping database.connection lifetime checks, don't add to blacklist
+                // if the Exception is caused by ping com.example.stevie.connection lifetime checks, don't add to blacklist
                 if (e.getMessage().equals(Messages.getString("Connection.exceededConnectionLifetime"))) {
                     // only set the return Exception if it's null
                     if (se == null) {
@@ -594,7 +594,7 @@ public class LoadBalancedConnectionProxy extends MultiHostConnectionProxy implem
                         addToGlobalBlacklist(host);
                     }
                 }
-                // take the database.connection out of the liveConnections Map
+                // take the com.example.stevie.connection out of the liveConnections Map
                 this.liveConnections.remove(this.connectionsToHostsMap.get(conn));
             }
         }

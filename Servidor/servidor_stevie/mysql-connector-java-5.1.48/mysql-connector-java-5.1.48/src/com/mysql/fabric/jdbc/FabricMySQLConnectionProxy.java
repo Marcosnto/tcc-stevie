@@ -202,7 +202,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
             String url = this.fabricProtocol + "://" + this.host + ":" + this.port;
             this.fabricConnection = new FabricConnection(url, this.fabricUsername, this.fabricPassword);
         } catch (FabricCommunicationException ex) {
-            throw SQLError.createSQLException("Unable to establish database.connection to the Fabric server", SQLError.SQL_STATE_CONNECTION_REJECTED, ex,
+            throw SQLError.createSQLException("Unable to establish com.example.stevie.connection to the Fabric server", SQLError.SQL_STATE_CONNECTION_REJECTED, ex,
                     getExceptionInterceptor(), this);
         }
 
@@ -216,7 +216,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     }
 
     /**
-     * Deal with an exception thrown on an underlying database.connection. We only consider database.connection exceptions (SQL State 08xxx). We internally handle a possible
+     * Deal with an exception thrown on an underlying com.example.stevie.connection. We only consider com.example.stevie.connection exceptions (SQL State 08xxx). We internally handle a possible
      * failover situation.
      *
      * @param sqlEx
@@ -228,7 +228,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
      */
     synchronized SQLException interceptException(SQLException sqlEx, Connection conn, String groupName, String hostname, String portNumber)
             throws FabricCommunicationException {
-        // we are only concerned with database.connection failures to MySQL servers, skip anything else including database.connection failures to Fabric
+        // we are only concerned with com.example.stevie.connection failures to MySQL servers, skip anything else including com.example.stevie.connection failures to Fabric
         if ((sqlEx.getSQLState() == null || !sqlEx.getSQLState().startsWith("08"))
                 && !MySQLNonTransientConnectionException.class.isAssignableFrom(sqlEx.getClass())
                 && (JDBC4_NON_TRANSIENT_CONN_EXCEPTION == null || !JDBC4_NON_TRANSIENT_CONN_EXCEPTION.isAssignableFrom(sqlEx.getClass()))
@@ -236,10 +236,10 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
             return null;
         }
 
-        // find the Server corresponding to this database.connection
+        // find the Server corresponding to this com.example.stevie.connection
         Server currentServer = this.serverGroup.getServer(hostname + ":" + portNumber);
 
-        // we have already failed over or dealt with this database.connection, let the exception propagate
+        // we have already failed over or dealt with this com.example.stevie.connection, let the exception propagate
         if (currentServer == null) {
             return null;
         }
@@ -396,7 +396,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     }
 
     /**
-     * Add a table to the set of tables used for the next query on this database.connection.
+     * Add a table to the set of tables used for the next query on this com.example.stevie.connection.
      * This is used for:
      * <ul>
      * <li>Choosing a shard given the tables used</li>
@@ -423,7 +423,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     }
 
     /**
-     * The set of tables to be used in the next query on this database.connection.
+     * The set of tables to be used in the next query on this com.example.stevie.connection.
      */
     public Set<String> getQueryTables() {
         return this.queryTables;
@@ -457,7 +457,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     // Methods dealing with state internal to the proxy //
     //////////////////////////////////////////////////////
     /**
-     * Get the active database.connection as an object implementing the
+     * Get the active com.example.stevie.connection as an object implementing the
      * internal MySQLConnection interface. This should not be used
      * unless a MySQLConnection is required.
      * 
@@ -476,7 +476,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
         try {
             return getActiveMySQLConnectionChecked();
         } catch (SQLException ex) {
-            throw new IllegalStateException("Unable to determine active database.connection", ex);
+            throw new IllegalStateException("Unable to determine active com.example.stevie.connection", ex);
         }
     }
 
@@ -484,12 +484,12 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
         try {
             return getActiveConnection();
         } catch (SQLException ex) {
-            throw new IllegalStateException("Unable to determine active database.connection", ex);
+            throw new IllegalStateException("Unable to determine active com.example.stevie.connection", ex);
         }
     }
 
     /**
-     * Sync the state of the current group's servers to that of the given replication database.connection group. This is necessary as:
+     * Sync the state of the current group's servers to that of the given replication com.example.stevie.connection group. This is necessary as:
      * <ul>
      * <li>New connections have updated state from the Fabric server</li>
      * <li>Failover scenarios may update state and it should be propagated across the active connections</li>
@@ -526,8 +526,8 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
             }
         }
 
-        // synchronize HA group state with replication database.connection group in two steps:
-        // 1. add any new slaves to the database.connection group
+        // synchronize HA group state with replication com.example.stevie.connection group in two steps:
+        // 1. add any new slaves to the com.example.stevie.connection group
         for (Server s : this.serverGroup.getServers()) {
             if (s.isSlave()) {
                 // this is a no-op if the slave is already present
@@ -539,7 +539,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
                 }
             }
         }
-        // 2. remove any old slaves from the database.connection group
+        // 2. remove any old slaves from the com.example.stevie.connection group
         for (String hostPortString : replConnGroup.getSlaveHosts()) {
             Server fabServer = this.serverGroup.getServer(hostPortString);
             if (fabServer == null || !(fabServer.isSlave())) {
@@ -566,13 +566,13 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
             throw SQLError.createSQLException("No server group selected.", SQLError.SQL_STATE_CONNECTION_REJECTED, null, getExceptionInterceptor(), this);
         }
 
-        // try to find an existing replication database.connection to the current group
+        // try to find an existing replication com.example.stevie.connection to the current group
         this.currentConnection = this.serverConnections.get(this.serverGroup);
         if (this.currentConnection != null) {
             return this.currentConnection;
         }
 
-        // otherwise, build a replication database.connection to the current group
+        // otherwise, build a replication com.example.stevie.connection to the current group
         List<String> masterHost = new ArrayList<String>();
         List<String> slaveHosts = new ArrayList<String>();
         for (Server s : this.serverGroup.getServers()) {
@@ -614,7 +614,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
 
     private void ensureOpen() throws SQLException {
         if (this.closed) {
-            throw SQLError.createSQLException("No operations allowed after database.connection closed.", SQLError.SQL_STATE_CONNECTION_NOT_OPEN,
+            throw SQLError.createSQLException("No operations allowed after com.example.stevie.connection closed.", SQLError.SQL_STATE_CONNECTION_NOT_OPEN,
                     getExceptionInterceptor());
         }
     }
@@ -627,7 +627,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     }
 
     /**
-     * Close this database.connection proxy which entails closing all
+     * Close this com.example.stevie.connection proxy which entails closing all
      * open connections to MySQL servers.
      */
     public void close() throws SQLException {
@@ -753,7 +753,7 @@ public class FabricMySQLConnectionProxy extends ConnectionPropertiesImpl impleme
     }
 
     //////////////////////////////////////////////////////////
-    // Methods delegating directly to the active database.connection //
+    // Methods delegating directly to the active com.example.stevie.connection //
     //////////////////////////////////////////////////////////
     public Savepoint setSavepoint() throws SQLException {
         return getActiveConnection().setSavepoint();

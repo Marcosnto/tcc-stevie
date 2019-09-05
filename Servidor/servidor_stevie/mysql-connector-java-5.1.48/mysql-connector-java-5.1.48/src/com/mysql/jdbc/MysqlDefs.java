@@ -143,7 +143,7 @@ public final class MysqlDefs {
     static final int MAX_ROWS = 50000000; // From the MySQL FAQ
 
     /**
-     * Used to indicate that the server sent no field-level character set information, so the driver should use the database.connection-level character encoding instead.
+     * Used to indicate that the server sent no field-level character set information, so the driver should use the com.example.stevie.connection-level character encoding instead.
      */
     public static final int NO_CHARSET_INFO = -1;
 

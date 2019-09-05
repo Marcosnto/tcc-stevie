@@ -51,7 +51,7 @@ public class JDBC4MysqlXAConnection extends MysqlXAConnection {
     /**
      * Registers a <code>StatementEventListener</code> with this <code>PooledConnection</code> object. Components that
      * wish to be notified when <code>PreparedStatement</code>s created by the
-     * database.connection are closed or are detected to be invalid may use this method
+     * com.example.stevie.connection are closed or are detected to be invalid may use this method
      * to register a <code>StatementEventListener</code> with this <code>PooledConnection</code> object.
      * 
      * @param listener

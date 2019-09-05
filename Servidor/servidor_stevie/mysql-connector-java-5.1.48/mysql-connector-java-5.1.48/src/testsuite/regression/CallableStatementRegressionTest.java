@@ -1019,7 +1019,7 @@ public class CallableStatementRegressionTest extends BaseTestCase {
 
     /**
      * Tests fix for BUG#28689 - CallableStatement.executeBatch() doesn't work
-     * when database.connection property "noAccessToProcedureBodies" has been set to
+     * when com.example.stevie.connection property "noAccessToProcedureBodies" has been set to
      * "true".
      * 
      * The fix involves changing the behavior of "noAccessToProcedureBodies", in

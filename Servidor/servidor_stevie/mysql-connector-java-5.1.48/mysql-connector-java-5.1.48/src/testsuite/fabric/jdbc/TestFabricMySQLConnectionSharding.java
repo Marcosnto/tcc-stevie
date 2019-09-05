@@ -170,7 +170,7 @@ public class TestFabricMySQLConnectionSharding extends BaseFabricTestCase {
     }
 
     /**
-     * Test that providing the query table(s) to the database.connection chooses
+     * Test that providing the query table(s) to the com.example.stevie.connection chooses
      * the proper shard mapping/table.
      */
     public void testQueryTableShardSelection() throws Exception {

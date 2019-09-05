@@ -181,7 +181,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         createFunction("testBug69298_func", "(param_func INT) RETURNS INT COMMENT 'testBug69298_func comment' DETERMINISTIC RETURN 1");
         createProcedure("testBug69298_proc", "(IN param_proc INT) COMMENT 'testBug69298_proc comment' SELECT 1");
 
-        // test with standard database.connection
+        // test with standard com.example.stevie.connection
         assertFalse("Property useInformationSchema should be false", ((ConnectionProperties) this.conn).getUseInformationSchema());
         assertTrue("Property getProceduresReturnsFunctions should be true", ((ConnectionProperties) this.conn).getGetProceduresReturnsFunctions());
         checkGetFunctionsForBug69298("Std. Connection MetaData", this.conn);
@@ -420,7 +420,7 @@ public class MetaDataRegressionTest extends BaseTestCase {
         createProcedure("testBug17248345", "(IN proccol INT) SELECT 1");
         createFunction("testBug17248345", "(funccol INT) RETURNS INT DETERMINISTIC RETURN 1");
 
-        // test with standard database.connection (getProceduresReturnsFunctions=true & useInformationSchema=false)
+        // test with standard com.example.stevie.connection (getProceduresReturnsFunctions=true & useInformationSchema=false)
         assertFalse("Property useInformationSchema should be false", ((ConnectionProperties) this.conn).getUseInformationSchema());
         assertTrue("Property getProceduresReturnsFunctions should be true", ((ConnectionProperties) this.conn).getGetProceduresReturnsFunctions());
         checkMetaDataInfoForBug17248345(this.conn);

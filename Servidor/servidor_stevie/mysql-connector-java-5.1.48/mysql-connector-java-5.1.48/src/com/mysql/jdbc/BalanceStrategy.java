@@ -33,15 +33,15 @@ import java.util.Map;
  * 
  * The driver will not pass in a Connection instance when calling init(), but it will pass in the Properties, otherwise it acts like a normal Extension.
  * 
- * One instance of a strategy *per* JDBC database.connection instance will be created. If you need singleton-like behavior, you're on your own to provide it.
+ * One instance of a strategy *per* JDBC com.example.stevie.connection instance will be created. If you need singleton-like behavior, you're on your own to provide it.
  */
 public interface BalanceStrategy extends Extension {
     /**
-     * Called by the driver to pick a new database.connection to route requests over.
+     * Called by the driver to pick a new com.example.stevie.connection to route requests over.
      * 
      * @param proxy
      *            the InvocationHandler that deals with actual method calls to
-     *            the JDBC database.connection, and serves as a factory for new
+     *            the JDBC com.example.stevie.connection, and serves as a factory for new
      *            connections for this strategy via the
      *            createConnectionForHost() method.
      * 
@@ -59,11 +59,11 @@ public interface BalanceStrategy extends Extension {
      *            for each host in the configured hosts list.
      * @param numRetries
      *            the number of times the driver expects this strategy to re-try
-     *            database.connection attempts if creating a new database.connection fails.
-     * @return the physical JDBC database.connection for the application to use, based
+     *            com.example.stevie.connection attempts if creating a new com.example.stevie.connection fails.
+     * @return the physical JDBC com.example.stevie.connection for the application to use, based
      *         upon the strategy employed.
      * @throws SQLException
-     *             if a new database.connection can not be found or created by this
+     *             if a new com.example.stevie.connection can not be found or created by this
      *             strategy.
      * 
      * @see LoadBalancedConnectionProxy#createConnectionForHost(String)

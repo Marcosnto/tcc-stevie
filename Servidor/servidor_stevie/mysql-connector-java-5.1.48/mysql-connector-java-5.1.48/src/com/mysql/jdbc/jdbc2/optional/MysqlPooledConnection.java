@@ -39,7 +39,7 @@ import com.mysql.jdbc.SQLError;
 import com.mysql.jdbc.Util;
 
 /**
- * This class is used to wrap and return a physical database.connection within a logical handle. It also registers and notifies ConnectionEventListeners of any
+ * This class is used to wrap and return a physical com.example.stevie.connection within a logical handle. It also registers and notifies ConnectionEventListeners of any
  * ConnectionEvents
  */
 public class MysqlPooledConnection implements PooledConnection {
@@ -78,7 +78,7 @@ public class MysqlPooledConnection implements PooledConnection {
     public static final int CONNECTION_ERROR_EVENT = 1;
 
     /**
-     * The flag for a database.connection being closed.
+     * The flag for a com.example.stevie.connection being closed.
      */
     public static final int CONNECTION_CLOSED_EVENT = 2;
 
@@ -94,7 +94,7 @@ public class MysqlPooledConnection implements PooledConnection {
      * Construct a new MysqlPooledConnection and set instance variables
      * 
      * @param connection
-     *            physical database.connection to db
+     *            physical com.example.stevie.connection to db
      */
     public MysqlPooledConnection(com.mysql.jdbc.Connection connection) {
         this.logicalHandle = null;
@@ -133,7 +133,7 @@ public class MysqlPooledConnection implements PooledConnection {
 
     /**
      * Invoked by the container. Return a logicalHandle object that wraps a
-     * physical database.connection.
+     * physical com.example.stevie.connection.
      * 
      * @see java.sql.DataSource#getConnection()
      */
@@ -173,7 +173,7 @@ public class MysqlPooledConnection implements PooledConnection {
 
     /**
      * Invoked by the container (not the client), and should close the physical
-     * database.connection. This will be called if the pool is destroyed or the
+     * com.example.stevie.connection. This will be called if the pool is destroyed or the
      * connectionEventListener receives a connectionErrorOccurred event.
      * 
      * @see java.sql.DataSource#close()

@@ -286,7 +286,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
 
             StringBuilder errorMessageBuf = new StringBuilder();
 
-            errorMessageBuf.append("The database.connection property '");
+            errorMessageBuf.append("The com.example.stevie.connection property '");
             errorMessageBuf.append(getPropertyName());
             errorMessageBuf.append("' only accepts values of the form: ");
 
@@ -393,7 +393,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
 
                     setValue(intValue, extractedValue, exceptionInterceptor);
                 } catch (NumberFormatException nfe) {
-                    throw SQLError.createSQLException("The database.connection property '" + getPropertyName() + "' only accepts integer values. The value '"
+                    throw SQLError.createSQLException("The com.example.stevie.connection property '" + getPropertyName() + "' only accepts integer values. The value '"
                             + extractedValue + "' can not be converted to an integer.", SQLError.SQL_STATE_ILLEGAL_ARGUMENT, exceptionInterceptor);
                 }
             } else {
@@ -418,7 +418,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
             if (isRangeBased()) {
                 if ((intValue < getLowerBound()) || (intValue > getUpperBound())) {
                     throw SQLError.createSQLException(
-                            "The database.connection property '" + getPropertyName() + "' only accepts integer values in the range of " + getLowerBound() + " - "
+                            "The com.example.stevie.connection property '" + getPropertyName() + "' only accepts integer values in the range of " + getLowerBound() + " - "
                                     + getUpperBound() + ", the value '" + (valueAsString == null ? intValue : valueAsString) + "' exceeds this range.",
                             SQLError.SQL_STATE_ILLEGAL_ARGUMENT, exceptionInterceptor);
                 }
@@ -453,7 +453,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
             if (isRangeBased()) {
                 if ((longValue < getLowerBound()) || (longValue > getUpperBound())) {
                     throw SQLError.createSQLException(
-                            "The database.connection property '" + getPropertyName() + "' only accepts long integer values in the range of " + getLowerBound() + " - "
+                            "The com.example.stevie.connection property '" + getPropertyName() + "' only accepts long integer values in the range of " + getLowerBound() + " - "
                                     + getUpperBound() + ", the value '" + (valueAsString == null ? longValue : valueAsString) + "' exceeds this range.",
                             SQLError.SQL_STATE_ILLEGAL_ARGUMENT, exceptionInterceptor);
                 }
@@ -476,7 +476,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
 
                     setValue(longValue, extractedValue, exceptionInterceptor);
                 } catch (NumberFormatException nfe) {
-                    throw SQLError.createSQLException("The database.connection property '" + getPropertyName() + "' only accepts long integer values. The value '"
+                    throw SQLError.createSQLException("The com.example.stevie.connection property '" + getPropertyName() + "' only accepts long integer values. The value '"
                             + extractedValue + "' can not be converted to a long integer.", SQLError.SQL_STATE_ILLEGAL_ARGUMENT, exceptionInterceptor);
                 }
             } else {
@@ -833,7 +833,7 @@ public class ConnectionPropertiesImpl implements Serializable, ConnectionPropert
     private StringConnectionProperty exceptionInterceptors = new StringConnectionProperty("exceptionInterceptors", null,
             Messages.getString("ConnectionProperties.exceptionInterceptors"), "5.1.8", MISC_CATEGORY, Integer.MIN_VALUE);
 
-    /** When failed-over, set database.connection to read-only? */
+    /** When failed-over, set com.example.stevie.connection to read-only? */
     private BooleanConnectionProperty failOverReadOnly = new BooleanConnectionProperty("failOverReadOnly", true,
             Messages.getString("ConnectionProperties.failoverReadOnly"), "3.0.12", HA_CATEGORY, 2);
 

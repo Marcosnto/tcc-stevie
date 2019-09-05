@@ -171,7 +171,7 @@ public class StatementsTest extends BaseTestCase {
     }
 
     public void testAccessorsAndMutators() throws SQLException {
-        assertTrue("Connection can not be null, and must be same database.connection", this.stmt.getConnection() == this.conn);
+        assertTrue("Connection can not be null, and must be same com.example.stevie.connection", this.stmt.getConnection() == this.conn);
 
         // Set max rows, to exercise code in execute(), executeQuery() and executeUpdate()
         Statement accessorStmt = null;
@@ -494,7 +494,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 cancelStmt.setQueryTimeout(0);
                 this.rs = cancelStmt.executeQuery("SELECT 1");
@@ -539,7 +539,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 this.rs = cancelStmt.executeQuery("SELECT 1");
 
@@ -566,7 +566,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 this.rs = cancelStmt.executeQuery("SELECT 1");
 
@@ -610,7 +610,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 this.rs = cancelStmt.executeQuery("SELECT 1");
 
@@ -637,7 +637,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 this.rs = cancelStmt.executeQuery("SELECT 1");
 
@@ -681,7 +681,7 @@ public class StatementsTest extends BaseTestCase {
                     }
                 }
 
-                // Make sure we can still use the database.connection...
+                // Make sure we can still use the com.example.stevie.connection...
 
                 this.rs = cancelStmt.executeQuery("SELECT 1");
 
@@ -1709,7 +1709,7 @@ public class StatementsTest extends BaseTestCase {
     }
 
     public void testParameterBindings() throws Exception {
-        // Need to check character set stuff, so need a new database.connection
+        // Need to check character set stuff, so need a new com.example.stevie.connection
         Connection utfConn = getConnectionWithProps("characterEncoding=utf-8,treatUtilDateAsTimestamp=false,autoDeserialize=true");
 
         java.util.Date now = new java.util.Date();

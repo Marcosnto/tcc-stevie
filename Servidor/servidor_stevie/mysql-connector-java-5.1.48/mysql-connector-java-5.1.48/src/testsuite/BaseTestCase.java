@@ -358,13 +358,13 @@ public abstract class BaseTestCase extends TestCase {
     }
 
     /**
-     * Returns a new database.connection with the given properties
+     * Returns a new com.example.stevie.connection with the given properties
      * 
      * @param props
      *            the properties to use (the URL will come from the standard for
      *            this testcase).
      * 
-     * @return a new database.connection using the given properties.
+     * @return a new com.example.stevie.connection using the given properties.
      * 
      * @throws SQLException
      */
@@ -651,7 +651,7 @@ public abstract class BaseTestCase extends TestCase {
         } else {
             try {
                 Properties props = new Properties();
-                props.setProperty("useSSL", "false"); // testsuite is built upon non-SSL default database.connection
+                props.setProperty("useSSL", "false"); // testsuite is built upon non-SSL default com.example.stevie.connection
                 props.setProperty("allowPublicKeyRetrieval", "true");
                 this.conn = DriverManager.getConnection(dbUrl, props);
 
@@ -992,7 +992,7 @@ public abstract class BaseTestCase extends TestCase {
     }
 
     /**
-     * Asserts the most recent history of database.connection attempts from the global data in UnreliableSocketFactory.
+     * Asserts the most recent history of com.example.stevie.connection attempts from the global data in UnreliableSocketFactory.
      * 
      * @param expectedConnectionsHistory
      *            The list of expected events. Use UnreliableSocketFactory.getHostConnectedStatus(String), UnreliableSocketFactory.getHostFailedStatus(String)

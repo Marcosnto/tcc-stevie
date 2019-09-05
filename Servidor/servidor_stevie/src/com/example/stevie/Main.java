@@ -1,30 +1,22 @@
+package com.example.stevie;
+
 import java.io.*;
 import javax.bluetooth.*;
 import javax.microedition.io.Connector;
-import javax.microedition.io.ContentConnection;
 import javax.microedition.io.StreamConnection;
 import javax.microedition.io.StreamConnectionNotifier;
-import javax.obex.*;
-import javax.swing.table.DefaultTableModel;
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
-import java.rmi.Remote;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.stream.Stream;
 
-import com.sun.corba.se.spi.orbutil.fsm.Input;
-import database.connection.model.bean.Departamento;
-import database.connection.model.bean.Laboratorio;
-import database.connection.model.bean.Ponto_Interesse;
-import database.connection.model.bean.Tag;
-import database.connection.model.dao.DepartamentoDAO;
-import database.connection.model.dao.LaboratorioDAO;
-import database.connection.model.dao.Ponto_InteresseDAO;
-import database.connection.model.dao.TagDAO;
+import com.example.stevie.connection.model.bean.Departamento;
+import com.example.stevie.connection.model.bean.Laboratorio;
+import com.example.stevie.connection.model.bean.Ponto_Interesse;
+import com.example.stevie.connection.model.bean.Tag;
+import com.example.stevie.connection.model.dao.DepartamentoDAO;
+import com.example.stevie.connection.model.dao.LaboratorioDAO;
+import com.example.stevie.connection.model.dao.Ponto_InteresseDAO;
+import com.example.stevie.connection.model.dao.TagDAO;
 import net.contentobjects.jnotify.JNotify;
 import net.contentobjects.jnotify.JNotifyAdapter;
 import net.contentobjects.jnotify.JNotifyException;
@@ -65,7 +57,7 @@ public class Main {
 //        Thread conexao = new Thread(bluetooth);
 //        conexao.start();
 
-//        BFS bfs = new BFS(tags);
+//        com.example.stevie.BFS bfs = new com.example.stevie.BFS(tags);
     }
 
     public static void adicionarTags() {
@@ -90,7 +82,6 @@ public class Main {
 //            todosDepartamentos += d.getNome() + ";";
         }
     }
-
 
     public static void carregarLaboratorios() {
         for (Laboratorio l : lDAO.read()) {
@@ -181,49 +172,82 @@ class ConexaoBL implements Runnable {
         LocalDevice local = null;
 
         StreamConnectionNotifier notifier;
+        StreamConnection connection = null;
 
         try {
             local = LocalDevice.getLocalDevice();
             local.setDiscoverable(DiscoveryAgent.GIAC);
 
-//            String url = "btgoep://localhost:" + serverUUID + ";name=Stevie";
             UUID uuid = new UUID(80087355); // "04c6093b-0000-1000-8000-00805f9b34fb"
             String url = "btspp://localhost:" + uuid.toString() + ";name=RemoteBluetooth";
             notifier = (StreamConnectionNotifier) Connector.open(url);
+            System.out.println("Conexão aberta! :D");
 
         } catch (Exception e) {
+            System.out.println("Algo deu errado ao tentar abrir conexão. :(");
             e.printStackTrace();
             return;
         }
 
-        try {
-            StreamConnection connection = notifier.acceptAndOpen();
-            InputStream inputStream = connection.openInputStream();
-            OutputStream outputStream = connection.openOutputStream();
-            while (true) {
-                System.out.println("waiting for connection");
-                System.out.println("Conexao aberta");
-//          // prepare to receive data
-                try {
-                    String st = "";
-                    ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+        while (true) {
+            try {
+                System.out.println("Esperando a conexão :c");
+                connection = notifier.acceptAndOpen();
+                System.out.println("Conectei!");
+//                InputStream inputStream = connection.openInputStream();
 
-                    st = (String) objectInputStream.readObject();
-                    System.out.println(st);
-                    switch (st) {
-                        case "1":
-                            write("DISGRAÇA", outputStream);
-                            break;
-                        case "2":
-                            break;
-                    }
-                } catch (IOException | ClassNotFoundException e) {
-                    e.printStackTrace();
-                }
+                Thread escutarThread = new Thread(new escutarThread(connection));
+                escutarThread.start();
+            } catch (Exception e) {
+                System.out.println("Erro ao aceitar uma conexão " + e);
+                return;
+            }
+        }
+    }
+}
+
+class escutarThread implements Runnable {
+    private StreamConnection mConnection;
+
+    public escutarThread(StreamConnection connection) {
+        mConnection = connection;
+    }
+
+    @Override
+    public void run() {
+        try {
+            //preparando para receber os dados
+            InputStream inputStream = mConnection.openInputStream();
+            System.out.println("Esperando receber os dados");
+            Object temp;
+            while (true) {
+                ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
+                Mensagem mensagem = (Mensagem) objectInputStream.readObject();
+                System.out.println("Opção lida: " + mensagem.mensagem);
+//                comandoLeitura(st, inputStream);
+//                mConnection.close();
+            }
+        } catch (IOException e) {
+            System.out.println("Algo deu errado na leitura dos dados " + e);
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void comandoLeitura(String opcao, InputStream inputStream) {
+        try {
+            switch (opcao) {
+                case "1":
+//                    write("DISGRAÇA", outputStream);
+                    System.out.println("Li a opção 1");
+                    break;
+                case "2":
+                    break;
             }
         } catch (Exception e) {
+            System.out.println("Algo deu errado na leitura do comando " + e);
             e.printStackTrace();
-            return;
         }
     }
 
@@ -238,5 +262,11 @@ class ConexaoBL implements Runnable {
     }
 }
 
+class Mensagem implements Serializable {
+    String mensagem;
 
+    public Mensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+}
 

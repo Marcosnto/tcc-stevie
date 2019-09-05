@@ -73,7 +73,7 @@ import com.mysql.jdbc.util.LRUCache;
  * 
  * <P>
  * A Connection's database is able to provide information describing its tables, its supported SQL grammar, its stored procedures, the capabilities of this
- * database.connection, etc. This information is obtained with the getMetaData method.
+ * com.example.stevie.connection, etc. This information is obtained with the getMetaData method.
  * </p>
  */
 public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLConnection {
@@ -106,8 +106,8 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
         this.realProxy = this.proxy instanceof MultiHostMySQLConnection ? ((MultiHostMySQLConnection) proxy).getThisAsProxy() : null;
     }
 
-    // this database.connection has to be proxied when using multi-host settings so that statements get routed to the right physical database.connection
-    // (works as "logical" database.connection)
+    // this com.example.stevie.connection has to be proxied when using multi-host settings so that statements get routed to the right physical com.example.stevie.connection
+    // (works as "logical" com.example.stevie.connection)
     private MySQLConnection getProxy() {
         return (this.proxy != null) ? this.proxy : (MySQLConnection) this;
     }
@@ -370,7 +370,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Creates a database.connection instance -- We need to provide factory-style methods
+     * Creates a com.example.stevie.connection instance -- We need to provide factory-style methods
      * so we can support both JDBC3 (and older) and JDBC4 runtimes, otherwise
      * the class verifier complains when it tries to load JDBC4-only interface
      * classes that are present in JDBC4 method signatures.
@@ -393,7 +393,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      * @param hostList
      */
     protected static synchronized int getNextRoundRobinHostIndex(String url, List<?> hostList) {
-        // we really do "random" here, because you don't get even distribution when this is coupled with database.connection pools
+        // we really do "random" here, because you don't get even distribution when this is coupled with com.example.stevie.connection pools
 
         int indexRange = hostList.size();
 
@@ -438,7 +438,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      */
     private final Map<String, Object> charsetConverterMap = new HashMap<String, Object>(CharsetMapping.getNumberOfCharsetsConfigured());
 
-    /** The point in time when this database.connection was created */
+    /** The point in time when this com.example.stevie.connection was created */
     private long connectionCreationTimeMillis = 0;
 
     /** ID used when profiling */
@@ -455,7 +455,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     /** The event sink to use for profiling */
     private ProfilerEventHandler eventSink;
 
-    /** Why was this database.connection implicitly closed, if known? (for diagnostics) */
+    /** Why was this com.example.stevie.connection implicitly closed, if known? (for diagnostics) */
     private Throwable forceClosedReason;
 
     /** Does the server support isolation levels? */
@@ -476,13 +476,13 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
     private boolean isClientTzUTC = false;
 
-    /** Has this database.connection been closed? */
+    /** Has this com.example.stevie.connection been closed? */
     private boolean isClosed = true;
 
-    /** Is this database.connection associated with a global tx? */
+    /** Is this com.example.stevie.connection associated with a global tx? */
     private boolean isInGlobalTx = false;
 
-    /** Is this database.connection running inside a JDK-1.3 VM? */
+    /** Is this com.example.stevie.connection running inside a JDK-1.3 VM? */
     private boolean isRunningOnJDK13 = false;
 
     /** isolation level */
@@ -521,7 +521,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     /** The JDBC URL we're using */
     private String myURL = null;
 
-    /** Does this database.connection need to be tested? */
+    /** Does this com.example.stevie.connection need to be tested? */
     private boolean needsPing = false;
 
     private int netBufferLength = 16384;
@@ -566,7 +566,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     /** The port number we're connected to (defaults to 3306) */
     private int port = 3306;
 
-    /** Properties for this database.connection specified by user */
+    /** Properties for this com.example.stevie.connection specified by user */
     protected Properties props = null;
 
     /** Should we retrieve 'info' messages from the server? */
@@ -581,7 +581,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     /** The timezone of the server */
     private TimeZone serverTimezoneTZ = null;
 
-    /** The map of server variables that we retrieve at database.connection init. */
+    /** The map of server variables that we retrieve at com.example.stevie.connection init. */
     private Map<String, String> serverVariables = null;
 
     private long shortestQueryTimeMs = Long.MAX_VALUE;
@@ -658,7 +658,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Creates a database.connection to a MySQL Server.
+     * Creates a com.example.stevie.connection to a MySQL Server.
      * 
      * @param hostToConnectTo
      *            the hostname of the database server
@@ -669,9 +669,9 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      * @param databaseToConnectTo
      *            the database to connect to
      * @param url
-     *            the URL of the database.connection
+     *            the URL of the com.example.stevie.connection
      * @param d
-     *            the Driver instantation of the database.connection
+     *            the Driver instantation of the com.example.stevie.connection
      * @exception SQLException
      *                if a database access error occurs
      */
@@ -683,7 +683,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
             databaseToConnectTo = "";
         }
 
-        // Stash away for later, used to clone this database.connection for Statement.cancel and Statement.setQueryTimeout().
+        // Stash away for later, used to clone this com.example.stevie.connection for Statement.cancel and Statement.setQueryTimeout().
         //
 
         this.origHostToConnectTo = hostToConnectTo;
@@ -704,7 +704,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
         //
         // Normally, this code would be in initializeDriverProperties, but we need to do this as early as possible, so we can start logging to the 'correct'
-        // place as early as possible...this.log points to 'NullLogger' for every database.connection at startup to avoid NPEs and the overhead of checking for NULL at
+        // place as early as possible...this.log points to 'NullLogger' for every com.example.stevie.connection at startup to avoid NPEs and the overhead of checking for NULL at
         // every logging call.
         //
         // We will reset this to the configured logger during properties initialization.
@@ -757,7 +757,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
         initializeDriverProperties(info);
 
-        // We store this per-database.connection, due to static synchronization issues in Java's built-in TimeZone class...
+        // We store this per-com.example.stevie.connection, due to static synchronization issues in Java's built-in TimeZone class...
         this.defaultTimeZone = TimeUtil.getDefaultTimeZone(getCacheDefaultTimezone());
 
         this.isClientTzUTC = !this.defaultTimeZone.useDaylightTime() && this.defaultTimeZone.getRawOffset() == 0;
@@ -1098,8 +1098,8 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Changes the user on this database.connection by performing a re-authentication. If
-     * authentication fails, the database.connection will remain under the context of the
+     * Changes the user on this com.example.stevie.connection by performing a re-authentication. If
+     * authentication fails, the com.example.stevie.connection will remain under the context of the
      * current user.
      * 
      * @param userName
@@ -1179,7 +1179,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     public void throwConnectionClosedException() throws SQLException {
-        SQLException ex = SQLError.createSQLException("No operations allowed after database.connection closed.", SQLError.SQL_STATE_CONNECTION_NOT_OPEN,
+        SQLException ex = SQLError.createSQLException("No operations allowed after com.example.stevie.connection closed.", SQLError.SQL_STATE_CONNECTION_NOT_OPEN,
                 getExceptionInterceptor());
 
         if (this.forceClosedReason != null) {
@@ -1290,14 +1290,14 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Clobbers the physical network database.connection and marks
-     * this database.connection as closed.
+     * Clobbers the physical network com.example.stevie.connection and marks
+     * this com.example.stevie.connection as closed.
      * 
      * @throws SQLException
      */
     public void abortInternal() throws SQLException {
         if (this.io != null) {
-            // checking this.io != null isn't enough if database.connection is used concurrently (the usual situation
+            // checking this.io != null isn't enough if com.example.stevie.connection is used concurrently (the usual situation
             // with application servers which have additional thread management), this.io can become null
             // at any moment after this check, causing a race condition and NPEs on next calls;
             // but we may ignore them because at this stage null this.io means that we successfully closed all resources by other thread.
@@ -1314,7 +1314,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Destroys this database.connection and any underlying resources
+     * Destroys this com.example.stevie.connection and any underlying resources
      * 
      * @param fromWhere
      * @param whyCleanedUp
@@ -1342,7 +1342,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
     /**
      * After this call, getWarnings returns null until a new warning is reported
-     * for this database.connection.
+     * for this com.example.stevie.connection.
      * 
      * @exception SQLException
      *                if a database access error occurs
@@ -1443,7 +1443,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      * database and JDBC resources instead of waiting for them to be
      * automatically released (cant think why off the top of my head) <B>Note:</B>
      * A Connection is automatically closed when it is garbage collected.
-     * Certain fatal errors also result in a closed database.connection.
+     * Certain fatal errors also result in a closed com.example.stevie.connection.
      * 
      * @exception SQLException
      *                if a database access error occurs
@@ -1889,7 +1889,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
         /**
          * Check if we need a CharsetEncoder for escaping codepoints that are
-         * transformed to backslash (0x5c) in the database.connection encoding.
+         * transformed to backslash (0x5c) in the com.example.stevie.connection encoding.
          */
         try {
             CharsetEncoder enc = Charset.forName(getEncoding()).newEncoder();
@@ -2005,7 +2005,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      */
     public void createNewIO(boolean isForReconnect) throws SQLException {
         synchronized (getConnectionMutex()) {
-            // Synchronization Not needed for *new* connections, but defintely for connections going through fail-over, since we might get the new database.connection up
+            // Synchronization Not needed for *new* connections, but defintely for connections going through fail-over, since we might get the new com.example.stevie.connection up
             // and running *enough* to start sending cached or still-open server-side prepared statements over to the backend before we get a chance to
             // re-prepare them...
 
@@ -2045,7 +2045,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
                     this.connectionId = this.io.getThreadId();
                     this.isClosed = false;
 
-                    // save state from old database.connection
+                    // save state from old com.example.stevie.connection
                     oldAutoCommit = getAutoCommit();
                     oldIsolationLevel = this.isolationLevel;
                     oldReadOnly = isReadOnly(false);
@@ -2054,11 +2054,11 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
                     this.io.setStatementInterceptors(this.statementInterceptors);
                 }
 
-                // Server properties might be different from previous database.connection, so initialize again...
+                // Server properties might be different from previous com.example.stevie.connection, so initialize again...
                 initializePropsFromServer();
 
                 if (isForReconnect) {
-                    // Restore state from old database.connection
+                    // Restore state from old com.example.stevie.connection
                     setAutoCommit(oldAutoCommit);
 
                     if (this.hasIsolationLevels) {
@@ -2206,7 +2206,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
         try {
             portNumber = Integer.parseInt(portAsString);
         } catch (NumberFormatException nfe) {
-            throw SQLError.createSQLException("Illegal database.connection port value '" + portAsString + "'", SQLError.SQL_STATE_INVALID_CONNECTION_ATTRIBUTE,
+            throw SQLError.createSQLException("Illegal com.example.stevie.connection port value '" + portAsString + "'", SQLError.SQL_STATE_INVALID_CONNECTION_ATTRIBUTE,
                     getExceptionInterceptor());
         }
         return portNumber;
@@ -2221,7 +2221,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
             this.connectionId = this.io.getThreadId();
             this.isClosed = false;
 
-            // save state from old database.connection
+            // save state from old com.example.stevie.connection
             boolean oldAutoCommit = getAutoCommit();
             int oldIsolationLevel = this.isolationLevel;
             boolean oldReadOnly = isReadOnly(false);
@@ -2229,11 +2229,11 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
             this.io.setStatementInterceptors(this.statementInterceptors);
 
-            // Server properties might be different from previous database.connection, so initialize again...
+            // Server properties might be different from previous com.example.stevie.connection, so initialize again...
             initializePropsFromServer();
 
             if (isForReconnect) {
-                // Restore state from old database.connection
+                // Restore state from old com.example.stevie.connection
                 setAutoCommit(oldAutoCommit);
 
                 if (this.hasIsolationLevels) {
@@ -2698,7 +2698,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
         if (charsetIndex != MysqlDefs.NO_CHARSET_INFO) {
             try {
-                // getting charset name from dynamic maps in database.connection; we do it before checking against static maps because custom charset on server can be mapped
+                // getting charset name from dynamic maps in com.example.stevie.connection; we do it before checking against static maps because custom charset on server can be mapped
                 // to index from our static map key's diapason 
                 if (this.indexToCustomMysqlCharset != null) {
                     String cs = this.indexToCustomMysqlCharset.get(charsetIndex);
@@ -2756,10 +2756,10 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
     /**
      * NOT JDBC-Compliant, but clients can use this method to determine how long
-     * this database.connection has been idle. This time (reported in milliseconds) is
+     * this com.example.stevie.connection has been idle. This time (reported in milliseconds) is
      * updated once a query has completed.
      * 
-     * @return number of ms that this database.connection has been idle, 0 if the driver
+     * @return number of ms that this com.example.stevie.connection has been idle, 0 if the driver
      *         is busy retrieving results.
      */
     public long getIdleFor() {
@@ -2773,11 +2773,11 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      * 
      * @return the IO channel to the server
      * @throws SQLException
-     *             if the database.connection is closed.
+     *             if the com.example.stevie.connection is closed.
      */
     public MysqlIO getIO() throws SQLException {
         if ((this.io == null) || this.isClosed) {
-            throw SQLError.createSQLException("Operation not allowed on closed database.connection", SQLError.SQL_STATE_CONNECTION_NOT_OPEN, getExceptionInterceptor());
+            throw SQLError.createSQLException("Operation not allowed on closed com.example.stevie.connection", SQLError.SQL_STATE_CONNECTION_NOT_OPEN, getExceptionInterceptor());
         }
 
         return this.io;
@@ -2807,7 +2807,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
         try {
             // if we can get it by charsetIndex just doing it
 
-            // getting charset name from dynamic maps in database.connection; we do it before checking against static maps because custom charset on server can be mapped
+            // getting charset name from dynamic maps in com.example.stevie.connection; we do it before checking against static maps because custom charset on server can be mapped
             // to index from our static map key's diapason 
             if (this.indexToCustomMysqlCharset != null) {
                 charset = this.indexToCustomMysqlCharset.get(charsetIndex);
@@ -2822,7 +2822,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
                 charset = CharsetMapping.getMysqlCharsetForJavaEncoding(javaCharsetName, this);
             }
 
-            // checking against dynamic maps in database.connection
+            // checking against dynamic maps in com.example.stevie.connection
             Integer mblen = null;
             if (this.mysqlCharsetToCustomMblen != null) {
                 mblen = this.mysqlCharsetToCustomMblen.get(charset);
@@ -2848,12 +2848,12 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * A database.connection's database is able to provide information describing its
+     * A com.example.stevie.connection's database is able to provide information describing its
      * tables, its supported SQL grammar, its stored procedures, the
-     * capabilities of this database.connection, etc. This information is made available
+     * capabilities of this com.example.stevie.connection, etc. This information is made available
      * through a DatabaseMetaData object.
      * 
-     * @return a DatabaseMetaData object for this database.connection
+     * @return a DatabaseMetaData object for this com.example.stevie.connection
      * @exception SQLException
      *                if a database access error occurs
      */
@@ -2888,7 +2888,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Returns the packet buffer size the MySQL server reported upon database.connection
+     * Returns the packet buffer size the MySQL server reported upon com.example.stevie.connection
      */
     public int getNetBufferLength() {
         return this.netBufferLength;
@@ -3022,7 +3022,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * JDBC 2.0 Get the type-map object associated with this database.connection. By
+     * JDBC 2.0 Get the type-map object associated with this com.example.stevie.connection. By
      * default, the map returned is empty.
      * 
      * @return the type map
@@ -3081,7 +3081,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
         if (getGatherPerformanceMetrics()) {
             this.numberOfPreparedExecutes++;
 
-            // We need to increment this, because server-side prepared statements bypass any execution by the database.connection itself...
+            // We need to increment this, because server-side prepared statements bypass any execution by the com.example.stevie.connection itself...
             this.numberOfQueriesIssued++;
         }
     }
@@ -3453,10 +3453,10 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Is this database.connection connected to the first host in the list if
+     * Is this com.example.stevie.connection connected to the first host in the list if
      * there is a list of servers in the URL?
      * 
-     * @return true if this database.connection is connected to the first in
+     * @return true if this com.example.stevie.connection is connected to the first in
      *         the list.
      */
     public boolean isMasterConnection() {
@@ -3478,11 +3478,11 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Tests to see if the database.connection is in Read Only Mode. Note that prior to 5.6,
+     * Tests to see if the com.example.stevie.connection is in Read Only Mode. Note that prior to 5.6,
      * we cannot really put the database in read only mode, but we pretend we can by
      * returning the value of the readOnly flag
      * 
-     * @return true if the database.connection is read only
+     * @return true if the com.example.stevie.connection is read only
      * @exception SQLException
      *                if a database access error occurs
      */
@@ -3491,15 +3491,15 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Tests to see if the database.connection is in Read Only Mode. Note that prior to 5.6,
+     * Tests to see if the com.example.stevie.connection is in Read Only Mode. Note that prior to 5.6,
      * we cannot really put the database in read only mode, but we pretend we can by
      * returning the value of the readOnly flag
      * 
      * @param useSessionStatus
-     *            in some cases, for example when restoring database.connection with autoReconnect=true,
+     *            in some cases, for example when restoring com.example.stevie.connection with autoReconnect=true,
      *            we can rely only on saved readOnly state, so use useSessionStatus=false in that case
      * 
-     * @return true if the database.connection is read only
+     * @return true if the com.example.stevie.connection is read only
      * @exception SQLException
      *                if a database access error occurs
      */
@@ -3876,7 +3876,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Detect if the database.connection is still good
+     * Detect if the com.example.stevie.connection is still good
      * 
      * @throws SQLException
      *             if the ping fails
@@ -4143,7 +4143,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Closes database.connection and frees resources.
+     * Closes com.example.stevie.connection and frees resources.
      * 
      * @param calledExplicitly
      *            is this being called from close()
@@ -4183,7 +4183,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
                     }
 
                     if (System.currentTimeMillis() - this.connectionCreationTimeMillis < 500) {
-                        String message = "Connection lifetime of < .5 seconds. You might be un-necessarily creating short-lived connections and should investigate database.connection pooling to be more efficient.";
+                        String message = "Connection lifetime of < .5 seconds. You might be un-necessarily creating short-lived connections and should investigate com.example.stevie.connection pooling to be more efficient.";
 
                         this.eventSink.processEvent(ProfilerEvent.TYPE_USAGE, this, null, null, 0, new Throwable(), message);
                     }
@@ -4476,9 +4476,9 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Resets the server-side state of this database.connection. Doesn't work for MySQL
+     * Resets the server-side state of this com.example.stevie.connection. Doesn't work for MySQL
      * versions older than 4.0.6 or if isParanoid() is set (it will become a
-     * no-op in these cases). Usually only used from database.connection pooling code.
+     * no-op in these cases). Usually only used from com.example.stevie.connection pooling code.
      * 
      * @throws SQLException
      *             if the operation fails while resetting server state.
@@ -4713,7 +4713,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * If a database.connection is in auto-commit mode, than all its SQL statements will
+     * If a com.example.stevie.connection is in auto-commit mode, than all its SQL statements will
      * be executed and committed as individual transactions. Otherwise, its SQL
      * statements are grouped into transactions that are terminated by either
      * commit() or rollback(). By default, new connections are in auto-commit
@@ -4768,7 +4768,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
                     }
 
                     // this internal value must be set first as failover depends on it being set to true to fail over (which is done by most app servers and
-                    // database.connection pools at the end of a transaction), and the driver issues an implicit set based on this value when it (re)-connects to a
+                    // com.example.stevie.connection pools at the end of a transaction), and the driver issues an implicit set based on this value when it (re)-connects to a
                     // server so the value holds across connections
                     this.autoCommit = autoCommitFlag;
 
@@ -4804,7 +4804,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
      * </p>
      * 
      * @param catalog
-     *            the database for this database.connection to use
+     *            the database for this com.example.stevie.connection to use
      * @throws SQLException
      *             if a database access error occurs
      */
@@ -4895,7 +4895,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * You can put a database.connection in read-only mode as a hint to enable database
+     * You can put a com.example.stevie.connection in read-only mode as a hint to enable database
      * optimizations <B>Note:</B> setReadOnly cannot be called while in the
      * middle of a transaction
      * 
@@ -5074,7 +5074,7 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
 
     /**
      * JDBC 2.0 Install a type-map object as the default type-map for this
-     * database.connection
+     * com.example.stevie.connection
      * 
      * @param map
      *            the type mapping
@@ -5396,18 +5396,18 @@ public class ConnectionImpl extends ConnectionPropertiesImpl implements MySQLCon
     }
 
     /**
-     * Terminates an open database.connection. Calling <code>abort</code> results in:
+     * Terminates an open com.example.stevie.connection. Calling <code>abort</code> results in:
      * <ul>
-     * <li>The database.connection marked as closed
-     * <li>Closes any physical database.connection to the database
-     * <li>Releases resources used by the database.connection
-     * <li>Insures that any thread that is currently accessing the database.connection will either progress to completion or throw an <code>SQLException</code>.
+     * <li>The com.example.stevie.connection marked as closed
+     * <li>Closes any physical com.example.stevie.connection to the database
+     * <li>Releases resources used by the com.example.stevie.connection
+     * <li>Insures that any thread that is currently accessing the com.example.stevie.connection will either progress to completion or throw an <code>SQLException</code>.
      * </ul>
      * <p>
-     * Calling <code>abort</code> marks the database.connection closed and releases any resources. Calling <code>abort</code> on a closed database.connection is a no-op.
+     * Calling <code>abort</code> marks the com.example.stevie.connection closed and releases any resources. Calling <code>abort</code> on a closed com.example.stevie.connection is a no-op.
      * <p>
-     * It is possible that the aborting and releasing of the resources that are held by the database.connection can take an extended period of time. When the
-     * <code>abort</code> method returns, the database.connection will have been marked as closed and the <code>Executor</code> that was passed as a parameter to abort
+     * It is possible that the aborting and releasing of the resources that are held by the com.example.stevie.connection can take an extended period of time. When the
+     * <code>abort</code> method returns, the com.example.stevie.connection will have been marked as closed and the <code>Executor</code> that was passed as a parameter to abort
      * may still be executing tasks to release resources.
      * <p>
      * This method checks to see that there is an <code>SQLPermission</code> object before allowing the method to proceed. If a <code>SecurityManager</code>

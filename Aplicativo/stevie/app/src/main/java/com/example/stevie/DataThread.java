@@ -12,6 +12,7 @@ import android.os.Looper;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import java.io.Serializable;
 import java.util.TimerTask;
 
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class DataThread extends Thread {
     public OutputStream mmOutStream;
     private byte[] mmBuffer; // mmBuffer store for the stream
     private Handler handler;
+    TelaInicial telaInicial = new TelaInicial();
 
     private static final String TAG = "DataThread";
 
@@ -80,10 +82,13 @@ public class DataThread extends Thread {
     // Call this from the main activity to send data to the remote device.
     public void enviarDados(Object object) {
         try {
+//            telaInicial.conectarServidor();
             OutputStream outputStream = mmSocket.getOutputStream();
-            new ObjectOutputStream(outputStream).writeObject(object);
-//            outputStream.close();
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
+            objectOutputStream.writeObject(object);
             System.out.println("Enviei!");
+//            outputStream.close();
+//            mmSocket.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -92,6 +97,7 @@ public class DataThread extends Thread {
     public String receberDados(InputStream inputStream){
         String st = "";
         try {
+            telaInicial.conectarServidor();
             ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
             st = (String) objectInputStream.readObject();
             Log.i(TAG, "run: Recebi" + st);
@@ -113,5 +119,13 @@ public class DataThread extends Thread {
         }
     }
 
+}
+
+class Mensagem implements Serializable {
+    String mensagem;
+
+    public Mensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
 }
 

@@ -4472,7 +4472,7 @@ public class ResultSetRegressionTest extends BaseTestCase {
             }
 
             if (ei == null) {
-                fail("TestBug67318ExceptionInterceptor is not found on database.connection");
+                fail("TestBug67318ExceptionInterceptor is not found on com.example.stevie.connection");
             }
 
             Statement st1 = c.createStatement();
@@ -4675,7 +4675,7 @@ public class ResultSetRegressionTest extends BaseTestCase {
             testRs2.close();
         } catch (SQLException ex) {
             if (ex.getMessage().startsWith("Streaming result set")) {
-                fail("There is a Streaming result set still active. No other statements can be issued on this database.connection.");
+                fail("There is a Streaming result set still active. No other statements can be issued on this com.example.stevie.connection.");
             } else {
                 ex.printStackTrace();
                 fail(ex.getMessage());

@@ -1,4 +1,4 @@
-package database.connection.model.bean;
+package com.example.stevie.connection.model.bean;
 
 public class Departamento {
 

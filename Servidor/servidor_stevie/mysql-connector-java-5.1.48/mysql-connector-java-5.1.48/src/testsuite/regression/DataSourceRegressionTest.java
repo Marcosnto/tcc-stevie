@@ -209,7 +209,7 @@ public class DataSourceRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests that we can get a database.connection from the DataSource bound in JNDI
+     * Tests that we can get a com.example.stevie.connection from the DataSource bound in JNDI
      * during test setup
      * 
      * @throws Exception
@@ -471,7 +471,7 @@ public class DataSourceRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests fix for BUG#32101 - When using a database.connection from our ConnectionPoolDataSource,
+     * Tests fix for BUG#32101 - When using a com.example.stevie.connection from our ConnectionPoolDataSource,
      * some Connection.prepareStatement() methods would return null instead of
      * a prepared statement.
      * 
@@ -546,7 +546,7 @@ public class DataSourceRegressionTest extends BaseTestCase {
             xaRes.end(xid, XAResource.TMSUCCESS);
             assertEquals(XAResource.XA_OK, xaRes.prepare(xid));
 
-            // Simulate a database.connection hang and make sure the database.connection really dies.
+            // Simulate a com.example.stevie.connection hang and make sure the com.example.stevie.connection really dies.
             this.stmt.execute("KILL CONNECTION " + connId);
             int connAliveChecks = 4;
             while (connAliveChecks > 0) {
@@ -606,8 +606,8 @@ public class DataSourceRegressionTest extends BaseTestCase {
      */
     public void testBug72632() throws Exception {
         final MysqlDataSource dataSource = new MysqlDataSource();
-        dataSource.setUrl("bad-database.connection-string");
-        assertThrows(SQLException.class, "Failed to get a database.connection using the URL 'bad-database.connection-string'.", new Callable<Void>() {
+        dataSource.setUrl("bad-com.example.stevie.connection-string");
+        assertThrows(SQLException.class, "Failed to get a com.example.stevie.connection using the URL 'bad-com.example.stevie.connection-string'.", new Callable<Void>() {
             public Void call() throws Exception {
                 dataSource.getConnection();
                 return null;

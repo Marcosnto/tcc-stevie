@@ -41,7 +41,7 @@ public interface AuthenticationPlugin extends Extension {
     String getProtocolPluginName();
 
     /**
-     * Does this plugin require the database.connection itself to be confidential
+     * Does this plugin require the com.example.stevie.connection itself to be confidential
      * (i.e. tls/ssl)...Highly recommended to return "true" for plugins
      * that return the credentials in the clear.
      */
@@ -59,9 +59,9 @@ public interface AuthenticationPlugin extends Extension {
      * String database) or MysqlIO.doHandshake(String user, String
      * password, String database).
      * 
-     * Plugin should use these values instead of values from database.connection
+     * Plugin should use these values instead of values from com.example.stevie.connection
      * properties because parent method may be a changeUser call which
-     * saves user and password into database.connection only after successful
+     * saves user and password into com.example.stevie.connection only after successful
      * handshake.
      * 
      * @param user
@@ -75,7 +75,7 @@ public interface AuthenticationPlugin extends Extension {
      * calling this method until either a SQLException is thrown
      * (authentication failure, please use appropriate SQLStates) or the
      * method returns false or driver receives an OK packet from the server
-     * which indicates that the database.connection has been already approved.
+     * which indicates that the com.example.stevie.connection has been already approved.
      * 
      * If, on return from this method, toServer is a non-empty list of
      * buffers, then these buffers should be sent to the server in order and

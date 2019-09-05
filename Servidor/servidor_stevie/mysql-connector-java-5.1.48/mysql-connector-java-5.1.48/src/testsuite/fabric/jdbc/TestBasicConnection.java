@@ -38,7 +38,7 @@ public class TestBasicConnection extends BaseFabricTestCase {
     }
 
     /**
-     * Test that we can make a database.connection with a URL, given a server group name
+     * Test that we can make a com.example.stevie.connection with a URL, given a server group name
      */
     public void testConnectionUrl() throws Exception {
         if (!this.isSetForFabricTest) {

@@ -86,7 +86,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Proxy class to intercept and deal with errors that may occur in any object bound to the current database.connection.
+     * Proxy class to intercept and deal with errors that may occur in any object bound to the current com.example.stevie.connection.
      */
     class JdbcInterfaceProxy implements InvocationHandler {
         Object invokeOn = null;
@@ -117,7 +117,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Initializes a database.connection wrapper for this MultiHostConnectionProxy instance.
+     * Initializes a com.example.stevie.connection wrapper for this MultiHostConnectionProxy instance.
      * 
      * @param props
      *            The properties to be used in new internal connections.
@@ -127,7 +127,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Constructs a MultiHostConnectionProxy instance for the given list of hosts and database.connection properties.
+     * Constructs a MultiHostConnectionProxy instance for the given list of hosts and com.example.stevie.connection properties.
      * 
      * @param hosts
      *            The lists of hosts available to switch on.
@@ -140,11 +140,11 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Initializes the hosts lists and makes a "clean" local copy of the given database.connection properties so that it can be later used to create standard
+     * Initializes the hosts lists and makes a "clean" local copy of the given com.example.stevie.connection properties so that it can be later used to create standard
      * connections.
      * 
      * @param hosts
-     *            The list of hosts for this multi-host database.connection.
+     *            The list of hosts for this multi-host com.example.stevie.connection.
      * @param props
      *            Connection properties from where to get initial settings and to be used in new connections.
      * @return
@@ -174,7 +174,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
      * Wraps this object with a new multi-host Connection instance.
      * 
      * @return
-     *         The database.connection object instance that wraps 'this'.
+     *         The com.example.stevie.connection object instance that wraps 'this'.
      */
     MySQLConnection getNewWrapperForThisAsConnection() throws SQLException {
         if (Util.isJdbc4() || JDBC_4_MS_CONNECTION_CTOR != null) {
@@ -185,23 +185,23 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Get this database.connection's proxy.
-     * A multi-host database.connection may not be at top level in the multi-host connections chain. In such case the first database.connection in the chain is available as a
+     * Get this com.example.stevie.connection's proxy.
+     * A multi-host com.example.stevie.connection may not be at top level in the multi-host connections chain. In such case the first com.example.stevie.connection in the chain is available as a
      * proxy.
      * 
      * @return
-     *         Returns this database.connection's proxy if there is one or itself if this is the first one.
+     *         Returns this com.example.stevie.connection's proxy if there is one or itself if this is the first one.
      */
     protected MySQLConnection getProxy() {
         return this.proxyConnection != null ? this.proxyConnection : this.thisAsConnection;
     }
 
     /**
-     * Sets this database.connection's proxy. This proxy should be the first database.connection in the multi-host connections chain.
-     * After setting the database.connection proxy locally, propagates it through the dependant connections.
+     * Sets this com.example.stevie.connection's proxy. This proxy should be the first com.example.stevie.connection in the multi-host connections chain.
+     * After setting the com.example.stevie.connection proxy locally, propagates it through the dependant connections.
      * 
      * @param proxyConn
-     *            The top level database.connection in the multi-host connections chain.
+     *            The top level com.example.stevie.connection in the multi-host connections chain.
      */
     protected final void setProxy(MySQLConnection proxyConn) {
         this.proxyConnection = proxyConn;
@@ -209,18 +209,18 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Propagates the database.connection proxy down through the multi-host connections chain.
-     * This method is intended to be overridden in subclasses that manage more than one active database.connection at same time.
+     * Propagates the com.example.stevie.connection proxy down through the multi-host connections chain.
+     * This method is intended to be overridden in subclasses that manage more than one active com.example.stevie.connection at same time.
      * 
      * @param proxyConn
-     *            The top level database.connection in the multi-host connections chain.
+     *            The top level com.example.stevie.connection in the multi-host connections chain.
      */
     protected void propagateProxyDown(MySQLConnection proxyConn) {
         this.currentConnection.setProxy(proxyConn);
     }
 
     /**
-     * If the given return type is or implements a JDBC interface, proxies the given object so that we can catch SQL errors and fire a database.connection switch.
+     * If the given return type is or implements a JDBC interface, proxies the given object so that we can catch SQL errors and fire a com.example.stevie.connection switch.
      * 
      * @param returnType
      *            The type the object instance to proxy is supposed to be.
@@ -272,7 +272,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     }
 
     /**
-     * Checks if the given throwable should trigger a database.connection switch.
+     * Checks if the given throwable should trigger a com.example.stevie.connection switch.
      * 
      * @param t
      *            The Throwable instance to analyze.
@@ -280,22 +280,22 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
     abstract boolean shouldExceptionTriggerConnectionSwitch(Throwable t);
 
     /**
-     * Checks if current database.connection is to a master host.
+     * Checks if current com.example.stevie.connection is to a master host.
      */
     abstract boolean isMasterConnection();
 
     /**
-     * Invalidates the current database.connection.
+     * Invalidates the current com.example.stevie.connection.
      */
     synchronized void invalidateCurrentConnection() throws SQLException {
         invalidateConnection(this.currentConnection);
     }
 
     /**
-     * Invalidates the specified database.connection by closing it.
+     * Invalidates the specified com.example.stevie.connection by closing it.
      * 
      * @param conn
-     *            The database.connection instance to invalidate.
+     *            The com.example.stevie.connection instance to invalidate.
      */
     synchronized void invalidateConnection(MySQLConnection conn) throws SQLException {
         try {
@@ -303,17 +303,17 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
                 conn.realClose(true, !conn.getAutoCommit(), true, null);
             }
         } catch (SQLException e) {
-            // swallow this exception, current database.connection should be useless anyway.
+            // swallow this exception, current com.example.stevie.connection should be useless anyway.
         }
     }
 
     /**
-     * Picks the "best" database.connection to use from now on. Each subclass needs to implement its database.connection switch strategy on it.
+     * Picks the "best" com.example.stevie.connection to use from now on. Each subclass needs to implement its com.example.stevie.connection switch strategy on it.
      */
     abstract void pickNewConnection() throws SQLException;
 
     /**
-     * Creates a new physical database.connection for the given host:port.
+     * Creates a new physical com.example.stevie.connection for the given host:port.
      * 
      * @param hostPortSpec
      *            The host:port specification.
@@ -329,7 +329,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
         String dbName = connProps.getProperty(NonRegisteringDriver.DBNAME_PROPERTY_KEY);
 
         if (hostName == null) {
-            throw new SQLException("Could not find a hostname to start a database.connection to");
+            throw new SQLException("Could not find a hostname to start a com.example.stevie.connection to");
         }
         if (portNumber == null) {
             portNumber = "3306"; // use default
@@ -354,9 +354,9 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
      * Synchronizes session state between two connections.
      * 
      * @param source
-     *            The database.connection where to get state from.
+     *            The com.example.stevie.connection where to get state from.
      * @param target
-     *            The database.connection where to set state.
+     *            The com.example.stevie.connection where to set state.
      */
     void syncSessionState(Connection source, Connection target) throws SQLException {
         if (source == null || target == null) {
@@ -375,9 +375,9 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
      * Synchronizes session state between two connections, allowing to override the read-only status.
      * 
      * @param source
-     *            The database.connection where to get state from.
+     *            The com.example.stevie.connection where to get state from.
      * @param target
-     *            The database.connection where to set state.
+     *            The com.example.stevie.connection where to set state.
      * @param readOnly
      *            The new read-only status.
      */
@@ -418,7 +418,7 @@ public abstract class MultiHostConnectionProxy implements InvocationHandler {
 
     /**
      * Proxies method invocation on the java.sql.Connection interface, trapping multi-host specific methods and generic methods.
-     * Subclasses have to override this to complete the method invocation process, deal with exceptions and decide when to switch database.connection.
+     * Subclasses have to override this to complete the method invocation process, deal with exceptions and decide when to switch com.example.stevie.connection.
      * To avoid unnecessary additional exception handling overriders should consult #canDealWith(Method) before chaining here.
      */
     public synchronized Object invoke(Object proxy, Method method, Object[] args) throws Throwable {

@@ -32,7 +32,7 @@ import com.mysql.fabric.jdbc.FabricMySQLConnection;
 import com.mysql.fabric.jdbc.FabricMySQLDataSource;
 
 /**
- * Demonstrate working with employee data in MySQL Fabric with Connector/J and the JDBC APIs via a DataSource-created database.connection.
+ * Demonstrate working with employee data in MySQL Fabric with Connector/J and the JDBC APIs via a DataSource-created com.example.stevie.connection.
  */
 public class EmployeesDataSource {
     public static void main(String args[]) throws Exception {
@@ -78,19 +78,19 @@ public class EmployeesDataSource {
         statement.close();
         rawConnection.close();
 
-        // The 2-nd way is to get implicitly connected to global group when the shard key isn't provided, ie. set "fabricShardTable" database.connection property but
+        // The 2-nd way is to get implicitly connected to global group when the shard key isn't provided, ie. set "fabricShardTable" com.example.stevie.connection property but
         // don't set "fabricShardKey"
         ds.setFabricServerGroup(null); // clear the setting in the datasource for previous connections
         ds.setFabricShardTable("employees.employees");
         rawConnection = ds.getConnection(user, password);
-        // At this point, we have a database.connection to the global group for  the `employees.employees' shard mapping.
+        // At this point, we have a com.example.stevie.connection to the global group for  the `employees.employees' shard mapping.
         statement = rawConnection.createStatement();
         statement.executeUpdate("drop table if exists employees.employees");
         statement.executeUpdate("create table employees.employees (emp_no int not null, first_name varchar(50), last_name varchar(50), primary key (emp_no))");
 
         // 2. Insert data
 
-        // Cast to a Fabric database.connection to have access to Fabric-specific methods
+        // Cast to a Fabric com.example.stevie.connection to have access to Fabric-specific methods
         FabricMySQLConnection connection = (FabricMySQLConnection) rawConnection;
 
         // example data used to create employee records

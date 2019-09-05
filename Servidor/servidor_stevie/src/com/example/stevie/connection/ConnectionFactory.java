@@ -1,4 +1,4 @@
-package database.connection;
+package com.example.stevie.connection;
 
 import java.sql.*;
 

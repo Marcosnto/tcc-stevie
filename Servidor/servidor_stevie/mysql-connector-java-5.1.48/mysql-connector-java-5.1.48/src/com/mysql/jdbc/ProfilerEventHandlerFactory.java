@@ -36,10 +36,10 @@ public class ProfilerEventHandlerFactory {
 
     /**
      * Returns the ProfilerEventHandlerFactory that handles profiler events for the given
-     * database.connection.
+     * com.example.stevie.connection.
      * 
      * @param conn
-     *            the database.connection to handle events for
+     *            the com.example.stevie.connection to handle events for
      * @return the ProfilerEventHandlerFactory that handles profiler events
      */
     public static synchronized ProfilerEventHandler getInstance(MySQLConnection conn) throws SQLException {
@@ -48,7 +48,7 @@ public class ProfilerEventHandlerFactory {
         if (handler == null) {
             handler = (ProfilerEventHandler) Util.getInstance(conn.getProfilerEventHandler(), new Class[0], new Object[0], conn.getExceptionInterceptor());
 
-            // we do it this way to not require exposing the database.connection properties for all who utilize it
+            // we do it this way to not require exposing the com.example.stevie.connection properties for all who utilize it
             conn.initializeExtension(handler);
             conn.setProfilerEventHandlerInstance(handler);
         }
@@ -70,7 +70,7 @@ public class ProfilerEventHandlerFactory {
         try {
             this.log = this.ownerConnection.getLog();
         } catch (SQLException sqlEx) {
-            throw new RuntimeException("Unable to get logger from database.connection");
+            throw new RuntimeException("Unable to get logger from com.example.stevie.connection");
         }
     }
 }

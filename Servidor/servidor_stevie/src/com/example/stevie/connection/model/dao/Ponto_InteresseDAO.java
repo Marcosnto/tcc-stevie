@@ -1,7 +1,7 @@
-package database.connection.model.dao;
+package com.example.stevie.connection.model.dao;
 
-import database.connection.ConnectionFactory;
-import database.connection.model.bean.Ponto_Interesse;
+import com.example.stevie.connection.ConnectionFactory;
+import com.example.stevie.connection.model.bean.Ponto_Interesse;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

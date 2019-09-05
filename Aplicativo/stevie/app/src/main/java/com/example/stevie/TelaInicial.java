@@ -29,7 +29,6 @@ public class TelaInicial extends AppCompatActivity {
     private static final UUID MY_UUID_INSECURE = UUID.fromString("04c6093b-0000-1000-8000-00805f9b34fb");
 
 
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,26 +42,23 @@ public class TelaInicial extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG, "onClick: pesquisando");
                 verificarBluetooths();
-                conectarServidor();
                 Intent intent = new Intent(TelaInicial.this, MenuPrincipal.class);
                 startActivity(intent);
 
-//                ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
-//                ConnectThread conexao = new ConnectThread();
-//                conexao.run(((StevieApplication) getApplication()).getSocket(),
-//                        ((StevieApplication) getApplication()).getDevice());
-
-
+                ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
+                ConnectThread conexao = new ConnectThread(((StevieApplication) getApplication()).getSocket(),
+                        ((StevieApplication) getApplication()).getDevice());
+                conexao.start();
 
             }
         });
     }
 
     //verificar se o dispositivo já é conhecido
-    public void verificarBluetooths() {
+    public BluetoothDevice verificarBluetooths() {
         if (mBluetoothAdapter == null) {
             Log.d(TAG, "verificarBluetooths: Smartphone não suporta");
-            return;
+            return null;
         }
         Set<BluetoothDevice> pairedDevices = mBluetoothAdapter.getBondedDevices();
         if (pairedDevices.size() > 0) {
@@ -74,12 +70,21 @@ public class TelaInicial extends AppCompatActivity {
                     Log.i(TAG, "verificarBluetooths: Peguei!" + " " + dispositivo.getName());
                 }
             }
-        }
+        } return dispositivo;
     }
 
     public class ConnectThread extends Thread {
 
-        public void run(BluetoothSocket mmSocket, BluetoothDevice device) {
+        BluetoothSocket mmSocket;
+        BluetoothDevice device;
+
+        public ConnectThread(BluetoothSocket mmSocket, BluetoothDevice device) {
+            this.mmSocket = mmSocket;
+            this.device = device;
+        }
+
+
+        public void run() {
             // Cancel discovery because it will slow down the connection
             mBluetoothAdapter.cancelDiscovery();
             try {
@@ -101,10 +106,10 @@ public class TelaInicial extends AppCompatActivity {
 
     }
 
-    public void conectarServidor(){
-        ((StevieApplication) getApplication()).makeSocket(dispositivo, MY_UUID_INSECURE);
-        ConnectThread conexao = new ConnectThread();
-        conexao.run(((StevieApplication) getApplication()).getSocket(),
+    public void conectarServidor() {
+        ((StevieApplication) getApplication()).makeSocket(verificarBluetooths(), MY_UUID_INSECURE);
+        ConnectThread conexao = new ConnectThread(((StevieApplication) getApplication()).getSocket(),
                 ((StevieApplication) getApplication()).getDevice());
+        conexao.start();
     }
 }

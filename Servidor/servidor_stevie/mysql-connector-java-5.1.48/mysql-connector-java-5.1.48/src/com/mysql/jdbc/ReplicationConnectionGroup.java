@@ -31,7 +31,7 @@ import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
- * Group of database.connection objects which can be configured as a group. This is used for promotion/demotion of slaves and masters in a replication configuration,
+ * Group of com.example.stevie.connection objects which can be configured as a group. This is used for promotion/demotion of slaves and masters in a replication configuration,
  * and for exposing metrics around replication-aware connections.
  */
 public class ReplicationConnectionGroup {

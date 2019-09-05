@@ -57,36 +57,36 @@ import junit.framework.TestSuite;
  * </p>
  * 
  * <p>
- * "When the application calls Connection.close(), an event is triggered that tells the database.connection pool it can recycle the physical database database.connection. In
- * other words, the event signals the database.connection pool that the PooledConnection object which originally produced the Connection object generating the event can
- * be put back in the database.connection pool."
+ * "When the application calls Connection.close(), an event is triggered that tells the com.example.stevie.connection pool it can recycle the physical database com.example.stevie.connection. In
+ * other words, the event signals the com.example.stevie.connection pool that the PooledConnection object which originally produced the Connection object generating the event can
+ * be put back in the com.example.stevie.connection pool."
  * </p>
  * 
  * <p>
  * "A Connection-EventListener will also be notified when a fatal error occurs, so that it can make a note not to put a bad PooledConnection object back in the
  * cache when the application finishes using it. When an error occurs, the ConnectionEventListener is notified by the JDBC driver, just before the driver throws
  * an SQLException to the application to notify it of the same error. Note that automatic closing of a Connection object as discussed in the previous section
- * does not generate a database.connection close event."
+ * does not generate a com.example.stevie.connection close event."
  * </p>
  * The JDBC 3.0 specification states the same in other words:
  * 
  * <p>
- * "The Connection.close method closes the logical handle, but the physical database.connection is maintained. The database.connection pool manager is notified that the
+ * "The Connection.close method closes the logical handle, but the physical com.example.stevie.connection is maintained. The com.example.stevie.connection pool manager is notified that the
  * underlying PooledConnection object is now available for reuse. If the application attempts to reuse the logical handle, the Connection implementation throws
  * an SQLException."
  * </p>
  * 
  * <p>
  * "For a given PooledConnection object, only the most recently produced logical Connection object will be valid. Any previously existing Connection object is
- * automatically closed when the associated PooledConnection.getConnection method is called. Listeners (database.connection pool managers) are not notified in this case.
- * This gives the application server a way to take a database.connection away from a client. This is an unlikely scenario but may be useful if the application server is
+ * automatically closed when the associated PooledConnection.getConnection method is called. Listeners (com.example.stevie.connection pool managers) are not notified in this case.
+ * This gives the application server a way to take a com.example.stevie.connection away from a client. This is an unlikely scenario but may be useful if the application server is
  * trying to force an orderly shutdown."
  * </p>
  * 
  * <p>
- * "A database.connection pool manager shuts down a physical database.connection by calling the method PooledConnection.close. This method is typically called only in certain
- * circumstances: when the application server is undergoing an orderly shutdown, when the database.connection cache is being reinitialized, or when the application
- * server receives an event indicating that an unrecoverable error has occurred on the database.connection."
+ * "A com.example.stevie.connection pool manager shuts down a physical com.example.stevie.connection by calling the method PooledConnection.close. This method is typically called only in certain
+ * circumstances: when the application server is undergoing an orderly shutdown, when the com.example.stevie.connection cache is being reinitialized, or when the application
+ * server receives an event indicating that an unrecoverable error has occurred on the com.example.stevie.connection."
  * </p>
  * Even though the specification isn't clear about it, I think it is no use
  * generating a close event when calling the method PooledConnection.close(),
@@ -160,7 +160,7 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
 
     /**
      * Tests fix for BUG#7136 ... Statement.getConnection() returning physical
-     * database.connection instead of logical database.connection.
+     * com.example.stevie.connection instead of logical com.example.stevie.connection.
      */
     public void testBug7136() {
         final ConnectionEventListener conListener = new ConnectionListener();
@@ -225,20 +225,20 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
                 Connection _conn = pc.getConnection();
 
                 try {
-                    // Try to reclaim database.connection.
-                    System.out.println("Before database.connection reclaim.");
+                    // Try to reclaim com.example.stevie.connection.
+                    System.out.println("Before com.example.stevie.connection reclaim.");
 
                     _conn = pc.getConnection();
 
-                    System.out.println("After database.connection reclaim.");
+                    System.out.println("After com.example.stevie.connection reclaim.");
                 } finally {
                     if (_conn != null) {
-                        System.out.println("Before database.connection.close().");
+                        System.out.println("Before com.example.stevie.connection.close().");
 
                         // This should generate a close event.
                         _conn.close();
 
-                        System.out.println("After database.connection.close().");
+                        System.out.println("After com.example.stevie.connection.close().");
                     }
                 }
             }
@@ -265,7 +265,7 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
     }
 
     /**
-     * Tests that PacketTooLargeException doesn't clober the database.connection.
+     * Tests that PacketTooLargeException doesn't clober the com.example.stevie.connection.
      * 
      * @throws Exception
      *             if the test fails.
@@ -299,7 +299,7 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
             // We're expecting this one...
         }
 
-        // This should still work okay, even though the last query on the same database.connection didn't...
+        // This should still work okay, even though the last query on the same com.example.stevie.connection didn't...
         this.rs = connFromPool.createStatement().executeQuery("SELECT 1");
 
         assertTrue(this.connectionErrorEventCount == 0);
@@ -309,7 +309,7 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
     /**
      * Test the nb of closeEvents generated by a PooledConnection. A
      * JDBC-compliant driver should only generate 1 closeEvent each time
-     * database.connection.close() is called.
+     * com.example.stevie.connection.close() is called.
      */
     public void testCloseEvent() {
         final ConnectionEventListener conListener = new ConnectionListener();
@@ -324,12 +324,12 @@ public final class PooledConnectionRegressionTest extends BaseTestCase {
             for (int i = 0; i < NB_TESTS; i++) {
                 Connection pConn = pc.getConnection();
 
-                System.out.println("Before database.connection.close().");
+                System.out.println("Before com.example.stevie.connection.close().");
 
                 // This should generate a close event.
                 pConn.close();
 
-                System.out.println("After database.connection.close().");
+                System.out.println("After com.example.stevie.connection.close().");
             }
         } catch (SQLException ex) {
             fail(ex.toString());

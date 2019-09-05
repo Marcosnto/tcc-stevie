@@ -36,15 +36,15 @@ import java.util.Properties;
 public interface StatementInterceptor extends Extension {
 
     /**
-     * Called once per database.connection that wants to use the interceptor
+     * Called once per com.example.stevie.connection that wants to use the interceptor
      * 
      * The properties are the same ones passed in in the URL or arguments to
      * Driver.connect() or DriverManager.getConnection().
      * 
      * @param conn
-     *            the database.connection for which this interceptor is being created
+     *            the com.example.stevie.connection for which this interceptor is being created
      * @param props
-     *            configuration values as passed to the database.connection. Note that
+     *            configuration values as passed to the com.example.stevie.connection. Note that
      *            in order to support javax.sql.DataSources, configuration properties specific
      *            to an interceptor <strong>must</strong> be passed via setURL() on the
      *            DataSource. StatementInterceptor properties are not exposed via
@@ -66,7 +66,7 @@ public interface StatementInterceptor extends Extension {
      * the server will not execute the query, and the given result set will be
      * returned to the application instead.
      * 
-     * This method will be called while the database.connection-level mutex is held, so
+     * This method will be called while the com.example.stevie.connection-level mutex is held, so
      * it will only be called from one thread at a time.
      * 
      * @param sql
@@ -74,7 +74,7 @@ public interface StatementInterceptor extends Extension {
      * @param interceptedStatement
      *            the actual statement instance being intercepted
      * @param connection
-     *            the database.connection the statement is using (passed in to make
+     *            the com.example.stevie.connection the statement is using (passed in to make
      *            thread-safe implementations straightforward)
      * 
      * @return a result set that should be returned to the application instead
@@ -99,7 +99,7 @@ public interface StatementInterceptor extends Extension {
      * must implement the interface
      * com.mysql.jdbc.ResultSetInternalMethods).
      * 
-     * This method will be called while the database.connection-level mutex is held, so
+     * This method will be called while the com.example.stevie.connection-level mutex is held, so
      * it will only be called from one thread at a time.
      * 
      * @param sql
@@ -107,7 +107,7 @@ public interface StatementInterceptor extends Extension {
      * @param interceptedStatement
      *            the actual statement instance being intercepted
      * @param connection
-     *            the database.connection the statement is using (passed in to make
+     *            the com.example.stevie.connection the statement is using (passed in to make
      *            thread-safe implementations straightforward)
      * 
      * @return a result set that should be returned to the application instead
@@ -127,7 +127,7 @@ public interface StatementInterceptor extends Extension {
      * "original" top-level query, and not put it in the execution
      * path for queries that may be executed from other interceptors?
      * 
-     * If an interceptor issues queries using the database.connection it was created for,
+     * If an interceptor issues queries using the com.example.stevie.connection it was created for,
      * and does not return <code>true</code> for this method, it must ensure
      * that it does not cause infinite recursion.
      * 
@@ -138,7 +138,7 @@ public interface StatementInterceptor extends Extension {
 
     /**
      * Called by the driver when this extension should release any resources
-     * it is holding and cleanup internally before the database.connection is
+     * it is holding and cleanup internally before the com.example.stevie.connection is
      * closed.
      */
     public abstract void destroy();

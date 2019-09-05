@@ -28,9 +28,9 @@ import java.sql.Savepoint;
 
 /**
  * Implementors of this interface can be installed via the "connectionLifecycleInterceptors" configuration property and receive events and alter behavior of
- * "lifecycle" methods on our database.connection implementation.
+ * "lifecycle" methods on our com.example.stevie.connection implementation.
  * 
- * The driver will create one instance of a given interceptor per-database.connection.
+ * The driver will create one instance of a given interceptor per-com.example.stevie.connection.
  */
 public interface ConnectionLifecycleInterceptor extends Extension {
     /**

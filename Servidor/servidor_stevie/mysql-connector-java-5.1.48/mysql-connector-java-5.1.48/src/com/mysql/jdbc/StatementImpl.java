@@ -133,9 +133,9 @@ public class StatementImpl implements Statement {
                     } catch (SQLException sqlEx) {
                         CancelTask.this.caughtWhileCancelling = sqlEx;
                     } catch (NullPointerException npe) {
-                        // Case when database.connection closed while starting to cancel.
+                        // Case when com.example.stevie.connection closed while starting to cancel.
                         // We can't easily synchronize this, because then one thread can't cancel() a running query.
-                        // Ignore, we shouldn't re-throw this, because the database.connection's already closed, so the statement has been timed out.
+                        // Ignore, we shouldn't re-throw this, because the com.example.stevie.connection's already closed, so the statement has been timed out.
                     } finally {
                         if (cancelStmt != null) {
                             try {
@@ -192,10 +192,10 @@ public class StatementImpl implements Statement {
     /** The character encoding to use (if available) */
     protected String charEncoding = null;
 
-    /** The database.connection that created us */
+    /** The com.example.stevie.connection that created us */
     protected volatile MySQLConnection connection = null;
 
-    /** The physical database.connection used to effectively execute the statement */
+    /** The physical com.example.stevie.connection used to effectively execute the statement */
     protected Reference<MySQLConnection> physicalConnection = null;
 
     /** The catalog in use */
@@ -262,7 +262,7 @@ public class StatementImpl implements Statement {
 
     /**
      * Should this statement hold results open over .close() irregardless of
-     * database.connection's setting?
+     * com.example.stevie.connection's setting?
      */
     protected boolean holdResultsOpenOverClose = false;
 
@@ -1623,7 +1623,7 @@ public class StatementImpl implements Statement {
             if (this.connection != null) {
                 return this.connection.getCalendarInstanceForSessionOrNew();
             }
-            // punt, no database.connection around
+            // punt, no com.example.stevie.connection around
             return new GregorianCalendar();
         }
     }

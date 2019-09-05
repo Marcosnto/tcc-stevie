@@ -131,7 +131,7 @@ public class TestHABasics extends BaseFabricTestCase {
     }
 
     /**
-     * Test that new connections get the state changes from the Fabric node. The current implementation queries the Fabric node on every new database.connection and
+     * Test that new connections get the state changes from the Fabric node. The current implementation queries the Fabric node on every new com.example.stevie.connection and
      * therefore always has the latest state. Future shared state implementation may loosen this constraint.
      */
     public void manualTestNewConnHasNewState() throws Exception {
@@ -165,8 +165,8 @@ public class TestHABasics extends BaseFabricTestCase {
     }
 
     /**
-     * Test that partially failed over connections (those that failed but could not immediately get a new database.connection) don't impact the creation of new
-     * connections by being a part of the replication database.connection group.
+     * Test that partially failed over connections (those that failed but could not immediately get a new com.example.stevie.connection) don't impact the creation of new
+     * connections by being a part of the replication com.example.stevie.connection group.
      */
     public void manualTestFailedOldMasterDoesntBlockNewConnections() throws Exception {
         FabricMySQLConnection conn1 = (FabricMySQLConnection) this.ds.getConnection(this.username, this.password);
@@ -174,7 +174,7 @@ public class TestHABasics extends BaseFabricTestCase {
 
         Statement s = conn1.createStatement();
 
-        // run a query until a failure happens. this will cause the master database.connection in the replication database.connection to be closed
+        // run a query until a failure happens. this will cause the master com.example.stevie.connection in the replication com.example.stevie.connection to be closed
         try {
             while (true) {
                 s.executeUpdate("set @x = 1");
@@ -185,17 +185,17 @@ public class TestHABasics extends BaseFabricTestCase {
             }
         } catch (SQLException ex) {
             System.err.println("Failure encountered: " + ex.getMessage());
-            System.err.println("Waiting 10 seconds before trying a new database.connection");
+            System.err.println("Waiting 10 seconds before trying a new com.example.stevie.connection");
             try {
                 Thread.sleep(10 * 1000);
             } catch (Exception ex2) {
             }
         }
 
-        // we leave the conn *open* and therefore in the database.connection group to make sure it doesn't prevent changing master which would happen if the
+        // we leave the conn *open* and therefore in the com.example.stevie.connection group to make sure it doesn't prevent changing master which would happen if the
         // removeMasterHost() call failed
 
-        // make sure a new database.connection is successful
+        // make sure a new com.example.stevie.connection is successful
         conn1 = (FabricMySQLConnection) this.ds.getConnection(this.username, this.password);
         conn1.setServerGroupName("ha_config1_group");
 
@@ -216,7 +216,7 @@ public class TestHABasics extends BaseFabricTestCase {
 
         Statement s = conn1.createStatement();
 
-        // run a query until a failure happens. this will cause the slaves database.connection in the replication database.connection to be closed
+        // run a query until a failure happens. this will cause the slaves com.example.stevie.connection in the replication com.example.stevie.connection to be closed
         try {
             while (true) {
                 ResultSet rs = s.executeQuery("select 1");
@@ -228,17 +228,17 @@ public class TestHABasics extends BaseFabricTestCase {
             }
         } catch (SQLException ex) {
             System.err.println("Failure encountered: " + ex.getMessage());
-            System.err.println("Waiting 10 seconds before trying a new database.connection");
+            System.err.println("Waiting 10 seconds before trying a new com.example.stevie.connection");
             try {
                 Thread.sleep(10 * 1000);
             } catch (Exception ex2) {
             }
         }
 
-        // we leave the conn *open* and therefore in the database.connection group to make sure it doesn't prevent changing SLAVE which would happen if the
+        // we leave the conn *open* and therefore in the com.example.stevie.connection group to make sure it doesn't prevent changing SLAVE which would happen if the
         // removeSlaveHost() call failed
 
-        // make sure a new database.connection is successful
+        // make sure a new com.example.stevie.connection is successful
         conn1 = (FabricMySQLConnection) this.ds.getConnection(this.username, this.password);
         conn1.setServerGroupName("ha_config1_group");
         conn1.setReadOnly(true);

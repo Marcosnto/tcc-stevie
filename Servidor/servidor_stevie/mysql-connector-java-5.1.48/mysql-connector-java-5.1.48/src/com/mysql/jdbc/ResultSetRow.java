@@ -660,7 +660,7 @@ public abstract class ResultSetRow {
      * @param encoding
      *            the Java name for the character encoding
      * @param conn
-     *            the database.connection that created this result set row
+     *            the com.example.stevie.connection that created this result set row
      * 
      * @return the value for the given column (including NULL if it is) as a
      *         String

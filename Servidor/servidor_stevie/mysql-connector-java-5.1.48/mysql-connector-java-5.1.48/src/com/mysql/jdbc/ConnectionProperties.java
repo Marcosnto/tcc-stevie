@@ -28,9 +28,9 @@ import java.sql.SQLException;
 public interface ConnectionProperties {
 
     /**
-     * Returns a description of the database.connection properties as an XML document.
+     * Returns a description of the com.example.stevie.connection properties as an XML document.
      * 
-     * @return the database.connection properties as an XML document.
+     * @return the com.example.stevie.connection properties as an XML document.
      * @throws SQLException
      *             if an error occurs.
      */
@@ -484,7 +484,7 @@ public interface ConnectionProperties {
 
     /**
      * Configures the number of callable statements to cache. (this is
-     * configurable during the life of the database.connection).
+     * configurable during the life of the com.example.stevie.connection).
      * 
      * @param size
      *            The callableStatementCacheSize to set.

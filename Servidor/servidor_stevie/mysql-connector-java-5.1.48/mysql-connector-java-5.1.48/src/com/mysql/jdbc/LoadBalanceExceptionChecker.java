@@ -34,7 +34,7 @@ public interface LoadBalanceExceptionChecker extends Extension {
      * The driver will not pass in a Connection instance when calling init(), but it
      * will pass in the Properties, otherwise it acts like a normal Extension.
      * 
-     * One instance of a handler *per* JDBC database.connection instance will be created. If
+     * One instance of a handler *per* JDBC com.example.stevie.connection instance will be created. If
      * you need singleton-like behavior, you're on your own to provide it.
      * 
      * @param ex

@@ -1,4 +1,6 @@
-import database.connection.model.bean.Tag;
+package com.example.stevie;
+
+import com.example.stevie.connection.model.bean.Tag;
 
 import java.util.*;
 

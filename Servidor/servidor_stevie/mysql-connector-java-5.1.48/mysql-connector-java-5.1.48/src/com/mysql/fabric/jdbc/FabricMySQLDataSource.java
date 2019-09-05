@@ -50,7 +50,7 @@ public class FabricMySQLDataSource extends MysqlDataSource implements FabricMySQ
     }
 
     /**
-     * Creates a database.connection using the specified properties.
+     * Creates a com.example.stevie.connection using the specified properties.
      * copied directly from MysqlDataSource.getConnection().
      * No easy way to override the static `mysqlDriver' without
      * globally affecting the driver.
@@ -58,7 +58,7 @@ public class FabricMySQLDataSource extends MysqlDataSource implements FabricMySQ
      * @param props
      *            the properties to connect with
      * 
-     * @return a database.connection to the database
+     * @return a com.example.stevie.connection to the database
      * 
      * @throws SQLException
      *             if an error occurs

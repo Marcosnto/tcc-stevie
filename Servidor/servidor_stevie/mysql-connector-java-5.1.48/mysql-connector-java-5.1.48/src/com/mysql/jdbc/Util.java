@@ -532,7 +532,7 @@ public class Util {
 
     /**
      * Returns initialized instances of classes listed in extensionClassNames.
-     * There is no need to call Extension.init() method after that if you don't change database.connection or properties.
+     * There is no need to call Extension.init() method after that if you don't change com.example.stevie.connection or properties.
      * 
      * @param conn
      * @param props

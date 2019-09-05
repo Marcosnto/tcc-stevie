@@ -118,7 +118,7 @@ public class MysqlIO {
     private static String jvmPlatformCharset = null;
 
     /**
-     * We need to have a 'marker' for all-zero datetimes so that ResultSet can decide what to do based on database.connection setting
+     * We need to have a 'marker' for all-zero datetimes so that ResultSet can decide what to do based on com.example.stevie.connection setting
      */
     protected final static String ZERO_DATE_VALUE_MARKER = "0000-00-00";
     protected final static String ZERO_DATETIME_VALUE_MARKER = "0000-00-00 00:00:00";
@@ -167,7 +167,7 @@ public class MysqlIO {
     private LinkedList<StringBuilder> packetDebugRingBuffer = null;
     private RowData streamingData = null;
 
-    /** The database.connection to the server */
+    /** The com.example.stevie.connection to the server */
     public Socket mysqlConnection = null;
     protected SocketFactory socketFactory = null;
 
@@ -199,7 +199,7 @@ public class MysqlIO {
     private boolean logSlowQueries = false;
 
     /**
-     * Does the character set of this database.connection match the character set of the
+     * Does the character set of this com.example.stevie.connection match the character set of the
      * platform
      */
     private boolean platformDbCharsetMatches = true; // changed once we've connected.
@@ -248,7 +248,7 @@ public class MysqlIO {
     private int authPluginDataLength = 0;
 
     /**
-     * Constructor: Connect to the MySQL server and setup a stream database.connection.
+     * Constructor: Connect to the MySQL server and setup a stream com.example.stevie.connection.
      * 
      * @param host
      *            the hostname to connect to
@@ -474,7 +474,7 @@ public class MysqlIO {
     }
 
     // We do this to break the chain between MysqlIO and Connection, so that we can have PhantomReferences on connections that let the driver clean up the
-    // socket database.connection without having to use finalize() somewhere (which although more straightforward, is horribly inefficient).
+    // socket com.example.stevie.connection without having to use finalize() somewhere (which although more straightforward, is horribly inefficient).
     protected NetworkResources getNetworkResources() {
         return new NetworkResources(this.mysqlConnection, this.mysqlInput, this.mysqlOutput);
     }
@@ -990,7 +990,7 @@ public class MysqlIO {
 
     /**
      * Initialize communications with the MySQL server. Handles logging on, and
-     * handling initial database.connection errors.
+     * handling initial com.example.stevie.connection errors.
      * 
      * @param user
      * @param password
@@ -1088,7 +1088,7 @@ public class MysqlIO {
         this.colDecimalNeedsBump = !versionMeetsMinimum(3, 23, 15); // guess? Not noted in changelog
         this.useNewUpdateCounts = versionMeetsMinimum(3, 22, 5);
 
-        // read database.connection id
+        // read com.example.stevie.connection id
         this.threadId = buf.readLong();
 
         if (this.protocolVersion > 9) {
@@ -1279,7 +1279,7 @@ public class MysqlIO {
                         packet.writeLong(this.clientParam);
                         packet.writeLong(this.maxThreeBytes);
 
-                        // charset, JDBC will connect as 'latin1', and use 'SET NAMES' to change to the desired charset after the database.connection is established.
+                        // charset, JDBC will connect as 'latin1', and use 'SET NAMES' to change to the desired charset after the com.example.stevie.connection is established.
                         packet.writeByte((byte) 8);
 
                         // Set of bytes reserved for future use.
@@ -1401,7 +1401,7 @@ public class MysqlIO {
      * Fill the {@link MysqlIO#authenticationPlugins} map.
      * First this method fill the map with instances of {@link MysqlOldPasswordPlugin}, {@link MysqlNativePasswordPlugin}, {@link MysqlClearPasswordPlugin} and
      * {@link Sha256PasswordPlugin}.
-     * Then it gets instances of plugins listed in "authenticationPlugins" database.connection property by
+     * Then it gets instances of plugins listed in "authenticationPlugins" com.example.stevie.connection property by
      * {@link Util#loadExtensions(Connection, Properties, String, String, ExceptionInterceptor)} call and adds them to the map too.
      * 
      * The key for the map entry is getted by {@link AuthenticationPlugin#getProtocolPluginName()}.
@@ -1409,7 +1409,7 @@ public class MysqlIO {
      * "mysql_native_password", "mysql_old_password", "mysql_clear_password" or "sha256_password" from it's own getProtocolPluginName() method.
      * 
      * All plugin instances in the map are initialized by {@link Extension#init(Connection, Properties)} call
-     * with this.database.connection and this.database.connection.getProperties() values.
+     * with this.com.example.stevie.connection and this.com.example.stevie.connection.getProperties() values.
      * 
      * @throws SQLException
      */
@@ -1465,7 +1465,7 @@ public class MysqlIO {
             defaultIsFound = true;
         }
 
-        // plugins from authenticationPluginClasses database.connection parameter
+        // plugins from authenticationPluginClasses com.example.stevie.connection parameter
         String authenticationPluginClasses = this.connection.getAuthenticationPlugins();
         if (authenticationPluginClasses != null && !"".equals(authenticationPluginClasses)) {
 
@@ -1535,7 +1535,7 @@ public class MysqlIO {
      * 
      * @param pluginName
      *            mysql protocol plugin names, for example "mysql_native_password" and "mysql_old_password" for built-in plugins
-     * @return null if plugin is not found or authentication plugin instance initialized with current database.connection properties
+     * @return null if plugin is not found or authentication plugin instance initialized with current com.example.stevie.connection properties
      * @throws SQLException
      */
     private AuthenticationPlugin getAuthenticationPlugin(String pluginName) throws SQLException {
@@ -1558,7 +1558,7 @@ public class MysqlIO {
     }
 
     /**
-     * Check if given plugin requires confidentiality, but database.connection is without SSL
+     * Check if given plugin requires confidentiality, but com.example.stevie.connection is without SSL
      * 
      * @param plugin
      * @throws SQLException
@@ -1571,10 +1571,10 @@ public class MysqlIO {
     }
 
     /**
-     * Performs an authentication handshake to authorize database.connection to a
+     * Performs an authentication handshake to authorize com.example.stevie.connection to a
      * given database as a given MySQL user. This can happen upon initial
-     * database.connection to the server, after receiving Auth Challenge Packet, or
-     * at any moment during the database.connection life-time via a Change User
+     * com.example.stevie.connection to the server, after receiving Auth Challenge Packet, or
+     * at any moment during the com.example.stevie.connection life-time via a Change User
      * request.
      * 
      * This method is aware of pluggable authentication and will use
@@ -1589,7 +1589,7 @@ public class MysqlIO {
      *            database to connect to (can be empty)
      * @param challenge
      *            the Auth Challenge Packet received from server if
-     *            this method is used during the initial database.connection.
+     *            this method is used during the initial com.example.stevie.connection.
      *            Otherwise null.
      * 
      * @throws SQLException
@@ -1807,7 +1807,7 @@ public class MysqlIO {
                         last_sent.writeString(plugin.getProtocolPluginName(), enc, this.connection);
                     }
 
-                    // database.connection attributes
+                    // com.example.stevie.connection attributes
                     if ((this.clientParam & CLIENT_CONNECT_ATTRS) != 0) {
                         sendConnectionAttributes(last_sent, enc, this.connection);
                         last_sent.writeByte((byte) 0);
@@ -1861,7 +1861,7 @@ public class MysqlIO {
                         last_sent.writeString(plugin.getProtocolPluginName(), enc, this.connection);
                     }
 
-                    // database.connection attributes
+                    // com.example.stevie.connection attributes
                     if (((this.clientParam & CLIENT_CONNECT_ATTRS) != 0)) {
                         sendConnectionAttributes(last_sent, enc, this.connection);
                     }
@@ -2238,7 +2238,7 @@ public class MysqlIO {
                 if (!ExportControlled.isSSLEstablished(this.mysqlConnection)) { // Fix for Bug#56979 does not apply to secure sockets.
                     if (!this.mysqlConnection.isClosed()) {
                         try {
-                            // The response won't be read, this fixes BUG#56979 [Improper database.connection closing logic leads to TIME_WAIT sockets on server].
+                            // The response won't be read, this fixes BUG#56979 [Improper com.example.stevie.connection closing logic leads to TIME_WAIT sockets on server].
                             this.mysqlConnection.shutdownInput();
                         } catch (UnsupportedOperationException e) {
                             // Ignore, some sockets do not support this method.
@@ -4175,7 +4175,7 @@ public class MysqlIO {
                     packet.writeLong(this.clientParam);
                     packet.writeLong(this.maxThreeBytes);
 
-                    // charset, JDBC will connect as 'latin1', and use 'SET NAMES' to change to the desired charset after the database.connection is established.
+                    // charset, JDBC will connect as 'latin1', and use 'SET NAMES' to change to the desired charset after the com.example.stevie.connection is established.
                     packet.writeByte((byte) 8);
 
                     // Set of bytes reserved for future use.
@@ -4372,7 +4372,7 @@ public class MysqlIO {
             packet.writeByte((byte) 0);
         }
 
-        // database.connection attributes
+        // com.example.stevie.connection attributes
         if ((this.serverCapabilities & CLIENT_CONNECT_ATTRS) != 0) {
             sendConnectionAttributes(packet, enc, this.connection);
         }

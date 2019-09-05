@@ -690,7 +690,7 @@ public class CharsetMapping {
      * <li>if there is no static mapping for this charset then return javaEncoding value as is because this
      * could be a custom charset for example
      * <li>if static mapping exists and javaEncoding equals to one of Java encoding canonical names or aliases available
-     * for this mapping then javaEncoding value as is; this is required when result should match to database.connection encoding, for example if database.connection encoding is
+     * for this mapping then javaEncoding value as is; this is required when result should match to com.example.stevie.connection encoding, for example if com.example.stevie.connection encoding is
      * Cp943 we must avoid getting SHIFT_JIS for sjis mysql charset
      * <li>if static mapping exists and javaEncoding doesn't match any Java encoding canonical
      * names or aliases available for this mapping then return default Java encoding (the first in mapping list)
@@ -735,7 +735,7 @@ public class CharsetMapping {
      * until then.
      * 
      * @param conn
-     *            the database.connection to the MySQL server
+     *            the com.example.stevie.connection to the MySQL server
      * @return the Java encoding name that error messages use
      * @throws SQLException
      *             if determination of the character encoding fails

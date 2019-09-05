@@ -33,10 +33,10 @@ public class MiniAdmin {
     private Connection conn;
 
     /**
-     * Create a new MiniAdmin using the given database.connection
+     * Create a new MiniAdmin using the given com.example.stevie.connection
      * 
      * @param conn
-     *            the existing database.connection to use.
+     *            the existing com.example.stevie.connection to use.
      * 
      * @throws SQLException
      *             if an error occurs
@@ -84,7 +84,7 @@ public class MiniAdmin {
     }
 
     /**
-     * Shuts down the MySQL server at the other end of the database.connection that this
+     * Shuts down the MySQL server at the other end of the com.example.stevie.connection that this
      * MiniAdmin was created from/for.
      * 
      * @throws SQLException

@@ -54,7 +54,7 @@ import com.mysql.jdbc.Driver;
  * In the 'tearDown' method, drop any tables you created in the 'setUp' method.
  * 
  * <p>
- * In any of the above three methods, you should use one of the variants of the 'getConnection' method to create a JDBC database.connection to MySQL, which will use the
+ * In any of the above three methods, you should use one of the variants of the 'getConnection' method to create a JDBC com.example.stevie.connection to MySQL, which will use the
  * default JDBC URL of 'jdbc:mysql:///test'.
  * 
  * <p>
@@ -183,15 +183,15 @@ public abstract class BaseBugReport {
     }
 
     /**
-     * Provides a database.connection to the JDBC URL specified in getUrl().
+     * Provides a com.example.stevie.connection to the JDBC URL specified in getUrl().
      * 
-     * If a database.connection already exists, that database.connection is returned. Otherwise a
-     * new database.connection is created.
+     * If a com.example.stevie.connection already exists, that com.example.stevie.connection is returned. Otherwise a
+     * new com.example.stevie.connection is created.
      * 
-     * @return a database.connection to the JDBC URL specified in getUrl().
+     * @return a com.example.stevie.connection to the JDBC URL specified in getUrl().
      * 
      * @throws SQLException
-     *             if an error is caused while creating the database.connection.
+     *             if an error is caused while creating the com.example.stevie.connection.
      */
     public final synchronized Connection getConnection() throws SQLException {
         if (this.conn == null || this.conn.isClosed()) {
@@ -202,33 +202,33 @@ public abstract class BaseBugReport {
     }
 
     /**
-     * Use this if you need to get a new database.connection for your bug report (i.e.
-     * there's more than one database.connection involved).
+     * Use this if you need to get a new com.example.stevie.connection for your bug report (i.e.
+     * there's more than one com.example.stevie.connection involved).
      * 
-     * @return a new database.connection to the JDBC URL specified in getUrl().
+     * @return a new com.example.stevie.connection to the JDBC URL specified in getUrl().
      * 
      * @throws SQLException
-     *             if an error is caused while creating the database.connection.
+     *             if an error is caused while creating the com.example.stevie.connection.
      */
     public final synchronized Connection getNewConnection() throws SQLException {
         return getConnection(getUrl());
     }
 
     /**
-     * Returns a database.connection using the given URL.
+     * Returns a com.example.stevie.connection using the given URL.
      * 
      * @param url
      *            the JDBC URL to use
      * @return a new java.sql.Connection to the JDBC URL.
      * @throws SQLException
-     *             if an error occurs getting the database.connection.
+     *             if an error occurs getting the com.example.stevie.connection.
      */
     public final synchronized Connection getConnection(String url) throws SQLException {
         return getConnection(url, null);
     }
 
     /**
-     * Returns a database.connection using the given URL and properties.
+     * Returns a com.example.stevie.connection using the given URL and properties.
      * 
      * @param url
      *            the JDBC URL to use
@@ -236,7 +236,7 @@ public abstract class BaseBugReport {
      *            the JDBC properties to use
      * @return a new java.sql.Connection to the JDBC URL.
      * @throws SQLException
-     *             if an error occurs getting the database.connection.
+     *             if an error occurs getting the com.example.stevie.connection.
      */
     public final synchronized Connection getConnection(String url, Properties props) throws SQLException {
 

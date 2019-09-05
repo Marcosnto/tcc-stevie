@@ -58,7 +58,7 @@ Version 5.1.47
 
   - Fix for Bug#72609 (18749544), SETDATE() NOT USING A PROLEPTIC GREGORIAN CALENDAR.
 
-  - Fix for Bug#87534 (26730196), UNION ALL query fails when useServerPrepStmts=true on database database.connection.
+  - Fix for Bug#87534 (26730196), UNION ALL query fails when useServerPrepStmts=true on database com.example.stevie.connection.
     Test case only. Base bug fixed in MySQL 5.7.22.
 
   - Fix for Bug#89948 (27658489), Batched statements are not committed for useLocalTransactionState=true.
@@ -73,7 +73,7 @@ Version 5.1.46
 
   - WL#11629, Change caching_sha2_password padding.
 
-  - Fix for Bug#86741 (26314325), Multi-Host database.connection with autocommit=0 getAutoCommit maybe wrong.
+  - Fix for Bug#86741 (26314325), Multi-Host com.example.stevie.connection with autocommit=0 getAutoCommit maybe wrong.
 
   - Fix for Bug#27231383, PROVIDE MAVEN-FRIENDLY COMMERCIAL PACKAGES WITHOUT "-BIN".
 
@@ -141,7 +141,7 @@ Version 5.1.43
   - Fix for Bug#25946965, UPDATE THE TIME ZONE MAPPINGS WITH LATEST TZ DATABASES.
 
   - Fix for Bug#20182108, INCLUDE CUSTOM LOAD BALANCING STRATEGY USING PLUGIN API.
-    New load-balancing strategy "serverAffinity" and new database.connection property "serverAffinityOrder" added.
+    New load-balancing strategy "serverAffinity" and new com.example.stevie.connection property "serverAffinityOrder" added.
 
 Version 5.1.42
 
@@ -155,7 +155,7 @@ Version 5.1.42
 
   - Fix for Bug#70704 (17653733), Deadlock using UpdatableResultSet.
 
-  - Fix for Bug#66430 (16714868), setCatalog on database.connection leaves ServerPreparedStatement cache for old catalog.
+  - Fix for Bug#66430 (16714868), setCatalog on com.example.stevie.connection leaves ServerPreparedStatement cache for old catalog.
 
   - Fix for Bug#83662 (25048406), NullPointerException while reading NULL boolean value from DB.
 
@@ -201,7 +201,7 @@ Version 5.1.42
 
   - Updated collations map.
 
-  - Fix for Bug#69526 (17035755), 'Abandoned database.connection cleanup thread' at mysql-connector-java-5.1.25.
+  - Fix for Bug#69526 (17035755), 'Abandoned com.example.stevie.connection cleanup thread' at mysql-connector-java-5.1.25.
 
   - Fix for Bug#82826 (24942672), Unneeded version requirement for javax.net.ssl Import-Package on OSGi MANIFEST.MF.
 
@@ -250,7 +250,7 @@ Version 5.1.42
   - Fix for Bug#23188498, CLIENT HANG WHILE USING SERVERPREPSTMT WHEN PROFILESQL=TRUE AND USEIS=TRUE.
 
   - Fix for Bug#22678872, NPE DURING UPDATE WITH FABRIC.
-    New property 'loadBalanceHostRemovalGracePeriod' sets the grace period when removing hosts from a load-balanced database.connection.
+    New property 'loadBalanceHostRemovalGracePeriod' sets the grace period when removing hosts from a load-balanced com.example.stevie.connection.
 
   - Fix for Bug#71131 (18068303), Poor error message in CallableStatement.java.
 
@@ -371,9 +371,9 @@ Version 5.1.42
 
   - Fix for BUG#75592 (20408891), "SHOW VARIABLES WHERE" is expensive.
 
-  - Fix for Bug#75113 (20821888), Fail in failover of the database.connection in MySQL fabric
+  - Fix for Bug#75113 (20821888), Fail in failover of the com.example.stevie.connection in MySQL fabric
 
-  - Fix for Bug#72077 (18425861), Fabric database.connection with username to a server with disabled auth throws NPE
+  - Fix for Bug#72077 (18425861), Fabric com.example.stevie.connection with username to a server with disabled auth throws NPE
 
   - Add test for already fixed Bug#72546 (18719760), C/J Fabric createGroup() throws ClassCastException
 
@@ -396,7 +396,7 @@ Version 5.1.42
 
   - Fix for Bug#20504139, GETFUNCTIONCOLUMNS() AND GETPROCEDURECOLUMNS() RETURNS ERROR FOR VALID INPUTS.
 
-  - Expose PreparedStatment.ParseInfo for external usage, with no capture of the database.connection, which allows for global, highly-concurrent parse caches to be
+  - Expose PreparedStatment.ParseInfo for external usage, with no capture of the com.example.stevie.connection, which allows for global, highly-concurrent parse caches to be
     implemented.
 
   - Fix for Bug#75309 (20272931), mysql connector/J driver in streaming mode will in the blocking state.
@@ -409,10 +409,10 @@ Version 5.1.42
   - Fix for Bug#67760 (15936413), Deadlock when concurrently executing prepared statements with Timestamp objects.
 
   - Fix for Bug#71084 (18028319), Wrong java.sql.Date stored if client and server time zones differ.
-    Two database.connection properties added, "noTimezoneConversionForDateType" and "cacheDefaultTimezone", to define if and how time zone conversions are available to
+    Two com.example.stevie.connection properties added, "noTimezoneConversionForDateType" and "cacheDefaultTimezone", to define if and how time zone conversions are available to
     DATE data type values. 
 
-  - Fix for Bug#75080 (20217686), NullPointerException during setTimestamp on Fabric database.connection.
+  - Fix for Bug#75080 (20217686), NullPointerException during setTimestamp on Fabric com.example.stevie.connection.
 
   - Fix for Bug#75168 (20204783), loadBalanceExceptionChecker interface cannot work using JDBC4/JDK7.
 
@@ -485,7 +485,7 @@ Version 5.1.42
 
   - Fix for Bug#18869381, CHANGEUSER() FOR SHA USER RESULTS IN NULLPOINTEREXCEPTION
 
-  - Fix for Bug#62577 (16722757), XA database.connection fails with ClassCastException
+  - Fix for Bug#62577 (16722757), XA com.example.stevie.connection fails with ClassCastException
 
   - Fix for Bug#18852587, CONNECT WITH A USER CREATED USING SHA256_PASSWORD PLUGIN FAILS WHEN PWD IS BLANK
 
@@ -496,7 +496,7 @@ Version 5.1.42
 
   - Charset mappings refactored.
 
-  - Fix for Bug#72712 (18836319), No way to configure Connector JDBC to not do extra queries on database.connection
+  - Fix for Bug#72712 (18836319), No way to configure Connector JDBC to not do extra queries on com.example.stevie.connection
 
 06-09-14 - Version 5.1.31
 
@@ -534,7 +534,7 @@ Version 5.1.42
     Thanks to Andrej Golovnin for his contribution.
     Additionally, unneeded StringBuffer replaced by StringBuilder instances in StringUtils.
 
-  - Fix for Bug#72301 (18549472), Fabric driver swallows exceptions thrown during database.connection creation using JDBC4
+  - Fix for Bug#72301 (18549472), Fabric driver swallows exceptions thrown during com.example.stevie.connection creation using JDBC4
 
 03-28-14 - Version 5.1.30
 
@@ -557,7 +557,7 @@ Version 5.1.42
   - Fix for Bug#71396 (18110320), setMaxRows (SQL_SELECT_LIMIT) from one query used in later queries (sometimes).
     Additionally, SQL_SELECT_LIMIT is no longer sent unnecessarily between consecutive queries.
 
-  - Fix for Bug#71432 (18107621), Key store files not closed when making SSL database.connection
+  - Fix for Bug#71432 (18107621), Key store files not closed when making SSL com.example.stevie.connection
 
   - Reserved words lists updated from latest official SQL:92 and SQL:2003 specifications.
 
@@ -573,7 +573,7 @@ Version 5.1.42
     Additional "com.mysql.jdbc.extra.libs" parameter must be used for ant build.
 
   - Fix for Bug#71038, Add an option for custom collations detection.
-    Added new database.connection property detectCustomCollations=[true|false], with default false.
+    Added new com.example.stevie.connection property detectCustomCollations=[true|false], with default false.
     Please be aware that these changed the previous default behavior and if you use custom charsets or collations
     you need to set detectCustomCollations=true.
 
@@ -612,7 +612,7 @@ Version 5.1.42
 
   - Fix for Bug#68562, Combination rewriteBatchedStatements and useAffectedRows not working as expected.
 
-  - Fix for Bug#69452 (17015673), memory size database.connection property doesn't support large values well.
+  - Fix for Bug#69452 (17015673), memory size com.example.stevie.connection property doesn't support large values well.
 
   - Added tests for InnoDB full-text search support introduced in 5.6GA.
 
@@ -660,14 +660,14 @@ Version 5.1.42
 
   - Fix for Bug#69298 (16845965), Methods DatabaseMetaData.getProcedures() and DatabaseMetaData.getProcedureColumns(), in JDBC4,
     return stored procedure only or both stored procedures and functions metadata information, depending on the value set in the
-    database.connection property "getProceduresReturnsFunctions", having default value 'true'. Several fixes in Functions and
+    com.example.stevie.connection property "getProceduresReturnsFunctions", having default value 'true'. Several fixes in Functions and
     Procedures metadata so that consulting I__S and MySQL/DDL returns the same info.
 
   - Fix for Bug#69308 (16879267), Avoid calling batchedStatement.close() twice, and thus raising and ignoring an undercover SQLException, in methods
     PreparedStatement.executeBatchedInserts and PreparedStatement.executePreparedBatchAsMultiStatement.
 
   - Fix for Bug#68400, useCompression=true and connect to server, zip native method cause out of memory.
-    CompressedInputStream now does not keep reference to database.connection.
+    CompressedInputStream now does not keep reference to com.example.stevie.connection.
     Thank Dominic Tootell for his investigation, proposed solution and all the help he provided.
 
   - Fix for Bug#65871, DatabaseMetaData.getColumns() throws an MySQLSyntaxErrorException.
@@ -676,7 +676,7 @@ Version 5.1.42
     like DatabaseMetaData.getColumns() allow parameters passed both in unquoted and quoted form,
     quoted form is not JDBC-compliant but used by third party tools. So when you pass the indentifier
     "`dbname`" in unquoted form (`dbname`) driver handles it as quoted by "`" symbol. To handle such
-    identifiers correctly a new behavior was added to pedantic mode (database.connection property pedantic=true),
+    identifiers correctly a new behavior was added to pedantic mode (com.example.stevie.connection property pedantic=true),
     now if it set to true methods like DatabaseMetaData.getColumns() treat all parameters as unquoted.
 
   - Fix for Bug#45757 (11754192), Don't allow updateRow() to be called when updatable cursor is positioned on insert row.
@@ -706,8 +706,8 @@ Version 5.1.42
      * _runtime_version : the version of the Java runtime environment in which the driver is running
      * _runtime_vendor : the name of company which produced the Java runtime environment
     Additionally, users may supply their own key/value attributes to be exposed by providing them in 
-    "key1:value1,key2:value2" format in the connectionAttributes database.connection property.
-    To avoid sending any database.connection attributes to the server, set connectionAttributes property to "none".
+    "key1:value1,key2:value2" format in the connectionAttributes com.example.stevie.connection property.
+    To avoid sending any com.example.stevie.connection attributes to the server, set connectionAttributes property to "none".
     
   - Fix for Bug#68763 (16545334), ReplicationConnection.isMasterConnection() returns false always.
 
@@ -726,8 +726,8 @@ Version 5.1.42
   - Fix for Bug#16224249, Deadlock on concurrently used LoadBalancedMySQLConnection:
     1) abortInternal() method was moved from com.mysql.jdbc.MySQLConnection to com.mysql.jdbc.Connection interface;
     2) load-balanced/failover proxy now broadcasts abortInternal() to all underlying physical connections;
-    3) load-balanced/failover proxy now prevents picking of new physical database.connection after close() or abortInternal() were called explicitly on proxy;
-    4) database.connection synchronization mutex was refactored, now mutex is proxy instance for proxied database.connection or database.connection instance itself if there is no proxy.
+    3) load-balanced/failover proxy now prevents picking of new physical com.example.stevie.connection after close() or abortInternal() were called explicitly on proxy;
+    4) com.example.stevie.connection synchronization mutex was refactored, now mutex is proxy instance for proxied com.example.stevie.connection or com.example.stevie.connection instance itself if there is no proxy.
 
   - Fix for Bug#64805, StatementImpl$CancelTask occasionally throws NullPointerExceptions.
 
@@ -740,7 +740,7 @@ Version 5.1.42
   - Fix for Bug#35653, executeQuery() in Statement.java let "TRUNCATE" queries being executed. "TRUNCATE" and "RENAME" are now filtered for executeQuery().
 
   - Fix for Bug#65909, referenceThread causes memory leak in Tomcat.
-    Abandoned database.connection cleanup thread was refactored to have static shutdown method.
+    Abandoned com.example.stevie.connection cleanup thread was refactored to have static shutdown method.
     If you encountered this leak problem, your application should implement context listener with
     AbandonedConnectionCleanupThread.shutdown() call in contextDestroyed method.
 
@@ -763,9 +763,9 @@ Version 5.1.42
 
   - Added tests for explicit partition selection syntax introduced in 5.6GA.
 
-  - Added support of password expiration protocol. This introduces new boolean database.connection property disconnectOnExpiredPasswords.
-    If disconnectOnExpiredPasswords = true and password expired then database.connection will be rejected by server with ErrorCode == 1820 (ER_MUST_CHANGE_PASSWORD).
-    If disconnectOnExpiredPasswords = false then database.connection will enter to "sandbox" mode,
+  - Added support of password expiration protocol. This introduces new boolean com.example.stevie.connection property disconnectOnExpiredPasswords.
+    If disconnectOnExpiredPasswords = true and password expired then com.example.stevie.connection will be rejected by server with ErrorCode == 1820 (ER_MUST_CHANGE_PASSWORD).
+    If disconnectOnExpiredPasswords = false then com.example.stevie.connection will enter to "sandbox" mode,
     all commands except SET PASSWORD = ... and SET PASSWORD FOR CURRRENT_USER() = ... will cause an error to be thrown.
 
   - Added tests for EXCHANGE PARTITION syntax introduced in 5.6GA.
@@ -821,7 +821,7 @@ Version 5.1.42
 
   - Fix for Bug#65508, getCharsetNameForIndex() should be faster.
 
-  - Fix for Bug#14563127, Load-balanced database.connection fails to select valid host, closes database.connection
+  - Fix for Bug#14563127, Load-balanced com.example.stevie.connection fails to select valid host, closes com.example.stevie.connection
     on re-balance.
 
 07-05-12 - Version 5.1.21
@@ -832,7 +832,7 @@ Version 5.1.42
 
   - Added new built-in authentication plugin com.mysql.jdbc.authentication.MysqlClearPasswordPlugin
     ("mysql_clear_password"). It allows C/J based clients to connect to MySQL accounts which use
-    PAM authentication for example. SSL database.connection required for this authentication method.
+    PAM authentication for example. SSL com.example.stevie.connection required for this authentication method.
     If SSL is not enabled then authentication which requires "mysql_clear_password" will lead to an error.
 
   - Fix for Bug#13980303, Auth plugin's confidentiality requirements are not checked after Auth Switch Request.
@@ -844,10 +844,10 @@ Version 5.1.42
   - Fix for Bug#36662, TimeUtil.java: MEST mapping n/a.
 
   - Fix a scalability/memory footprint issue where Object.finalize() was being used on 
-    ConnectionImpl to clean up the low-level network database.connection to MySQL should a
-    database.connection be abandoned by the application before being cleanly close()d. We now
+    ConnectionImpl to clean up the low-level network com.example.stevie.connection to MySQL should a
+    com.example.stevie.connection be abandoned by the application before being cleanly close()d. We now
     track connections in a phantom reference queue, and have a single thread per-vm
-    clean these up when the VM notices the database.connection is no longer referenced by
+    clean these up when the VM notices the com.example.stevie.connection is no longer referenced by
     anything else.
     
   - Added the ability to add new client-side prepared statement parse info caches by
@@ -920,7 +920,7 @@ Version 5.1.42
        nor it is one of the built-in plugins. It is an error to set as default a plugin
        which was disabled with "disabledAuthenticationPlugins" property. It is an error
        to set this value to null or the empty string (i.e. there must be at least a valid
-       default authentication plugin specified for the database.connection, meeting all constraints
+       default authentication plugin specified for the com.example.stevie.connection, meeting all constraints
        listed above).
 
   - Fix for Bug#63526. The problem happens in com.mysql.jdbc.EscapeProcessor#escapeSQL.  The function recognizes the string in the create table statement as an escape sequence (line 136+138). The "if" construct beginning in line 182 tries to match a white-space collapsed version of the string to prefixes for valid jdbc-escapes (till line 300). Since no matching escape sequence is found and no "else" clause is defined, neither the token, nor replacement are added to the resulting escaped SQL string.
@@ -929,7 +929,7 @@ Version 5.1.42
 
   - Fix for Bug#63811, pointless Socket.bind() when using ephemeral ports and interfaces, which limits scalability on some platforms.
     
-  - Connection.changeUser() would not check for closed connections, leading to NPEs when this method was called on a closed database.connection.
+  - Connection.changeUser() would not check for closed connections, leading to NPEs when this method was called on a closed com.example.stevie.connection.
 	
   - Fix for Bug#63284, memory leak with Failover proxied Statement/PreparedStatement with DBCP due to improper implementation of equals().
     
@@ -954,12 +954,12 @@ Version 5.1.42
 
   - Completed fix for Bug#61201/12649557, fixed tests failures.
   
-  - Fix for Bug#61201/12649557, Can't establish database.connection when url has
+  - Fix for Bug#61201/12649557, Can't establish com.example.stevie.connection when url has
     sessionVariables and characterEncoding. Fix covers only MySQL server 4.1+
     
   - Fix for Bug#61501 - Calling Statement.cancel() on a statement that isn't
     currently executing will cause some later-executed query on the same
-    database.connection to be cancelled unexpectedly. The driver now guards against this
+    com.example.stevie.connection to be cancelled unexpectedly. The driver now guards against this
     condition, but it is an underlying server issue. The MySQL statement "KILL QUERY"
     (which is what the driver uses to implement Statement.cancel()) is rather
     non-deterministic, and thus the use of Statement.cancel() should be avoided
@@ -984,7 +984,7 @@ Version 5.1.42
   - Fix for Bug#61150 - First call to stored procedure fails with "No Database Selected".
 	The workaround introduced in DatabaseMetaData.getCallStmtParameterTypes to fix
 	the bug in server where SHOW CREATE PROCEDURE was not respecting lower-case table names
-	is misbehaving when database.connection is not attached to database and on non-casesensitive OS.
+	is misbehaving when com.example.stevie.connection is not attached to database and on non-casesensitive OS.
 
   - Fix for Bug#61105 - Avoid a concurrent bottleneck in Java's character set
     encoding/decoding when converting bytes to/from Strings.
@@ -1006,12 +1006,12 @@ Version 5.1.42
   - Fix for bug 11782297, DBMD.getTables (so thus getColumns too) fails with 
     table names containing dot (like "junk_[Sp:e,c/ C-h+a=.r]").
   
-  - Added the ability to determine if the database.connection is against a server on the
+  - Added the ability to determine if the com.example.stevie.connection is against a server on the
     same host via the Connection.isServerLocal() method.
     
   - Fix for bug 12325877, Setting "autoReconnect=true" and 
     "cacheServerConfiguration=true" would cause connections created after
-    an existing database.connection fails to have non-existent values for server
+    an existing com.example.stevie.connection fails to have non-existent values for server
     variables which lead to exceeding of max allowed packet exceptions when the
     new connections were used.
 
@@ -1036,7 +1036,7 @@ Version 5.1.42
      in MySQL's "SHOW PROCESSLIST" and Innodb deadlock diagnostics, enable with
      "includeThreadNamesAsStatementComment=true".
      
-   - Added an SLF4J logging adapter. Enable by adding setting the database.connection
+   - Added an SLF4J logging adapter. Enable by adding setting the com.example.stevie.connection
      property "logger" to "Slf4JLogger" and placing the appropriate bridge
      from SLF4J to the logging framework of choice in your CLASSPATH. As with
      other Connector/J logging adapters, the log category name used by the 
@@ -1099,8 +1099,8 @@ Version 5.1.42
 	 extended with createDatabase and dropDatabase. Regression test added.
 
    - Fix for Bug#57262 - "useOldUTF8Behavior" behavior was broken since 5.1.3,
-     now explicitly sets database.connection character set to latin1 ("SET NAMES latin1")
-     during database.connection post-handshake process.
+     now explicitly sets com.example.stevie.connection character set to latin1 ("SET NAMES latin1")
+     during com.example.stevie.connection post-handshake process.
      
    - Patch for problem where "noAccessToProcedureBodies=true" was causing 
      "underprivileged" user not to have access to procedures created by him.
@@ -1156,8 +1156,8 @@ Version 5.1.42
       using load-balanced connections.
 
     - Fix for Bug#56200 - Added diagnostic information to SQLException message 
-      thrown when a closed load-balanced database.connection is reused.  This
-      information will identify the conditions which caused the database.connection to
+      thrown when a closed load-balanced com.example.stevie.connection is reused.  This
+      information will identify the conditions which caused the com.example.stevie.connection to
       be closed.
       
     - Fix for Bug#56429 - When using Connector/J configured for failover 
@@ -1165,7 +1165,7 @@ Version 5.1.42
       and spawned new idle connections when the transactions on the master were
       committed or rolled-back, eventually exceeding max_connections. It was 
       also discovered that session state (autocommit, isolation level, catalog)
-      wasn't  being copied from the primary database.connection to secondary
+      wasn't  being copied from the primary com.example.stevie.connection to secondary
       connections correctly because of the same changes that caused this bug, 
       and this was fixed as well.
      
@@ -1179,7 +1179,7 @@ Version 5.1.42
       The default value for these properties is now "JKS", and thus it no 
       longer has to be specified.
       
-    - Fixed Bug#56979 - Improper database.connection closing logic leads to TIME_WAIT
+    - Fixed Bug#56979 - Improper com.example.stevie.connection closing logic leads to TIME_WAIT
       sockets on server
       
     - Fixed Bug#57380 - DatabaseMetaData.supportsMultipleResultSets() now returns
@@ -1212,7 +1212,7 @@ Version 5.1.42
       down.
       
     - Replaced URLs of the form jdbc:mysql://host-1,host-2 with a composite of
-      a normal database.connection and a jdbc:mysql:loadbalance:// database.connection for more
+      a normal com.example.stevie.connection and a jdbc:mysql:loadbalance:// com.example.stevie.connection for more
       robustness and cleaner code.
       
     - Fixed BUG#51643 - Connections using jdbc:mysql:loadbalance:// would 
@@ -1221,14 +1221,14 @@ Version 5.1.42
       instances past commit()/rollback() could have data written to or read from
       un-intended connections.
       
-    - Fixed BUG#51666 - StatementInterceptors were never "un-safed" after database.connection
+    - Fixed BUG#51666 - StatementInterceptors were never "un-safed" after com.example.stevie.connection
       establishment, causing interceptors which returned result sets pre/post execution
       would not work.
       
     - Fixed BUG#51783 - Load-balanced connections could throw a SQLException
       incorrectly on commit() or rollback().  This was not caused by failures in commit
       or rollback, but rather by the possibility that the newly-selected physical
-      database.connection was stale.  Added logic to catch and retry if this happens, up to
+      com.example.stevie.connection was stale.  Added logic to catch and retry if this happens, up to
       the number of hosts specified for load-balancing.  Also added new property,
       loadBalanceValidateConnectionOnSwapServer, which controls whether to explicitly
       ping the selected host (otherwise, the host is presumed to be up, and will only
@@ -1239,7 +1239,7 @@ Version 5.1.42
       for each ping executed against the servers.  This ping is executed when the
       physical connections are rebalanced (commit/rollback or communication exception),
       or when a query starting with (exactly) "/* ping */" is executed.  The latter
-      causes each open underlying physical database.connection to be pinged.
+      causes each open underlying physical com.example.stevie.connection to be pinged.
 
     - Fixed BUG#51776 - Connection.rollback() could swallow exceptions incorrectly.
 
@@ -1247,7 +1247,7 @@ Version 5.1.42
       a failover event could result in failure to try more than a single host in 
       certain situations.
       
-    - Fixed BUG#52534 - Performance regression using load-balanced database.connection.
+    - Fixed BUG#52534 - Performance regression using load-balanced com.example.stevie.connection.
 
     - More aggressively purge the statement timeout timers after they've been cancelled to
       trade time for memory. This purge only happens if statement timeouts are in use.
@@ -1285,7 +1285,7 @@ Version 5.1.42
     - Fixed Bug#54175 - Driver doesn't support utf8mb4 for servers 5.5.2 and newer. The
       driver now auto-detects servers configured with character_set_server=utf8mb4 or
       treats the Java encoding "utf-8" passed via "characterEncoding=..." as utf8mb4 in
-      the "SET NAMES=" calls it makes when establishing the database.connection.
+      the "SET NAMES=" calls it makes when establishing the com.example.stevie.connection.
     
 02-18-10 - Version 5.1.12
 
@@ -1315,7 +1315,7 @@ Version 5.1.42
     - Fix for BUG#49607 - Provide Connection context in ExceptionInterceptor.
  
     - Fix for BUG#48605 - Ping leaves closed connections in liveConnections, causing subsequent Exceptions when
-      that database.connection is used.
+      that com.example.stevie.connection is used.
  
     - Fix for BUG#48442 - Load-balanced Connection object returns inconsistent results for hashCode() and equals()
       dependent upon state of underlying connections.
@@ -1334,15 +1334,15 @@ Version 5.1.42
       the com.mysql.jdbc.StatementInteceptorsV2 interface for more details. The driver will create adaptors to
       transparently convert older implementations to the newer interface at runtime.
       
-    - Statement Interceptors are now enabled at database.connection instantiation, but
-      can not return result sets (they will be ignored)  until the database.connection
+    - Statement Interceptors are now enabled at com.example.stevie.connection instantiation, but
+      can not return result sets (they will be ignored)  until the com.example.stevie.connection
       has bootstrapped itself. If during the init() method your interceptor 
-      requires access to the database.connection itself, it should ensure that methods
-      that might throw exceptions if the database.connection is closed should handle
+      requires access to the com.example.stevie.connection itself, it should ensure that methods
+      that might throw exceptions if the com.example.stevie.connection is closed should handle
       this in a robust manner.
       
     - "Replication" connections (those with URLs that start with 
-      jdbc:mysql:replication) now use a jdbc:mysql:loadbalance database.connection
+      jdbc:mysql:replication) now use a jdbc:mysql:loadbalance com.example.stevie.connection
       under the hood for the slave "pool". This also means that one can set
       load balancing properties such as "loadBalanceBlacklistTimeout" and
       "loadBalanceStrategy" to choose a mechanism for balancing the load and
@@ -1350,9 +1350,9 @@ Version 5.1.42
       in order to fix Bug#49537.
       
     - Fixed Bug#36565 - permgen leak from java.util.Timer. Unfortunately no great
-      fix exists that lets us keep the timer shared amongst database.connection instances, so
+      fix exists that lets us keep the timer shared amongst com.example.stevie.connection instances, so
       instead it's lazily created if need be per-instance, and torn down when the 
-      database.connection is closed.
+      com.example.stevie.connection is closed.
       
     - Fixed BUG#49700 - Connections from ConnectionPoolDataSource don't
       maintain any values set with "sesssionVariables=...". This was a bug
@@ -1386,7 +1386,7 @@ Version 5.1.42
       scenario.
       
     - Added a new option, "queryTimeoutKillsConnection", when set to "true" will cause timeouts set
-      by Statement.setQueryTimeout() to forcibly kill the database.connection, not just the query.
+      by Statement.setQueryTimeout() to forcibly kill the com.example.stevie.connection, not just the query.
       
     - Fixed BUG#32216, "PORT" property filled in by Driver.parseURL() not always present. The driver 
       will now always fill in the "PORT" (using 3306 if not specified) property, and the "HOST" property 
@@ -1420,7 +1420,7 @@ Version 5.1.42
       as multi-value INSERTs so they are rewritten into multi-statements instead.
 
 07-16-09 - Version 5.1.8
-    - Fixed BUG#44588 - Fixed error message for database.connection exceptions when
+    - Fixed BUG#44588 - Fixed error message for com.example.stevie.connection exceptions when
       streaming result sets are used.
       
     - Modified/fixed test cases using UnreliableSocketFactory.
@@ -1519,7 +1519,7 @@ Version 5.1.42
     - Support use of INFORMATION_SCHEMA.PARAMETERS when "useInformationSchema" is set "true" and the view exists
       for DatabaseMetaData.getProcedureColumns() and getFunctionColumns().
       
-    - When "logSlowQueries" is set to "true", and the driver has made a database.connection to a server that has suport
+    - When "logSlowQueries" is set to "true", and the driver has made a com.example.stevie.connection to a server that has suport
       for the SERVER_QUERY_WAS_SLOW flag in the protocol, the query will be logged if the server indicates the
       query has passed the slow query threshold.
 
@@ -1536,7 +1536,7 @@ Version 5.1.42
 	  strategy.
 	  
 	- Fixed BUG#39784 - invalidateCurrentConnection() does not manage global blacklist
-	  when handling database.connection exceptions.
+	  when handling com.example.stevie.connection exceptions.
 
 	- Fixed BUG#40031 - Adding support for CallableStatement.execute() to call
 	  stored procedures that are defined as NO SQL or SQL READ DATA when failed
@@ -1591,7 +1591,7 @@ Version 5.1.42
 	
 	- Fixed BUG#35489 - Prepared statements from pooled connections cause NPE when closed() under JDBC-4.0.
 	
-	- Added database.connection property "useLocalTransactionState" which configures if the driver use the in-transaction
+	- Added com.example.stevie.connection property "useLocalTransactionState" which configures if the driver use the in-transaction
 	  state provided by the MySQL protocol to determine if a commit() or rollback() should actually be sent to the database.
 	  (disabled by default).
 	  
@@ -1606,12 +1606,12 @@ Version 5.1.42
 	  also made INFORMATION_SCHEMA tables available via DatabaseMetadata.getColumns().
 	  
 	- Fixed BUG#39352, "INSERT ... ON DUPLICATE KEY UPDATE" doesn't return "0" for un-affected rows. This requires the driver to not
-	  send the "CLIENT_FOUND_ROWS" flag to the server when it connects if the database.connection property "useAffectedRows" is set to "true",
+	  send the "CLIENT_FOUND_ROWS" flag to the server when it connects if the com.example.stevie.connection property "useAffectedRows" is set to "true",
 	  which breaks JDBC-compliance, but currently there is no other way to get correct return values from the server.
 	  
-	- Fixed BUG#38747 - ResultSets in "streaming" mode throw an exception when closed when the database.connection is set as "read-only".
+	- Fixed BUG#38747 - ResultSets in "streaming" mode throw an exception when closed when the com.example.stevie.connection is set as "read-only".
 	  
-	- Fixed BUG#37570 - Can't use non-latin1 passwords. Added database.connection property "passwordCharacterEncoding". Leaving this set to
+	- Fixed BUG#37570 - Can't use non-latin1 passwords. Added com.example.stevie.connection property "passwordCharacterEncoding". Leaving this set to
 	  the default value (null), uses the platform character set, which works for ISO8859_1 (i.e. "latin1") passwords. For passwords 
 	  in other character encodings, the encoding will have to be specified with this property, as it's not possible for the driver to 
 	  auto-detect this.
@@ -1647,7 +1647,7 @@ Version 5.1.42
       doesn't properly handle ReplicationConnection
     
     - Fixed Bug#20491 - DatabaseMetadata.getColumns() doesn't
-      return correct column names if database.connection character set
+      return correct column names if com.example.stevie.connection character set
       isn't UTF-8. (There was a server-side component of this that
       was fixed late in the 5.0 development cycle, it seems, this
       is the last piece that fixes some loose ends in the JDBC
@@ -1659,7 +1659,7 @@ Version 5.1.42
       (fixes a hang when reading data from 4.0 servers).
       
     - Made profiler event handling extensible via the "profilerEventHandler"
-      database.connection property.
+      com.example.stevie.connection property.
       
     - Fixed Bug#31823 - CallableStatement.setNull() on a stored function would 
       throw an ArrayIndexOutOfBounds when setting the last parameter to null when calling setNull().
@@ -1695,13 +1695,13 @@ Version 5.1.42
       in trunk and beyond it will be "false" (i.e. the old date/time handling code, warts
       and all will be deprecated).
       
-    - Fixed BUG#32877 - Load balancing database.connection using best response time would incorrectly
-      "stick" to hosts that were down when the database.connection was first created.
+    - Fixed BUG#32877 - Load balancing com.example.stevie.connection using best response time would incorrectly
+      "stick" to hosts that were down when the com.example.stevie.connection was first created.
       
       We solve this problem with a black list that is used during the picking of new hosts.
       If the black list ends up including all configured hosts, the driver will retry for
       a configurable number of times (the "retriesAllDown" configuration property, with a default
-      of 120 times), sleeping 250ms between attempts to pick a new database.connection.
+      of 120 times), sleeping 250ms between attempts to pick a new com.example.stevie.connection.
       
       We've also went ahead and made the balancing strategy extensible. To create a new strategy,
       implement the interface com.mysql.jdbc.BalanceStrategy (which also includes our standard
@@ -1711,29 +1711,29 @@ Version 5.1.42
     - Fixed BUG#30508 - ResultSet returned by Statement.getGeneratedKeys() is not closed 
       automatically when statement that created it is closed.
       
-    - Added two new database.connection properties, "selfDestructOnPingSecondsLifetime" and
-      "selfDestructOnPingMaxOperations" designed to control overall database.connection lifetime
-      (useful to reclaim resources on the server side) for database.connection pools that don't have such a
+    - Added two new com.example.stevie.connection properties, "selfDestructOnPingSecondsLifetime" and
+      "selfDestructOnPingMaxOperations" designed to control overall com.example.stevie.connection lifetime
+      (useful to reclaim resources on the server side) for com.example.stevie.connection pools that don't have such a
       facility. 
       
       The driver will consult the values of these properties when a ping is sent, either through 
       calling Connection.ping(), issuing the "ping marker" query (any query that starts with 
       "/* ping */"), or when using JDBC-4.0, calling Connection.isValid(). 
       
-      If the database.connection has issued too many operations, or is too old, the driver will
+      If the com.example.stevie.connection has issued too many operations, or is too old, the driver will
       throw a SQLException with the SQLState of "08S01" at the time of the ping, which
-      will cause the database.connection to be invalidated with most pools in use today.
+      will cause the com.example.stevie.connection to be invalidated with most pools in use today.
       
     - Fixed issue where driver could send invalid server-side prepared statement 
       IDs to the server when the driver was setup to do auto-reconnect as the
-      database.connection could get set up enough to start sending queries on one thread,
-      while the thread that "noticed" the database.connection was down hasn't completed
+      com.example.stevie.connection could get set up enough to start sending queries on one thread,
+      while the thread that "noticed" the com.example.stevie.connection was down hasn't completed
       re-preparing all of the server-side prepared statements that were open when
-      the database.connection died.
+      the com.example.stevie.connection died.
       
       Potentially fixes cause for bug 28934. Potentially fixes other possible race
-      conditions where one thread that has created a database.connection "shares" it with other
-      threads if the database.connection is reconnected due to auto-reconnect functionality.
+      conditions where one thread that has created a com.example.stevie.connection "shares" it with other
+      threads if the com.example.stevie.connection is reconnected due to auto-reconnect functionality.
       
     - Fixed BUG#33823 - Public interface ResultSetInternalMethods with reference to 
       non-public class com.mysql.jdbc.CachedResultSetMetaData.
@@ -1758,7 +1758,7 @@ Version 5.1.42
       DDL through CallableStatements.
     
     - Fixed BUG#34518 - Statements using cursor fetch leaked internal prepared statements
-      until database.connection was closed. The internal prepared statement is now held open while
+      until com.example.stevie.connection was closed. The internal prepared statement is now held open while
       the result set is open, and closed by the result set itself being closed.
 
     - Fixed BUG#34677 - Blob.truncate() wouldn't take "0" as an argument.
@@ -1779,8 +1779,8 @@ Version 5.1.42
       TIME, DATETIME and TIMESTAMP types when using absolute, relative,
       and previous result set navigation methods.
       
-    - Fixed BUG#34703 - Connection.isValid() invalidates database.connection after
-      timeout, even if database.connection is actually valid.
+    - Fixed BUG#34703 - Connection.isValid() invalidates com.example.stevie.connection after
+      timeout, even if com.example.stevie.connection is actually valid.
       
     - Fixed BUG#34194 - ResultSetMetaData.getColumnTypeName() returns
       "UNKNOWN" for GEOMETRY type.
@@ -1806,14 +1806,14 @@ Version 5.1.42
       ReplicationConnection. Notice that we implemented com.mysql.jdbc.Connection
       for ReplicationConnection, however, only accessors from ConnectionProperties
       are implemented (not the mutators), and they return values from the currently
-      active database.connection. All other methods from com.mysql.jdbc.Connection are
-      implemented, and operate on the currently active database.connection, with the exception of
+      active com.example.stevie.connection. All other methods from com.mysql.jdbc.Connection are
+      implemented, and operate on the currently active com.example.stevie.connection, with the exception of
       resetServerState() and changeUser().
       
     - Connections created with jdbc:mysql:replication:// URLs now force
       roundRobinLoadBalance=true on the slaves, and round-robin loadbalancing
       now uses a "random" choice to more evenly distribute load across slave
-      servers, especially in database.connection pools. Connections that are configured
+      servers, especially in com.example.stevie.connection pools. Connections that are configured
       with "roundRobinLoadBalance=true" no longer set the failover state,
       as it's assumed that we're not attempting to fall-back to a master
       server. This fixes BUG#34963.
@@ -1830,7 +1830,7 @@ Version 5.1.42
       queries by those that are slower than 5 * stddev of the mean
       query time (outside the 96% percentile).
       
-    - Fixed BUG#28256 - When database.connection is in read-only mode,
+    - Fixed BUG#28256 - When com.example.stevie.connection is in read-only mode,
       queries that are wrapped in parentheses incorrectly identified 
       as DML.
        
@@ -1953,7 +1953,7 @@ Version 5.1.42
       for more details until we iron out the API and get it documented in the
       manual.
 
-    - Externalized the descriptions of database.connection properties.
+    - Externalized the descriptions of com.example.stevie.connection properties.
 
     - The data (and how it's stored) for ResultSet rows are now behind an
       interface which allows us (in some cases) to allocate less memory
@@ -2040,7 +2040,7 @@ nn-nn-07 - Version 5.0.9
 
     - Fixed BUG#30550, executeBatch() would fail with an ArithmeticException
       and/or NullPointerException when the batch had zero members and
-      "rewriteBatchedStatements" was set to "true" for the database.connection.
+      "rewriteBatchedStatements" was set to "true" for the com.example.stevie.connection.
     
     - Added two configuration parameters (both default to "false")
     
@@ -2066,15 +2066,15 @@ nn-nn-07 - Version 5.0.9
       and NUMERIC will return a precision of 254 for server versions older than
       5.0.3, 64 for versions 5.0.3-5.0.5 and 65 for versions newer than 5.0.5.
     
-    - Fixed BUG#29852 - Closing a load-balanced database.connection would cause a
+    - Fixed BUG#29852 - Closing a load-balanced com.example.stevie.connection would cause a
       ClassCastException.
     
     - Fixed BUG#27867 - Schema objects with identifiers other than
-      the database.connection character aren't retrieved correctly in
+      the com.example.stevie.connection character aren't retrieved correctly in
       ResultSetMetadata.
       
     - Fixed BUG#28689 - CallableStatement.executeBatch() doesn't work when 
-      database.connection property "noAccessToProcedureBodies" has been set to "true".
+      com.example.stevie.connection property "noAccessToProcedureBodies" has been set to "true".
      
       The fix involves changing the behavior of "noAccessToProcedureBodies",in 
       that the driver will now report all paramters as "IN" paramters
@@ -2090,7 +2090,7 @@ nn-nn-07 - Version 5.0.9
     - Fixed BUG#30851, NPE with null column values when
       "padCharsWithSpace" is set to "true".
     
-    - Specifying a "validation query" in your database.connection pool
+    - Specifying a "validation query" in your com.example.stevie.connection pool
       that starts with "/* ping */" _exactly_ will cause the driver to 
       instead send a ping to the server and return a fake result set (much 
       lighter weight), and when using a ReplicationConnection or a LoadBalancedConnection, 
@@ -2245,7 +2245,7 @@ nn-nn-07 - Version 5.0.9
 	  inability to retrieve said metadata, or execute procedures that have certain
 	  comments in them.
 
-	- Give better error message when "streaming" result sets, and the database.connection
+	- Give better error message when "streaming" result sets, and the com.example.stevie.connection
 	  gets clobbered because of exceeding net_write_timeout on the server. (which is
 	  basically what the error message says too).
 
@@ -2296,7 +2296,7 @@ nn-nn-07 - Version 5.0.9
 	  "SHOW VARIABLES LIKE" which is very inefficient on MySQL-5.0+
 
 	- Added configuration property "useDynamicCharsetInfo". If set to "false"
-	  (the default), the driver will use a per-database.connection cache of character set
+	  (the default), the driver will use a per-com.example.stevie.connection cache of character set
 	  information queried from the server when necessary, or when set to "true",
 	  use a built-in static mapping that is more efficient, but isn't aware of
 	  custom character sets or character sets implemented after the release of
@@ -2313,8 +2313,8 @@ nn-nn-07 - Version 5.0.9
 	  calling execute() didn't always return the generated keys (executeUpdate()
 	  worked fine however).
 
-	- Fixed issue where a failed-over database.connection would let an application call
-	  setReadOnly(false), when that call should be ignored until the database.connection
+	- Fixed issue where a failed-over com.example.stevie.connection would let an application call
+	  setReadOnly(false), when that call should be ignored until the com.example.stevie.connection
 	  is reconnected to a writable master unless "failoverReadOnly" had been set
 	  to "false".
 
@@ -2338,7 +2338,7 @@ nn-nn-07 - Version 5.0.9
 	  "jdbc:mysql:replication://" and "jdbc:mysql:loadbalance://" which will
 	  create a ReplicationConnection (exactly like when
 	  using [NonRegistering]ReplicationDriver) and an experimenal load-balanced
-	  database.connection designed for use with SQL nodes in a MySQL Cluster/NDB environment,
+	  com.example.stevie.connection designed for use with SQL nodes in a MySQL Cluster/NDB environment,
 	  respectively.
 
 	  In an effort to simplify things, we're working on deprecating multiple
@@ -2347,7 +2347,7 @@ nn-nn-07 - Version 5.0.9
 	  disappear, to be replaced with com.mysql.jdbc[NonRegistering]Driver with
 	  the new URL prefix.
 
-	- Added an experimental load-balanced database.connection designed for use with SQL nodes
+	- Added an experimental load-balanced com.example.stevie.connection designed for use with SQL nodes
       in a MySQL Cluster/NDB environment (This is not for master-slave replication.
       For that, we suggest you look at ReplicationConnection or "lbpool").
 
@@ -2362,7 +2362,7 @@ nn-nn-07 - Version 5.0.9
       Physical connections to the given hosts will not be created until needed.
 
       The driver will invalidate connections that it detects have had
-      communication errors when processing a request. A new database.connection to the
+      communication errors when processing a request. A new com.example.stevie.connection to the
       problematic host will be attempted the next time it is selected by the load
       balancing algorithm.
 
@@ -2383,8 +2383,8 @@ nn-nn-07 - Version 5.0.9
       "rollback" statement needs to be sent to the database when Connection.commit()
       or Connection.rollback() is called.
 
-      This is especially helpful for high-load situations with database.connection pools that
-      always call Connection.rollback() on database.connection check-in/check-out because it
+      This is especially helpful for high-load situations with com.example.stevie.connection pools that
+      always call Connection.rollback() on com.example.stevie.connection check-in/check-out because it
       avoids a round-trip to the server.
 
 03-01-07 - Version 5.0.5
@@ -2394,7 +2394,7 @@ nn-nn-07 - Version 5.0.9
 	  the detected server character set.
 
 	- Performance enhancement of initial character set configuration, driver
-      will only send commands required to configure database.connection character set
+      will only send commands required to configure com.example.stevie.connection character set
       session variables if the current values on the server do not match
       what is required.
 
@@ -2433,7 +2433,7 @@ nn-nn-07 - Version 5.0.9
 	  using server-side prepared statements, when server expects microseconds.
 
 	- Fixed BUG#25514 - Timer instance used for Statement.setQueryTimeout()
-	  created per-database.connection, rather than per-VM, causing memory leak
+	  created per-com.example.stevie.connection, rather than per-VM, causing memory leak
 
 	- Fixed BUG#25009 - Results from updates not handled correctly in
 	  multi-statement queries, leading to erroneous "Result is from UPDATE"
@@ -2469,7 +2469,7 @@ nn-nn-07 - Version 5.0.9
       time than our internal implementation.
 
 	- Changed cached result set metadata (when using
-	  "cacheResultSetMetadata=true") to be cached per-database.connection rather
+	  "cacheResultSetMetadata=true") to be cached per-com.example.stevie.connection rather
 	  than per-statement as previously implemented.
 
 	- Use a java.util.TreeMap to map column names to ordinal indexes for
@@ -2510,7 +2510,7 @@ nn-nn-07 - Version 5.0.9
 
 	- Added configuration property "localSocketAddress",which is the hostname or
 	  IP address given to explicitly configure the interface that the driver will
-	  bind the client side of the TCP/IP database.connection to when connecting.
+	  bind the client side of the TCP/IP com.example.stevie.connection to when connecting.
 
 	- Take "localSocketAddress" property into account when creating instances
 	  of CommunicationsException when the underyling exception is a
@@ -2619,7 +2619,7 @@ nn-nn-07 - Version 5.0.9
 07-26-06 - Version 5.0.3
 
     - Fixed BUG#20650 - Statement.cancel() causes NullPointerException
-      if underlying database.connection has been closed due to server failure.
+      if underlying com.example.stevie.connection has been closed due to server failure.
 
     - Added configuration option "noAccessToProcedureBodies" which will
       cause the driver to create basic parameter metadata for
@@ -2648,13 +2648,13 @@ nn-nn-07 - Version 5.0.9
 	- Fixed BUG#20242 - MysqlValidConnectionChecker for JBoss doesn't
 	  work with MySQLXADataSources.
 
-	- Better caching of character set converters (per-database.connection)
+	- Better caching of character set converters (per-com.example.stevie.connection)
 	  to remove a bottleneck for multibyte character sets.
 
-	- Added database.connection/datasource property  "pinGlobalTxToPhysicalConnection"
+	- Added com.example.stevie.connection/datasource property  "pinGlobalTxToPhysicalConnection"
 	  (defaults to "false"). When set to "true", when using XAConnections, the
 	  driver ensures that operations on a given XID are always routed to the
-	  same physical database.connection. This allows the XAConnection to support
+	  same physical com.example.stevie.connection. This allows the XAConnection to support
 	  "XA START ... JOIN" after "XA END" has been called, and is also a
 	  workaround for transaction managers that don't maintain thread affinity
 	  for a global transaction (most either always maintain thread affinity,
@@ -2685,9 +2685,9 @@ nn-nn-07 - Version 5.0.9
     - Moved -bin-g.jar file into separate "debug" subdirectory to avoid confusion.
 
     - Don't allow .setAutoCommit(true), or .commit() or .rollback() on an XA-managed
-      database.connection as-per the JDBC specification.
+      com.example.stevie.connection as-per the JDBC specification.
 
-    - If the database.connection "useTimezone" is set to "true", then also respect timezone
+    - If the com.example.stevie.connection "useTimezone" is set to "true", then also respect timezone
       conversions in escape-processed string literals (e.g. "{ts ...}" and
       "{t ...}").
 
@@ -2738,12 +2738,12 @@ nn-nn-07 - Version 5.0.9
       information for .getParameterClassName().
 
     - Fuller synchronization of Connection to avoid deadlocks when
-      using multithreaded frameworks that multithread a single database.connection
+      using multithreaded frameworks that multithread a single com.example.stevie.connection
       (usually not recommended, but the JDBC spec allows it anyways),
       part of fix to BUG#14972).
 
     - Implementation of Statement.cancel() and Statement.setQueryTimeout().
-      Both require MySQL-5.0.0 or newer server, require a separate database.connection
+      Both require MySQL-5.0.0 or newer server, require a separate com.example.stevie.connection
       to issue the "KILL QUERY" command, and in the case of setQueryTimeout()
       creates an additional thread to handle the timeout functionality.
 
@@ -2780,7 +2780,7 @@ nn-nn-07 - Version 5.0.9
       board.
 
       These changes should not have any effect on "normal" J(2)EE use cases
-      where only one thread ever uses a database.connection instance and the objects created by
+      where only one thread ever uses a com.example.stevie.connection instance and the objects created by
       it.
 
     - Use a java.util.Timer to schedule cancellation of queries via
@@ -2939,7 +2939,7 @@ nn-nn-07 - Version 3.1.15
       "logger=com.mysql.jdbc.log.CommonsLogger".
 
     - Fixed BUG#15570 - ReplicationConnection incorrectly copies state,
-	  doesn't transfer database.connection context correctly when transitioning between
+	  doesn't transfer com.example.stevie.connection context correctly when transitioning between
 	  the same read-only states.
 
 	- Fixed BUG#18041 - Server-side prepared statements don't cause
@@ -3058,7 +3058,7 @@ nn-nn-07 - Version 3.1.15
 	  tables (due to J2EE classloader differences).
 
 	- Fixed BUG#14972 - Deadlock while closing server-side prepared
-	  statements from multiple threads sharing one database.connection.
+	  statements from multiple threads sharing one com.example.stevie.connection.
 
 	- Fixed BUG#12230 -	logSlowQueries should give better info.
 
@@ -3112,7 +3112,7 @@ nn-nn-07 - Version 3.1.15
       "Catalog can't be null" exception.
 
     - Fixed BUG#12218, properties shared between master and slave with
-      replication database.connection.
+      replication com.example.stevie.connection.
 
     - Fixed BUG#10630, Statement.getWarnings() fails with NPE if statement
       has been closed.
@@ -3190,7 +3190,7 @@ nn-nn-07 - Version 3.1.15
 	  ConnectionPoolDataSource instances).
 
     - Added Connection.isMasterConnection() for clients to be able to determine
-      if a multi-host master/slave database.connection is connected to the first host
+      if a multi-host master/slave com.example.stevie.connection is connected to the first host
       in the list.
 
     - Fixed BUG#12753 - Tokenizer for "=" in URL properties was causing
@@ -3224,7 +3224,7 @@ nn-nn-07 - Version 3.1.15
 
     - Fixed BUG#13277 - ResultSetMetaData from
       Statement.getGeneratedKeys() caused NullPointerExceptions to be
-      thrown whenever a method that required a database.connection reference
+      thrown whenever a method that required a com.example.stevie.connection reference
       was called.
 
     - Removed support for java.nio I/O. Too many implementations
@@ -3304,7 +3304,7 @@ nn-nn-07 - Version 3.1.15
 	- Fixed BUG#10485, SQLException thrown when retrieving YEAR(2)
 	  with ResultSet.getString(). The driver will now always treat YEAR types
 	  as java.sql.Dates and return the correct values for getString().
-	  Alternatively, the "yearIsDateType" database.connection property can be set to
+	  Alternatively, the "yearIsDateType" com.example.stevie.connection property can be set to
 	  "false" and the values will be treated as SHORTs.
 
 	- The datatype returned for TINYINT(1) columns when "tinyInt1isBit=true"
@@ -3336,17 +3336,17 @@ nn-nn-07 - Version 3.1.15
 	- Setting "cachePrepStmts=true" now causes the Connection to also
 	  cache the check the driver performs to determine if a prepared
 	  statement can be server-side or not, as well as caches server-side
-	  prepared statements for the lifetime of a database.connection. As before,
+	  prepared statements for the lifetime of a com.example.stevie.connection. As before,
 	  the "prepStmtCacheSize" parameter controls the size of these
 	  caches.
 
 	- Try to handle OutOfMemoryErrors more gracefully. Although not
-	  much can be done, they will in most cases close the database.connection
+	  much can be done, they will in most cases close the com.example.stevie.connection
 	  they happened on so that further operations don't run into
-	  a database.connection in some unknown state. When an OOM has happened,
-	  any further operations on the database.connection will fail with a
+	  a com.example.stevie.connection in some unknown state. When an OOM has happened,
+	  any further operations on the com.example.stevie.connection will fail with a
 	  "Connection closed" exception that will also list the OOM exception
-	  as the reason for the implicit database.connection close event.
+	  as the reason for the implicit com.example.stevie.connection close event.
 
 	- Don't send COM_RESET_STMT for each execution of a server-side
 	  prepared statement if it isn't required.
@@ -3376,7 +3376,7 @@ nn-nn-07 - Version 3.1.15
 	  and the last successful packet sent to the server's time. If set to
 	  false, removes two syscalls per query.
 
-	- Fixed BUG#11259, autoReconnect ping causes exception on database.connection
+	- Fixed BUG#11259, autoReconnect ping causes exception on com.example.stevie.connection
 	  startup.
 
 	- Fixed BUG#11360 Connector/J dumping query into SQLException twice
@@ -3410,8 +3410,8 @@ nn-nn-07 - Version 3.1.15
     - BlobFromLocator now uses correct identifier quoting when generating
       prepared statements.
 
-    - Server-side session variables can be preset at database.connection time by
-      passing them as a comma-delimited list for the database.connection property
+    - Server-side session variables can be preset at com.example.stevie.connection time by
+      passing them as a comma-delimited list for the com.example.stevie.connection property
       'sessionVariables'.
 
 	- Fixed regression in ping() for users using autoReconnect=true.
@@ -3453,10 +3453,10 @@ nn-nn-07 - Version 3.1.15
 
 	- Fixed build.xml to not compile log4j logging if log4j not available.
 
-	- Added support for the c3p0 database.connection pool's (http://c3p0.sf.net/)
-	  validation/database.connection checker interface which uses the lightweight
+	- Added support for the c3p0 com.example.stevie.connection pool's (http://c3p0.sf.net/)
+	  validation/com.example.stevie.connection checker interface which uses the lightweight
 	  'COM_PING' call to the server if available. To use it, configure your
-	  c3p0 database.connection pool's 'connectionTesterClassName' property to use
+	  c3p0 com.example.stevie.connection pool's 'connectionTesterClassName' property to use
 	  'com.mysql.jdbc.integration.c3p0.MysqlConnectionTester'.
 
 	- Better detection of LIMIT inside/outside of quoted strings so that
@@ -3507,12 +3507,12 @@ nn-nn-07 - Version 3.1.15
 
 	- Fixed BUG#9917 - Should accept null for catalog (meaning use current)
 	  in DBMD methods, even though it's not JDBC-compliant for legacy's sake.
-	  Disable by setting database.connection property "nullCatalogMeansCurrent" to "false"
+	  Disable by setting com.example.stevie.connection property "nullCatalogMeansCurrent" to "false"
 	  (which will be the default value in C/J 3.2.x).
 
 	- Fixed BUG#9769 - Should accept null for name patterns in DBMD (meaning "%"),
 	  even though it isn't JDBC compliant, for legacy's sake. Disable by setting
-	  database.connection property "nullNamePatternMatchesAll" to "false" (which will be
+	  com.example.stevie.connection property "nullNamePatternMatchesAll" to "false" (which will be
 	  the default value in C/J 3.2.x).
 
 02-18-05 - Version 3.1.7-stable
@@ -3550,7 +3550,7 @@ nn-nn-07 - Version 3.1.15
 
     - Fixed synchronization issue with
       ServerPreparedStatement.serverPrepare() that could cause
-      deadlocks/crashes if database.connection was shared between threads.
+      deadlocks/crashes if com.example.stevie.connection was shared between threads.
 
     - By default, the driver now scans SQL you are preparing via all
       variants of Connection.prepareStatement() to determine if it is a
@@ -3607,7 +3607,7 @@ nn-nn-07 - Version 3.1.15
       manipulate these values in many cases without incurring
       round-trips to the database server.
 
-    - Added enableStreamingResults() to Statement for database.connection pool
+    - Added enableStreamingResults() to Statement for com.example.stevie.connection pool
       implementations that check Statement.setFetchSize() for
       specification-compliant values. Call Statement.setFetchSize(>=0)
       to disable the streaming results for that statement.
@@ -3754,7 +3754,7 @@ nn-nn-07 - Version 3.1.15
     - You can now use URLs in 'LOAD DATA LOCAL INFILE' statements, and the
       driver will use Java's built-in handlers for retreiving the data and
       sending it to the server. This feature is not enabled by default,
-      you must set the 'allowUrlInLocalInfile' database.connection property to 'true'.
+      you must set the 'allowUrlInLocalInfile' com.example.stevie.connection property to 'true'.
 
     - The driver is more strict about truncation of numerics on
       ResultSet.get*(), and will throw a SQLException when truncation is
@@ -3868,7 +3868,7 @@ nn-nn-07 - Version 3.1.15
 	- Fixed BUG#3520 -- DBMD.getSQLStateType() returns incorrect value.
 
 	- Added 'connectionCollation' property to cause driver to issue
-	  'set collation_connection=...' query on database.connection init if default
+	  'set collation_connection=...' query on com.example.stevie.connection init if default
 	  collation for given charset is not appropriate.
 
 	- Fixed DatabaseMetaData.getProcedures() when run on MySQL-5.0.0 (output of
@@ -3905,7 +3905,7 @@ nn-nn-07 - Version 3.1.15
 
 	- Centralized setting of result set type and concurrency.
 
-	- Re-factored how database.connection properties are set and exposed
+	- Re-factored how com.example.stevie.connection properties are set and exposed
 	  as DriverPropertyInfo as well as Connection and DataSource
 	  properties.
 
@@ -3940,13 +3940,13 @@ nn-nn-07 - Version 3.1.15
 	- Deal with 0-length tokens in EscapeProcessor (caused by callable
 	  statement escape syntax).
 
-	- Check for closed database.connection on delete/update/insert row operations in
+	- Check for closed com.example.stevie.connection on delete/update/insert row operations in
 	  UpdatableResultSet.
 
 	- Fix support for table aliases when checking for all primary keys in
 	  UpdatableResultSet.
 
-	- Removed useFastDates database.connection property.
+	- Removed useFastDates com.example.stevie.connection property.
 
 	- Correctly initialize datasource properties from JNDI Refs, including
 	  explicitly specified URLs.
@@ -3983,7 +3983,7 @@ nn-nn-07 - Version 3.1.15
       datetime functionality in ServerPreparedStatements and their
       resultant result sets.
 
-    - Display where/why a database.connection was implicitly closed (to
+    - Display where/why a com.example.stevie.connection was implicitly closed (to
       aid debugging).
 
     - CommunicationsException implemented, that tries to determine
@@ -4065,8 +4065,8 @@ nn-nn-07 - Version 3.1.15
 	  the character encoding is 'utf-8' when connected to MySQL-4.1 or
 	  newer.
 
-	- Fixed BUG#7316 - Statements created from a pooled database.connection were
-	  returning physical database.connection instead of logical database.connection when
+	- Fixed BUG#7316 - Statements created from a pooled com.example.stevie.connection were
+	  returning physical com.example.stevie.connection instead of logical com.example.stevie.connection when
 	  getConnection() was called.
 
 	- Fixed BUG#7033 - PreparedStatements don't encode Big5 (and other
@@ -4082,7 +4082,7 @@ nn-nn-07 - Version 3.1.15
       UpdatableResultSet.refreshRow().
 
     - Backported SQLState codes mapping from Connector/J 3.1, enable with
-      'useSqlStateCodes=true' as a database.connection property, it defaults to
+      'useSqlStateCodes=true' as a com.example.stevie.connection property, it defaults to
       'false' in this release, so that we don't break legacy applications (it
       defaults to 'true' starting with Connector/J 3.1).
 
@@ -4149,7 +4149,7 @@ nn-nn-07 - Version 3.1.15
     - Made TINYINT(1) -> BIT/Boolean conversion configurable via 'tinyInt1isBit'
       property (default 'true' to be JDBC compliant out of the box).
 
-    - Only set 'character_set_results' during database.connection establishment if
+    - Only set 'character_set_results' during com.example.stevie.connection establishment if
       server version >= 4.1.1.
 
     - Fixed regression where useUnbufferedInput was defaulting to 'false'.
@@ -4173,7 +4173,7 @@ nn-nn-07 - Version 3.1.15
 
 	- Logical connections created by MysqlConnectionPoolDataSource will
 	  now issue a rollback() when they are closed and sent back to the pool.
-	  If your application server/database.connection pool already does this for you, you
+	  If your application server/com.example.stevie.connection pool already does this for you, you
 	  can set the 'rollbackOnPooledClose' property to false to avoid the
 	  overhead of an extra rollback().
 
@@ -4234,11 +4234,11 @@ nn-nn-07 - Version 3.1.15
 	  in the TYPE_NAME column.
 
 	- Added 'failOverReadOnly' property, to allow end-user to configure
-	  state of database.connection (read-only/writable) when failed over.
+	  state of com.example.stevie.connection (read-only/writable) when failed over.
 
 	- Backported 'change user' and 'reset server state' functionality
       from 3.1 branch, to allow clients of MysqlConnectionPoolDataSource
-      to reset server state on getConnection() on a pooled database.connection.
+      to reset server state on getConnection() on a pooled com.example.stevie.connection.
 
     - Don't escape SJIS/GBK/BIG5 when using MySQL-4.1 or newer.
 
@@ -4378,7 +4378,7 @@ nn-nn-07 - Version 3.1.15
     - ResultSet.getObject() on TINYINT and SMALLINT columns should return
       Java type 'Integer' (BUG#1913)
 
-    - Added 'alwaysClearStream' database.connection property, which causes the driver
+    - Added 'alwaysClearStream' com.example.stevie.connection property, which causes the driver
       to always empty any remaining data on the input stream before
       each query.
 
@@ -4495,7 +4495,7 @@ nn-nn-07 - Version 3.1.15
 
 	- Don't hide messages from exceptions thrown in I/O layers.
 
-	- Don't fire database.connection closed events when closing pooled connections, or
+	- Don't fire com.example.stevie.connection closed events when closing pooled connections, or
 	  on PooledConnection.getConnection() with already open connections (BUG#884).
 
 	- Clip +/- INF (to smallest and largest representative values for the type in
@@ -4748,7 +4748,7 @@ nn-nn-07 - Version 3.1.15
       PreparedStatement.executeBatch() via 'continueBatchOnError' property
       (defaults to 'true').
 
-    - Check for database.connection closed in more Connection methods
+    - Check for com.example.stevie.connection closed in more Connection methods
       (createStatement, prepareStatement, setTransactionIsolation,
       setAutoCommit).
 
@@ -4798,7 +4798,7 @@ nn-nn-07 - Version 3.1.15
 
     - Added SSL support. See README for information on how to use it.
 
-    - Properly restore database.connection properties when autoReconnecting
+    - Properly restore com.example.stevie.connection properties when autoReconnecting
       or failing-over, including autoCommit state, and isolation level.
 
     - Use 'SHOW CREATE TABLE' when possible for determining foreign key
@@ -4822,9 +4822,9 @@ nn-nn-07 - Version 3.1.15
       Java and MySQL server together in an end-user application.
 
     - Added 'connectTimeout' parameter that allows users of JDK-1.4 and newer
-      to specify a maxium time to wait to establish a database.connection.
+      to specify a maxium time to wait to establish a com.example.stevie.connection.
 
-    - Failover and autoReconnect only work when the database.connection is in a
+    - Failover and autoReconnect only work when the com.example.stevie.connection is in a
       autoCommit(false) state, in order to stay transaction safe
 
     - Added 'queriesBeforeRetryMaster' property that specifies how many
@@ -4838,7 +4838,7 @@ nn-nn-07 - Version 3.1.15
     - Fixed ResultSet.isLast() for empty result sets (should return false).
 
     - PreparedStatement now honors stream lengths in setBinary/Ascii/Character
-      Stream() unless you set the database.connection property
+      Stream() unless you set the com.example.stevie.connection property
       'useStreamLengthsInPrepStmts' to 'false'.
 
     - Removed some not-needed temporary object creation by using Strings
@@ -4942,7 +4942,7 @@ nn-nn-07 - Version 3.1.15
 
     - ResultSet.getDouble() now uses code built into JDK to be more precise (but slower)
 
-    - LogicalHandle.isClosed() calls through to physical database.connection
+    - LogicalHandle.isClosed() calls through to physical com.example.stevie.connection
 
     - Added SQL profiling (to STDERR). Set "profileSql=true" in your JDBC url.
       See README for more information.
@@ -5050,7 +5050,7 @@ nn-nn-07 - Version 3.1.15
        implementation and testing of PooledConnectionDataSource with
        IBM WebSphere 4).
 
-     - Added detection of network database.connection being closed when reading packets
+     - Added detection of network com.example.stevie.connection being closed when reading packets
        (thanks to Todd Lizambri).
 
      - Fixed quoting error with escape processor (bug 486265).
@@ -5351,7 +5351,7 @@ Fixed PreparedStatement parameter checking
        it will work with BETWEEN clauses.
        (thanks to Craig Longman)
 
-     - MysqlIO.quit() now closes the socket database.connection. Before,
+     - MysqlIO.quit() now closes the socket com.example.stevie.connection. Before,
        after many failed connections some OS's would run out
        of file descriptors. (thanks to Michael Brinkman)
 
@@ -5450,17 +5450,17 @@ Fixed PreparedStatement parameter checking
        by property maxRows. Statement.setMaxRows() overrides
        maxRows set via properties or url parameters.
 
-     - Automatic re-database.connection is available. Because it has
+     - Automatic re-com.example.stevie.connection is available. Because it has
        to "ping" the database before each query, it is
        turned off by default. To use it, pass in "autoReconnect=true"
-       in the database.connection URL. You may also change the number of
+       in the com.example.stevie.connection URL. You may also change the number of
        reconnect tries, and the initial timeout value via
        "maxReconnects=n" (default 3) and "initialTimeout=n"
        (seconds, default 2) parameters. The timeout is an
        exponential backoff type of timeout, e.g. if you have initial
        timeout of 2 seconds, and maxReconnects of 3, then the driver
        will timeout 2 seconds, 4 seconds, then 16 seconds between each
-       re-database.connection attempt.
+       re-com.example.stevie.connection attempt.
 
 8-24-98 - Version 1.0
 

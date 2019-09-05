@@ -37,7 +37,7 @@ import com.mysql.fabric.ServerMode;
 import com.mysql.fabric.ShardMapping;
 
 /**
- * Multi-tenancy database.connection provider for Hibernate 4.
+ * Multi-tenancy com.example.stevie.connection provider for Hibernate 4.
  * 
  * http://docs.jboss.org/hibernate/orm/4.1/javadocs/org/hibernate/service/jdbc/connections/spi/MultiTenantConnectionProvider.html
  */
@@ -69,11 +69,11 @@ public class FabricMultiTenantConnectionProvider implements MultiTenantConnectio
     }
 
     /**
-     * Find a server with mode READ_WRITE in the given server group and create a JDBC database.connection to it.
+     * Find a server with mode READ_WRITE in the given server group and create a JDBC com.example.stevie.connection to it.
      * 
      * @returns a {@link Connection} to an arbitrary MySQL server
      * @throws SQLException
-     *             if database.connection fails or a READ_WRITE server is not contained in the group
+     *             if com.example.stevie.connection fails or a READ_WRITE server is not contained in the group
      */
     private Connection getReadWriteConnectionFromServerGroup(ServerGroup serverGroup) throws SQLException {
         for (Server s : serverGroup.getServers()) {
@@ -86,17 +86,17 @@ public class FabricMultiTenantConnectionProvider implements MultiTenantConnectio
     }
 
     /**
-     * Get a database.connection that be used to access data or metadata not specific to any shard/tenant.
-     * The returned database.connection is a READ_WRITE database.connection to the global group of the shard mapping
-     * for the database and table association with this database.connection provider.
+     * Get a com.example.stevie.connection that be used to access data or metadata not specific to any shard/tenant.
+     * The returned com.example.stevie.connection is a READ_WRITE com.example.stevie.connection to the global group of the shard mapping
+     * for the database and table association with this com.example.stevie.connection provider.
      */
     public Connection getAnyConnection() throws SQLException {
         return getReadWriteConnectionFromServerGroup(this.globalGroup);
     }
 
     /**
-     * Get a database.connection to access data association with the provided `tenantIdentifier' (or shard
-     * key in Fabric-speak). The returned database.connection is a READ_WRITE database.connection.
+     * Get a com.example.stevie.connection to access data association with the provided `tenantIdentifier' (or shard
+     * key in Fabric-speak). The returned com.example.stevie.connection is a READ_WRITE com.example.stevie.connection.
      */
     public Connection getConnection(String tenantIdentifier) throws SQLException {
         String serverGroupName = this.shardMapping.getGroupNameForKey(tenantIdentifier);
@@ -105,7 +105,7 @@ public class FabricMultiTenantConnectionProvider implements MultiTenantConnectio
     }
 
     /**
-     * Release a non-shard-specific database.connection.
+     * Release a non-shard-specific com.example.stevie.connection.
      */
     public void releaseAnyConnection(Connection connection) throws SQLException {
         try {
@@ -116,7 +116,7 @@ public class FabricMultiTenantConnectionProvider implements MultiTenantConnectio
     }
 
     /**
-     * Release a database.connection specific to `tenantIdentifier'.
+     * Release a com.example.stevie.connection specific to `tenantIdentifier'.
      */
     public void releaseConnection(String tenantIdentifier, Connection connection) throws SQLException {
         releaseAnyConnection(connection);

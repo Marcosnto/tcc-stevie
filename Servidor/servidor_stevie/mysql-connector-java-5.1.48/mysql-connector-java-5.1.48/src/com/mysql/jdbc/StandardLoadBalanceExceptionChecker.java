@@ -39,7 +39,7 @@ public class StandardLoadBalanceExceptionChecker implements LoadBalanceException
 
         if (sqlState != null) {
             if (sqlState.startsWith("08")) {
-                // database.connection error
+                // com.example.stevie.connection error
                 return true;
             }
             if (this.sqlStateList != null) {

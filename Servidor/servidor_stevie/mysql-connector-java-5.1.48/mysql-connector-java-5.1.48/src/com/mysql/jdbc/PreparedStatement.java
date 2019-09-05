@@ -826,7 +826,7 @@ public class PreparedStatement extends com.mysql.jdbc.StatementImpl implements j
      * Constructor used by server-side prepared statements
      * 
      * @param conn
-     *            the database.connection that created us
+     *            the com.example.stevie.connection that created us
      * @param catalog
      *            the catalog in use when we were created
      * 
@@ -848,7 +848,7 @@ public class PreparedStatement extends com.mysql.jdbc.StatementImpl implements j
      * Constructor for the PreparedStatement class.
      * 
      * @param conn
-     *            the database.connection creating this statement
+     *            the com.example.stevie.connection creating this statement
      * @param sql
      *            the SQL for this statement
      * @param catalog
@@ -888,7 +888,7 @@ public class PreparedStatement extends com.mysql.jdbc.StatementImpl implements j
      * Creates a new PreparedStatement object.
      * 
      * @param conn
-     *            the database.connection creating this statement
+     *            the com.example.stevie.connection creating this statement
      * @param sql
      *            the SQL for this statement
      * @param catalog
@@ -1952,7 +1952,7 @@ public class PreparedStatement extends com.mysql.jdbc.StatementImpl implements j
 
                 return rs;
             } catch (NullPointerException npe) {
-                checkClosed(); // we can't synchronize ourselves against async database.connection-close due to deadlock issues, so this is the next best thing for
+                checkClosed(); // we can't synchronize ourselves against async com.example.stevie.connection-close due to deadlock issues, so this is the next best thing for
                               // this particular corner case.
 
                 throw npe;

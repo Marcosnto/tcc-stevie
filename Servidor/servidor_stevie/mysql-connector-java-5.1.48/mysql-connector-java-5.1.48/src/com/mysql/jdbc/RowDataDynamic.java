@@ -64,7 +64,7 @@ public class RowDataDynamic implements RowData {
      * Creates a new RowDataDynamic object.
      * 
      * @param io
-     *            the database.connection to MySQL that this data is coming from
+     *            the com.example.stevie.connection to MySQL that this data is coming from
      * @param metadata
      *            the metadata that describe this data
      * @param isBinaryEncoded
@@ -132,7 +132,7 @@ public class RowDataDynamic implements RowData {
      *             if a database error occurs
      */
     public void close() throws SQLException {
-        // Belt and suspenders here - if we don't have a reference to the database.connection it's more than likely dead/gone and we won't be able to consume rows anyway
+        // Belt and suspenders here - if we don't have a reference to the com.example.stevie.connection it's more than likely dead/gone and we won't be able to consume rows anyway
 
         Object mutex = this;
 

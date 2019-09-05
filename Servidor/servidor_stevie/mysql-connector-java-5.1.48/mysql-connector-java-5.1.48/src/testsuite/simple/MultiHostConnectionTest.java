@@ -97,10 +97,10 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Asserts the SQLException thrown for database.connection commit() or rollback();
+     * Asserts the SQLException thrown for com.example.stevie.connection commit() or rollback();
      * 
      * @param testConn
-     *            The database.connection instance where to issue the command.
+     *            The com.example.stevie.connection instance where to issue the command.
      * @param command
      *            The command to issue.
      * @param messageRegEx
@@ -139,7 +139,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests failover database.connection establishing with multiple up/down combinations of 3 hosts.
+     * Tests failover com.example.stevie.connection establishing with multiple up/down combinations of 3 hosts.
      */
     public void testFailoverConnection() throws Exception {
         Properties props = getPropertiesFromTestsuiteUrl();
@@ -190,7 +190,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests failover transitions in a default failover database.connection using three hosts.
+     * Tests failover transitions in a default failover com.example.stevie.connection using three hosts.
      */
     public void testFailoverTransitions() throws Exception {
         Set<String> downedHosts = new HashSet<String>();
@@ -239,9 +239,9 @@ public class MultiHostConnectionTest extends BaseTestCase {
      * @param downedHosts
      *            The set of hosts initially down.
      * @param recoverHost
-     *            The host that recovers after first database.connection.
+     *            The host that recovers after first com.example.stevie.connection.
      * @param expectedConnectionsHistory
-     *            The expected database.connection attempts sequence.
+     *            The expected com.example.stevie.connection attempts sequence.
      */
     private void testFailoverTransition(String fromHost, String toHost, Set<String> downedHosts, String recoverHost, String... expectedConnectionsHistory)
             throws Exception {
@@ -273,7 +273,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to 'fromHost'
             assertEquals(fromHostOk, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to 'toHost' on database.connection error
+            // connects to 'toHost' on com.example.stevie.connection error
             assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(toHostOk, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -300,7 +300,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests a default failover database.connection using three hosts and the following sequence of events:
+     * Tests a default failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [/HOST_1 : /HOST_2 : /HOST_3] --> HOST_1
      * - [\HOST_1 : /HOST_2 : /HOST_3] --> HOST_2
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
@@ -333,7 +333,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_1
             assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_2 on database.connection error
+            // connects to HOST_2 on com.example.stevie.connection error
             assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -353,7 +353,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_2
             assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_3 on database.connection error
+            // connects to HOST_3 on com.example.stevie.connection error
             assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -377,7 +377,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_3
             assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_2 on database.connection error (not time to come back to HOST_1 yet)
+            // connects to HOST_2 on com.example.stevie.connection error (not time to come back to HOST_1 yet)
             assertSQLException(testStmt2, "SELECT 2", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -397,7 +397,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_2
             assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_1 on database.connection error
+            // connects to HOST_1 on com.example.stevie.connection error
             assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -427,7 +427,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Repeatedly tests a failover database.connection using three hosts and the following sequence of events, combining distinct failover event triggering:
+     * Repeatedly tests a failover com.example.stevie.connection using three hosts and the following sequence of events, combining distinct failover event triggering:
      * - [/HOST_1 : /HOST_2 : /HOST_3] --> HOST_1
      * - [\HOST_1 : /HOST_2 : /HOST_3] --> HOST_2
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
@@ -463,7 +463,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_1
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_2 on database.connection error
+                // connects to HOST_2 on com.example.stevie.connection error
                 if (run == 1) {
                     assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 } else if (run == 2) {
@@ -489,7 +489,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_3 on database.connection error
+                // connects to HOST_3 on com.example.stevie.connection error
                 if (run == 1) {
                     assertSQLException(testConn, "commit", COMM_LINK_ERR_PATTERN);
                 } else if (run == 2) {
@@ -519,7 +519,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_3
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_2 on database.connection error (not time to come back to HOST_1 yet)
+                // connects to HOST_2 on com.example.stevie.connection error (not time to come back to HOST_1 yet)
                 if (run == 1) {
                     assertSQLException(testConn, "rollback", COMM_LINK_ERR_PATTERN);
                 } else if (run == 2) {
@@ -545,7 +545,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_1 on database.connection error
+                // connects to HOST_1 on com.example.stevie.connection error
                 if (run == 1) {
                     assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 } else if (run == 2) {
@@ -580,7 +580,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the property 'failOverReadOnly' in a failover database.connection using three hosts and the following sequence of events:
+     * Tests the property 'failOverReadOnly' in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [\HOST_1 : /HOST_2 : /HOST_3] --> HOST_2
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
      * - [\HOST_1 : /HOST_2 : \HOST_3] --> HOST_2
@@ -617,7 +617,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects ('failOverReadOnly') to HOST_3 on database.connection error
+                // connects ('failOverReadOnly') to HOST_3 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
                 assertEquals(foReadOnly, testConn.isReadOnly());
@@ -633,7 +633,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_3
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects ('failOverReadOnly') to HOST_2 on database.connection error
+                // connects ('failOverReadOnly') to HOST_2 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
                 assertEquals(foReadOnly, testConn.isReadOnly());
@@ -649,7 +649,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects (r+w) to HOST_1 on database.connection error
+                // connects (r+w) to HOST_1 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
                 assertFalse(testConn.isReadOnly());
@@ -665,7 +665,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_1
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects ('failOverReadOnly') to HOST_2 on database.connection error
+                // connects ('failOverReadOnly') to HOST_2 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
                 assertEquals(foReadOnly, testConn.isReadOnly());
@@ -684,7 +684,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the property 'queriesBeforeRetryMaster' in a failover database.connection using three hosts and the following sequence of events:
+     * Tests the property 'queriesBeforeRetryMaster' in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [/HOST_1 : /HOST_2 : /HOST_3] --> HOST_1
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
      * - [/HOST_1 : /HOST_2 : \HOST_3] --> HOST_1 vs HOST_2
@@ -722,7 +722,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_1
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_3 on database.connection error
+                // connects to HOST_3 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -742,14 +742,14 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
                 if (setQueriesBeforeRetryMaster) {
-                    // connects to HOST_1 on database.connection error
+                    // connects to HOST_1 on com.example.stevie.connection error
                     assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                     assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
                     assertConnectionsHistory(HOST_1_OK, HOST_2_FAIL, HOST_3_OK, HOST_1_OK);
 
                 } else {
-                    // connects to HOST_2 on database.connection error
+                    // connects to HOST_2 on com.example.stevie.connection error
                     assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                     assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -768,7 +768,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the property 'secondsBeforeRetryMaster' in a failover database.connection using three hosts and the following sequence of events:
+     * Tests the property 'secondsBeforeRetryMaster' in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [/HOST_1 : /HOST_2 : /HOST_3] --> HOST_1
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
      * - [/HOST_1 : /HOST_2 : \HOST_3] --> HOST_1 vs HOST_2
@@ -806,7 +806,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_1
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_3 on database.connection error
+                // connects to HOST_3 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -831,14 +831,14 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
                 if (setSecondsBeforeRetryMaster) {
-                    // connects to HOST_1 on database.connection error
+                    // connects to HOST_1 on com.example.stevie.connection error
                     assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                     assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
                     assertConnectionsHistory(HOST_1_OK, HOST_2_FAIL, HOST_3_OK, HOST_1_OK);
 
                 } else {
-                    // connects to HOST_2 on database.connection error
+                    // connects to HOST_2 on com.example.stevie.connection error
                     assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                     assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -857,7 +857,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the automatic fall back to primary host in a failover database.connection using three hosts and the following sequence of events:
+     * Tests the automatic fall back to primary host in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * + 1.st part:
      * - [\HOST_1 : /HOST_2 : \HOST_3] --> HOST_2
      * - [/HOST_1 : /HOST_2 : /HOST_3] --> no_change vs HOST_1 (auto fall back)
@@ -937,7 +937,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                     // still connected to HOST_2
                     assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                    // connects to HOST_1 on database.connection error
+                    // connects to HOST_1 on com.example.stevie.connection error
                     assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                     assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
                 }
@@ -988,7 +988,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_3 on database.connection error
+                // connects to HOST_3 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1003,7 +1003,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_3
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_1 on database.connection error
+                // connects to HOST_1 on com.example.stevie.connection error
                 assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1021,7 +1021,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests the property 'autoReconnect' in a failover database.connection using three hosts and the following sequence of events:
+     * Tests the property 'autoReconnect' in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
      * - [\HOST_1 : /HOST_2 : \HOST_3] --> HOST_2
      * - [/HOST_1 : /HOST_2 : \HOST_3]
@@ -1064,7 +1064,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_3
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_2 on database.connection error
+                // connects to HOST_2 on com.example.stevie.connection error
                 assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1089,7 +1089,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_2
                 assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_1 on database.connection error
+                // connects to HOST_1 on com.example.stevie.connection error
                 assertSQLException(testStmt2, "SELECT 2", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1114,7 +1114,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
                 // still connected to HOST_1
                 assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-                // connects to HOST_3 on database.connection error
+                // connects to HOST_3 on com.example.stevie.connection error
                 assertSQLException(testStmt1, "SELECT 1", COMM_LINK_ERR_PATTERN);
                 assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1154,7 +1154,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
     }
 
     /**
-     * Tests database.connection properties synchronization in a failover database.connection using three hosts and the following sequence of events:
+     * Tests com.example.stevie.connection properties synchronization in a failover com.example.stevie.connection using three hosts and the following sequence of events:
      * - [\HOST_1 : /HOST_2 : \HOST_3] --> HOST_2
      * - [/HOST_1 : \HOST_2 : \HOST_3] --> HOST_1
      * - [\HOST_1 : \HOST_2 : /HOST_3] --> HOST_3
@@ -1215,7 +1215,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_2
             assertEquals(HOST_2_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_1 on database.connection error
+            // connects to HOST_1 on com.example.stevie.connection error
             assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1223,12 +1223,12 @@ public class MultiHostConnectionTest extends BaseTestCase {
             testStmt = testConn.createStatement();
             assertSingleValueQuery(testStmt, "SELECT 1", 1L);
 
-            // assert expected session values after database.connection synchronization
+            // assert expected session values after com.example.stevie.connection synchronization
             assertFalse(testConn.getAutoCommit());
             assertEquals(newCatalog, testConn.getCatalog());
             assertEquals(newTransactionIsolation, testConn.getTransactionIsolation());
             assertTrue(testConn.isReadOnly());
-            assertEquals(-1, testConn.getSessionMaxRows()); // this value is reset to default 'maxRows' when the new "internal" database.connection is created
+            assertEquals(-1, testConn.getSessionMaxRows()); // this value is reset to default 'maxRows' when the new "internal" com.example.stevie.connection is created
 
             // change session values
             testConn.setAutoCommit(true);
@@ -1250,7 +1250,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
             // still connected to HOST_1
             assertEquals(HOST_1_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
-            // connects to HOST_3 on database.connection error (not time to come back to HOST_1 yet)
+            // connects to HOST_3 on com.example.stevie.connection error (not time to come back to HOST_1 yet)
             assertSQLException(testStmt, "SELECT 1", COMM_LINK_ERR_PATTERN);
             assertEquals(HOST_3_OK, UnreliableSocketFactory.getHostFromLastConnection());
 
@@ -1258,12 +1258,12 @@ public class MultiHostConnectionTest extends BaseTestCase {
             testStmt = testConn.createStatement();
             assertSingleValueQuery(testStmt, "SELECT 1", 1L);
 
-            // assert expected session values after database.connection synchronization
+            // assert expected session values after com.example.stevie.connection synchronization
             assertTrue(testConn.getAutoCommit());
             assertEquals(newCatalog, testConn.getCatalog());
             assertEquals(newTransactionIsolation, testConn.getTransactionIsolation());
             assertFalse(testConn.isReadOnly());
-            assertEquals(-1, testConn.getSessionMaxRows()); // this value is reset to default 'maxRows' when the new "internal" database.connection is created
+            assertEquals(-1, testConn.getSessionMaxRows()); // this value is reset to default 'maxRows' when the new "internal" com.example.stevie.connection is created
 
             assertConnectionsHistory(HOST_1_FAIL, HOST_2_OK, HOST_3_FAIL, HOST_2_FAIL, HOST_3_FAIL, HOST_1_OK, HOST_2_FAIL, HOST_3_OK);
 
@@ -1312,7 +1312,7 @@ public class MultiHostConnectionTest extends BaseTestCase {
         testConn.setAutoCommit(false);
         assertConnectionsHistory(HOST_2_FAIL, HOST_2_FAIL, HOST_4_OK);
 
-        testConn.commit(); // Retries HOST2 but fails. Ends up reusing the active HOST4 database.connection.
+        testConn.commit(); // Retries HOST2 but fails. Ends up reusing the active HOST4 com.example.stevie.connection.
         assertConnectionsHistory(HOST_2_FAIL, HOST_2_FAIL, HOST_4_OK, HOST_2_FAIL, HOST_2_FAIL);
         this.rs = testConn.createStatement().executeQuery("SELECT 1");
         assertTrue(this.rs.next());

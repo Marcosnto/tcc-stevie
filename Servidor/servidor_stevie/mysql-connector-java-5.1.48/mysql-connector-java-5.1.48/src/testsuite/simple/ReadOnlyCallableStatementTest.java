@@ -89,7 +89,7 @@ public class ReadOnlyCallableStatementTest extends BaseTestCase {
                     cstmt.execute();
                     fail("Should not execute because procedure modifies data.");
                 } catch (SQLException e) {
-                    assertEquals("Should error for read-only database.connection.", e.getSQLState(), "S1009");
+                    assertEquals("Should error for read-only com.example.stevie.connection.", e.getSQLState(), "S1009");
                 }
 
                 cstmt = replConn.prepareCall("CALL `" + replConn.getCatalog() + "`.testProc2()");
@@ -98,7 +98,7 @@ public class ReadOnlyCallableStatementTest extends BaseTestCase {
                     cstmt.execute();
                     fail("Should not execute because procedure modifies data.");
                 } catch (SQLException e) {
-                    assertEquals("Should error for read-only database.connection.", e.getSQLState(), "S1009");
+                    assertEquals("Should error for read-only com.example.stevie.connection.", e.getSQLState(), "S1009");
                 }
 
                 cstmt = replConn.prepareCall("CALL `" + replConn.getCatalog() + "`.`testProc.2`()");
@@ -107,7 +107,7 @@ public class ReadOnlyCallableStatementTest extends BaseTestCase {
                     cstmt.execute();
                     fail("Should not execute because procedure modifies data.");
                 } catch (SQLException e) {
-                    assertEquals("Should error for read-only database.connection.", e.getSQLState(), "S1009");
+                    assertEquals("Should error for read-only com.example.stevie.connection.", e.getSQLState(), "S1009");
                 }
 
             } finally {

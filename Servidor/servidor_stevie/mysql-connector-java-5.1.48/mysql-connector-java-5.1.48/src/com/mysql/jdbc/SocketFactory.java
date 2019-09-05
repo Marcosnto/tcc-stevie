@@ -70,7 +70,7 @@ public interface SocketFactory {
      * @param host
      *            the hostname passed in the JDBC URL. It will be a single
      *            hostname, as the driver parses multi-hosts (for failover) and
-     *            calls this method for each host database.connection attempt.
+     *            calls this method for each host com.example.stevie.connection attempt.
      * 
      * @param portNumber
      *            the port number to connect to (if required).

@@ -33,8 +33,8 @@ import java.util.Properties;
 import java.util.concurrent.Executor;
 
 /**
- * Connection that opens two connections, one two a replication master, and another to one or more slaves, and decides to use master when the database.connection is not
- * read-only, and use slave(s) when the database.connection is read-only.
+ * Connection that opens two connections, one two a replication master, and another to one or more slaves, and decides to use master when the com.example.stevie.connection is not
+ * read-only, and use slave(s) when the com.example.stevie.connection is read-only.
  */
 public class ReplicationConnectionProxy extends MultiHostConnectionProxy implements PingTarget {
     private ReplicationConnection thisAsReplicationConnection;
@@ -88,17 +88,17 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Creates a proxy for java.sql.Connection that routes requests to a load-balanced database.connection of master servers or a load-balanced database.connection of slave
-     * servers. Each sub-database.connection is created with its own set of independent properties.
+     * Creates a proxy for java.sql.Connection that routes requests to a load-balanced com.example.stevie.connection of master servers or a load-balanced com.example.stevie.connection of slave
+     * servers. Each sub-com.example.stevie.connection is created with its own set of independent properties.
      * 
      * @param masterHostList
-     *            The list of hosts to use in the masters database.connection.
+     *            The list of hosts to use in the masters com.example.stevie.connection.
      * @param masterProperties
-     *            The properties for the masters database.connection.
+     *            The properties for the masters com.example.stevie.connection.
      * @param slaveHostList
-     *            The list of hosts to use in the slaves database.connection.
+     *            The list of hosts to use in the slaves com.example.stevie.connection.
      * @param slaveProperties
-     *            The properties for the slaves database.connection.
+     *            The properties for the slaves com.example.stevie.connection.
      * @throws SQLException
      */
     private ReplicationConnectionProxy(List<String> masterHostList, Properties masterProperties, List<String> slaveHostList, Properties slaveProperties)
@@ -165,7 +165,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
 
         resetReadFromMasterWhenNoSlaves();
 
-        // Initialize slaves database.connection first so that it is ready to be used in case the masters database.connection fails and 'allowMasterDownConnections=true'.
+        // Initialize slaves com.example.stevie.connection first so that it is ready to be used in case the masters com.example.stevie.connection fails and 'allowMasterDownConnections=true'.
         try {
             initializeSlavesConnection();
         } catch (SQLException e) {
@@ -186,7 +186,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
 
         if (this.currentConnection == null) {
             if (this.allowMasterDownConnections && this.slavesConnection != null) {
-                // Set read-only and fail over to the slaves database.connection.
+                // Set read-only and fail over to the slaves com.example.stevie.connection.
                 this.readOnly = true;
                 this.currentConnection = this.slavesConnection;
             } else {
@@ -206,7 +206,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
      * Wraps this object with a new replication Connection instance.
      * 
      * @return
-     *         The database.connection object instance that wraps 'this'.
+     *         The com.example.stevie.connection object instance that wraps 'this'.
      */
     @Override
     MySQLConnection getNewWrapperForThisAsConnection() throws SQLException {
@@ -217,10 +217,10 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Propagates the database.connection proxy down through all live connections.
+     * Propagates the com.example.stevie.connection proxy down through all live connections.
      * 
      * @param proxyConn
-     *            The top level database.connection in the multi-host connections chain.
+     *            The top level com.example.stevie.connection in the multi-host connections chain.
      */
     @Override
     protected void propagateProxyDown(MySQLConnection proxyConn) {
@@ -244,7 +244,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Checks if current database.connection is the masters l/b database.connection.
+     * Checks if current com.example.stevie.connection is the masters l/b com.example.stevie.connection.
      */
     @Override
     public boolean isMasterConnection() {
@@ -252,7 +252,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Checks if current database.connection is the slaves l/b database.connection.
+     * Checks if current com.example.stevie.connection is the slaves l/b com.example.stevie.connection.
      */
     public boolean isSlavesConnection() {
         return this.currentConnection != null && this.currentConnection == this.slavesConnection;
@@ -269,7 +269,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
             super.syncSessionState(source, target, readOnlyStatus);
         } catch (SQLException e1) {
             try {
-                // Try again. It may happen that the database.connection had recovered in the meantime but the right syncing wasn't done yet.
+                // Try again. It may happen that the com.example.stevie.connection had recovered in the meantime but the right syncing wasn't done yet.
                 super.syncSessionState(source, target, readOnlyStatus);
             } catch (SQLException e2) {
             }
@@ -332,7 +332,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
                         && ((SQLException) e.getCause()).getSQLState() == SQLError.SQL_STATE_INVALID_TRANSACTION_STATE
                         && ((SQLException) e.getCause()).getErrorCode() == MysqlErrorNumbers.ERROR_CODE_NULL_LOAD_BALANCED_CONNECTION) {
                     try {
-                        // Try to re-establish the database.connection with the last known read-only state.
+                        // Try to re-establish the com.example.stevie.connection with the last known read-only state.
                         setReadOnly(this.readOnly);
                         invokeAgain = true;
                     } catch (SQLException sqlEx) {
@@ -347,7 +347,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Checks if this database.connection is in a state capable to invoke the provided method. If the database.connection is in an inconsistent state, i.e. it has no hosts for
+     * Checks if this com.example.stevie.connection is in a state capable to invoke the provided method. If the com.example.stevie.connection is in an inconsistent state, i.e. it has no hosts for
      * both sub-connections, then throw an invalid transaction state exception. Nevertheless, the methods defined in the ReplicationConnection interface will be
      * allowed as they are the only way to leave from an empty hosts lists situation.
      */
@@ -359,7 +359,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     /**
-     * Pings both l/b connections. Switch to another database.connection in case of failure.
+     * Pings both l/b connections. Switch to another com.example.stevie.connection in case of failure.
      */
     public void doPing() throws SQLException {
         boolean isMasterConn = isMasterConnection();
@@ -397,7 +397,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
         }
 
         if (isMasterConn && mastersPingException != null) {
-            // Switch to slaves database.connection.
+            // Switch to slaves com.example.stevie.connection.
             if (this.slavesConnection != null && slavesPingException == null) {
                 this.masterConnection = null;
                 this.currentConnection = this.slavesConnection;
@@ -406,7 +406,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
             throw mastersPingException;
 
         } else if (!isMasterConn && (slavesPingException != null || this.slavesConnection == null)) {
-            // Switch to masters database.connection, setting read-only state, if 'readFromMasterWhenNoSlaves=true'.
+            // Switch to masters com.example.stevie.connection, setting read-only state, if 'readFromMasterWhenNoSlaves=true'.
             if (this.masterConnection != null && this.readFromMasterWhenNoSlaves && mastersPingException == null) {
                 this.slavesConnection = null;
                 this.currentConnection = this.masterConnection;
@@ -507,11 +507,11 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
     }
 
     private boolean switchToSlavesConnectionIfNecessary() throws SQLException {
-        // Switch to slaves database.connection:
-        // - If the current database.connection is null. Or,
+        // Switch to slaves com.example.stevie.connection:
+        // - If the current com.example.stevie.connection is null. Or,
         // - If we're currently on the master and in read-only mode - we didn't have any slaves to use until now. Or,
-        // - If we're currently on a closed master database.connection and there are no masters to connect to. Or,
-        // - If we're currently not on a master database.connection that is closed - means that we were on a closed slaves database.connection before it was re-initialized.
+        // - If we're currently on a closed master com.example.stevie.connection and there are no masters to connect to. Or,
+        // - If we're currently not on a master com.example.stevie.connection that is closed - means that we were on a closed slaves com.example.stevie.connection before it was re-initialized.
         if (this.currentConnection == null || isMasterConnection() && (this.readOnly || this.masterHosts.isEmpty() && this.currentConnection.isClosed())
                 || !isMasterConnection() && this.currentConnection.isClosed()) {
             return switchToSlavesConnection();
@@ -538,7 +538,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
             this.masterConnection.addHost(hostPortPair);
         }
 
-        // Switch back to the masters database.connection if this database.connection was running in fail-safe mode.
+        // Switch back to the masters com.example.stevie.connection if this com.example.stevie.connection was running in fail-safe mode.
         if (!this.readOnly && !isMasterConnection()) {
             switchToMasterConnection();
         }
@@ -559,7 +559,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
         }
         this.masterHosts.remove(hostPortPair);
 
-        // The master database.connection may have been implicitly closed by a previous op., don't let it stop us.
+        // The master com.example.stevie.connection may have been implicitly closed by a previous op., don't let it stop us.
         if (this.masterConnection == null || this.masterConnection.isClosed()) {
             this.masterConnection = null;
             return;
@@ -571,7 +571,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
             this.masterConnection.removeHost(hostPortPair);
         }
 
-        // Close the database.connection if that was the last master.
+        // Close the com.example.stevie.connection if that was the last master.
         if (this.masterHosts.isEmpty()) {
             this.masterConnection.close();
             this.masterConnection = null;
@@ -630,7 +630,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
             this.slavesConnection.removeHost(hostPortPair);
         }
 
-        // Close the database.connection if that was the last slave.
+        // Close the com.example.stevie.connection if that was the last slave.
         if (this.slaveHosts.isEmpty()) {
             this.slavesConnection.close();
             this.slavesConnection = null;
@@ -668,7 +668,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
                     exceptionCaught = e;
                 }
                 if (!switched && this.readFromMasterWhenNoSlaves && switchToMasterConnection()) {
-                    exceptionCaught = null; // The database.connection is OK. Cancel the exception, if any.
+                    exceptionCaught = null; // The com.example.stevie.connection is OK. Cancel the exception, if any.
                 }
                 if (exceptionCaught != null) {
                     throw exceptionCaught;
@@ -685,7 +685,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
                     exceptionCaught = e;
                 }
                 if (!switched && switchToSlavesConnectionIfNecessary()) {
-                    exceptionCaught = null; // The database.connection is OK. Cancel the exception, if any.
+                    exceptionCaught = null; // The com.example.stevie.connection is OK. Cancel the exception, if any.
                 }
                 if (exceptionCaught != null) {
                     throw exceptionCaught;
@@ -695,7 +695,7 @@ public class ReplicationConnectionProxy extends MultiHostConnectionProxy impleme
         this.readOnly = readOnly;
 
         /*
-         * Reset masters database.connection read-only state if 'readFromMasterWhenNoSlaves=true'. If there are no slaves then the masters database.connection will be used with
+         * Reset masters com.example.stevie.connection read-only state if 'readFromMasterWhenNoSlaves=true'. If there are no slaves then the masters com.example.stevie.connection will be used with
          * read-only state in its place. Even if not, it must be reset from a possible previous read-only state.
          */
         if (this.readFromMasterWhenNoSlaves && isMasterConnection()) {

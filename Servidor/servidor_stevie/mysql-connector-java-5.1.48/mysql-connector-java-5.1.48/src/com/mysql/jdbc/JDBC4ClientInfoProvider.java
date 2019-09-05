@@ -30,7 +30,7 @@ import java.util.Properties;
 /**
  * Classes that implement this interface and provide a no-args constructor can be used by the driver to store and retrieve client information and/or labels.
  * 
- * The driver will create an instance for each Connection instance, and call initialize() once and only once. When the database.connection is closed, destroy() will be
+ * The driver will create an instance for each Connection instance, and call initialize() once and only once. When the com.example.stevie.connection is closed, destroy() will be
  * called, and the provider is expected to clean up any resources at this time.
  */
 public interface JDBC4ClientInfoProvider {
@@ -38,17 +38,17 @@ public interface JDBC4ClientInfoProvider {
      * Called once by the driver when it needs to configure the provider.
      * 
      * @param conn
-     *            the database.connection that the provider belongs too.
+     *            the com.example.stevie.connection that the provider belongs too.
      * @param configurationProps
      *            a java.util.Properties instance that contains
-     *            configuration information for the database.connection.
+     *            configuration information for the com.example.stevie.connection.
      * @throws SQLException
      *             if initialization fails.
      */
     public void initialize(java.sql.Connection conn, Properties configurationProps) throws SQLException;
 
     /**
-     * Called once by the driver when the database.connection this provider instance
+     * Called once by the driver when the com.example.stevie.connection this provider instance
      * belongs to is being closed.
      * 
      * Implementations are expected to clean up and resources at this point
@@ -60,14 +60,14 @@ public interface JDBC4ClientInfoProvider {
     public void destroy() throws SQLException;
 
     /**
-     * Returns the client info for the database.connection that this provider
-     * instance belongs to. The database.connection instance is passed as an argument
+     * Returns the client info for the com.example.stevie.connection that this provider
+     * instance belongs to. The com.example.stevie.connection instance is passed as an argument
      * for convenience's sake.
      * 
-     * Providers can use the database.connection to communicate with the database,
+     * Providers can use the com.example.stevie.connection to communicate with the database,
      * but it will be within the scope of any ongoing transactions, so therefore
      * implementations should not attempt to change isolation level, autocommit settings
-     * or call rollback() or commit() on the database.connection.
+     * or call rollback() or commit() on the com.example.stevie.connection.
      * 
      * @param conn
      * @return
@@ -78,14 +78,14 @@ public interface JDBC4ClientInfoProvider {
     public Properties getClientInfo(java.sql.Connection conn) throws SQLException;
 
     /**
-     * Returns the client info for the database.connection that this provider
-     * instance belongs to. The database.connection instance is passed as an argument
+     * Returns the client info for the com.example.stevie.connection that this provider
+     * instance belongs to. The com.example.stevie.connection instance is passed as an argument
      * for convenience's sake.
      * 
-     * Providers can use the database.connection to communicate with the database,
+     * Providers can use the com.example.stevie.connection to communicate with the database,
      * but it will be within the scope of any ongoing transactions, so therefore
      * implementations should not attempt to change isolation level, autocommit settings
-     * or call rollback() or commit() on the database.connection.
+     * or call rollback() or commit() on the com.example.stevie.connection.
      * 
      * @param conn
      * @return
@@ -96,14 +96,14 @@ public interface JDBC4ClientInfoProvider {
     public String getClientInfo(java.sql.Connection conn, String name) throws SQLException;
 
     /**
-     * Sets the client info for the database.connection that this provider
-     * instance belongs to. The database.connection instance is passed as an argument
+     * Sets the client info for the com.example.stevie.connection that this provider
+     * instance belongs to. The com.example.stevie.connection instance is passed as an argument
      * for convenience's sake.
      * 
-     * Providers can use the database.connection to communicate with the database,
+     * Providers can use the com.example.stevie.connection to communicate with the database,
      * but it will be within the scope of any ongoing transactions, so therefore
      * implementations should not attempt to change isolation level, autocommit settings
-     * or call rollback() or commit() on the database.connection.
+     * or call rollback() or commit() on the com.example.stevie.connection.
      * 
      * @param conn
      * @return
@@ -114,14 +114,14 @@ public interface JDBC4ClientInfoProvider {
     public void setClientInfo(java.sql.Connection conn, Properties properties) throws SQLClientInfoException;
 
     /**
-     * Sets the client info for the database.connection that this provider
-     * instance belongs to. The database.connection instance is passed as an argument
+     * Sets the client info for the com.example.stevie.connection that this provider
+     * instance belongs to. The com.example.stevie.connection instance is passed as an argument
      * for convenience's sake.
      * 
-     * Providers can use the database.connection to communicate with the database,
+     * Providers can use the com.example.stevie.connection to communicate with the database,
      * but it will be within the scope of any ongoing transactions, so therefore
      * implementations should not attempt to change isolation level, autocommit settings
-     * or call rollback() or commit() on the database.connection.
+     * or call rollback() or commit() on the com.example.stevie.connection.
      * 
      * @param conn
      * @return

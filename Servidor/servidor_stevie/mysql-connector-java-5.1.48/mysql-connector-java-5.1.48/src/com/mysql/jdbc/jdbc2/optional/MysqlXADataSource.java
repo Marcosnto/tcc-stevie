@@ -59,7 +59,7 @@ public class MysqlXADataSource extends MysqlDataSource implements javax.sql.XADa
     }
 
     /**
-     * Wraps a database.connection as a 'fake' XAConnection
+     * Wraps a com.example.stevie.connection as a 'fake' XAConnection
      */
 
     private XAConnection wrapConnection(Connection conn) throws SQLException {

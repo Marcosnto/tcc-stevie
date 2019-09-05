@@ -46,18 +46,18 @@ import com.mysql.jdbc.profiler.ProfilerEventHandler;
  * 
  * While this class implements MySQLConnection directly, MultiHostConnectionProxy does the same but via a dynamic proxy.
  * 
- * Most of the methods in this class refer directly to the active database.connection from its MultiHostConnectionProxy pair, providing a non-proxied access to the
- * current active database.connection managed by this multi-host structure. The remaining methods either implement some local behavior or refer to the proxy itself
- * instead of the sub-database.connection.
+ * Most of the methods in this class refer directly to the active com.example.stevie.connection from its MultiHostConnectionProxy pair, providing a non-proxied access to the
+ * current active com.example.stevie.connection managed by this multi-host structure. The remaining methods either implement some local behavior or refer to the proxy itself
+ * instead of the sub-com.example.stevie.connection.
  * 
- * Referring to the higher level proxy database.connection is needed when some operation needs to be extended to all open sub-connections existing in this multi-host
- * structure as opposed to just refer to the active current database.connection, such as with close() which is most likely required to close all sub-connections as
+ * Referring to the higher level proxy com.example.stevie.connection is needed when some operation needs to be extended to all open sub-connections existing in this multi-host
+ * structure as opposed to just refer to the active current com.example.stevie.connection, such as with close() which is most likely required to close all sub-connections as
  * well.
  */
 public class MultiHostMySQLConnection implements MySQLConnection {
     /**
-     * thisAsProxy holds the proxy (MultiHostConnectionProxy or one of its subclasses) this database.connection is associated with.
-     * It is used as a gateway to the current active sub-database.connection managed by this multi-host structure or as a target to where some of the methods implemented
+     * thisAsProxy holds the proxy (MultiHostConnectionProxy or one of its subclasses) this com.example.stevie.connection is associated with.
+     * It is used as a gateway to the current active sub-com.example.stevie.connection managed by this multi-host structure or as a target to where some of the methods implemented
      * here in this class refer to.
      */
     protected MultiHostConnectionProxy thisAsProxy;

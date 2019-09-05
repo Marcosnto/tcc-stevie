@@ -41,7 +41,7 @@ public class FabricMySQLDriver extends NonRegisteringDriver implements Driver {
     // may be extended to support other protocols in the future
     public static final String FABRIC_URL_PREFIX = "jdbc:mysql:fabric://";
 
-    // database.connection property keys
+    // com.example.stevie.connection property keys
     public static final String FABRIC_SHARD_KEY_PROPERTY_KEY = "fabricShardKey";
     public static final String FABRIC_SHARD_TABLE_PROPERTY_KEY = "fabricShardTable";
     public static final String FABRIC_SERVER_GROUP_PROPERTY_KEY = "fabricServerGroup";

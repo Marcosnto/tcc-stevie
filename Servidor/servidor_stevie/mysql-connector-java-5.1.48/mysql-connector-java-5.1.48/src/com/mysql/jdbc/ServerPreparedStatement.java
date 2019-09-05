@@ -356,7 +356,7 @@ public class ServerPreparedStatement extends PreparedStatement {
      * Creates a new ServerPreparedStatement object.
      * 
      * @param conn
-     *            the database.connection creating us.
+     *            the com.example.stevie.connection creating us.
      * @param sql
      *            the SQL containing the statement to prepare.
      * @param catalog
@@ -967,7 +967,7 @@ public class ServerPreparedStatement extends PreparedStatement {
     }
 
     /**
-     * Closes this database.connection and frees all resources.
+     * Closes this com.example.stevie.connection and frees all resources.
      * 
      * @param calledExplicitly
      *            was this called from close()?

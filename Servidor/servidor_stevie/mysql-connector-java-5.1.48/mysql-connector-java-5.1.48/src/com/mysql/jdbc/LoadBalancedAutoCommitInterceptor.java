@@ -75,7 +75,7 @@ public class LoadBalancedAutoCommitInterceptor implements StatementInterceptorV2
     public ResultSetInternalMethods postProcess(String sql, Statement interceptedStatement, ResultSetInternalMethods originalResultSet, Connection connection,
             int warningCount, boolean noIndexUsed, boolean noGoodIndexUsed, SQLException statementException) throws SQLException {
 
-        // Don't count SETs neither SHOWs. Those are mostly used internally and must not trigger a database.connection switch.
+        // Don't count SETs neither SHOWs. Those are mostly used internally and must not trigger a com.example.stevie.connection switch.
         if (!this.countStatements || StringUtils.startsWithIgnoreCase(sql, "SET") || StringUtils.startsWithIgnoreCase(sql, "SHOW")) {
             return originalResultSet;
         }
@@ -114,7 +114,7 @@ public class LoadBalancedAutoCommitInterceptor implements StatementInterceptorV2
                 this.proxy.pickNewConnection();
             } catch (SQLException e) {
                 // eat this exception, the auto-commit statement completed, but we could not rebalance for some reason.  User may get exception when using
-                // database.connection next.
+                // com.example.stevie.connection next.
             }
         }
 
