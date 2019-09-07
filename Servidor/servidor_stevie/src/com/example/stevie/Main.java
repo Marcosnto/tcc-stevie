@@ -162,18 +162,17 @@ class OuvirArquivo implements Runnable {
 }
 
 class ConexaoBL implements Runnable {
+    LocalDevice local = null;
+
+    StreamConnectionNotifier notifier;
+    StreamConnection connection = null;
+
+    public ConexaoBL () {
+
+    }
 
     @Override
     public void run() {
-        waitForConnection();
-    }
-
-    private void waitForConnection() {
-        LocalDevice local = null;
-
-        StreamConnectionNotifier notifier;
-        StreamConnection connection = null;
-
         try {
             local = LocalDevice.getLocalDevice();
             local.setDiscoverable(DiscoveryAgent.GIAC);
@@ -191,82 +190,58 @@ class ConexaoBL implements Runnable {
 
         while (true) {
             try {
-                System.out.println("Esperando a conexão :c");
-                connection = notifier.acceptAndOpen();
-                System.out.println("Conectei!");
-//                InputStream inputStream = connection.openInputStream();
-
-                Thread escutarThread = new Thread(new escutarThread(connection));
-                escutarThread.start();
-            } catch (Exception e) {
-                System.out.println("Erro ao aceitar uma conexão " + e);
-                return;
+                if(connection == null){
+                    System.out.println("Esperando a conexão :c");
+                    connection = notifier.acceptAndOpen();
+                    System.out.println("CONECTEI, CANSO");
+                }
+                InputStream is = connection.openInputStream();
+                OutputStream os = connection.openOutputStream();
+                String mensagem = receberDados(is);
+                Thread.sleep(2000);
+                switch (mensagem){
+                    case "Hi, baby":
+                        enviarDados("hello, canso", os);
+                        System.out.println(mensagem);
+                        break;
+                }
+                is.close();
+                os.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
-}
 
-class escutarThread implements Runnable {
-    private StreamConnection mConnection;
-
-    public escutarThread(StreamConnection connection) {
-        mConnection = connection;
-    }
-
-    @Override
-    public void run() {
+    public String receberDados(InputStream is){
         try {
-            //preparando para receber os dados
-            InputStream inputStream = mConnection.openInputStream();
-            System.out.println("Esperando receber os dados");
-            Object temp;
-            while (true) {
-                ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-                Mensagem mensagem = (Mensagem) objectInputStream.readObject();
-                System.out.println("Opção lida: " + mensagem.mensagem);
-//                comandoLeitura(st, inputStream);
-//                mConnection.close();
-            }
-        } catch (IOException e) {
-            System.out.println("Algo deu errado na leitura dos dados " + e);
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void comandoLeitura(String opcao, InputStream inputStream) {
-        try {
-            switch (opcao) {
-                case "1":
-//                    write("DISGRAÇA", outputStream);
-                    System.out.println("Li a opção 1");
-                    break;
-                case "2":
-                    break;
-            }
+            byte[] buffer = new byte[1024];
+            is.read(buffer);
+            return msgConvertida(buffer);
         } catch (Exception e) {
-            System.out.println("Algo deu errado na leitura do comando " + e);
             e.printStackTrace();
-        }
+        } return null;
     }
 
-    public void write(String string, OutputStream outputStream) {
+    public void enviarDados(String mensagem, OutputStream os){
         try {
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-            objectOutputStream.writeObject(string);
-            System.out.println("Enviei!");
+            os.write(mensagem.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-}
 
-class Mensagem implements Serializable {
-    String mensagem;
-
-    public Mensagem(String mensagem) {
-        this.mensagem = mensagem;
+    public String msgConvertida(byte[] buffer) {
+        int cont = 0;
+        String mensagem = "";
+        while (buffer[cont] != 0) {
+            mensagem += Character.toString((char) buffer[cont++]);
+        }
+        return mensagem;
     }
+
 }
+
 

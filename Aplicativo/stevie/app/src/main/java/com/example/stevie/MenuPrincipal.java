@@ -20,9 +20,7 @@ public class MenuPrincipal extends AppCompatActivity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
         final DataThread dataThread = new DataThread(((StevieApplication) getApplication()).getSocket());
-        dataThread.start();
-//        final TelaInicial telaInicial = new TelaInicial();
-
+        TelaInicial telaInicial = new TelaInicial();
 
         setTitle("Menu Principal");
 
@@ -44,9 +42,8 @@ public class MenuPrincipal extends AppCompatActivity{
                 Intent intent = new Intent(MenuPrincipal.this, IdentificarObjeto.class);
                 startActivity(intent);
                 String teste = "testando";
-
-                dataThread.enviarDados(new Mensagem("1"));
-//                telaInicial.conectarServidor();
+                telaInicial.conectarServidor();
+                dataThread.start();
             }
         });
 

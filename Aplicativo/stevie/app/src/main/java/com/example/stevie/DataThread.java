@@ -1,131 +1,68 @@
 package com.example.stevie;
 
 import android.bluetooth.BluetoothSocket;
-import android.content.Context;
-import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.util.Log;
-
-import android.os.Handler;
-import android.os.Looper;
-import android.widget.ProgressBar;
-import android.widget.Toast;
-
-import java.io.Serializable;
-import java.util.TimerTask;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.OutputStream;
 
 public class DataThread extends Thread {
     private BluetoothSocket mmSocket;
-    private InputStream mmInStream;
-    OutputStream tmpOut = null;
-    String ultimoComando;
-
-
-    public InputStream getMmInStream() {
-        return mmInStream;
-    }
-
-    public OutputStream mmOutStream;
-    private byte[] mmBuffer; // mmBuffer store for the stream
-    private Handler handler;
-    TelaInicial telaInicial = new TelaInicial();
+    private InputStream is;
+    private OutputStream os;
 
     private static final String TAG = "DataThread";
 
     public DataThread(BluetoothSocket socket) {
         mmSocket = socket;
-        InputStream tmpIn = null;
-//        OutputStream tmpOut = null;
-
-        // Get the input and output streams; using temp objects because
-        // member streams are final.
         try {
-            tmpIn = socket.getInputStream();
+            is = mmSocket.getInputStream();
+            os = mmSocket.getOutputStream();
         } catch (IOException e) {
-            Log.e(TAG, "Error occurred when creating input stream", e);
+            e.printStackTrace();
         }
-        try {
-            tmpOut = socket.getOutputStream();
-        } catch (IOException e) {
-            Log.e(TAG, "Error occurred when creating output stream", e);
-        }
-        mmInStream = tmpIn;
-        mmOutStream = tmpOut;
     }
 
     public void run() {
-        // Continua ouvindo até ocorrer uma excessão
-        try {
-            InputStream inputStream = mmSocket.getInputStream();
-            while (true) {
-                try {
-                    Log.i(TAG, "run: escuta ativada");
-                    ultimoComando = receberDados(inputStream);
-                    Log.i(TAG, "run: recebido no run " + ultimoComando);
-                } catch (Exception e) {
-                    Log.d(TAG, "Input stream was disconnected", e);
-                    break;
-                }
+        Log.i(TAG, "run: Ouvindo o Servidor");
+        while (true) {
+            try {
+                enviarDados("Hi, baby");
+                String msg = receberDados();
+                System.out.println(msg);
+                is.close();
+                os.close();
+            } catch (Exception e) {
+                Log.d(TAG, "Input foi desconectado", e);
+                break;
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
     }
 
-    // Call this from the main activity to send data to the remote device.
-    public void enviarDados(Object object) {
+    public String receberDados(){
+        byte[] buffer = new byte[1024];
         try {
-//            telaInicial.conectarServidor();
-            OutputStream outputStream = mmSocket.getOutputStream();
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
-            objectOutputStream.writeObject(object);
-            System.out.println("Enviei!");
-//            outputStream.close();
-//            mmSocket.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+            is.read(buffer);
+        } catch (Exception e) {
+            Log.d(TAG, "Input foi desconectado", e);
+        } return msgConvertida(buffer);
     }
-        //TROCAR PRA OBJETO
-    public String receberDados(InputStream inputStream){
-        String st = "";
+
+    public void enviarDados(String mensagem){
         try {
-            telaInicial.conectarServidor();
-            ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);
-            st = (String) objectInputStream.readObject();
-            Log.i(TAG, "run: Recebi" + st);
+            os.write(mensagem.getBytes());
         } catch (IOException e) {
             e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-        return st;
-    }
-
-
-    // Call this method from the main activity to shut down the connection.
-    public void cancel() {
-        try {
-            mmSocket.close();
-        } catch (IOException e) {
-            Log.e(TAG, "Não foi possível encerrar a conexão", e);
         }
     }
 
-}
-
-class Mensagem implements Serializable {
-    String mensagem;
-
-    public Mensagem(String mensagem) {
-        this.mensagem = mensagem;
+    public String msgConvertida(byte[] buffer) {
+        int cont = 0;
+        String mensagem = "";
+        while (buffer[cont] != 0) {
+            mensagem += Character.toString((char) buffer[cont++]);
+        }
+        return mensagem;
     }
 }
-

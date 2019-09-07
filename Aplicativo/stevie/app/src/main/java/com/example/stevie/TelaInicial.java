@@ -6,6 +6,7 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -34,6 +35,8 @@ public class TelaInicial extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_inicial);
+
+
         Button search = (Button) findViewById(R.id.btnPesquisar);
         mBluetoothAdapter = mBluetoothAdapter.getDefaultAdapter();
 
@@ -97,13 +100,12 @@ public class TelaInicial extends AppCompatActivity {
                 try {
                     mmSocket.close();
                 } catch (IOException closeException) {
-                    Log.e(TAG, "Could not close the client com.example.stevie.socket", closeException);
+                    Log.e(TAG, "Não conectou o Socket", closeException);
                 }
                 return;
             }
 
         }
-
     }
 
     public void conectarServidor() {
