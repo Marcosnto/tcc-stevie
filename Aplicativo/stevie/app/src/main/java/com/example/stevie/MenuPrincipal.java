@@ -3,13 +3,17 @@ package com.example.stevie;
 import android.content.Intent;
 import android.net.wifi.WifiManager;
 import android.os.StrictMode;
+import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.Formatter;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 
 public class MenuPrincipal extends AppCompatActivity {
+//    private EditText write;
+//    private TextToSpeech ttobj;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,12 @@ public class MenuPrincipal extends AppCompatActivity {
                 .permitAll()
                 .build();
         StrictMode.setThreadPolicy(policy);
+
+//        ttobj=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
+//            @Override
+//            public void onInit(int status) {
+//            }
+//        });
 
 
         setTitle("Menu Principal");
@@ -37,6 +47,8 @@ public class MenuPrincipal extends AppCompatActivity {
                 WifiManager wm = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
                 String ip = Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());
                 new SocketEnviar("ip " + ip, "192.168.50.45", 7000).send();
+
+
             }
         });
 
