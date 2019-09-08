@@ -496,7 +496,7 @@ Version 5.1.42
 
   - Charset mappings refactored.
 
-  - Fix for Bug#72712 (18836319), No way to configure Connector JDBC to not do extra queries on database.connection
+  - Fix for Bug#72712 (18836319), busca.No way to configure Connector JDBC to not do extra queries on database.connection
 
 06-09-14 - Version 5.1.31
 
@@ -981,7 +981,7 @@ Version 5.1.42
 	in the string, LIKE will take care of that, otherwise we now use = . The only exception is
 	information_schema database which is handled separately. Patch covers both getTables() and getColumns().
 
-  - Fix for Bug#61150 - First call to stored procedure fails with "No Database Selected".
+  - Fix for Bug#61150 - First call to stored procedure fails with "busca.No Database Selected".
 	The workaround introduced in DatabaseMetaData.getCallStmtParameterTypes to fix
 	the bug in server where SHOW CREATE PROCEDURE was not respecting lower-case table names
 	is misbehaving when database.connection is not attached to database and on non-casesensitive OS.
@@ -4222,7 +4222,7 @@ nn-nn-07 - Version 3.1.15
 
 	- Fixed BUG#3848 - Using a MySQLDatasource without server name fails
 
-	- Fixed BUG#3920 - "No Database Selected" when using
+	- Fixed BUG#3920 - "busca.No Database Selected" when using
 	  MysqlConnectionPoolDataSource.
 
 	- Fixed BUG#3873 - PreparedStatement.getGeneratedKeys() method returns only
@@ -5198,7 +5198,7 @@ Fixed PreparedStatement parameter checking
      - DatabaseMetaData.getPrimaryKeys() now works correctly wrt
        to key_seq. Thanks to Brian Slesinsky.
 
-     - No escape processing is done on PreparedStatements anymore
+     - busca.No escape processing is done on PreparedStatements anymore
        per JDBC spec.
 
      - Fixed many JDBC-2.0 traversal, positioning bugs, especially

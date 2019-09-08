@@ -3297,21 +3297,26 @@ namespace UHFDemo
             {
                 System.IO.Directory.CreateDirectory(@"c:\stevie");
             }
-            
-            if (!File.Exists(@"c:\stevie\LeituraTags.txt"))
+
+            using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
             {
-                using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
-                {
-                    arqTags.WriteLine(tag);
-                };
+                arqTags.WriteLine(tag);
             }
-            else 
-            {
-                using (StreamWriter arqTags = new StreamWriter(@"c:\stevie\LeituraTags.txt", true))
-                {
-                    arqTags.WriteLine(tag);
-                };
-            }
+
+            //if (!File.Exists(@"c:\stevie\LeituraTags.txt"))
+            //{
+            //    using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
+            //    {
+            //        arqTags.WriteLine(tag);
+            //    };
+            //}
+            //else 
+            //{
+            //    using (StreamWriter arqTags = new StreamWriter(@"c:\stevie\LeituraTags.txt", true))
+            //    {
+            //        arqTags.WriteLine(tag);
+            //    };
+            //}
         }
 
         private void ProcessInventory(Reader.MessageTran msgTran)
