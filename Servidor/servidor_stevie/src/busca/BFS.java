@@ -20,7 +20,7 @@ public class BFS {
         List<No> no = new ArrayList<>();
         Node proximo = null;
         while(atual != null){
-            System.out.println("busca.No atual: " + atual.getTag());
+//            System.out.println("busca.No atual: " + atual.getTag());
             no.add(new No (atual, atual.getPai(), proximo));
             proximo = atual;
             atual = atual.getPai();
@@ -40,7 +40,7 @@ public class BFS {
         return null;
     }
 
-    public Node buscaBFS(Node noInicial, Node noFinal) {
+    public List<No> buscaBFS(Node noInicial, Node noFinal) {
         //limpando os nós de Pai e Visitado para uma nova busca
         limparLista();
 
@@ -52,7 +52,7 @@ public class BFS {
 
             noAtual = fila.poll();
 
-            if (noAtual == noFinal) return noAtual;
+            if (noAtual == noFinal) return listaResultado(noAtual);
 
 
             if (noAtual.isVisitado() == false) {
@@ -76,7 +76,7 @@ public class BFS {
             }
             noAtual.setVisitado(true);
         }
-        return noAtual;
+        return listaResultado(noAtual);
     }
 
     public void preencherLista() {
@@ -102,96 +102,8 @@ public class BFS {
     }
 }
 
-class Node {
-    private String tag;
-    private Node pai;
-    private Node norte;
-    private Node sul;
-    private Node leste;
-    private Node oeste;
-    private boolean visitado;
 
-    public Node(String tag) {
-        this.tag = tag;
-    }
 
-    public Node() {
-        this.pai = null;
-        this.norte = null;
-        this.sul = null;
-        this.leste = null;
-        this.oeste = null;
-        this.visitado = false;
-    }
-
-    public String getTag() {
-        return tag;
-    }
-
-    public void setTag(String tag) {
-        this.tag = tag;
-    }
-
-    public Node getPai() {
-        return pai;
-    }
-
-    public void setPai(Node pai) {
-        this.pai = pai;
-    }
-
-    public Node getNorte() {
-        return norte;
-    }
-
-    public void setNorte(Node norte) {
-        this.norte = norte;
-    }
-
-    public Node getSul() {
-        return sul;
-    }
-
-    public void setSul(Node sul) {
-        this.sul = sul;
-    }
-
-    public Node getLeste() {
-        return leste;
-    }
-
-    public void setLeste(Node leste) {
-        this.leste = leste;
-    }
-
-    public Node getOeste() {
-        return oeste;
-    }
-
-    public void setOeste(Node oeste) {
-        this.oeste = oeste;
-    }
-
-    public boolean isVisitado() {
-        return visitado;
-    }
-
-    public void setVisitado(boolean visitado) {
-        this.visitado = visitado;
-    }
-}
-
-class No {
-    Node no;
-    Node anterior;
-    Node proximo;
-
-    public No(Node no, Node anterior, Node proximo) {
-        this.no = no;
-        this.anterior = anterior;
-        this.proximo = proximo;
-    }
-}
 
 
 

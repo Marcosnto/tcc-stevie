@@ -2,53 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/busca/BFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/Navegacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/Servidor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/SocketConexao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/SocketEnviar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/SocketReceber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/busca/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/busca/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servidor/OuvirArquivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/IdentificarObjeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SelecionarObjeto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/adapter/ObjectRecyclerAdapter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_selecionar_opcao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/res/layout/activity_selecionar_opcao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Banco de dados/db_stevie.mwb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/adapter/ObjectRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/adapter/ObjectRecyclerAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/CustomControl/obj/x86/Release/CustomControl.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/R2000UartDemo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/TempPE/Properties.Resources.Designer.cs.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/UHFDemo/obj/x86/Release/UHFDemo.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a3f244c1-485d-42e6-9904-84446f8c421b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a3f244c1-485d-42e6-9904-84446f8c421b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jnotify-lib-0.94/CHANGELOG" beforeDir="false" afterPath="$PROJECT_DIR$/jnotify-lib-0.94/CHANGELOG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jnotify-lib-0.94/epl.html" beforeDir="false" afterPath="$PROJECT_DIR$/jnotify-lib-0.94/epl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/CHANGES" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/CHANGES" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LocalizedErrorMessages.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48/src/com/mysql/jdbc/LocalizedErrorMessages.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BFS.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/ConnectionFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/bean/Ponto_Interesse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/bean/Regiao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/bean/Tag.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/bean/Tag.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/busca/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/busca/BFS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servidor/Navegacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/Navegacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servidor/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/Servidor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servidor/SocketConexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/SocketConexao.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,6 +151,7 @@
       <workItem from="1567880240871" duration="7030000" />
       <workItem from="1567903958491" duration="2341000" />
       <workItem from="1567922230166" duration="9309000" />
+      <workItem from="1567938177044" duration="5084000" />
     </task>
     <servers />
   </component>
@@ -199,37 +170,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/servidor/Servidor.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servidor/SocketConexao.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servidor/SocketConexao.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/servidor/SocketConexao.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/servidor_stevie$Main.ic" NAME="Main Coverage Results" MODIFIED="1567130191964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

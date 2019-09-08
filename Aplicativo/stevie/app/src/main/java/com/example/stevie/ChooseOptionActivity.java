@@ -65,29 +65,15 @@ public class ChooseOptionActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(), DividerItemDecoration.VERTICAL));
 
 
-        String[] mockedList = {"Cadeira",
-                "Mesa",
-                "Poste",
-                "Fiquei sem ideia",
-                "É isso",
-                "Hmmm sei lá oq po vei",
-                "Queijo tá demorando ein",
-                "Se demorar mais vou zuar o projeto dele",
-                "Cadeira",
-                "Mesa",
-                "Poste",
-                "Fiquei sem ideia",
-                "É isso",
-                "Hmmm sei lá oq po vei",
-                "Queijo tá demorando ein",
-                "Se demorar mais vou zuar o projeto dele","Cadeira",
-                "Mesa",
-                "Poste",
-                "Fiquei sem ideia",
-                "É isso",
-                "Hmmm sei lá oq po vei",
-                "Queijo tá demorando ein",
-                "Se demorar mais vou zuar o projeto dele"};
+        String[] mockedList = {
+                "Sala 1",
+                "Sala 2",
+                "Sala 3",
+                "Hall - Bloco D",
+                "Sala - Professor - DSI",
+                "Sala - PRofessor - DMAI",
+                "DEMAI",
+        };
 
         String[] mockedList2 = {"Cadeira",
                 "Mesa",
@@ -104,6 +90,7 @@ public class ChooseOptionActivity extends AppCompatActivity {
             @Override
             public void onOptionClicked(String name) {
                 Toast.makeText(ChooseOptionActivity.this, name, Toast.LENGTH_LONG).show();
+                new SocketEnviar("destino:"  +name, "192.168.50.45", 7000).send();
                 Intent intent = new Intent(ChooseOptionActivity.this, Navegar.class);
                 startActivity(intent);
             }

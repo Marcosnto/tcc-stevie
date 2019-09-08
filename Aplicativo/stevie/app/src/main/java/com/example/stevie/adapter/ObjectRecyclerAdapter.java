@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.stevie.R;
 
@@ -32,7 +33,7 @@ public class ObjectRecyclerAdapter extends RecyclerView.Adapter<ObjectRecyclerAd
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final MyViewHolder holder, final int position) {
         // - get element from your dataset at this position
         // - replace the contents of the view with that element
         final String objectName = objectList[position];
@@ -41,6 +42,8 @@ public class ObjectRecyclerAdapter extends RecyclerView.Adapter<ObjectRecyclerAd
             @Override
             public void onClick(View view) {
                 chooseOptionInterface.onOptionClicked(objectName);
+//                Toast.makeText(holder.itemView.getContext(), objectName, Toast.LENGTH_SHORT).show();
+
             }
         });
     }
