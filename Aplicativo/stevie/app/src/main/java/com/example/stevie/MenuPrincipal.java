@@ -11,9 +11,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import java.util.Locale;
+
 public class MenuPrincipal extends AppCompatActivity {
-//    private EditText write;
-//    private TextToSpeech ttobj;
+    private EditText write;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +28,9 @@ public class MenuPrincipal extends AppCompatActivity {
                 .build();
         StrictMode.setThreadPolicy(policy);
 
-//        ttobj=new TextToSpeech(getApplicationContext(), new TextToSpeech.OnInitListener() {
-//            @Override
-//            public void onInit(int status) {
-//            }
-//        });
-
+        WifiManager wm = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
+        String ip = Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());
+        new Thread(new SocketEnviar("ip:" + ip, "192.168.50.45", 7000)).start();
 
         setTitle("Menu Principal");
 
@@ -44,11 +42,10 @@ public class MenuPrincipal extends AppCompatActivity {
         btnLocalizacao.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                WifiManager wm = (WifiManager) getApplicationContext().getSystemService(WIFI_SERVICE);
-                String ip = Formatter.formatIpAddress(wm.getConnectionInfo().getIpAddress());
-                new SocketEnviar("ip " + ip, "192.168.50.45", 7000).send();
-
-
+                new Thread(new SocketEnviar("localizacaoAtual", "192.168.50.45", 7000)).start();
+                SocketReceber dado = new SocketReceber(getApplicationContext());
+                Thread d = new Thread(dado);
+                d.start();
             }
         });
 

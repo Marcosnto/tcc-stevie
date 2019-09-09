@@ -19,6 +19,8 @@ public class Navegar extends AppCompatActivity {
         ImageButton btnMenuAnterior = (ImageButton) findViewById(R.id.btnAnterior);
         ImageButton btnMenuPrincipal = (ImageButton) findViewById(R.id.btnPrincipal);
 
+        new Thread(new SocketReceber(getApplicationContext())).start();
+
         btnMenuAnterior.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

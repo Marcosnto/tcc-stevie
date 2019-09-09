@@ -1,22 +1,63 @@
 package com.example.stevie;
 
+import android.content.Context;
+import android.speech.tts.TextToSpeech;
 import android.util.Log;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
+import java.net.ServerSocket;
 import java.net.Socket;
 
-public class SocketReceber {
+public class SocketReceber implements Runnable {
 
-    protected Object receive(Socket socketIn) {
+    Context context;
+    TextToSpeech ttobj;
+
+
+    public SocketReceber(Context context) {
+        this.context = context;
+        this.falar();
+    }
+
+    @Override
+    public void run() {
+        String mensagem;
         try {
-            ObjectInputStream inputStream = new ObjectInputStream(socketIn.getInputStream());
-            return inputStream.readObject();
+            ServerSocket serverSocket = new ServerSocket(7500);
+            while (true) {
+                Socket socket = serverSocket.accept();
+                ObjectInputStream inputStream = new ObjectInputStream(socket.getInputStream());
+                mensagem = (String) inputStream.readObject();
+
+                String[] comandos = mensagem.split(":");
+
+                switch (comandos[0]) {
+                    case "localizacaoAtual":
+                        ttobj.speak("Você está em " + comandos[1], TextToSpeech.QUEUE_FLUSH, null);
+                        break;
+                    case "direcao":
+                        ttobj.speak(comandos[1], TextToSpeech.QUEUE_FLUSH, null);
+                        break;
+                    case "ip":
+                        break;
+                }socket.close();
+            }
         } catch (IOException e) {
-            Log.d("SOCKET_RECEBER", e.toString());
+            e.printStackTrace();
         } catch (ClassNotFoundException e) {
-            Log.d("SOCKET_RECEBER", e.toString());
+            e.printStackTrace();
         }
-        return null;
+
+
+    }
+
+    public void falar() {
+        ttobj = new TextToSpeech(context, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                ttobj.setLanguage(ttobj.getLanguage());
+            }
+        });
     }
 }

@@ -20,10 +20,6 @@ public class SocketEnviar implements Runnable {
 
     @Override
     public void run() {
-        send();
-    }
-
-    protected void send() {
         try {
             Socket socketOut = new Socket(ip, port);
             ObjectOutputStream outputStream = new ObjectOutputStream(socketOut.getOutputStream());

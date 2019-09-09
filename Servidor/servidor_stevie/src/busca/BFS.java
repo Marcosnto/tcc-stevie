@@ -13,20 +13,17 @@ public class BFS {
         this.tags = tags;
         preencherLista();
         preencherConexoes();
-//        busca.Node atual = buscaBFS(buscarTag("A2"),buscarTag("C3"));
+//        busca.No atual = resultado(buscaBFS(buscarTag("A2"),buscarTag("C3")));
+//        System.out.println(atual);
     }
 
-    public List<No> listaResultado(Node atual){
-        List<No> no = new ArrayList<>();
-        Node proximo = null;
-        while(atual != null){
-//            System.out.println("busca.No atual: " + atual.getTag());
-            no.add(new No (atual, atual.getPai(), proximo));
-            proximo = atual;
-            atual = atual.getPai();
+    public No resultado(Node atual){
+        No noAtual = new No(atual, null);
+        while(noAtual.getNode().getPai() != null){
+            noAtual = new No(noAtual.getNode().getPai(), noAtual);
         }
-        Collections.reverse(no);
-        return no;
+//        Collections.reverse(no);
+        return noAtual;
     }
 
     public Node buscarTag(String codTag) {
@@ -40,7 +37,7 @@ public class BFS {
         return null;
     }
 
-    public List<No> buscaBFS(Node noInicial, Node noFinal) {
+    public Node buscaBFS(Node noInicial, Node noFinal) {
         //limpando os nós de Pai e Visitado para uma nova busca
         limparLista();
 
@@ -52,7 +49,7 @@ public class BFS {
 
             noAtual = fila.poll();
 
-            if (noAtual == noFinal) return listaResultado(noAtual);
+            if (noAtual == noFinal) return noAtual;
 
 
             if (noAtual.isVisitado() == false) {
@@ -76,7 +73,7 @@ public class BFS {
             }
             noAtual.setVisitado(true);
         }
-        return listaResultado(noAtual);
+        return noAtual;
     }
 
     public void preencherLista() {

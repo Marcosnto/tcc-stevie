@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86522f51-3216-4367-a283-84172a420bad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/busca/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/busca/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/servidor/OuvirArquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/ChooseOptionActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/MenuPrincipal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/TelaInicial.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/adapter/ObjectRecyclerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/adapter/ObjectRecyclerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/Servidor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SocketConexao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SocketReceber.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Aplicativo/stevie/app/src/main/java/com/example/stevie/SocketReceber.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/.vs/UHFDemo/v16/Server/sqlite3/storage.ide" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../Leitor/software leitor (C#) - Modificado/UHFDemo_v3.8.0/Reader/obj/x86/Release/Reader.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/busca/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/busca/BFS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/database/connection/model/dao/TagDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/busca/No.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/busca/No.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servidor/Navegacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/Navegacao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/servidor/Servidor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/Servidor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servidor/SocketConexao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/servidor/SocketConexao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servidor/SocketConexao.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +88,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
@@ -152,6 +149,8 @@
       <workItem from="1567903958491" duration="2341000" />
       <workItem from="1567922230166" duration="9309000" />
       <workItem from="1567938177044" duration="5084000" />
+      <workItem from="1567977669169" duration="5961000" />
+      <workItem from="1567995261527" duration="8706000" />
     </task>
     <servers />
   </component>
@@ -170,6 +169,27 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/busca/BFS.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/servidor/Servidor.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/servidor/Servidor.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/servidor_stevie$Main.ic" NAME="Main Coverage Results" MODIFIED="1567130191964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

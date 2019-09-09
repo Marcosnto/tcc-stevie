@@ -77,7 +77,7 @@ public class ChooseOptionActivity extends AppCompatActivity {
             @Override
             public void onOptionClicked(String name) {
                 Toast.makeText(ChooseOptionActivity.this, name, Toast.LENGTH_LONG).show();
-                new SocketEnviar("destino:"  +name, "192.168.50.45", 7000).send();
+                new Thread(new SocketEnviar("destino:"  +name, "192.168.50.45", 7000)).start();
                 Intent intent = new Intent(ChooseOptionActivity.this, Navegar.class);
                 startActivity(intent);
             }

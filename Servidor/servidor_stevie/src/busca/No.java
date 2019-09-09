@@ -1,37 +1,27 @@
 package busca;
 
 public class No {
-    private Node no;
-    private Node anterior;
-    private Node proximo;
+    private Node node;
+    private No proximo;
 
-    public No(Node no, Node anterior, Node proximo) {
-        this.no = no;
-        this.anterior = anterior;
+    public No(Node node, No proximo) {
+        this.node = node;
         this.proximo = proximo;
     }
 
-    public Node getNo() {
-        return no;
+    public Node getNode() {
+        return node;
     }
 
-    public void setNo(Node no) {
-        this.no = no;
+    public void setNode(Node node) {
+        this.node = node;
     }
 
-    public Node getAnterior() {
-        return anterior;
-    }
-
-    public void setAnterior(Node anterior) {
-        this.anterior = anterior;
-    }
-
-    public Node getProximo() {
+    public No getProximo() {
         return proximo;
     }
 
-    public void setProximo(Node proximo) {
+    public void setProximo(No proximo) {
         this.proximo = proximo;
     }
 }
