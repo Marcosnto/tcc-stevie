@@ -27,7 +27,7 @@ public class EscolherDestino extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String[] departamentos = {
-                        "Departamento de Matemática",
+                        "Departamento de Ciências Contábeis",
                         "Departamento de Sistemas de Informação"
                 };
                 Intent intent = new Intent(EscolherDestino.this, ChooseOptionActivity.class);

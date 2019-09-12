@@ -3297,11 +3297,13 @@ namespace UHFDemo
             {
                 System.IO.Directory.CreateDirectory(@"c:\stevie");
             }
+            //File.CreateText(@"c:\stevie\Lock.txt");
+                using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
+                {
+                    arqTags.WriteLine(tag);
+                }
+            //File.Delete(@"c:\stevie\Lock.txt");
 
-            using (StreamWriter arqTags = File.CreateText(@"c:\stevie\LeituraTags.txt"))
-            {
-                arqTags.WriteLine(tag);
-            }
 
             //if (!File.Exists(@"c:\stevie\LeituraTags.txt"))
             //{
