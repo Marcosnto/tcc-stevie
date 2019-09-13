@@ -46,5 +46,3 @@ C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\
 C:\Users\Marcos\Documents\stevie\software leitor (C#)\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb
 C:\Users\Marcos\Documents\Projetos no Git\stevie\Leitor\software leitor (C#) - Modificado\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csprojAssemblyReference.cache
 C:\Users\Marcos\Documents\Projetos no Git\stevie\Leitor\software leitor (C#) - Modificado\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.csproj.CoreCompileInputs.cache
-C:\Users\Marcos\Documents\Projetos no Git\stevie\Leitor\software leitor (C#) - Modificado\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.dll
-C:\Users\Marcos\Documents\Projetos no Git\stevie\Leitor\software leitor (C#) - Modificado\UHFDemo_v3.8.0\Reader\obj\x86\Release\Reader.pdb

@@ -33,7 +33,7 @@ public class OuvirArquivo implements Runnable {
 
                 public void fileCreated(int wd, String rootPath,
                                         String name) {
-                    System.out.println("Arquivo criado: " + name);
+//                    System.out.println("Arquivo criado: " + name);
                 }
 
                 public void fileModified(int wd, String rootPath, String name) {
@@ -42,7 +42,7 @@ public class OuvirArquivo implements Runnable {
                     System.out.println(ultimaTag);
                 }
             });
-            Thread.sleep(10000000);
+            Thread.sleep(1000);
         } catch (JNotifyException | InterruptedException e) {
             e.printStackTrace();
         }
