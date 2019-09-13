@@ -113,19 +113,24 @@ public class Servidor implements Runnable {
         Boolean enviado = false;
         Boolean aviso = false;
         Boolean recalcular = false;
-        while (caminhoAtual.getProximo() != null) {
+        while (true) {
             String tagAtual = lerArq();
 
             //Verifica se chegou no objetivo final
-            if (caminhoAtual.getNode().getTag().equals(destino)){
+            if (tagAtual.equals(destino)){
                 new SocketEnviar("direcao:Você chegou ao destino", ip, 7500).send();
                 break;
             }
             //Verifica se a próxima tag é uma tag de alerta
-            if(caminhoAtual.getProximo() != null){
-                String alerta = buscarTipoTag(caminhoAtual.getProximo().getNode().getTag());
+            if(caminhoAtual != null){
+                String alerta = buscarTipoTag(caminhoAtual.getNode().getTag());
                 if(alerta.equals("alerta") && aviso != true){
-                    new SocketEnviar("direcao:Cuidado! Você está próximo de "+ buscarDescricao(caminhoAtual.getProximo().getNode().getTag()), ip, 7500).send();
+                    new SocketEnviar("direcao:Cuidado! Você está próximo de "+ buscarDescricao(caminhoAtual.getNode().getTag()), ip, 7500).send();
+                    try {
+                        Thread.sleep(500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
                     aviso = true;
                 }
             }
@@ -142,30 +147,30 @@ public class Servidor implements Runnable {
                 }
                 anterior = caminhoAtual;
                 caminhoAtual = caminhoAtual.getProximo();
-            }else if(!tagAtual.equals(caminhoAtual.getProximo().getNode().getTag()) && !tagAtual.equals(caminhoAtual.getNode().getTag())
-            &&  !tagAtual.equals(anterior.getNode().getTag())){
-                System.out.println("Entrei e recalculei");
-                recalcular = true;
-                new SocketEnviar("direcao:Recalculando rota, por favor, aguarde!", ip, 7500).send();
-                try {
-                    Thread.sleep(2500);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+            }else if(!tagAtual.equals(caminhoAtual.getNode().getTag()) && !tagAtual.equals(anterior.getNode().getTag())){
+                    System.out.println("Entrei e recalculei");
+                    recalcular = true;
+                    new SocketEnviar("direcao:Recalculando rota, por favor, aguarde!", ip, 7500).send();
+                    try {
+                        Thread.sleep(2500);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    String localizacaoAtual = lerArq(); //Pega a localização atual, no caso a ultima tag lida
+                    if (origem != null){
+                        caminhoAtual = bfs.resultado(bfs.buscaBFS(bfs.buscarTag(localizacaoAtual), bfs.buscarTag(destino)));
+                        enviado = false;
+                    }
+                    System.out.println("Saindo");
                 }
-                String localizacaoAtual = lerArq(); //Pega a localização atual, no caso a ultima tag lida
-                if (origem != null){
-                    caminhoAtual = bfs.resultado(bfs.buscaBFS(bfs.buscarTag(localizacaoAtual), bfs.buscarTag(destino)));
-                    enviado = false;
-                }
-                System.out.println("Saindo");
-            }
+
 
 //            if(caminhoAtual.getNode() == null){
 //                break;
 //            }
 //
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
