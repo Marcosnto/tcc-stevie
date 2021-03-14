@@ -1,5 +1,5 @@
 
-<h1>Stevie: Sistema auxiliativo para locomoção de deficientes visuais em ambientes indoor</h1>
+<h1>Stevie: Sistema auxiliativo para locomoção de deficientes visuais em ambientes indoor 🧑‍🦯</h1>
 
 Projeto desenvolvido para o Trabalho de Conclusão de Curso (TCC) - Sistemas de Informação da <a href="http://www.ufs.br/">Universidade Federal de Sergipe (UFS)</a>  desenvolvido por <a href="https://www.linkedin.com/in/marcosnto/">Marcos Neto</a> e orientado 
 pelo <a href="http://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=C577929"> Prof. Dr. André Luis Meneses Silva</a>.
